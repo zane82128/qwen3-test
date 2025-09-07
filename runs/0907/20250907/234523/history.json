@@ -1,0 +1,587 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Van Gogh’s impasto brushwork and Studio Ghibli’s soft, dreamlike atmosphere, with swirling starry skies and gentle, flowing lines.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic yet flowing lines; loose spatial organization emphasizing movement and celestial patterns; layered, overlapping planes mimicking starry skies and atmospheric depth.\",
+    \"COLOR_TONALITY\": \"Warm, luminous palettes with dominant earthy yellows, soft blues, and gentle magentas; high contrast between bright highlights and muted backgrounds; balanced saturation with soft gradients and subtle glows.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto application with visible, textured strokes; thick, expressive brushmarks that suggest motion and energy; blended transitions in soft areas to maintain dreamlike fluidity.\",
+    \"EXPRESSION_THEME\": \"Serene yet vibrant celestial wonder; a sense of quiet awe and emotional warmth; themes of nature, cosmos, and gentle motion in peaceful environments.\",
+    \"HISTORICAL_CONTEXT\": \"Modernist expressionism (Van Gogh) fused with contemporary Japanese animation aesthetics (Studio Ghibli); rooted in emotional expression and visual storytelling.\"
+  },
+  \"MERGE_STRATEGY\": \"Blend Van Gogh’s textural intensity and expressive brushwork with Ghibli’s compositional calm and atmospheric softness by maintaining dynamic forms while smoothing transitions and enhancing luminous, gentle lighting.\",
+  \"PROMPT_SNIPPET\": \"A swirling starry sky with thick, expressive brushstrokes and soft, dreamlike lighting, combining Van Gogh’s impasto energy with Studio Ghibli’s serene, flowing atmosphere.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"No sharp, rigid lines or mechanical precision\",
+    \"Avoid harsh contrasts or cold, desaturated tones\",
+    \"No overly detailed realism or hyper-realistic textures\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of visible impasto textures and swirling motion\",
+    \"Soft, glowing color transitions with warm and cool tonal balance\",
+    \"Flowing, organic forms without mechanical or geometric rigidity\",
+    \"Atmosphere of calm wonder and emotional warmth\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "windmill, bicycle, stars",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Windmills are a classic symbol of rural and industrial landscapes, often associated with Dutch or rural European art styles, featuring rotating blades and a central tower.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with horizontal blades\",
+        \"MATERIAL\": \"wooden or metal structure\",
+        \"COLOR_PALETTE\": \"beige, tan, white, with contrasting dark wood or metal\",
+        \"SCALE_POSE\": \"midground to background, often tall and vertical\",
+        \"TEXTURE\": \"textured wood grain, smooth metal surfaces\",
+        \"LIGHTING\": \"natural daylight, flat or soft lighting\",
+        \"CONTEXT\": \"rural countryside, farms, open fields\",
+        \"COMPOSITION_ROLE\": \"background focal point or rhythmic element\",
+        \"CAMERA\": \"wide-angle, low to mid-level viewpoint\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wind, industry, rural life, and sustainability\",
+      \"VARIANTS\": [\"tower windmill\", \"post windmill\", \"three-bladed windmill\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Bicycles are common in 19th- and 20th-century realism and modernist art, often depicted in urban or leisure scenes with simple, functional forms.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"two-wheeled frame with pedals and handlebars\",
+        \"MATERIAL\": \"metal frame, rubber tires\",
+        \"COLOR_PALETTE\": \"metallic silver, black, red, or bright colors for accents\",
+        \"SCALE_POSE\": \"midground, often in motion or static posture\",
+        \"TEXTURE\": \"smooth metal, slightly brushed or polished\",
+        \"LIGHTING\": \"natural daylight, balanced lighting\",
+        \"CONTEXT\": \"urban streets, parks, countryside paths\",
+        \"COMPOSITION_ROLE\": \"foreground subject or dynamic element\",
+        \"CAMERA\": \"close-up or mid-shot, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"symbol of freedom, modernity, and youth culture\",
+      \"VARIANTS\": [\"single-speed\", \"mountain bike\", \"pedal bicycle\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"stars\",
+      \"WHY\": \"Stars are a common motif in celestial or romantic art, often rendered in night skies with geometric or radiant patterns.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"pointed or circular, often radiating light\",
+        \"MATERIAL\": \"abstract or implied light\",
+        \"COLOR_PALETTE\": \"white, silver, or pale blue with high contrast\",
+        \"SCALE_POSE\": \"background, small and scattered\",
+        \"TEXTURE\": \"smooth, glowing, sometimes with halos\",
+        \"LIGHTING\": \"night sky, soft ambient glow\",
+        \"CONTEXT\": \"night sky, rural skies, celestial scenes\",
+        \"COMPOSITION_ROLE\": \"background accent or symbolic element\",
+        \"CAMERA\": \"wide-angle, high vantage point\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, guidance, infinity, or the unknown\",
+      \"VARIANTS\": [\"constellations\", \"starfield\", \"single bright star\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are any specific cultural or regional art styles implied by the objects (e.g., Dutch windmills, 1920s bicycle art)?\",
+    \"Could the combination of windmill, bicycle, and stars suggest a particular narrative or symbolic theme?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of brushstroke thickness (e.g., 1–3 mm) is expected in the impasto technique to maintain both expressive energy and soft transitions?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies the physical scale of texture to ensure balance between Van Gogh’s intensity and Ghibli’s fluidity.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 1–3 mm)\",
+      \"DEPENDENCIES\": [\"impasto application\", \"visible, textured strokes\"]
+    },
+    {
+      \"Q\": \"How should the warm and cool tonal balance be quantified in the color palette—specifically, what percentage of the composition should be warm (yellow/magenta) versus cool (blue) tones?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Provides measurable criteria to ensure the luminous, balanced palette aligns with the specified tonal harmony.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage split (e.g., 60% warm, 40% cool)\",
+      \"DEPENDENCIES\": [\"warm, luminous palettes\", \"balanced saturation\", \"high contrast between highlights and backgrounds\"]
+    },
+    {
+      \"Q\": \"In the composition, how should the windmill, bicycle, and stars be spatially arranged—what specific ratio or alignment (e.g., 3:2:1) or compositional device (e.g., leading lines, negative space) should be used to reflect the flowing, organic form principle?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Ensures the organic, dynamic structure of the scene is realized through measurable spatial relationships.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"ratio or compositional device (e.g., 3:2:1, leading lines, flowing negative space)\",
+      \"DEPENDENCIES\": [\"swirling, organic forms\", \"layered, overlapping planes\", \"flowing lines\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle appear with sharp, geometric lines or mechanical precision?\",
+    \"Are any parts of the scene rendered with cold, desaturated tones or harsh contrasts?\",
+    \"Is the starfield composed of rigid geometric patterns instead of soft, glowing, organic radiance?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK mentions impasto thickness THEN ask for minimum and maximum stroke width ranges\",
+    \"IF COLOR_TONALITY specifies warm/cool balance THEN verify if it applies uniformly across all elements (e.g., sky, objects)\",
+    \"IF FORM_COMPOSITION references spatial arrangement THEN request specific compositional devices used\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"2–4 mm\",
+      \"RATIONALE\": \"Maintains expressive impasto energy while allowing soft transitions and organic flow.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"60% warm, 40% cool\",
+      \"RATIONALE\": \"Achieves luminous balance between earthy yellows/magentas and soft blues for emotional warmth.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"3:2:1 (windmill:stars:bicycle) with flowing negative space and leading lines\",
+      \"RATIONALE\": \"Creates organic, dynamic flow while placing the windmill as a central anchor and bicycle as a rhythmic movement element.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic yet flowing lines; layered, overlapping planes mimicking starry skies and atmospheric depth; spatial arrangement follows 3:2:1 ratio (windmill:stars:bicycle) with flowing negative space and leading lines to guide the eye.\",
+    \"COLOR_TONALITY\": \"Warm, luminous palettes with 60% warm (yellow/magenta) and 40% cool (blue) tones; high contrast between bright highlights and muted backgrounds; balanced saturation with soft gradients and subtle glows.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto application with visible, textured strokes of 2–4 mm thickness; thick, expressive brushmarks suggest motion and energy; blended transitions in soft areas maintain dreamlike fluidity.\",
+    \"EXPRESSION_THEME\": \"Serene yet vibrant celestial wonder; a sense of quiet awe and emotional warmth; themes of nature, cosmos, and gentle motion in peaceful environments.\",
+    \"HISTORICAL_CONTEXT\": \"Modernist expressionism (Van Gogh) fused with contemporary Japanese animation aesthetics (Studio Ghibli); rooted in emotional expression and visual storytelling.\",
+    \"SUBJECT_MATTER\": \"A rural night scene featuring a windmill, bicycle, and starfield in harmonious, flowing composition.\",
+    \"COMPOSITIONAL_DEVICES\": \"3:2:1 spatial ratio, flowing negative space, leading lines from bicycle to windmill to stars\",
+    \"LIGHTING_CAMERA\": \"Soft, ambient glow in night sky; wide-angle, low-to-mid viewpoint for windmill and bicycle; high vantage for starfield\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"No sharp, rigid lines or mechanical precision\",
+      \"Avoid harsh contrasts or cold, desaturated tones\",
+      \"No overly detailed realism or hyper-realistic textures\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of visible impasto textures with 2–4 mm stroke thickness\",
+      \"60% warm, 40% cool tonal balance across sky, windmill, and bicycle\",
+      \"Organic spatial arrangement in 3:2:1 ratio with flowing negative space and leading lines\",
+      \"Atmosphere of calm wonder and emotional warmth\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A rural night scene with a windmill, bicycle, and starfield in a 3:2:1 spatial ratio, rendered with 2–4 mm impasto strokes, 60% warm and 40% cool tonal balance, and flowing negative space and leading lines, blending Van Gogh’s expressive energy with Studio Ghibli’s serene atmosphere.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added measurable brushstroke thickness (2–4 mm)\",
+    \"Quantified warm/cool tonal balance (60%/40%)\",
+    \"Defined spatial ratio (3:2:1) and compositional devices (flowing negative space, leading lines)\",
+    \"Updated evaluation criteria with specific metrics\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the 3:2:1 ratio be adjusted to emphasize movement or narrative progression?\",
+    \"How should the bicycle’s motion be implied without mechanical realism?\",
+    \"Are there cultural references in the windmill-bicycle-star combination that could deepen the symbolic theme?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific texture or surface quality should be applied to the windmill's wooden structure to maintain the organic, expressive style—e.g., grain pattern, roughness, or smoothness?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Clarifies how material texture contributes to the organic, flowing aesthetic and avoids mechanical realism.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"description (e.g., 'visible wood grain with soft, irregular texture')\",
+      \"DEPENDENCIES\": [\"wooden or metal structure\", \"organic forms\", \"impasto texture\"]
+    },
+    {
+      \"Q\": \"How should the bicycle’s form be rendered in terms of motion—e.g., implied movement through line, blur, or dynamic pose—without using mechanical or realistic details?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Ensures the bicycle's presence supports the theme of gentle motion while avoiding rigid or hyper-realistic depictions.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description (e.g., 'slightly tilted, flowing lines suggesting motion')\",
+      \"DEPENDENCIES\": [\"implied motion\", \"no mechanical precision\", \"organic forms\"]
+    },
+    {
+      \"Q\": \"In the color palette, how should the warm and cool tones be distributed across the windmill, bicycle, and starfield—e.g., which object(s) should dominate warm tones, and which should emphasize cool tones?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Provides object-level tonal assignment to ensure balanced emotional warmth and visual harmony across all elements.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"object-wise distribution (e.g., 'windmill: 50% warm, 50% cool; bicycle: 60% warm, 40% cool; stars: 40% warm, 60% cool')\",
+      \"DEPENDENCIES\": [\"60% warm, 40% cool tonal balance\", \"warm yellow/magenta and soft blue tones\", \"object-specific context\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle appear with rigid, geometric shapes or sharp edges?\",
+    \"Are any of the objects rendered with cold, desaturated tones or harsh, unnatural contrasts?\",
+    \"Does the starfield use rigid geometric patterns or radiating lines instead of soft, glowing, organic radiance?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF TEXTURE mentions wood or metal THEN ask for specific grain or surface variation\",
+    \"IF FORM describes motion THEN verify if it uses flowing lines or implied movement only\",
+    \"IF COLOR_PALETTE specifies warm/cool split THEN request per-object tonal distribution\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"visible wood grain with soft, irregular texture and slight organic warping\",
+      \"RATIONALE\": \"Maintains organic, expressive quality while avoiding mechanical smoothness or precision.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": \"slightly tilted, flowing lines suggesting gentle motion without mechanical detail\",
+      \"RATIONALE\": \"Implies movement through dynamic form without rigid or realistic pose.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": \"windmill: 50% warm, 50% cool; bicycle: 60% warm, 40% cool; stars: 40% warm, 60% cool\",
+      \"RATIONALE\": \"Distributes warm/cool balance per object to preserve tonal harmony and emotional warmth across elements.\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Its wooden structure and organic form align with the expressive, textured style; warm/cool balance enhances emotional warmth and celestial harmony.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with horizontal blades, slightly tilted and organic in shape\",
+        \"MATERIAL\": \"wooden structure with visible grain and slight warping\",
+        \"COLOR_PALETTE\": \"earth tones with warm yellows and soft magentas; balanced with muted blues and greys\",
+        \"SCALE_POSE\": \"midground to background, tall and vertical with soft leading lines\",
+        \"TEXTURE\": \"visible wood grain with soft, irregular texture and slight organic warping\",
+        \"LIGHTING\": \"soft ambient glow, warm highlights from sky and structure\",
+        \"CONTEXT\": \"rural night sky, open fields, peaceful countryside\",
+        \"COMPOSITION_ROLE\": \"central anchor with leading lines to bicycle and stars\",
+        \"CAMERA\": \"wide-angle, low-to-mid viewpoint\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wind, rural life, and gentle motion in nature\",
+      \"VARIANTS\": [\"tower windmill\", \"three-bladed windmill\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Its form supports gentle motion and dynamic flow without mechanical realism, fitting the expressive, organic style.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"two-wheeled frame with flowing lines suggesting gentle motion\",
+        \"MATERIAL\": \"metal frame with soft, brushed finish\",
+        \"COLOR_PALETTE\": \"metallic silver with red or yellow accents; 60% warm, 40% cool\",
+        \"SCALE_POSE\": \"midground, slightly tilted, in dynamic but soft posture\",
+        \"TEXTURE\": \"smooth, slightly brushed metal with soft transitions\",
+        \"LIGHTING\": \"soft daylight and ambient glow, balanced highlights\",
+        \"CONTEXT\": \"rural night path, quiet countryside, open field\",
+        \"COMPOSITION_ROLE\": \"rhythmic movement element, leading line to windmill and stars\",
+        \"CAMERA\": \"mid-shot, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"symbol of freedom, youth, and gentle motion in peaceful settings\",
+      \"VARIANTS\": [\"single-speed\", \"mountain bike\"],
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"NAME\": \"stars\",
+      \"WHY\": \"Soft, glowing radiance and organic distribution reflect the celestial wonder theme and avoid rigid patterns.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"pointed or circular, radiating soft light with organic halos\",
+        \"MATERIAL\": \"abstract light, implied glow\",
+        \"COLOR_PALETTE\": \"white, pale silver, soft blue; 40% warm, 60% cool\",
+        \"SCALE_POSE\": \"background, scattered and soft, high vantage\",
+        \"TEXTURE\": \"smooth, glowing, with soft gradients and subtle halos\",
+        \"LIGHTING\": \"night sky, ambient glow with soft diffusion\",
+        \"CONTEXT\": \"night sky, rural skies, open horizon\",
+        \"COMPOSITION_ROLE\": \"background accent and symbolic element of calm wonder\",
+        \"CAMERA\": \"wide-angle, high vantage point\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, guidance, infinity, and quiet awe\",
+      \"VARIANTS\": [\"starfield\", \"constellations\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Van Gogh-inspired impasto with Ghibli softness\": [\"windmill\", \"bicycle\", \"stars\"],
+      \"Celestial and organic composition\": [\"stars\", \"windmill\"]
+    },
+    \"INTERSECTION\": [\"stars\", \"windmill\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"mechanical bicycle\", \"geometric star patterns\", \"sharp-edged windmill\"],
+  \"PROMPT_SNIPPETS\": [
+    \"Windmill with visible wood grain and soft irregular texture, slightly tilted, in warm-soft earth tones\",
+    \"Bicycle rendered with flowing lines and gentle tilt, 60% warm, 40% cool, no mechanical detail\",
+    \"Stars with soft glowing halos and organic radiance, 40% warm, 60% cool, in a dreamlike night sky\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific texture to windmill (visible wood grain with soft warping)\",
+    \"Refined bicycle form to imply motion via flowing lines and tilt\",
+    \"Assigned object-specific warm/cool tonal distribution (windmill:50/50, bicycle:60/40, stars:40/60)\",
+    \"Updated texture, form, and color attributes to align with organic, expressive style\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the windmill’s tilt be adjusted to better guide the viewer’s eye toward the stars?\",
+    \"How might the bicycle’s color accents be softened to match the overall luminous palette?\",
+    \"Are there cultural or symbolic links between the windmill, bicycle, and stars in rural traditions?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of brushstroke thickness (e.g., 2–4 mm) is required in the impasto technique to ensure expressive energy without disrupting the soft, flowing transitions in the composition?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Precisely defines the texture scale to balance Van Gogh’s intensity with Studio Ghibli’s fluidity and organic flow.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 2–4 mm)\",
+      \"DEPENDENCIES\": [\"2–4 mm\", \"visible, textured strokes\", \"soft transitions\"]
+    },
+    {
+      \"Q\": \"How should the warm and cool tonal balance be distributed across the windmill, bicycle, and starfield—specifically, what percentage of warm and cool tones should each object have to maintain emotional harmony and avoid visual imbalance?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures tonal consistency across all elements while preserving the 60% warm, 40% cool global balance and object-specific emotional context.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"object-wise distribution (e.g., 'windmill: 50% warm, 50% cool; bicycle: 60% warm, 40% cool; stars: 40% warm, 60% cool')\",
+      \"DEPENDENCIES\": [\"60% warm, 40% cool global balance\", \"object-specific color palettes\", \"emotional warmth across elements\"]
+    },
+    {
+      \"Q\": \"In the composition, how should the leading lines and negative space be structured to guide the viewer’s eye from the bicycle to the windmill and then to the stars—what specific compositional devices (e.g., flowing curves, diagonal paths) should be used to support the 3:2:1 spatial ratio and organic flow?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Clarifies how spatial relationships and visual flow reinforce the dynamic, harmonious structure of the rural night scene.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of devices (e.g., 'leading lines from bicycle to windmill, flowing negative space between windmill and stars')\",
+      \"DEPENDENCIES\": [\"3:2:1 ratio\", \"flowing negative space\", \"leading lines\", \"organic forms\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should any object (e.g., windmill or bicycle) feature sharp, mechanical lines or geometric precision?\",
+    \"Are any elements rendered with cold, desaturated tones or harsh contrasts that disrupt the warm, luminous atmosphere?\",
+    \"Does the starfield use rigid, geometric patterns instead of soft, glowing, organic radiance?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK mentions thickness THEN ask for minimum and maximum stroke width in mm\",
+    \"IF COLOR_TONALITY specifies per-object split THEN verify if it aligns with global warm/cool balance\",
+    \"IF COMPOSITIONAL_DEVICES references leading lines THEN request specific path or flow direction\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"2–4 mm\",
+      \"RATIONALE\": \"Maintains expressive impasto energy while allowing soft transitions and organic flow.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"windmill: 50% warm, 50% cool; bicycle: 60% warm, 40% cool; stars: 40% warm, 60% cool\",
+      \"RATIONALE\": \"Distributes warm/cool balance per object to preserve tonal harmony and emotional warmth across elements while maintaining global 60% warm, 40% cool balance.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": [\"leading lines from bicycle to windmill, flowing negative space between windmill and stars\"],
+      \"RATIONALE\": \"Guides viewer’s eye through the scene in a natural, organic flow that supports the 3:2:1 ratio and dynamic composition.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic yet flowing lines; layered, overlapping planes mimicking starry skies and atmospheric depth; spatial arrangement follows 3:2:1 ratio (windmill:stars:bicycle) with flowing negative space and leading lines to guide the eye.\",
+    \"COLOR_TONALITY\": \"Warm, luminous palettes with 60% warm (yellow/magenta) and 40% cool (blue) tones; object-specific distribution: windmill: 50% warm, 50% cool; bicycle: 60% warm, 40% cool; stars: 40% warm, 60% cool; balanced saturation with soft gradients and subtle glows.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto application with visible, textured strokes of 2–4 mm thickness; thick, expressive brushmarks suggest motion and energy; blended transitions in soft areas maintain dreamlike fluidity.\",
+    \"EXPRESSION_THEME\": \"Serene yet vibrant celestial wonder; a sense of quiet awe and emotional warmth; themes of nature, cosmos, and gentle motion in peaceful environments.\",
+    \"HISTORICAL_CONTEXT\": \"Modernist expressionism (Van Gogh) fused with contemporary Japanese animation aesthetics (Studio Ghibli); rooted in emotional expression and visual storytelling.\",
+    \"SUBJECT_MATTER\": \"A rural night scene featuring a windmill, bicycle, and starfield in harmonious, flowing composition.\",
+    \"COMPOSITIONAL_DEVICES\": \"3:2:1 spatial ratio, leading lines from bicycle to windmill, flowing negative space between windmill and stars\",
+    \"LIGHTING_CAMERA\": \"Soft, ambient glow in night sky; wide-angle, low-to-mid viewpoint for windmill and bicycle; high vantage for starfield\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"No sharp, rigid lines or mechanical precision\",
+      \"Avoid harsh contrasts or cold, desaturated tones\",
+      \"No overly detailed realism or hyper-realistic textures\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of visible impasto textures with 2–4 mm stroke thickness\",
+      \"60% warm, 40% cool tonal balance globally and object-specific distribution (windmill:50/50, bicycle:60/40, stars:40/60)\",
+      \"Organic spatial arrangement in 3:2:1 ratio with flowing negative space and leading lines from bicycle to windmill to stars\",
+      \"Atmosphere of calm wonder and emotional warmth\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A rural night scene with a windmill, bicycle, and starfield in a 3:2:1 spatial ratio, rendered with 2–4 mm impasto strokes, 60% warm and 40% cool tonal balance (windmill:50/50, bicycle:60/40, stars:40/60), and leading lines from bicycle to windmill with flowing negative space between windmill and stars, blending Van Gogh’s expressive energy with Studio Ghibli’s serene atmosphere.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added object-specific warm/cool tonal distribution (windmill:50/50, bicycle:60/40, stars:40/60)\",
+    \"Clarified compositional devices as 'leading lines from bicycle to windmill, flowing negative space between windmill and stars'\",
+    \"Updated evaluation criteria to include per-object tonal splits and directional flow\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the leading lines be curved or organic instead of straight to enhance the flowing, natural aesthetic?\",
+    \"How might the windmill’s tilt be adjusted to better align with the leading line path?\",
+    \"Are there cultural or symbolic narratives in the windmill-bicycle-star combination that reflect rural or nocturnal traditions?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific type of organic warping or deformation should be applied to the windmill’s wooden structure to enhance its expressive, non-mechanical quality—e.g., slight sag, natural curvature, or soft bowing?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Refines the organic texture to better reflect natural material behavior and emotional warmth in the style.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"description (e.g., 'slight natural sag', 'soft organic bowing')\",
+      \"DEPENDENCIES\": [\"visible wood grain\", \"soft, irregular texture\", \"organic forms\"]
+    },
+    {
+      \"Q\": \"How should the bicycle’s motion be implied through form—specifically, should the lines be flowing, curving, or gently undulating, and how does this contribute to the overall sense of gentle motion without realism?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Clarifies the visual language of motion to ensure it remains expressive and aligned with the organic, non-mechanical aesthetic.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description (e.g., 'curving, undulating lines suggesting soft movement')\",
+      \"DEPENDENCIES\": [\"implied motion\", \"flowing lines\", \"no mechanical detail\"]
+    },
+    {
+      \"Q\": \"What specific range of luminosity or glow intensity should be applied to the stars to maintain their soft, celestial radiance—e.g., subtle halos, medium glow, or diffused light—and how does this affect the perceived emotional warmth?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Ensures the starfield’s glow supports the emotional tone and avoids artificial or harsh lighting that contradicts the dreamlike atmosphere.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"glow intensity level (e.g., 'subtle halos', 'diffused soft glow')\",
+      \"DEPENDENCIES\": [\"soft, glowing texture\", \"organic radiance\", \"emotional warmth\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle show rigid, symmetrical, or geometric warping or form?\",
+    \"Are the stars rendered with sharp edges, high contrast, or artificial lighting?\",
+    \"Is the glow on the stars uniform or too intense, disrupting the soft, ambient atmosphere?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF TEXTURE mentions organic warping THEN ask for specific type (e.g., sag, bowing)\",
+    \"IF FORM describes motion THEN verify if it uses curving or undulating lines only\",
+    \"IF TEXTURE mentions star glow THEN confirm it is diffused and not directional or bright\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"slight natural sag\",
+      \"RATIONALE\": \"Enhances organic, non-mechanical quality by mimicking real wood behavior under wind and age.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": \"curving, undulating lines suggesting soft movement\",
+      \"RATIONALE\": \"Implies gentle motion through organic flow without mechanical realism or sharp angles.\",
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"diffused soft glow\",
+      \"RATIONALE\": \"Maintains celestial wonder and emotional warmth with subtle, ambient radiance avoiding harsh or artificial lighting.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"The slight natural sag enhances organic texture and emotional warmth, aligning with expressive, non-mechanical material behavior.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with horizontal blades, slightly tilted and organic in shape\",
+        \"MATERIAL\": \"wooden structure with visible grain and slight warping\",
+        \"COLOR_PALETTE\": \"earth tones with warm yellows and soft magentas; balanced with muted blues and greys\",
+        \"SCALE_POSE\": \"midground to background, tall and vertical with soft leading lines\",
+        \"TEXTURE\": \"visible wood grain with soft, irregular texture and slight natural sag\",
+        \"LIGHTING\": \"soft ambient glow, warm highlights from sky and structure\",
+        \"CONTEXT\": \"rural night sky, open fields, peaceful countryside\",
+        \"COMPOSITION_ROLE\": \"central anchor with leading lines to bicycle and stars\",
+        \"CAMERA\": \"wide-angle, low-to-mid viewpoint\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wind, rural life, and gentle motion in nature\",
+      \"VARIANTS\": [\"tower windmill\", \"three-bladed windmill\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Curving, undulating lines imply motion through expressive form, avoiding mechanical precision and enhancing organic flow.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"two-wheeled frame with curving, undulating lines suggesting soft movement\",
+        \"MATERIAL\": \"metal frame with soft, brushed finish\",
+        \"COLOR_PALETTE\": \"metallic silver with red or yellow accents; 60% warm, 40% cool\",
+        \"SCALE_POSE\": \"midground, slightly tilted, in dynamic but soft posture\",
+        \"TEXTURE\": \"smooth, slightly brushed metal with soft transitions\",
+        \"LIGHTING\": \"soft daylight and ambient glow, balanced highlights\",
+        \"CONTEXT\": \"rural night path, quiet countryside, open field\",
+        \"COMPOSITION_ROLE\": \"rhythmic movement element, leading line to windmill and stars\",
+        \"CAMERA\": \"mid-shot, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"symbol of freedom, youth, and gentle motion in peaceful settings\",
+      \"VARIANTS\": [\"single-speed\", \"mountain bike\"],
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"NAME\": \"stars\",
+      \"WHY\": \"Diffused soft glow maintains celestial wonder and emotional warmth without artificial or harsh lighting.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"pointed or circular, radiating soft light with organic halos\",
+        \"MATERIAL\": \"abstract light, implied glow\",
+        \"COLOR_PALETTE\": \"white, pale silver, soft blue; 40% warm, 60% cool\",
+        \"SCALE_POSE\": \"background, scattered and soft, high vantage\",
+        \"TEXTURE\": \"smooth, glowing, with soft gradients and subtle halos\",
+        \"LIGHTING\": \"night sky, ambient glow with soft diffusion\",
+        \"CONTEXT\": \"night sky, rural skies, open horizon\",
+        \"COMPOSITION_ROLE\": \"background accent and symbolic element of calm wonder\",
+        \"CAMERA\": \"wide-angle, high vantage point\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, guidance, infinity, and quiet awe\",
+      \"VARIANTS\": [\"starfield\", \"constellations\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Van Gogh-inspired impasto with Ghibli softness\": [\"windmill\", \"bicycle\", \"stars\"],
+      \"Celestial and organic composition\": [\"stars\", \"windmill\"]
+    },
+    \"INTERSECTION\": [\"stars\", \"windmill\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"mechanical bicycle\", \"geometric star patterns\", \"sharp-edged windmill\"],
+  \"PROMPT_SNIPPETS\": [
+    \"Windmill with visible wood grain and slight natural sag, slightly tilted, in warm-soft earth tones\",
+    \"Bicycle rendered with curving, undulating lines suggesting soft movement, 60% warm, 40% cool, no mechanical detail\",
+    \"Stars with diffused soft glow and organic radiance, 40% warm, 60% cool, in a dreamlike night sky\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific warping type to windmill: 'slight natural sag'\",
+    \"Updated bicycle motion to 'curving, undulating lines suggesting soft movement'\",
+    \"Refined star glow to 'diffused soft glow' to enhance emotional warmth and ambient atmosphere\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the windmill’s natural sag be slightly exaggerated to enhance the flow of leading lines?\",
+    \"How might the undulating lines on the bicycle be integrated with the windmill’s tilt for smoother visual continuity?\",
+    \"Are there cultural or symbolic narratives in the windmill-bicycle-star combination that reflect rural or nocturnal traditions?\"
+  ]
+}"
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "windmill, bicycle, stars",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Windmills are iconic in rural and historical landscapes, especially in Dutch and European countryside settings, and are commonly associated with wind energy and agricultural history.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Circular or tower-like with rotating blades\",
+        \"MATERIAL\": \"Wood, metal, or concrete\",
+        \"COLOR_PALETTE\": \"Beige, brown, white, with contrasting red or black accents\",
+        \"SCALE_POSE\": \"Medium to large scale, often central or mid-ground in composition\",
+        \"TEXTURE\": \"Smooth wood surfaces, metallic blade edges\",
+        \"LIGHTING\": \"Natural daylight, often with soft chiaroscuro or flat lighting\",
+        \"CONTEXT\": \"Rural landscapes, farm fields, coastal areas\",
+        \"COMPOSITION_ROLE\": \"Main subject or focal point\",
+        \"CAMERA\": \"Medium to wide angle, often slightly elevated\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of wind power, perseverance, rural life, or timelessness\",
+      \"VARIANTS\": [\"tower windmill\", \"post windmill\", \"modern wind turbine\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Bicycles are common in urban and pastoral scenes, especially in mid-20th century art, representing freedom, mobility, and modernity.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Two-wheeled frame with handlebars and pedals\",
+        \"MATERIAL\": \"Steel, aluminum, or painted plastic\",
+        \"COLOR_PALETTE\": \"Red, blue, green, black, white — often vibrant or contrasting\",
+        \"SCALE_POSE\": \"Medium scale, often shown in motion or mid-action\",
+        \"TEXTURE\": \"Smooth metallic finish, sometimes with brushed or scratched texture\",
+        \"LIGHTING\": \"Natural daylight, dynamic lighting to show motion\",
+        \"CONTEXT\": \"Urban streets, parks, countryside paths\",
+        \"COMPOSITION_ROLE\": \"Foreground accent or dynamic element\",
+        \"CAMERA\": \"Low-angle or close-up to emphasize motion\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of youth, independence, and modern transportation\",
+      \"VARIANTS\": [\"road bike\", \"city bike\", \"children's bicycle\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"stars\",
+      \"WHY\": \"Stars are frequently depicted in night sky scenes, especially in romantic or dreamlike compositions, symbolizing hope, the cosmos, and celestial order.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Pointed or circular, often grouped in constellations\",
+        \"MATERIAL\": \"Abstract or symbolic — not physical\",
+        \"COLOR_PALETTE\": \"White, silver, or soft blue — high contrast against dark background\",
+        \"SCALE_POSE\": \"Small scale, scattered in the sky or distant background\",
+        \"TEXTURE\": \"Smooth, glowing, or sparkling — often with a subtle gradient\",
+        \"LIGHTING\": \"Dark background with bright points of light\",
+        \"CONTEXT\": \"Night sky, rural sky, celestial scenes\",
+        \"COMPOSITION_ROLE\": \"Background accent or symbolic element\",
+        \"CAMERA\": \"Wide-angle, high elevation, often with a night sky view\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of hope, infinity, guidance, or the unknown\",
+      \"VARIANTS\": [\"constellation stars\", \"twinkling stars\", \"starfield\"],
+      \"CONFIDENCE\": 0.90
+    }
+  ],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific gradient or glow effect (e.g., soft white, radial bloom, luminous diffusion) should be applied to the stars to maintain Studio Ghibli-style luminosity and ensure a smooth transition between dark voids and glowing highlights?\",
+      \"DIMENSION\": \"LIGHTING\",
+      \"WHY\": \"Ghibli-style luminosity relies on soft, diffused glows that enhance dreamy atmosphere and emotional warmth without appearing mechanical or flat.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"glow type (e.g., radial bloom, soft white gradient, luminous diffusion)\",
+      \"DEPENDENCIES\": [\"luminous highlights\", \"dreamy, celestial lighting\", \"glowing texture\"]
+    },
+    {
+      \"Q\": \"Should the windmill’s blades be shown in motion (rotating) or remain static, and how does this choice impact the expression of emotional intensity and inner turmoil in the composition?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Motion conveys dynamic energy and movement, while stillness emphasizes emotional stillness and inner turmoil — both are central to the expression theme.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"motion state (e.g., rotating or static) + emotional impact explanation\",
+      \"DEPENDENCIES\": [\"emotional intensity\", \"inner turmoil\", \"swirling, organic forms\"]
+    },
+    {
+      \"Q\": \"What texture characteristics (e.g., rough, smooth, brushed, metallic) are expected for the windmill’s wooden body and metal blades, and how do these textures interact with the impasto brushwork and surrounding soft transitions?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture differentiates earthly form from celestial softness, and must align with both Van Gogh’s expressive impasto and Ghibli’s tactile, organic surfaces.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"texture per element (e.g., rough wood, metallic edge) + interaction with brushwork\",
+      \"DEPENDENCIES\": [\"impasto brushstrokes\", \"visible texture\", \"soft flowing transitions\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the windmill lack visible impasto texture or appear flat and realistic?\",
+    \"Are the stars missing a glow or gradient, appearing as simple dots without luminous quality?\",
+    \"Is the windmill’s form overly static or mechanical, lacking emotional movement?\",
+    \"Do the textures of the windmill contradict the soft, flowing transitions in the starfield?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF LIGHTING mentions glow effect THEN ask for gradient direction or intensity range\",
+    \"IF FORM specifies motion state THEN ask for blade rotation speed or implied motion cues\",
+    \"IF TEXTURE references material THEN ask for brushstroke interaction or layering details\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"LIGHTING\",
+      \"ANSWER\": \"radial bloom with soft white gradient and luminous diffusion\",
+      \"RATIONALE\": \"Maintains Studio Ghibli’s signature soft, organic glow while ensuring smooth transition from dark void to luminous highlights.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": \"rotating slowly — conveys dynamic energy and inner turmoil, reflecting emotional movement and cosmic connection\",
+      \"RATIONALE\": \"Rotation introduces rhythmic motion that mirrors Van Gogh’s swirling forms and enhances the theme of emotional intensity and personal dreams.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"rough wood surface with smooth, brushed metal blades — impasto layers enhance texture, blending with soft transitions in surrounding sky\",
+      \"RATIONALE\": \"Contrasts earthly solidity with celestial softness; impasto reinforces form while allowing smooth flow into the starfield.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Central emotional focal point with dynamic motion and textured form, aligning with Van Gogh’s expressive energy and Ghibli’s organic, tactile style\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Circular tower with rotating blades in dynamic motion\",
+        \"MATERIAL\": \"Wood and metal\",
+        \"COLOR_PALETTE\": \"Warm ochres (40–50%) and vermilion (10–20%) in body; black and white accents on blades\",
+        \"SCALE_POSE\": \"Medium to large, central in composition, slightly elevated\",
+        \"TEXTURE\": \"Rough wood surface with smooth, brushed metal blades; impasto layers enhance tactile depth\",
+        \"LIGHTING\": \"Warm, soft chiaroscuro with dynamic glow from rotating blades\",
+        \"CONTEXT\": \"Rural landscape at twilight, with distant starfield\",
+        \"COMPOSITION_ROLE\": \"Emotional anchor and central focal point\",
+        \"CAMERA\": \"Medium elevation, slightly wide to include both windmill and sky\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of emotional struggle, perseverance, and the connection between earth and cosmos\",
+      \"VARIANTS\": [\"tower windmill with rotating blades\", \"twilight windmill\", \"earthly anchor\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"stars\",
+      \"WHY\": \"Celestial counterpoint with soft, glowing luminosity that enhances dreamy atmosphere and emotional transcendence\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Pointed or circular, grouped in constellations with soft clustering\",
+        \"MATERIAL\": \"Abstract, symbolic — glowing points in dark void\",
+        \"COLOR_PALETTE\": \"Soft white to silver with subtle blue gradient; luminous diffusion\",
+        \"SCALE_POSE\": \"Small, scattered in upper and diagonal sky\",
+        \"TEXTURE\": \"Soft white radial bloom with luminous diffusion and gentle gradient\",
+        \"LIGHTING\": \"Dark background with glowing, softly diffused highlights\",
+        \"CONTEXT\": \"Night sky above and diagonally from windmill\",
+        \"COMPOSITION_ROLE\": \"Symbolic counterpoint to inner turmoil and emotional transcendence\",
+        \"CAMERA\": \"Wide-angle, high elevation, emphasizing depth and spatial flow\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of hope, infinite connection, and peaceful transcendence\",
+      \"VARIANTS\": [\"twinkling starfield\", \"constellation glow\", \"luminous sky\"],
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Van Gogh + Studio Ghibli Fusion\": [
+        \"windmill\",
+        \"stars\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"windmill\",
+      \"stars\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"static windmill without motion\",
+    \"flat or non-glowing stars\",
+    \"overly sharp or mechanical textures\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A central windmill with rotating blades in warm ochres and vermilion (40–50%) and rough wood texture, impasto-laid with brushed metal edges\",
+    \"Stars above and diagonally with soft white radial bloom and luminous diffusion, glowing gently against a dark void\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added rotating motion to windmill blades with emotional rationale\",
+    \"Defined specific glow effect (radial bloom with soft white gradient) for stars\",
+    \"Enhanced windmill texture with rough wood and brushed metal, linked to impasto layering\",
+    \"Refined starfield lighting and texture to match Ghibli-style luminosity\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"What is the exact rotation speed or implied motion cue (e.g., slow, steady) to match emotional rhythm?\",
+    \"Should the windmill’s base or foundation show subtle cracks or wear to imply age and emotional weight?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific texture or material variation should be applied to the windmill’s wooden body beyond roughness (e.g., grain pattern, weathering, cracks) to imply age, emotional weight, or connection to the earth?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Adding specific surface details enhances emotional depth and realism without violating the soft, dreamlike aesthetic.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"specific texture variation (e.g., deep grain, faded finish, subtle cracks)\",
+      \"DEPENDENCIES\": [\"emotional weight\", \"earthly anchor\", \"age implication\", \"tactile grounding\"]
+    },
+    {
+      \"Q\": \"Are there specific color shifts or gradients within the windmill’s body (e.g., ochre to vermilion) as it rotates, and how do these shifts contribute to the emotional narrative of inner turmoil and transcendent joy?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Dynamic color transitions during rotation can mirror emotional progression and psychological change in the composition.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"color gradient (e.g., ochre to vermilion) + emotional function (e.g., reflects inner turmoil to joy)\",
+      \"DEPENDENCIES\": [\"rotation motion\", \"warm hue dominance\", \"emotional intensity\", \"personal dreams\"]
+    },
+    {
+      \"Q\": \"Could the stars’ radial glow subtly pulse or fade in rhythm with the windmill’s slow, wobbling rotation, and what would be the timing or frequency of this pulsation to create a dynamic emotional beat?\",
+      \"DIMENSION\": \"LIGHTING\",
+      \"WHY\": \"A synchronized pulse between windmill motion and starlight could create a narrative rhythm, enhancing the theme of cosmic connection and emotional harmony.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"pulse behavior (e.g., gentle fade-in/fade-out) + timing (e.g., once per full rotation)\",
+      \"DEPENDENCIES\": [\"windmill rotation\", \"radial bloom\", \"emotional rhythm\", \"transcendent joy\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the windmill lack visible surface details like grain or wear that suggest age or emotional history?\",
+    \"Are there no color transitions during rotation that reflect emotional progression?\",
+    \"Does the starlight remain static without rhythmic modulation to match the windmill’s motion?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF TEXTURE mentions age or wear THEN ask for specific visual pattern (e.g., cracking, fading)\",
+    \"IF COLOR_TONALITY references gradient THEN ask for exact hue progression and direction\",
+    \"IF LIGHTING mentions pulsation THEN ask for frequency or duration of each pulse cycle\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"deep grain with subtle fading finish and faint, radial cracks — implies age, emotional weight, and connection to the earth over time\",
+      \"RATIONALE\": \"Deep grain and radial cracks add tactile realism and narrative depth without breaking the dreamlike aesthetic.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"ochre to vermilion gradient across the rotating body — reflects inner turmoil to transcendent joy as the windmill spins\",
+      \"RATIONALE\": \"A warm hue progression mirrors emotional evolution from struggle to serenity, enhancing the narrative arc of personal dreams.\",
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"LIGHTING\",
+      \"ANSWER\": \"gentle fade-in/fade-out pulse once per full rotation — syncs with windmill’s wobbling rhythm to create a dynamic emotional beat\",
+      \"RATIONALE\": \"Rhythmic pulsation between motion and light reinforces cosmic connection and emotional harmony through temporal alignment.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Enhanced with age-related textures and dynamic color shifts to deepen emotional resonance and narrative progression, aligning with inner turmoil and transcendent joy themes\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Circular tower with rotating blades in slow, wobbling motion\",
+        \"MATERIAL\": \"Wood and metal\",
+        \"COLOR_PALETTE\": \"Warm ochres (40–50%) and vermilion (10–20%) with gradient from ochre to vermilion during rotation\",
+        \"SCALE_POSE\": \"Medium to large, central in composition, slightly elevated\",
+        \"TEXTURE\": \"Deep grain with faded finish and faint radial cracks — implies age, emotional weight, and earthbound history\",
+        \"LIGHTING\": \"Warm, soft chiaroscuro with radial glow from rotating blades; gentle fade-in/fade-out pulse once per full rotation\",
+        \"CONTEXT\": \"Rural landscape at twilight, with distant starfield\",
+        \"COMPOSITION_ROLE\": \"Emotional anchor and central focal point\",
+        \"CAMERA\": \"Medium elevation, slightly wide to include both windmill and sky\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of emotional struggle, perseverance, and the connection between earth and cosmos, evolving from turmoil to transcendent joy\",
+      \"VARIANTS\": [\"tower windmill with rotating blades\", \"twilight windmill\", \"earthly anchor with age wear\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"stars\",
+      \"WHY\": \"Maintains soft, luminous glow with rhythmic pulsation synchronized to windmill motion, enhancing dreamy atmosphere and emotional harmony\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Pointed or circular, grouped in constellations with soft clustering\",
+        \"MATERIAL\": \"Abstract, symbolic — glowing points in dark void\",
+        \"COLOR_PALETTE\": \"Soft white to silver with subtle blue gradient; luminous diffusion\",
+        \"SCALE_POSE\": \"Small, scattered in upper and diagonal sky\",
+        \"TEXTURE\": \"Soft white radial bloom with luminous diffusion and gentle gradient (10–30% luminance)\",
+        \"LIGHTING\": \"Dark background with glowing, softly diffused highlights; gentle fade-in/fade-out pulse once per full rotation\",
+        \"CONTEXT\": \"Night sky above and diagonally from windmill\",
+        \"COMPOSITION_ROLE\": \"Symbolic counterpoint to inner turmoil and emotional transcendence\",
+        \"CAMERA\": \"Wide-angle, high elevation, emphasizing depth and spatial flow\"
+      },
+      \"ICONOGRAPHY\": \"Symbol of hope, infinite connection, and peaceful transcendence, resonating in rhythm with the windmill’s emotional journey\",
+      \"VARIANTS\": [\"twinkling starfield\", \"constellation glow\", \"luminous sky with pulsing glow\"],
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Van Gogh + Studio Ghibli Fusion\": [
+        \"windmill\",
+        \"stars\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"windmill\",
+      \"stars\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"static windmill without motion or texture\",
+    \"flat or non-glowing stars\",
+    \"overly sharp or mechanical textures\",
+    \"no color gradient during rotation\",
+    \"no rhythmic pulsation between windmill and stars\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A central windmill with slow, wobbling rotation and deep grain texture, fading finish, and faint radial cracks, showing a gradient from ochre to vermilion as it spins\",
+    \"Stars above and diagonally with soft white radial bloom and gentle fade-in/fade-out pulse once per full rotation, glowing softly against a dark void\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added deep grain, fading finish, and radial cracks to windmill texture for emotional age and weight\",
+    \"Introduced ochre-to-vermilion gradient during rotation to reflect emotional progression from turmoil to joy\",
+    \"Applied gentle pulsing glow to stars synchronized with windmill rotation for dynamic emotional rhythm\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the windmill’s base show a subtle shadow or depression to imply structural wear or emotional strain?\",
+    \"Is the gradient in the windmill’s body smooth or stepped (e.g., abrupt shift) to better mirror emotional transitions?\",
+    \"Would a slight delay in the star pulse (e.g., half-rotation lag) enhance the sense of emotional tension or anticipation?\"
+  ]
+}"
+  }
+]

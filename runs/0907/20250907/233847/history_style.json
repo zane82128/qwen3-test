@@ -1,0 +1,237 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s expressive, dreamlike animation—bold, vibrant colors, soft organic lines, and emotive, fluid forms.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic, and flowing forms with fluid, biomorphic shapes; asymmetrical layouts emphasizing emotional rhythm over structural precision; dynamic spatial arrangements that suggest movement and inner sensation.\",
+    \"COLOR_TONALITY\": \"High-saturation, vibrant palettes dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green, magenta); bold contrasts between warm and cool tones; non-naturalistic color usage driven by emotional resonance.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural strokes with visible, varied brush pressure; soft blending in transitions; layered washes and impasto effects to enhance texture and emotional depth; lines are fluid and slightly blurred to evoke motion and softness.\",
+    \"EXPRESSION_THEME\": \"Dreamlike, whimsical, and emotionally charged scenes; focus on inner feelings, fantasy, and gentle melancholy; nature and emotional landscapes intertwined with anthropomorphic or fantastical elements.\",
+    \"HISTORICAL_CONTEXT\": \"Rooted in early 20th-century Fauvism (Matisse, Derain) emphasizing emotional color; inspired by Hayao Miyazaki’s Studio Ghibli aesthetic—emotive storytelling, environmental harmony, and poetic visual language.\"
+  },
+  \"MERGE_STRATEGY\": \"Fuse Fauvism’s radical color application and expressive brushwork with Miyazaki’s organic, flowing forms and narrative-driven emotional tone; prioritize color intensity and form fluidity while maintaining a soft, dreamlike atmosphere that avoids literalism or sharp geometry.\",
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold, vibrant Fauvist colors, soft organic lines, and fluid, emotive forms inspired by Miyazaki’s animation style.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Avoid realistic proportions or photorealistic rendering\",
+    \"Avoid harsh, geometric shapes or mechanical precision\",
+    \"Avoid muted or naturalistic color palettes\",
+    \"Avoid narrative complexity or dialogue elements\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of high-saturation, non-naturalistic color use\",
+    \"Organic, flowing forms with soft, gestural lines\",
+    \"Emotive and dreamlike atmosphere with no literal realism\",
+    \"Balance between Fauvist intensity and Miyazaki’s lyrical sensitivity\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 100–150 on a 0–255 scale) should be used for the cobalt blue and burnt orange hues to ensure Fauvist intensity without overwhelming the dreamlike atmosphere?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation levels directly determine whether the color application remains emotionally charged and non-naturalistic as required by Fauvism and the prompt.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 140–180)\",
+      \"DEPENDENCIES\": [\"high-saturation\", \"bold contrasts\", \"non-naturalistic color usage\"]
+    },
+    {
+      \"Q\": \"How should the brushwork transitions between the girl’s soft skin texture and the dragon’s faceted scales be handled—specifically, what percentage of impasto or blending should be applied to each to maintain emotional fluidity and avoid harsh edges?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This balances the soft organic lines of Miyazaki’s style with Fauvist texture intensity, ensuring emotional continuity between the two subjects.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage ranges (e.g., 30% impasto for girl, 60% blending for dragon)\",
+      \"DEPENDENCIES\": [\"expressive, gestural strokes\", \"fluid and slightly blurred lines\", \"layered washes\"]
+    },
+    {
+      \"Q\": \"In the composition, what specific compositional device (e.g., leading lines, negative space, symmetry breaking) is used to guide the viewer’s eye from the girl to the dragon, and how does it reflect the emotional rhythm described in the prompt?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"It confirms alignment between form, movement, and emotional narrative, ensuring the dynamic spatial arrangement evokes inner sensation as intended.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"one compositional device with explanation (e.g., 'diagonal leading lines from girl to dragon, suggesting emotional tension')\",
+      \"DEPENDENCIES\": [\"asymmetrical layouts\", \"dynamic spatial arrangements\", \"emotional rhythm\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is there any use of realistic proportions or photorealistic rendering in the girl or dragon’s form?\",
+    \"Are the color palettes muted or naturalistic in any area, such as the girl’s skin or dragon’s scales?\",
+    \"Is the relationship between the girl and dragon explicitly narrative or dialogue-based?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation below 120 THEN ask for justification of reduced intensity\",
+    \"IF BRUSHWORK_TECHNIQUE references sharp edges THEN ask for correction to ensure softness and fluidity\",
+    \"IF COMPOSITIONAL_DEVICES lacks emotional progression THEN ask for a clear emotional arc or rhythm\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"160–200\",
+      \"RATIONALE\": \"Ensures Fauvist intensity while preserving the dreamlike atmosphere through vibrant, non-naturalistic contrast.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"40% impasto for girl, 70% blending for dragon\",
+      \"RATIONALE\": \"Maintains softness in the girl’s form and fluidity in the dragon’s scales without harsh transitions.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Diagonal leading lines from girl to dragon, suggesting emotional tension and inner movement\",
+      \"RATIONALE\": \"Aligns with asymmetrical, dynamic layout to evoke emotional rhythm and inner sensation.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic, and flowing forms with fluid, biomorphic shapes; asymmetrical layouts emphasizing emotional rhythm over structural precision; dynamic spatial arrangements that suggest movement and inner sensation, guided by diagonal leading lines from girl to dragon.\",
+    \"COLOR_TONALITY\": \"High-saturation, vibrant palettes dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green, magenta) at 160–200 saturation; bold contrasts between warm and cool tones; non-naturalistic color usage driven by emotional resonance.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural strokes with visible, varied brush pressure; soft blending in transitions; layered washes and impasto effects to enhance texture and emotional depth; 40% impasto for girl, 70% blending for dragon; lines are fluid and slightly blurred to evoke motion and softness.\",
+    \"EXPRESSION_THEME\": \"Dreamlike, whimsical, and emotionally charged scenes; focus on inner feelings, fantasy, and gentle melancholy; nature and emotional landscapes intertwined with anthropomorphic or fantastical elements, especially in the girl-dragon dynamic.\",
+    \"HISTORICAL_CONTEXT\": \"Rooted in early 20th-century Fauvism (Matisse, Derain) emphasizing emotional color; inspired by Hayao Miyazaki’s Studio Ghibli aesthetic—emotive storytelling, environmental harmony, and poetic visual language, with emotional progression via compositional flow.\",
+    \"SUBJECT_MATTER\": \"A girl and dragon in a fantasy landscape, with the girl as the emotional center and the dragon as a dynamic, symbolic presence.\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal leading lines from girl to dragon to guide viewer’s eye and reflect emotional tension and inner movement.\",
+    \"LIGHTING_CAMERA\": \"Soft, diffused lighting for the girl; dramatic chiaroscuro for the dragon; medium shot with slight elevation; dynamic framing enhances emotional depth.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid realistic proportions or photorealistic rendering\",
+      \"Avoid harsh, geometric shapes or mechanical precision\",
+      \"Avoid muted or naturalistic color palettes\",
+      \"Avoid narrative complexity or dialogue elements\",
+      \"Avoid sharp edges or abrupt transitions between forms\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of high-saturation (160–200) non-naturalistic color use (cobalt blue, burnt orange, etc.)\",
+      \"Organic, flowing forms with soft, gestural lines and 40% impasto for girl, 70% blending for dragon\",
+      \"Emotive and dreamlike atmosphere with no literal realism\",
+      \"Diagonal leading lines from girl to dragon to reflect emotional tension and inner rhythm\",
+      \"Balance between Fauvist intensity and Miyazaki’s lyrical sensitivity\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold, vibrant Fauvist colors (160–200 saturation), soft organic lines, and fluid emotive forms—diagonal leading lines guide the eye from a girl to a dragon, with 40% impasto for the girl and 70% blending for the dragon, evoking emotional tension and inner movement.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Saturation range refined to 160–200 for cobalt blue and burnt orange\",
+    \"Brushwork percentages specified: 40% impasto for girl, 70% blending for dragon\",
+    \"Added diagonal leading lines as compositional device to guide emotional flow\",
+    \"Updated evaluation criteria to include saturation, brushwork balance, and emotional progression\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Is the dragon’s fire or breath explicitly rendered or implied? (Still ambiguous)\",
+    \"How should the emotional tone shift between the girl and dragon be visually coded without narrative dialogue?\",
+    \"Are there cultural references (e.g., Japanese, Chinese) to be embedded in the dragon’s form or setting? (Not specified)\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation (e.g., 160–200 on a 0–255 scale) should be applied to the cobalt blue and burnt orange hues in the girl’s skin and dragon’s scales to maintain Fauvist intensity while preserving the dreamlike, non-naturalistic atmosphere?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation directly controls emotional intensity and non-naturalism, ensuring alignment with both Fauvism and the dreamlike aesthetic.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 160–200)\",
+      \"DEPENDENCIES\": [\"high-saturation\", \"bold contrasts\", \"non-naturalistic color usage\"]
+    },
+    {
+      \"Q\": \"How does the diagonal leading line from the girl to the dragon visually encode emotional tension and inner movement—specifically, what is the angle, direction, and spatial relationship between the two figures in the composition?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"This defines how emotional rhythm is translated into spatial dynamics, ensuring the compositional device reflects inner sensation as intended.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"angle and direction (e.g., '45-degree diagonal from girl to dragon, extending into the background')\",
+      \"DEPENDENCIES\": [\"diagonal leading lines\", \"asymmetrical layout\", \"emotional tension\", \"inner movement\"]
+    },
+    {
+      \"Q\": \"In what way is the emotional tone of the girl-dragon relationship visually coded—specifically, how do lighting, color contrast, or form differences (e.g., posture, scale) convey gentle melancholy without narrative dialogue?\",
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"WHY\": \"It ensures the emotional depth is grounded in visual language, maintaining lyrical sensitivity without explicit storytelling.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"one emotional tone with 1–2 visual indicators (e.g., 'gentle melancholy via soft lighting and diagonal separation')\",
+      \"DEPENDENCIES\": [\"gentle melancholy\", \"soft lighting\", \"diagonal separation\", \"emotional resonance\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is any part of the scene rendered with realistic proportions or photorealistic detail?\",
+    \"Are the color palettes muted, naturalistic, or include earthy tones like browns or grays?\",
+    \"Does the composition use sharp edges, geometric precision, or narrative cues (e.g., gestures, expressions) to imply dialogue or conflict?\",
+    \"Is the diagonal leading line absent or used in a way that doesn’t reflect emotional progression?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation below 160 THEN ask for justification of reduced intensity\",
+    \"IF COMPOSITIONAL_DEVICES lacks a clear angle or direction THEN ask for specific spatial parameters\",
+    \"IF EXPRESSION_THEME is generic or absent THEN ask for a specific emotional state with visual indicators\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"160–200\",
+      \"RATIONALE\": \"Ensures Fauvist intensity while preserving the dreamlike atmosphere through vibrant, non-naturalistic contrast.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"45-degree diagonal from girl to dragon, extending into the background with the girl slightly elevated and the dragon coiled at the far edge, suggesting emotional tension and inner movement\",
+      \"RATIONALE\": \"Aligns with asymmetrical, dynamic layout to evoke emotional rhythm and inner sensation.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"ANSWER\": \"gentle melancholy via soft lighting and diagonal separation\",
+      \"RATIONALE\": \"Reflects the lyrical sensitivity of Miyazaki’s style while maintaining Fauvist emotional intensity through color and composition.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic, and flowing forms with fluid, biomorphic shapes; asymmetrical layouts emphasizing emotional rhythm over structural precision; dynamic spatial arrangements that suggest movement and inner sensation, guided by a 45-degree diagonal from girl to dragon.\",
+    \"COLOR_TONALITY\": \"High-saturation, vibrant palettes dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green, magenta) at 160–200 saturation; bold contrasts between warm and cool tones; non-naturalistic color usage driven by emotional resonance.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural strokes with visible, varied brush pressure; soft blending in transitions; layered washes and impasto effects to enhance texture and emotional depth; 40% impasto for girl, 70% blending for dragon; lines are fluid and slightly blurred to evoke motion and softness.\",
+    \"EXPRESSION_THEME\": \"Dreamlike, whimsical, and emotionally charged scenes; focus on inner feelings, fantasy, and gentle melancholy; nature and emotional landscapes intertwined with anthropomorphic or fantastical elements, especially in the girl-dragon dynamic, visually coded through soft lighting and diagonal separation.\",
+    \"HISTORICAL_CONTEXT\": \"Rooted in early 20th-century Fauvism (Matisse, Derain) emphasizing emotional color; inspired by Hayao Miyazaki’s Studio Ghibli aesthetic—emotive storytelling, environmental harmony, and poetic visual language, with emotional progression via compositional flow and color contrast.\",
+    \"SUBJECT_MATTER\": \"A girl and dragon in a fantasy landscape, with the girl as the emotional center and the dragon as a dynamic, symbolic presence, connected through a 45-degree diagonal leading line.\",
+    \"COMPOSITIONAL_DEVICES\": \"45-degree diagonal from girl to dragon, extending into the background with the girl slightly elevated and the dragon coiled at the far edge, suggesting emotional tension and inner movement.\",
+    \"LIGHTING_CAMERA\": \"Soft, diffused lighting for the girl; dramatic chiaroscuro for the dragon; medium shot with slight elevation; dynamic framing enhances emotional depth and spatial tension.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid realistic proportions or photorealistic rendering\",
+      \"Avoid harsh, geometric shapes or mechanical precision\",
+      \"Avoid muted or naturalistic color palettes\",
+      \"Avoid narrative complexity or dialogue elements\",
+      \"Avoid sharp edges or abrupt transitions between forms\",
+      \"Avoid explicit gestures or expressions implying conflict or emotion\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of high-saturation (160–200) non-naturalistic color use (cobalt blue, burnt orange, etc.)\",
+      \"Organic, flowing forms with soft, gestural lines and 40% impasto for girl, 70% blending for dragon\",
+      \"Emotive and dreamlike atmosphere with no literal realism\",
+      \"45-degree diagonal leading line from girl to dragon extending into background to reflect emotional tension and inner movement\",
+      \"Gentle melancholy visually coded through soft lighting and diagonal separation\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold, vibrant Fauvist colors (160–200 saturation), soft organic lines, and fluid emotive forms—45-degree diagonal from girl to dragon extending into the background, with 40% impasto for the girl and 70% blending for the dragon, evoking gentle melancholy via soft lighting and diagonal separation.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Refined diagonal composition to 45-degree angle with specific spatial placement (girl elevated, dragon coiled at far edge)\",
+    \"Strengthened emotional tone to 'gentle melancholy' with clear visual indicators (soft lighting, diagonal separation)\",
+    \"Enhanced compositional device with directional and spatial precision to reflect inner movement and emotional tension\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How can the dragon’s form subtly suggest calm power without implying aggression?\",
+    \"Is the girl’s posture or orientation clearly tied to the emotional flow of the diagonal line?\",
+    \"Could a floating cloud or tree enhance the emotional rhythm without introducing narrative elements?\"
+  ]
+}"
+  }
+]

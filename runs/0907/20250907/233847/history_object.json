@@ -1,0 +1,358 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "girl, dragon",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"The female figure is a common subject in fantasy art, especially when combined with mythical elements like dragons, representing a blend of human vulnerability and mystical power.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"anthropomorphic, human-like proportions with soft curves\",
+        \"MATERIAL\": \"flesh tone, often with detailed skin texture\",
+        \"COLOR_PALETTE\": \"soft skin tones, natural lighting with warm undertones\",
+        \"SCALE_POSE\": \"central figure, standing or seated in dynamic poses\",
+        \"TEXTURE\": \"smooth skin, subtle gradients, soft brushwork\",
+        \"LIGHTING\": \"natural daylight, soft diffusion, balanced lighting\",
+        \"CONTEXT\": \"fantasy landscape, mythical setting, often in nature or urban fantasy\",
+        \"COMPOSITION_ROLE\": \"main subject, focal point\",
+        \"CAMERA\": \"medium shot, slightly elevated or eye-level view\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes humanity, agency, and connection to the natural or magical world\",
+      \"VARIANTS\": [\"young girl\", \"teenage girl\", \"dressed in fantasy attire\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Dragons are central to fantasy art, especially in depictions involving human figures, symbolizing power, wisdom, or danger.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body with wings and often a prominent head and tail\",
+        \"MATERIAL\": \"scale-like surface, often with metallic or iridescent texture\",
+        \"COLOR_PALETTE\": \"deep reds, golds, browns, and dark blues; high contrast and saturation\",
+        \"SCALE_POSE\": \"looming in background or mid-frame, coiled or flying\",
+        \"TEXTURE\": \"faceted scales, sharp edges, sometimes with overlapping patterns\",
+        \"LIGHTING\": \"dramatic chiaroscuro, strong shadows, often with fiery highlights\",
+        \"CONTEXT\": \"mythical mountains, forests, or skies; often in conflict or harmony with the girl\",
+        \"COMPOSITION_ROLE\": \"secondary subject, dynamic presence, often in opposition or alliance\",
+        \"CAMERA\": \"wide or medium shot, often from low angle to emphasize size and power\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes strength, wisdom, destruction, or guardianship\",
+      \"VARIANTS\": [\"fire-breathing dragon\", \"winged dragon\", \"mythical hybrid dragon\"],
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the girl and dragon in a symbiotic or adversarial relationship? (Uncertain context)\",
+    \"Is the dragon fully fantasy or inspired by real-world reptilian forms? (Ambiguous in prompt)\",
+    \"What specific cultural or artistic tradition (e.g., Chinese, Western) influences the style? (Not specified)\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color combinations (e.g., cobalt blue with burnt orange, lime green with magenta) are used to create bold complementary contrasts between the girl and dragon, and how do these pairings contribute to emotional resonance in the scene?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Complementary color pairings directly influence emotional tone and visual tension between the girl and dragon, reinforcing the dreamlike, emotive atmosphere.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 2–3 specific complementary pairs with brief emotional descriptor (e.g., 'cobalt blue + burnt orange: tension and warmth')\",
+      \"DEPENDENCIES\": [\"primary and complementary hues\", \"bold contrasts\", \"emotional resonance\"]
+    },
+    {
+      \"Q\": \"How is the texture of the girl’s skin and the dragon’s scales visually differentiated in terms of surface quality—specifically, what brushwork or layering techniques are used to maintain softness in the girl and sharpness in the dragon without violating the 'no sharp edges' constraint?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture differentiates the subjects while respecting the style’s requirement for fluidity and emotional continuity, avoiding harsh transitions or mechanical precision.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of texture differences using brushwork terms (e.g., 'soft gradients and blended strokes for girl; faceted, layered washes for dragon')\",
+      \"DEPENDENCIES\": [\"40% impasto for girl\", \"70% blending for dragon\", \"no sharp edges\"]
+    },
+    {
+      \"Q\": \"What specific emotional tone (e.g., gentle melancholy, playful tension, quiet harmony) is visually coded in the relationship between the girl and dragon, and how is it reflected in lighting, composition, or form?\",
+      \"DIMENSION\": \"EMOTIONAL_TONE\",
+      \"WHY\": \"The emotional tone bridges the gap between Fauvist intensity and Miyazaki’s lyrical sensitivity, providing narrative depth without dialogue or explicit storytelling.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"one emotional tone with 1–2 visual indicators (e.g., 'gentle melancholy via soft lighting and diagonal separation')\",
+      \"DEPENDENCIES\": [\"dreamlike, whimsical, emotionally charged\", \"emotional rhythm\", \"diagonal leading lines\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the color palette include naturalistic tones such as earthy browns or neutral grays that break the vibrant, non-naturalistic rule?\",
+    \"Are the textures of the girl or dragon described as having sharp, mechanical, or geometric edges?\",
+    \"Is the emotional tone explicitly narrative or implied through dialogue or text?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes naturalistic or muted hues THEN ask for replacement with primary/complementary pairs\",
+    \"IF TEXTURE mentions sharp edges OR mechanical precision THEN ask for revision to ensure fluidity and softness\",
+    \"IF EMOTIONAL_TONE is absent or generic THEN ask for a specific, visual-coded emotional state with supporting elements\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": [
+        \"cobalt blue + burnt orange: tension and warmth\",
+        \"lime green + magenta: playful melancholy and vibrancy\",
+        \"magenta + cobalt blue: emotional balance and inner stillness\"
+      ],
+      \"RATIONALE\": \"These complementary pairs create bold contrasts that reflect emotional tension and harmony, aligning with the dreamlike, emotive atmosphere.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"Soft gradients and blended strokes with visible gestural pressure for the girl’s skin; layered, fluid washes with soft transitions for the dragon’s scales, avoiding sharp edges through gentle blending and organic layering.\",
+      \"RATIONALE\": \"Maintains emotional fluidity and softness in both subjects while differentiating texture without violating the no-sharp-edges constraint.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"EMOTIONAL_TONE\",
+      \"ANSWER\": \"gentle melancholy via soft lighting and diagonal separation, with subtle color contrasts suggesting emotional distance and quiet harmony\",
+      \"RATIONALE\": \"Reflects the lyrical sensitivity of Miyazaki’s style while maintaining Fauvist emotional intensity through color and composition.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central emotional figure with soft, human-like form that embodies vulnerability and quiet strength in a dreamlike fantasy context.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"anthropomorphic, flowing curves with soft, organic contours\",
+        \"MATERIAL\": \"flesh tone with subtle translucency and soft gradients\",
+        \"COLOR_PALETTE\": \"cobalt blue, burnt orange, lime green; high saturation (160–200) in complementary pairs\",
+        \"SCALE_POSE\": \"central, slightly elevated, facing toward the dragon with gentle motion\",
+        \"TEXTURE\": \"soft gradients and blended strokes with 40% impasto for texture depth and emotional warmth\",
+        \"LIGHTING\": \"soft, diffused, warm-toned light with gentle highlights\",
+        \"CONTEXT\": \"mythical forest edge or gentle mountain slope, ethereal and harmonious\",
+        \"COMPOSITION_ROLE\": \"emotional center, focal point with leading influence\",
+        \"CAMERA\": \"medium shot, slightly elevated to emphasize emotional presence\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes inner emotion, quiet strength, and connection to the natural world\",
+      \"VARIANTS\": [\"young girl with flowing hair\", \"in a simple dress with soft colors\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Dynamic symbolic presence that reflects emotional tension and inner power, with form and color conveying quiet menace and harmony.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine with flowing wings and soft curves, avoiding sharp geometry\",
+        \"MATERIAL\": \"scale-like surface with iridescent, layered texture\",
+        \"COLOR_PALETTE\": \"deep reds, golds, dark blues; high saturation (160–200) in complementary pairs\",
+        \"SCALE_POSE\": \"coiled in background or mid-frame, gently facing the girl, suggesting calm presence\",
+        \"TEXTURE\": \"layered washes with 70% blending and soft transitions, no sharp edges\",
+        \"LIGHTING\": \"dramatic chiaroscuro with soft highlights and diffused shadows\",
+        \"CONTEXT\": \"skyline or mountain ridge, ambient and dreamlike\",
+        \"COMPOSITION_ROLE\": \"dynamic presence, emotional counterpoint with soft tension\",
+        \"CAMERA\": \"medium to wide shot, slightly low to emphasize scale and depth\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes inner power, emotional depth, and quiet balance between harmony and tension\",
+      \"VARIANTS\": [\"winged dragon with glowing scales\", \"semi-organic form with flowing tail\"],
+      \"CONFIDENCE\": 0.98
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki\": [
+        \"girl\",
+        \"dragon\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"girl\",
+      \"dragon\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"realistic human or animal forms\",
+    \"mechanical or geometric structures\",
+    \"narrative elements or dialogue\",
+    \"naturalistic color tones (e.g., earthy browns, neutral grays)\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A girl with cobalt blue and burnt orange skin tones, soft gradients, and 40% impasto, gently facing a dragon\",
+    \"A dragon with deep reds and golds, layered washes, 70% blending, and soft, flowing scales in a dreamlike sky\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific complementary color pairs (cobalt blue + burnt orange, lime green + magenta) with emotional descriptors\",
+    \"Refined texture descriptions to align with 40% impasto for girl and 70% blending for dragon while avoiding sharp edges\",
+    \"Defined emotional tone as 'gentle melancholy' with visual indicators (soft lighting, diagonal separation)\",
+    \"Updated color palettes to include primary/complementary pairs with saturation range 160–200\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How should the dragon’s presence be visually coded as both powerful and peaceful without implying aggression?\",
+    \"Is the girl’s emotional state explicitly tied to the dragon’s form or movement?\",
+    \"Could a third element (e.g., a tree or floating cloud) enhance the emotional rhythm without breaking the style?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific additional organic elements (e.g., a floating cloud, a tree, a flowing river) could be included in the scene to enhance the emotional rhythm or environmental harmony without introducing narrative complexity or realism?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Organic elements support the dreamlike, naturalistic atmosphere and emotional flow while staying within the style’s non-narrative constraints.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 2–3 specific organic elements with brief role in emotional or compositional context\",
+      \"DEPENDENCIES\": [\"fantasy landscape\", \"emotional rhythm\", \"no narrative complexity\"]
+    },
+    {
+      \"Q\": \"How does the form of the dragon’s wings or tail contribute to the emotional tone—specifically, are they flowing, coiled, or gently spread, and how does this affect the perception of power or calm?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"The wing or tail form directly influences the visual coding of emotional balance between power and peace, critical to avoiding aggression while maintaining symbolic presence.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of wing/tail form with emotional implication (e.g., 'softly spread wings suggesting calm presence')\",
+      \"DEPENDENCIES\": [\"soft organic lines\", \"no sharp edges\", \"emotional tone of gentle melancholy\"]
+    },
+    {
+      \"Q\": \"What specific color transitions or gradients occur between the girl and dragon in the scene—particularly in the area where their forms meet or are visually adjacent, and how do these contribute to emotional continuity or tension?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Color transitions at the boundary between subjects are key to visually encoding emotional flow and inner movement without narrative dialogue.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description of gradient or transition (e.g., 'soft blend from burnt orange to deep red across the diagonal line')\",
+      \"DEPENDENCIES\": [\"complementary color pairs\", \"45-degree diagonal\", \"emotional tension\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the inclusion of any new element introduce realistic proportions, mechanical precision, or narrative cues?\",
+    \"Are the color transitions described as abrupt, naturalistic, or lacking emotional resonance?\",
+    \"Is the form of the dragon’s wings or tail described as sharp, geometric, or aggressive in nature?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF CONTEXT includes mechanical or realistic elements THEN ask for removal or replacement with organic, flowing forms\",
+    \"IF FORM describes sharp edges or geometric wings THEN ask for revision to ensure softness and emotional calm\",
+    \"IF COLOR_TRANSITIONS are abrupt or naturalistic THEN ask for a smooth, emotionally coded blend\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": [
+        \"floating cloud with soft edges, gently drifting across the diagonal line, symbolizing emotional transition\",
+        \"flowing willow tree with curved branches, rooted in the background, offering environmental harmony\",
+        \"slow-moving river with rippling surface, reflecting soft colors, enhancing emotional rhythm\"
+      ],
+      \"RATIONALE\": \"These organic elements support the dreamlike atmosphere and emotional flow without introducing narrative or realism.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": \"softly spread wings with gentle curves and flowing tail, coiled at the far edge but not tense, suggesting calm presence and quiet power\",
+      \"RATIONALE\": \"Maintains soft organic lines and avoids sharp geometry, visually coding inner strength without aggression.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": \"soft blend from burnt orange to deep red across the 45-degree diagonal, transitioning through a gradient of 160–200 saturation, creating emotional tension and continuity\",
+      \"RATIONALE\": \"The gradient reflects inner movement and emotional flow between girl and dragon, enhancing visual continuity without narrative cues.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"floating cloud\",
+      \"WHY\": \"A soft, ethereal element that follows the diagonal line, enhancing emotional transition and environmental harmony without narrative content.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, rounded, biomorphic shape with gentle curvature\",
+        \"MATERIAL\": \"translucent, diffused form with no defined edges\",
+        \"COLOR_PALETTE\": \"light lavender to soft pink, matching the girl’s burnt orange gradient\",
+        \"SCALE_POSE\": \"mid-background, drifting slightly across the diagonal line\",
+        \"TEXTURE\": \"smooth, blurred edges with soft blending\",
+        \"LIGHTING\": \"diffused, ambient, reflecting surrounding colors\",
+        \"CONTEXT\": \"skyline, drifting along the 45-degree diagonal from girl to dragon\",
+        \"COMPOSITION_ROLE\": \"emotional bridge, visual flow connector\",
+        \"CAMERA\": \"wide-angle, slightly elevated to show spatial depth\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes emotional transition and inner movement between the girl and dragon\",
+      \"VARIANTS\": [\"drifting slowly\", \"with faint golden glimmers\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"flowing willow tree\",
+      \"WHY\": \"A natural, organic element that enhances environmental harmony and complements the flowing forms of the girl and dragon.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"long, curved branches with soft, undulating motion\",
+        \"MATERIAL\": \"biomorphic, leafy texture with no rigid structure\",
+        \"COLOR_PALETTE\": \"soft green and pale yellow, blending into the lime green and cobalt blue tones\",
+        \"SCALE_POSE\": \"large in background, rooted near the girl’s side, gently swaying\",
+        \"TEXTURE\": \"fluid, soft brushwork with visible gestural strokes\",
+        \"LIGHTING\": \"soft, diffused, with gentle highlights on leaves\",
+        \"CONTEXT\": \"mythical forest edge or mountain slope, aligned with the diagonal flow\",
+        \"COMPOSITION_ROLE\": \"environmental anchor, rhythm enhancer\",
+        \"CAMERA\": \"wide shot, low angle to emphasize movement\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes harmony with nature and emotional stability\",
+      \"VARIANTS\": [\"with a single glowing leaf\", \"slightly bent in wind\"],
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"NAME\": \"slow-moving river\",
+      \"WHY\": \"Adds environmental depth and emotional rhythm through flowing water that reflects the vibrant colors and diagonal movement.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"wavy, organic curve with gentle ripples and soft edges\",
+        \"MATERIAL\": \"liquid-like surface with reflective quality\",
+        \"COLOR_PALETTE\": \"reflects burnt orange, cobalt blue, and lime green in soft gradients\",
+        \"SCALE_POSE\": \"mid-ground, flowing from left to right along the diagonal line\",
+        \"TEXTURE\": \"smooth, blended with soft wave patterns and subtle impasto highlights\",
+        \"LIGHTING\": \"diffused, with gentle reflections from sky and land\",
+        \"CONTEXT\": \"bordering the landscape, flowing beneath the diagonal path\",
+        \"COMPOSITION_ROLE\": \"rhythm enhancer, emotional continuity marker\",
+        \"CAMERA\": \"medium-wide, slightly low to emphasize flow\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes time, movement, and emotional continuity\",
+      \"VARIANTS\": [\"with soft ripples\", \"reflecting the dragon’s color gradient\"],
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki\": [
+        \"girl\",
+        \"dragon\",
+        \"floating cloud\",
+        \"flowing willow tree\",
+        \"slow-moving river\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"girl\",
+      \"dragon\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"realistic human or animal forms\",
+    \"mechanical or geometric structures\",
+    \"narrative elements or dialogue\",
+    \"naturalistic color tones (e.g., earthy browns, neutral grays)\",
+    \"sharp edges or abrupt transitions\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A floating cloud with soft edges, drifting across the 45-degree diagonal from girl to dragon\",
+    \"A flowing willow tree with curved branches, gently swaying in the background\",
+    \"A slow-moving river reflecting burnt orange and cobalt blue, flowing beneath the diagonal line\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added floating cloud, flowing willow tree, and slow-moving river as organic contextual elements\",
+    \"Refined dragon’s wing and tail form to 'softly spread' and 'coiled gently' to ensure calm presence\",
+    \"Defined color transition along the diagonal as a soft blend from burnt orange to deep red at 160–200 saturation\",
+    \"Updated contextual and emotional roles to support rhythm and harmony without narrative\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the cloud or river subtly pulse or shimmer to suggest inner emotion without breaking softness?\",
+    \"How should the willow tree’s movement be visually coded to match the emotional flow of the diagonal line?\",
+    \"Is there a balance between the girl’s emotional center and the dragon’s symbolic presence in the new elements?\"
+  ]
+}"
+  }
+]

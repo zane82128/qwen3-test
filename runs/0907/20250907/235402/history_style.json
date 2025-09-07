@@ -1,0 +1,234 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical, expressive line and soft, dreamlike colorism.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic shapes with dynamic, non-geometric arrangements; emphasis on emotional resonance over realism; flowing, fluid forms that suggest movement and fantasy\",
+    \"COLOR_TONALITY\": \"Vibrant, saturated palettes dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green); soft gradients and pastel overlays to maintain dreamlike quality; high contrast between bold Fauve accents and gentle Miyazaki tonal transitions\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible impasto layers; soft blending in areas of emotional softness; clean, flowing lines with minimal detail to preserve whimsy and narrative fluidity\",
+    \"EXPRESSION_THEME\": \"Whimsical, childlike wonder; gentle fantasy elements; emotional intimacy with nature and animals; a sense of quiet joy and surreal calm\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, particularly 'My Neighbor Totoro' and 'Spirited Away') as a hybrid of emotional expression and visual poetry\"
+  },
+  \"MERGE_STRATEGY\": \"Balance Fauvism’s radical color use and emotional intensity with Miyazaki’s lyrical line quality and atmospheric softness; prioritize emotional tone over formal precision, using Fauvist color as emotional drivers and Miyazaki’s line as narrative scaffolding.\",
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold, expressive Fauve colors and flowing, whimsical lines reminiscent of Miyazaki’s animation, evoking quiet joy and emotional warmth in a soft, surreal environment.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Overly detailed realism\",
+    \"Stiff or mechanical line work\",
+    \"Cold or desaturated color palettes\",
+    \"Dark, dramatic, or anxious atmospheres\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of vivid, non-naturalistic color contrasts\",
+    \"Use of soft, flowing lines with emotional intent\",
+    \"Balance between Fauvist intensity and Miyazaki’s dreamlike calm\",
+    \"Absence of literal realism or sharp, technical precision\"
+  ],
+  \"CONFIDENCE\": 0.96
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of cobalt blue to burnt orange contrast ratios should be used to maintain Fauvist intensity while preserving Miyazaki’s soft transitions?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"This quantifies the core emotional color contrast required to balance Fauvism and Miyazaki’s dreamlike calm\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"ratio range (e.g., 3:1 to 7:1)\",
+      \"DEPENDENCIES\": [\"vibrant, saturated palettes dominated by primary and complementary hues\", \"high contrast between bold Fauve accents and gentle Miyazaki tonal transitions\"]
+    },
+    {
+      \"Q\": \"What percentage of the composition should be covered by visible impasto brushwork, and where should it be concentrated (e.g., face, wings, background)?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This operationalizes the expressive brushwork requirement while avoiding mechanical or overly detailed rendering\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage with location (e.g., 40% on dragon’s wings, 20% on girl’s face)\",
+      \"DEPENDENCIES\": [\"expressive, gestural brushstrokes with visible impasto layers\", \"minimal detail to preserve whimsy\"]
+    },
+    {
+      \"Q\": \"How should the girl and dragon be positioned in terms of spatial balance and line flow to evoke emotional intimacy without visual tension?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"This ensures the dynamic, organic arrangement supports the theme of quiet joy and emotional warmth\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial relationship (e.g., girl slightly behind, facing dragon with flowing diagonal lines)\",
+      \"DEPENDENCIES\": [\"loose, organic shapes with dynamic, non-geometric arrangements\", \"emotional resonance over realism\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the girl or dragon have sharp, technical details that break the soft, flowing line quality?\",
+    \"Is any part of the scene using cold tones (e.g., blue-gray, slate) that would violate the warm, vibrant palette?\",
+    \"Does the composition include a dark or anxious atmosphere that contradicts the quiet joy theme?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions specific ratios THEN ask for exact hue names (e.g., cobalt blue, burnt orange)\",
+    \"IF BRUSHWORK_TECHNIQUE specifies impasto THEN ask for thickness ranges (e.g., 0.5mm to 2mm)\",
+    \"IF FORM_COMPOSITION references emotional intimacy THEN ask for narrative flow direction (e.g., from girl to dragon, upward motion)\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"4:1 to 8:1\",
+      \"RATIONALE\": \"Maintains Fauvist intensity through high contrast while allowing Miyazaki-style soft transitions in adjacent tones.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"50% on dragon’s wings (20% impasto), 30% on girl’s face (10% impasto)\",
+      \"RATIONALE\": \"Concentrates expressive energy where emotional and narrative impact is strongest, avoiding mechanical detail.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"Girl slightly behind, facing dragon with flowing diagonal lines from left to right\",
+      \"RATIONALE\": \"Creates emotional intimacy through gentle motion and balance, avoiding tension or visual conflict.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Girl slightly behind, facing dragon with flowing diagonal lines from left to right; loose, organic shapes with dynamic, non-geometric arrangements; emphasis on emotional resonance over realism\",
+    \"COLOR_TONALITY\": \"Vibrant, saturated palettes with 4:1 to 8:1 cobalt blue to burnt orange contrast ratios; soft gradients and pastel overlays to maintain dreamlike quality; high contrast between bold Fauve accents and gentle Miyazaki tonal transitions\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible impasto layers (50% on dragon’s wings, 30% on girl’s face); soft blending in areas of emotional softness; clean, flowing lines with minimal detail to preserve whimsy and narrative fluidity\",
+    \"EXPRESSION_THEME\": \"Whimsical, childlike wonder; gentle fantasy elements; emotional intimacy with nature and animals; a sense of quiet joy and surreal calm\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, particularly 'My Neighbor Totoro' and 'Spirited Away') as a hybrid of emotional expression and visual poetry\",
+    \"SUBJECT_MATTER\": \"A girl and dragon in a soft, surreal fantasy landscape, positioned in emotional balance\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal flow from girl to dragon; spatial balance with soft organic forms; implied movement without tension\",
+    \"LIGHTING_CAMERA\": \"Soft natural lighting with gentle chiaroscuro; medium close-up on girl, wide-angle on dragon to emphasize scale and presence\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Overly detailed realism\",
+      \"Stiff or mechanical line work\",
+      \"Cold or desaturated color palettes\",
+      \"Dark, dramatic, or anxious atmospheres\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of vivid, non-naturalistic color contrasts (4:1 to 8:1 ratio)\",
+      \"Use of soft, flowing lines with emotional intent (diagonal flow from girl to dragon)\",
+      \"Balance between Fauvist intensity and Miyazaki’s dreamlike calm (impasto concentrated on wings and face)\",
+      \"Absence of literal realism or sharp, technical precision\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold Fauve color contrasts (4:1 to 8:1 cobalt blue to burnt orange), flowing diagonal lines from a girl to a dragon, expressive impasto on wings and face, evoking quiet joy and emotional warmth in a soft, surreal environment.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific color contrast ratio range (4:1 to 8:1)\",
+    \"Quantified impasto coverage (50% on dragon’s wings, 30% on girl’s face)\",
+    \"Defined spatial relationship (girl slightly behind, facing dragon with diagonal flow)\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should specific hue names (e.g., cobalt blue, burnt orange) be used for exact color matching?\",
+    \"Is there a desired narrative flow direction (e.g., from girl to dragon, upward motion) beyond the current diagonal?\",
+    \"Should the dragon’s wings or girl’s clothing include subtle cultural motifs (e.g., traditional patterns)?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of impasto thickness (e.g., 0.5mm to 2mm) should be applied to the dragon’s wings and girl’s face to achieve expressive depth while maintaining soft, flowing lines?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Impasto thickness directly affects texture and emotional impact, and precise ranges ensure expressive intent without mechanical detail\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range of thickness (e.g., 0.5mm to 2mm)\",
+      \"DEPENDENCIES\": [\"50% on dragon’s wings (20% impasto), 30% on girl’s face\", \"visible impasto layers\", \"minimal detail to preserve whimsy\"]
+    },
+    {
+      \"Q\": \"What specific direction or narrative flow should the diagonal line follow—such as from girl to dragon, upward, or toward the river—to enhance emotional intimacy and movement in the composition?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"The flow direction defines the emotional arc and narrative rhythm, reinforcing the theme of quiet joy and connection between the girl and dragon\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"flow direction (e.g., from girl to dragon, upward, toward river)\",
+      \"DEPENDENCIES\": [\"girl slightly behind, facing dragon with flowing diagonal lines\", \"emotional intimacy without visual tension\", \"diagonal flow from girl to dragon\"]
+    },
+    {
+      \"Q\": \"What specific color contrast ratios should be applied between the environmental elements (e.g., trees, clouds, river) and the main subjects (girl and dragon) to maintain visual harmony and emotional balance?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Environmental color relationships support the emotional tone and Fauvist-Miyazaki balance, ensuring soft transitions without losing vibrancy or contrast\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of elements with contrast ratios (e.g., soft green trees: 2:1 to 4:1, pale gray clouds: 1:1 to 2:1, warm golden river: 3:1 to 5:1)\",
+      \"DEPENDENCIES\": [\"soft green trees (2:1 to 4:1)\", \"pale gray clouds (1:1 to 2:1)\", \"warm golden river (3:1 to 5:1)\", \"high contrast between bold Fauve accents and gentle transitions\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the impasto thickness introduce sharp, mechanical edges or excessive texture that breaks the soft, flowing style?\",
+    \"Does the flow direction create visual tension or imbalance instead of emotional intimacy?\",
+    \"Are any environmental color contrasts too low or too high, violating the 4:1 to 8:1 Fauve intensity baseline?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK_TECHNIQUE specifies impasto thickness THEN ask for brushstroke density (e.g., 5 to 15 strokes per square inch)\",
+    \"IF FORM_COMPOSITION references flow direction THEN ask for implied motion (e.g., gentle drift, subtle ripple)\",
+    \"IF COLOR_TONALITY references environmental ratios THEN ask for hue names (e.g., cobalt blue, burnt orange) in those contexts\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"0.8mm to 1.5mm\",
+      \"RATIONALE\": \"Provides expressive depth without introducing mechanical texture or sharp edges, maintaining soft flow in key emotional areas.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"from girl to dragon, gently curving toward the warm golden river\",
+      \"RATIONALE\": \"Establishes a clear emotional arc of connection and peaceful movement, reinforcing quiet joy and narrative intimacy.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": [
+        \"soft green trees: 2:1 to 4:1\",
+        \"pale gray clouds: 1:1 to 2:1\",
+        \"warm golden river: 3:1 to 5:1\"
+      ],
+      \"RATIONALE\": \"Maintains visual harmony with the main subjects while preserving Fauvist contrast and Miyazaki-style soft transitions.\",
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Girl slightly behind, facing dragon with a gently curving diagonal line flowing from girl to dragon and toward the warm golden river; loose, organic shapes with dynamic, non-geometric arrangements; emphasis on emotional resonance over realism\",
+    \"COLOR_TONALITY\": \"Vibrant, saturated palettes with 4:1 to 8:1 cobalt blue to burnt orange contrast ratios; soft gradients and pastel overlays; environmental elements maintain 2:1 to 4:1 (trees), 1:1 to 2:1 (clouds), 3:1 to 5:1 (river) color contrasts to main subjects\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible impasto layers (0.8mm to 1.5mm thickness on dragon’s wings and girl’s face); soft blending in emotional softness areas; clean, flowing lines with minimal detail to preserve whimsy and narrative fluidity\",
+    \"EXPRESSION_THEME\": \"Whimsical, childlike wonder; gentle fantasy elements; emotional intimacy with nature and animals; a sense of quiet joy and surreal calm\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, particularly 'My Neighbor Totoro' and 'Spirited Away') as a hybrid of emotional expression and visual poetry\",
+    \"SUBJECT_MATTER\": \"A girl and dragon in a soft, surreal fantasy landscape, positioned in emotional balance with a flowing diagonal from girl to dragon and toward a golden river\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal flow from girl to dragon, curving toward warm golden river; spatial balance with soft organic forms; implied gentle motion (drift, ripple) without tension\",
+    \"LIGHTING_CAMERA\": \"Soft natural lighting with gentle chiaroscuro; medium close-up on girl, wide-angle on dragon to emphasize scale and presence\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Overly detailed realism\",
+      \"Stiff or mechanical line work\",
+      \"Cold or desaturated color palettes\",
+      \"Dark, dramatic, or anxious atmospheres\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of vivid, non-naturalistic color contrasts (4:1 to 8:1 cobalt blue to burnt orange)\",
+      \"Use of soft, flowing lines with emotional intent (diagonal flow from girl to dragon, curving toward river)\",
+      \"Balance between Fauvist intensity and Miyazaki’s dreamlike calm (impasto 0.8mm to 1.5mm on wings and face)\",
+      \"Absence of literal realism or sharp, technical precision\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold Fauve color contrasts (4:1 to 8:1 cobalt blue to burnt orange), flowing diagonal lines from a girl to a dragon curving toward a warm golden river, expressive impasto (0.8mm to 1.5mm) on wings and face, evoking quiet joy and emotional warmth in a soft, surreal environment with soft green trees (2:1 to 4:1), pale gray clouds (1:1 to 2:1), and warm golden river (3:1 to 5:1).\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific impasto thickness range (0.8mm to 1.5mm)\",
+    \"Defined flow direction as 'from girl to dragon, curving toward warm golden river'\",
+    \"Confirmed environmental color contrast ratios with exact ranges and alignment to main subjects\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the diagonal flow include subtle motion lines (e.g., wind or ripple) to enhance the drifting aesthetic?\",
+    \"Is there a desired hue name (e.g., cobalt blue, burnt orange) to anchor the primary color contrast in the prompt?\",
+    \"Could the river or dragon’s wings include soft glow effects without breaking the soft, flowing style?\"
+  ]
+}"
+  }
+]

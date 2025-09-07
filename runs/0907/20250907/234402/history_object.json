@@ -1,0 +1,410 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "fox, paper lantern, misty bridge",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are common in East Asian folklore and art, often symbolizing wisdom, luck, or spiritual insight, especially in scenes with natural or mystical settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, expressive eyes\",
+        \"MATERIAL\": \"anthropomorphized form, often depicted in stylized silhouette\",
+        \"COLOR_PALETTE\": \"warm browns, gray, black; high contrast with white or red accents\",
+        \"SCALE_POSE\": \"medium scale, often mid-frame or in foreground, upright or crouched\",
+        \"TEXTURE\": \"smooth lines, soft contours, sometimes with subtle hatching\",
+        \"LIGHTING\": \"soft natural light, diffused, often in misty or twilight settings\",
+        \"CONTEXT\": \"natural landscape, forest, rural village, mystical path\",
+        \"COMPOSITION_ROLE\": \"main subject or symbolic presence\",
+        \"CAMERA\": \"medium close-up or wide angle, slightly tilted for depth\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, loyalty, or spiritual connection in East Asian traditions\",
+      \"VARIANTS\": [\"red fox\", \"gray fox\", \"fox in moonlight\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are iconic in East Asian art, especially in Japanese and Chinese traditions, often associated with festivals, tranquility, and spiritual guidance.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or octagonal frame, thin paper covering, hanging or suspended\",
+        \"MATERIAL\": \"paper, bamboo, silk, sometimes with metal or thread\",
+        \"COLOR_PALETTE\": \"soft pastels like white, pink, yellow, light blue; low saturation\",
+        \"SCALE_POSE\": \"small to medium, hanging from trees or bridges, often in pairs or clusters\",
+        \"TEXTURE\": \"smooth, slightly translucent, delicate folds\",
+        \"LIGHTING\": \"soft internal glow, warm ambient light, often against dark backgrounds\",
+        \"CONTEXT\": \"rural landscape, festival, bridge, night scene, misty path\",
+        \"COMPOSITION_ROLE\": \"foreground accent or visual anchor\",
+        \"CAMERA\": \"low-angle or side view, often framed against natural elements\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, peace, and illumination in darkness\",
+      \"VARIANTS\": [\"round lantern\", \"octagonal lantern\", \"lantern with calligraphy\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges are a common motif in traditional East Asian landscape painting, evoking serenity, transience, and the passage between worlds.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or low structure, partially obscured by fog or mist\",
+        \"MATERIAL\": \"wooden or stone, often implied rather than detailed\",
+        \"COLOR_PALETTE\": \"gray, white, soft blue, muted tones; low contrast\",
+        \"SCALE_POSE\": \"medium scale, spanning a river or valley, often centered or off-center\",
+        \"TEXTURE\": \"soft, blurred edges, atmospheric haze, slight grain or ink wash texture\",
+        \"LIGHTING\": \"diffused, flat lighting with no strong directional source\",
+        \"CONTEXT\": \"rural landscape, mountainous region, night or early morning\",
+        \"COMPOSITION_ROLE\": \"central compositional element or visual divider\",
+        \"CAMERA\": \"wide angle, slightly elevated, with soft focus on mist\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, impermanence, and spiritual journey\",
+      \"VARIANTS\": [\"wooden bridge\", \"stone bridge\", \"bridge in fog\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.93
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the fox and paper lantern specifically tied to a particular cultural or regional style (e.g., Japanese Noh, Chinese Ming dynasty)?\",
+    \"Is the misty bridge more accurately a landscape element or a symbolic architectural feature?\",
+    \"Could the combination of these elements suggest a specific artistic movement or period?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific seasonal motifs (e.g., cherry blossoms, autumn leaves) are commonly paired with the paper lanterns or misty bridge in compositions, and what color tones do they introduce to the palette?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Seasonal motifs provide cultural authenticity and tie color palettes to kigo, enhancing thematic and visual coherence\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 2–3 motifs with associated color cues (e.g., 'cherry blossoms → pink #D1C4E9')\",
+      \"DEPENDENCIES\": [\"seasonal transitions (kigo)\", \"soft pastel palette\", \"muted earth tones\"]
+    },
+    {
+      \"Q\": \"How does the texture of the fox's fur or form interact with the ink wash technique—specifically, is there a range of hatching or line density to suggest softness or movement without violating the 'minimal detail' rule?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Clarifies how subtle texture supports the overall softness and suggestion-based aesthetic without introducing realism or sharpness\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"range or description (e.g., '0–5 light hatches per 100px, sparse and flowing')\",
+      \"DEPENDENCIES\": [\"soft contours\", \"minimal detail\", \"delicate ink washes\"]
+    },
+    {
+      \"Q\": \"Are there specific variations of the paper lantern (e.g., floating, calligraphic) that are more commonly associated with the misty bridge or fox in the scene, and what compositional role do they play in balancing the visual weight?\",
+      \"DIMENSION\": \"VARIANTS\",
+      \"WHY\": \"Identifies key visual variants that enhance narrative or symbolic harmony within the composition\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of 2–3 variants with their compositional role (e.g., 'floating lantern → foreground anchor')\",
+      \"DEPENDENCIES\": [\"paper lantern variants\", \"composition role\", \"visual anchoring\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the fox’s fur texture include sharp lines or detailed patterns that violate the 'minimal detail' constraint?\",
+    \"Are floating lanterns used in a way that introduces dynamic movement or dramatic lighting that contradicts the 'soft, flat lighting' rule?\",
+    \"Is a calligraphic lantern used with bold strokes or high contrast that breaks the 'low saturation' and 'soft wash' standards?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF CONTEXT includes cherry blossoms OR autumn leaves THEN ask for exact color mapping to hex values\",
+    \"IF TEXTURE references hatching THEN ask for stroke frequency and direction (e.g., radial vs. linear)\",
+    \"IF VARIANTS mention floating or calligraphic lanterns THEN ask for their placement relative to the fox and bridge\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": [
+        \"cherry blossoms → pink #D1C4E9\",
+        \"autumn leaves → soft amber #F5F0E6\",
+        \"early morning mist → gray-blue #D9E6F5\"
+      ],
+      \"RATIONALE\": \"These seasonal motifs align with kigo and natural transitions, introducing culturally grounded color cues that enhance the soft pastel palette and thematic coherence.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"0–5 light hatches per 100px, sparse and flowing, radial or gentle wave patterns\",
+      \"RATIONALE\": \"Maintains minimal detail and soft suggestion while implying movement or form through subtle, non-repetitive texture cues consistent with naïve ink wash traditions.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"VARIANTS\",
+      \"ANSWER\": [
+        \"floating lantern → foreground anchor, low scale, suspended in mist\",
+        \"octagonal lantern → midground balance, paired with bridge structure\",
+        \"lantern with calligraphy → symbolic presence, centered or off-center, subtle script in soft ink\"
+      ],
+      \"RATIONALE\": \"Each variant supports visual harmony and symbolic resonance without adding detail or contrast, aligning with the style’s emphasis on balance and subtlety.\",
+      \"CONFIDENCE\": 0.93
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes in misty, seasonal landscapes embody spiritual insight and quiet presence, fitting the contemplative tone and soft brushwork of the style\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, expressive eyes\",
+        \"MATERIAL\": \"anthropomorphized form, stylized silhouette\",
+        \"COLOR_PALETTE\": \"warm browns, gray, black; white or red accents only in soft, diluted form\",
+        \"SCALE_POSE\": \"medium scale, 10–30% off-center, upright or crouched in natural setting\",
+        \"TEXTURE\": \"0–5 light hatches per 100px, sparse and flowing, radial or gentle wave patterns\",
+        \"LIGHTING\": \"soft natural light, diffused, in misty or twilight settings\",
+        \"CONTEXT\": \"natural landscape, forest, rural village, mystical path with cherry blossoms or autumn leaves\",
+        \"COMPOSITION_ROLE\": \"main subject or symbolic presence\",
+        \"CAMERA\": \"medium close-up or wide angle, slightly tilted for depth\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, loyalty, or spiritual connection in East Asian traditions\",
+      \"VARIANTS\": [\"red fox\", \"gray fox\", \"fox in moonlight\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are central to the seasonal and spiritual atmosphere, acting as visual anchors and symbolic sources of gentle illumination\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or octagonal frame, thin paper covering, hanging or suspended\",
+        \"MATERIAL\": \"paper, bamboo, silk, sometimes with metal or thread\",
+        \"COLOR_PALETTE\": \"soft pastels like white, pink, yellow, light blue; low saturation; pink #D1C4E9 for cherry blossoms, amber #F5F0E6 for autumn\",
+        \"SCALE_POSE\": \"small to medium, hanging from trees or bridges, often in pairs or clusters\",
+        \"TEXTURE\": \"smooth, slightly translucent, delicate folds\",
+        \"LIGHTING\": \"soft internal glow, warm ambient light, often against dark backgrounds\",
+        \"CONTEXT\": \"rural landscape, festival, bridge, night scene, misty path with seasonal motifs\",
+        \"COMPOSITION_ROLE\": \"foreground accent or visual anchor\",
+        \"CAMERA\": \"low-angle or side view, often framed against natural elements\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, peace, and illumination in darkness\",
+      \"VARIANTS\": [
+        \"floating lantern → foreground anchor, low scale, suspended in mist\",
+        \"octagonal lantern → midground balance, paired with bridge structure\",
+        \"lantern with calligraphy → symbolic presence, centered or off-center, subtle script in soft ink\"
+      ],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"The misty bridge serves as a structural and symbolic divider, representing transition and impermanence in a serene, flat-space composition\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or low structure, partially obscured by fog or mist\",
+        \"MATERIAL\": \"wooden or stone, implied rather than detailed\",
+        \"COLOR_PALETTE\": \"gray, white, soft blue, muted tones; low contrast; gray-blue #D9E6F5 for early morning mist\",
+        \"SCALE_POSE\": \"medium scale, spanning a river or valley, often centered or off-center\",
+        \"TEXTURE\": \"soft, blurred edges, atmospheric haze, slight grain or ink wash texture\",
+        \"LIGHTING\": \"diffused, flat lighting with no strong directional source\",
+        \"CONTEXT\": \"rural landscape, mountainous region, night or early morning with cherry blossoms or autumn leaves\",
+        \"COMPOSITION_ROLE\": \"central compositional element or visual divider\",
+        \"CAMERA\": \"wide angle, slightly elevated, with soft focus on mist\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, impermanence, and spiritual journey\",
+      \"VARIANTS\": [\"wooden bridge\", \"stone bridge\", \"bridge in fog\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.93
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Impressionism blended with Ukiyo-e aesthetics\": [
+        \"fox\",
+        \"paper lantern\",
+        \"misty bridge\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"fox\",
+      \"paper lantern\",
+      \"misty bridge\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"sharp-edged fox with detailed fur\",
+    \"bold red or saturated lanterns\",
+    \"calligraphic lanterns with thick strokes\",
+    \"floating lanterns with dynamic motion or strong lighting\",
+    \"autumn leaves in high-contrast yellow or orange\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A fox 10–30% off-center in a misty forest with cherry blossoms → pink #D1C4E9\",
+    \"Paper lanterns in soft pastel tones: white, pink #D1C4E9, light blue; floating or octagonal, with subtle calligraphy in soft ink\",
+    \"Misty bridge spanning a river, partially hidden in gray-blue mist #D9E6F5, with autumn leaves → soft amber #F5F0E6\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added seasonal motifs with color mapping to hex codes\",
+    \"Refined fox texture to 0–5 light hatches per 100px, sparse and flowing\",
+    \"Expanded paper lantern variants with compositional roles\",
+    \"Updated context to include seasonal cues and color associations\",
+    \"Added negative objects to prevent over-saturation or detail violations\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the radial hatching pattern on the fox’s form subtly suggest movement without breaking the minimal detail rule?\",
+    \"How does the placement of a floating lantern affect the perceived balance when the fox is off-center?\",
+    \"Is there a cultural preference for certain lantern forms in specific seasons (e.g., cherry blossoms with pink lanterns)?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What is the specific range of ink density variation (e.g., thicker at base, thinner at edges) used in the misty bridge’s wash to suggest depth without violating the softness or flatness rule?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies how subtle ink variation enhances atmospheric depth while maintaining the soft, flowing aesthetic\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"description or range (e.g., 'thinner at edges, denser at base, 10–30% opacity gradient')\",
+      \"DEPENDENCIES\": [\"soft blending of ink and water\", \"subtle gradations mimicking dawn or mist\", \"no sharp edges\"]
+    },
+    {
+      \"Q\": \"How does the placement of a floating lantern in the foreground affect the visual rhythm and balance when the fox is 10–30% off-center, particularly in relation to the bridge’s horizontal/vertical alignment?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Explores the interplay between key elements to ensure harmonic flow and avoid visual dissonance\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of rhythm and balance (e.g., 'creates a rhythmic counterpoint with bridge lines')\",
+      \"DEPENDENCIES\": [\"horizontal/vertical rhythm\", \"fox off-center placement\", \"foreground anchoring by lantern\"]
+    },
+    {
+      \"Q\": \"In what specific seasonal context (e.g., cherry blossom festival, autumn night) are paper lanterns traditionally associated with cultural rituals or art, and how does this influence their composition or form?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Links artistic choices to cultural authenticity and traditional practice, grounding the style in historical precedent\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of 1–2 seasonal contexts with cultural associations (e.g., 'cherry blossom festivals → pink lanterns, ritual lighting')\",
+      \"DEPENDENCIES\": [\"seasonal motifs\", \"cultural traditions in East Asian art\", \"festivals with lantern use\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the ink density variation introduce defined edges or structural clarity that contradicts the 'soft, flowing' brushwork?\",
+    \"Is the floating lantern’s placement so unbalanced that it disrupts the overall compositional rhythm?\",
+    \"Are lanterns linked to modern or non-traditional festivals that break cultural authenticity?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK_TECHNIQUE mentions ink density variation THEN ask for exact opacity gradient per section\",
+    \"IF COMPOSITIONAL_DEVICES references rhythm THEN ask for alignment with bridge or lantern lines\",
+    \"IF CONTEXT mentions cultural rituals THEN ask for specific art forms (e.g., Noh, kabuki) or historical period\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"thinner at edges, denser at base, with a 10–30% opacity gradient\",
+      \"RATIONALE\": \"This variation subtly suggests depth and atmospheric recession without introducing sharp edges or structural clarity, preserving the soft, flowing wash aesthetic.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Creates a rhythmic counterpoint with the bridge’s horizontal/vertical lines; the floating lantern’s foreground presence anchors the visual flow, balancing the fox’s off-center placement and reinforcing the scene’s natural, flowing rhythm.\",
+      \"RATIONALE\": \"The lantern’s vertical alignment contrasts with the bridge’s horizontal span, forming a dynamic yet harmonious compositional rhythm that supports the asymmetrical balance.\",
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": [
+        \"cherry blossom festivals → pink lanterns, ritual lighting during spring evenings\",
+        \"autumn nights → lanterns lit in village squares, symbolic of harvest and transition\"
+      ],
+      \"RATIONALE\": \"These traditional contexts ground the lantern use in cultural practice, where seasonal lighting rituals reflect seasonal transitions and community harmony.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes in misty, seasonal landscapes embody spiritual insight and quiet presence, fitting the contemplative tone and soft brushwork of the style\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, expressive eyes\",
+        \"MATERIAL\": \"anthropomorphized form, stylized silhouette\",
+        \"COLOR_PALETTE\": \"warm browns, gray, black; white or red accents only in soft, diluted form\",
+        \"SCALE_POSE\": \"medium scale, 10–30% off-center, upright or crouched in natural setting\",
+        \"TEXTURE\": \"0–5 light hatches per 100px, sparse and flowing, radial or gentle wave patterns\",
+        \"LIGHTING\": \"soft natural light, diffused, in misty or twilight settings; gently illuminated by lantern glow\",
+        \"CONTEXT\": \"natural landscape, forest, rural village, mystical path with cherry blossoms or autumn leaves during festivals\",
+        \"COMPOSITION_ROLE\": \"main subject or symbolic presence\",
+        \"CAMERA\": \"medium close-up or wide angle, slightly tilted for depth\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, loyalty, or spiritual connection in East Asian traditions\",
+      \"VARIANTS\": [\"red fox\", \"gray fox\", \"fox in moonlight\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are central to the seasonal and spiritual atmosphere, acting as visual anchors and symbolic sources of gentle illumination\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or octagonal frame, thin paper covering, hanging or suspended\",
+        \"MATERIAL\": \"paper, bamboo, silk, sometimes with metal or thread\",
+        \"COLOR_PALETTE\": \"soft pastels like white, pink #D1C4E9, yellow, light blue; low saturation; pink for cherry blossoms, soft amber for autumn\",
+        \"SCALE_POSE\": \"small to medium, hanging from trees or bridges, often in pairs or clusters; floating lanterns in foreground, anchored by mist\",
+        \"TEXTURE\": \"smooth, slightly translucent, delicate folds\",
+        \"LIGHTING\": \"soft internal glow that diffuses into mist and gently illuminates the fox without sharp highlights or contrast\",
+        \"CONTEXT\": \"rural landscape, festival, bridge, night scene, misty path during cherry blossom or autumn nights with ritual lighting\",
+        \"COMPOSITION_ROLE\": \"foreground anchor or visual balance point\",
+        \"CAMERA\": \"low-angle or side view, often framed against natural elements or bridge structure\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, peace, and illumination in darkness\",
+      \"VARIANTS\": [
+        \"floating lantern → foreground anchor, low scale, suspended in mist, during cherry blossom or autumn festivals\",
+        \"octagonal lantern → midground balance, paired with bridge structure\",
+        \"lantern with calligraphy → symbolic presence, centered or off-center, subtle script in soft ink\"
+      ],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"The misty bridge serves as a structural and symbolic divider, representing transition and impermanence in a serene, flat-space composition\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or low structure, partially obscured by fog or mist\",
+        \"MATERIAL\": \"wooden or stone, implied rather than detailed\",
+        \"COLOR_PALETTE\": \"gray, white, soft blue, muted tones; low contrast; gray-blue #D9E6F5 for early morning mist\",
+        \"SCALE_POSE\": \"medium scale, spanning a river or valley, often centered or off-center\",
+        \"TEXTURE\": \"soft, blurred edges, atmospheric haze, slight grain or ink wash texture; thinner at edges, denser at base, 10–30% opacity gradient\",
+        \"LIGHTING\": \"diffused, flat lighting with no strong directional source\",
+        \"CONTEXT\": \"rural landscape, mountainous region, night or early morning with cherry blossoms or autumn leaves during festivals\",
+        \"COMPOSITION_ROLE\": \"central compositional element or visual divider\",
+        \"CAMERA\": \"wide angle, slightly elevated, with soft focus on mist\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, impermanence, and spiritual journey\",
+      \"VARIANTS\": [\"wooden bridge\", \"stone bridge\", \"bridge in fog\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.93
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Impressionism blended with Ukiyo-e aesthetics\": [
+        \"fox\",
+        \"paper lantern\",
+        \"misty bridge\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"fox\",
+      \"paper lantern\",
+      \"misty bridge\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"sharp-edged fox with detailed fur\",
+    \"bold red or saturated lanterns\",
+    \"calligraphic lanterns with thick strokes\",
+    \"floating lanterns with dynamic motion or strong lighting\",
+    \"autumn leaves in high-contrast yellow or orange\",
+    \"ink density variations with defined edges or structural clarity\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A fox 10–30% off-center in a misty forest with cherry blossoms → pink #D1C4E9, rendered with ink washes thinner at edges, denser at base\",
+    \"Floating paper lantern in foreground during cherry blossom festival → soft pink #D1C4E9, gently glowing into mist, creating rhythmic counterpoint with bridge lines\",
+    \"Misty bridge spanning a river, partially hidden in gray-blue mist #D9E6F5, with autumn leaves → soft amber #F5F0E6 during harvest night, ink washes with 10–30% opacity gradient\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added ink density gradient (thinner at edges, denser at base, 10–30% opacity) for misty bridge\",
+    \"Refined compositional interaction: floating lantern creates rhythmic counterpoint with bridge lines\",
+    \"Linked lanterns to cultural rituals (cherry blossom, autumn nights) for authenticity\",
+    \"Updated context to include traditional festival settings and seasonal rituals\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the radial hatching on the fox subtly suggest movement without breaking the minimal detail rule?\",
+    \"Is there a specific regional preference (e.g., Kyoto vs. Nagano) for lantern forms during festivals?\",
+    \"How does the glow from the lantern interact with the fox’s eye or tail in terms of soft focus and color bleed?\"
+  ]
+}"
+  }
+]

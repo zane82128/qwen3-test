@@ -1,0 +1,241 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Van Gogh’s swirling impasto and Studio Ghibli’s soft, expressive animation, with bold, emotional color and dreamy, celestial atmosphere.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic movement; layered, overlapping shapes resembling celestial constellations; balanced asymmetry with a central emotional focal point.\",
+    \"COLOR_TONALITY\": \"Bold, high-saturation hues with warm ochres, cobalt blues, and vermilion; dreamy gradients transitioning between twilight and starlight; high contrast between dark voids and luminous highlights.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto brushstrokes with visible texture and thick layers; rhythmic, expressive swirls mimicking brush motion; soft blending in transitions to maintain dreamy softness.\",
+    \"EXPRESSION_THEME\": \"Emotional intensity, inner turmoil, and serene wonder; themes of cosmic connection, personal dreams, and transcendent joy.\",
+    \"HISTORICAL_CONTEXT\": \"Post-Impressionist (Van Gogh) and contemporary Japanese animation (Studio Ghibli) fusion; blending 19th-century expressive painting with 21st-century narrative-driven visual storytelling.\"
+  },
+  \"MERGE_STRATEGY\": \"Prioritize emotional expression and color intensity from Van Gogh, while integrating Ghibli’s softness, luminous lighting, and celestial narrative structure; balance impasto energy with smooth, flowing transitions to avoid visual chaos.\",
+  \"PROMPT_SNIPPET\": \"A swirling, impasto painting with bold emotional colors and soft celestial lighting, combining Van Gogh’s expressive brushwork with Studio Ghibli’s dreamy, luminous atmosphere.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Flat or overly realistic rendering\",
+    \"Overly sharp or mechanical lines\",
+    \"Lack of emotional warmth or movement\",
+    \"Absence of celestial or dreamlike elements\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Visible impasto texture and swirling motion\",
+    \"High contrast between warm and cool tones with luminous highlights\",
+    \"Soft, flowing transitions that maintain dreamy atmosphere\",
+    \"Emotional intensity conveyed through color and form\",
+    \"Celestial or ethereal spatial composition\"
+  ],
+  \"CONFIDENCE\": 0.96
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of brushstroke thickness (e.g., 0.5mm to 2.0mm) is intended for the impasto swirls around the windmill's blades, and how does this thickness vary between the central emotional focal point and the outer celestial edges?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Establishes measurable texture variation that supports both Van Gogh’s energy and Ghibli’s soft transitions.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 0.5–2.0mm)\",
+      \"DEPENDENCIES\": [\"swirling, organic forms\", \"impasto brushstrokes\", \"visible texture\"]
+    },
+    {
+      \"Q\": \"How are the warm ochres and cobalt blues specifically balanced in hue and saturation across the windmill’s structure versus the surrounding starfield, and what percentage of the canvas does each color dominate?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Clarifies the contrast and emotional balance between earthly form and celestial atmosphere.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage ranges (e.g., warm hues: 40–50%, cool hues: 50–60%)\",
+      \"DEPENDENCIES\": [\"bold, high-saturation hues\", \"high contrast between dark voids and luminous highlights\"]
+    },
+    {
+      \"Q\": \"In what compositional role do the stars serve relative to the windmill (e.g., background, symbolic counterpoint, emotional mirror), and how does their spatial positioning (e.g., above, behind, diagonally) influence the emotional theme of cosmic connection?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Links celestial elements directly to emotional and narrative themes of transcendence and connection.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial relationship + emotional function (e.g., 'above and diagonally: symbolic counterpoint to inner turmoil')\",
+      \"DEPENDENCIES\": [\"celestial or ethereal spatial composition\", \"cosmic connection\", \"emotional intensity\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the windmill appear with flat, realistic rendering or sharp, mechanical lines?\",
+    \"Are the stars missing or reduced to a simple dot without glowing texture or gradient?\",
+    \"Is the emotional warmth or movement absent despite bold color and swirling forms?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK mentions thickness variation THEN ask for minimum and maximum stroke diameters\",
+    \"IF COLOR_TONALITY specifies dominance THEN ask for exact hue percentages per zone\",
+    \"IF COMPOSITIONAL_DEVICES references spatial positioning THEN ask for camera angle or perspective shift\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"1.0–2.0mm in central focal area; 0.5–1.5mm in outer celestial edges\",
+      \"RATIONALE\": \"Thicker strokes emphasize emotional intensity at the windmill’s core, thinning toward celestial edges to maintain soft transitions.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"warm hues: 40–50% (ochres, vermilion) in windmill; cool hues: 50–60% (cobalt blues) in starfield\",
+      \"RATIONALE\": \"Warm tones anchor emotional energy in the earthly windmill; cool tones dominate the sky to evoke serenity and cosmic depth.\",
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"above and diagonally: symbolic counterpoint to inner turmoil, reinforcing cosmic connection and transcendence\",
+      \"RATIONALE\": \"Stars positioned above and diagonally create visual and emotional contrast to the grounded windmill, symbolizing aspiration and inner peace.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic movement; layered, overlapping shapes resembling celestial constellations; balanced asymmetry with a central emotional focal point (windmill) and celestial counterpoint (stars).\",
+    \"COLOR_TONALITY\": \"Bold, high-saturation hues with warm ochres (40–50%) and cobalt blues (50–60%); high contrast between dark voids and luminous highlights; warm tones dominate the windmill, cool tones dominate the starfield.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto brushstrokes ranging from 1.0–2.0mm at the windmill’s core to 0.5–1.5mm in celestial edges; rhythmic swirls maintain expressive energy and soft transitions.\",
+    \"EXPRESSION_THEME\": \"Emotional intensity, inner turmoil, and serene wonder; themes of cosmic connection, personal dreams, and transcendent joy, intensified by the windmill-stars dynamic.\",
+    \"HISTORICAL_CONTEXT\": \"Post-Impressionist (Van Gogh) and contemporary Japanese animation (Studio Ghibli) fusion; blending 19th-century expressive painting with 21st-century narrative-driven visual storytelling, with specific emotional and compositional balance.\",
+    \"SUBJECT_MATTER\": \"A windmill as emotional focal point, stars as celestial counterpoint, forming a narrative of earthly struggle and cosmic harmony.\",
+    \"COMPOSITIONAL_DEVICES\": \"Central windmill as emotional anchor; stars positioned above and diagonally to create symbolic counterpoint and reinforce themes of transcendence and connection.\",
+    \"LIGHTING_CAMERA\": \"Medium to wide angle with dynamic lighting: warm, soft chiaroscuro on windmill; dark void with glowing, gradient-rich stars in distant sky; slight elevation to emphasize spatial depth.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Flat or overly realistic rendering\",
+      \"Overly sharp or mechanical lines\",
+      \"Lack of emotional warmth or movement\",
+      \"Absence of celestial or dreamlike elements\",
+      \"Stars missing glowing texture or gradient\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Visible impasto texture and swirling motion (1.0–2.0mm thickness in central area)\",
+      \"High contrast between warm (40–50%) and cool (50–60%) hues with luminous highlights\",
+      \"Soft, flowing transitions between windmill and starfield\",
+      \"Emotional intensity conveyed through color and form\",
+      \"Celestial spatial composition with stars above and diagonally as symbolic counterpoint\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A swirling, impasto painting with bold emotional colors and dreamy celestial lighting, featuring a central windmill in warm ochres and vermilion (40–50%) with cobalt blues (50–60%) in the starfield above and diagonally, combining Van Gogh’s expressive brushwork with Studio Ghibli’s luminous, dreamy atmosphere.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific brushstroke thickness range (1.0–2.0mm central, 0.5–1.5mm outer)\",
+    \"Quantified warm/cool hue dominance (40–50% warm, 50–60% cool)\",
+    \"Defined stars’ spatial role as above and diagonally with symbolic counterpoint to inner turmoil\",
+    \"Refined lighting and composition to support emotional and narrative flow\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"What specific gradient or glow effect should be applied to the stars to maintain Ghibli-style luminosity?\",
+    \"Should the windmill’s blades rotate in motion or remain static for emotional emphasis?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What is the exact rotation speed or implied motion cue (e.g., slow, steady, rapid) for the windmill’s blades, and how does this pacing align with the emotional theme of inner turmoil and transcendent joy?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Rotation speed directly influences the perception of emotional rhythm and movement, linking mechanical motion to inner psychological states.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"motion pacing (e.g., slow and steady) + emotional alignment explanation\",
+      \"DEPENDENCIES\": [\"rotating slowly\", \"emotional intensity\", \"inner turmoil\", \"personal dreams\"]
+    },
+    {
+      \"Q\": \"What specific gradient direction and luminance range (e.g., 10–30% brightness) should be applied to the stars’ radial bloom to maintain Ghibli-style softness and ensure smooth transition from dark void to glowing highlights?\",
+      \"DIMENSION\": \"LIGHTING\",
+      \"WHY\": \"Gradient parameters determine the visual softness and emotional warmth of the celestial glow, critical for dreamy atmosphere and emotional transcendence.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"gradient direction + luminance range (e.g., radial, 10–30% brightness)\",
+      \"DEPENDENCIES\": [\"radial bloom\", \"soft white gradient\", \"luminous diffusion\", \"smooth transition\"]
+    },
+    {
+      \"Q\": \"How do the impasto brushstrokes on the windmill’s wooden body interact with the rough texture, and what specific layering technique (e.g., thick buildup, dry brushing) is used to maintain a tactile, grounded feel without disrupting the soft transitions into the starfield?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Layering and brush interaction define the tactile contrast between earth and sky, essential for emotional grounding and narrative balance.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"brush technique + layering method (e.g., thick buildup with dry brushing)\",
+      \"DEPENDENCIES\": [\"impasto brushstrokes\", \"rough wood surface\", \"smooth flowing transitions\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the windmill’s rotation appear too fast or too slow, disrupting emotional pacing?\",
+    \"Are the stars’ gradients flat or too bright, breaking the dreamy, soft atmosphere?\",
+    \"Do the impasto layers on the windmill appear overly thick or disjointed, causing visual chaos?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF FORM specifies rotation speed THEN ask for implied motion rhythm or visual cue (e.g., wobbling, steady spin)\",
+    \"IF LIGHTING specifies gradient THEN ask for diffusion direction or edge softness\",
+    \"IF BRUSHWORK mentions layering THEN ask for stroke direction or overlap pattern\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": \"slow and steady rotation with slight wobbling — creates a rhythmic, contemplative pulse that mirrors inner turmoil and the gradual emergence of transcendent joy\",
+      \"RATIONALE\": \"Slow pacing reflects emotional depth and psychological tension, while subtle wobbling introduces organic instability, enhancing the sense of inner struggle and eventual harmony.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"LIGHTING\",
+      \"ANSWER\": \"radial bloom extending from stars with 10–30% luminance gradient, soft diffusion at edges — ensures dreamy softness and smooth transition from dark void to glowing highlights\",
+      \"RATIONALE\": \"Low luminance range maintains Ghibli-style subtlety; radial diffusion prevents harsh edges, preserving the celestial softness and emotional warmth.\",
+      \"CONFIDENCE\": 0.99
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"thick buildup with dry brushing and light layering — creates tactile texture on wooden body while allowing smooth transition into the soft starfield\",
+      \"RATIONALE\": \"Dry brushing enhances surface texture and visual depth without disrupting flow; controlled layering prevents visual chaos and maintains grounded, organic form.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic movement; layered, overlapping shapes resembling celestial constellations; balanced asymmetry with a central emotional focal point (windmill) and celestial counterpoint (stars), featuring slow, wobbling rotation of blades.\",
+    \"COLOR_TONALITY\": \"Bold, high-saturation hues with warm ochres (40–50%) and cobalt blues (50–60%); high contrast between dark voids and luminous highlights; warm tones dominate the windmill, cool tones dominate the starfield.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto brushstrokes ranging from 1.0–2.0mm at the windmill’s core to 0.5–1.5mm in celestial edges; thick buildup with dry brushing on wooden body and light layering for smooth transitions into the starfield.\",
+    \"EXPRESSION_THEME\": \"Emotional intensity, inner turmoil, and serene wonder; themes of cosmic connection, personal dreams, and transcendent joy, intensified by the windmill-stars dynamic with slow, wobbling motion.\",
+    \"HISTORICAL_CONTEXT\": \"Post-Impressionist (Van Gogh) and contemporary Japanese animation (Studio Ghibli) fusion; blending 19th-century expressive painting with 21st-century narrative-driven visual storytelling, with specific emotional and compositional balance.\",
+    \"SUBJECT_MATTER\": \"A windmill as emotional focal point with slow, wobbling rotation, stars as celestial counterpoint with soft radial glow, forming a narrative of earthly struggle and cosmic harmony.\",
+    \"COMPOSITIONAL_DEVICES\": \"Central windmill as emotional anchor; stars positioned above and diagonally to create symbolic counterpoint and reinforce themes of transcendence and connection; slow, wobbling rotation introduces emotional rhythm and psychological depth.\",
+    \"LIGHTING_CAMERA\": \"Medium to wide angle with dynamic lighting: warm, soft chiaroscuro on windmill with radial glow from rotating blades; dark void with glowing, gradient-rich stars in distant sky; slight elevation to emphasize spatial depth and soft transitions.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Flat or overly realistic rendering\",
+      \"Overly sharp or mechanical lines\",
+      \"Lack of emotional warmth or movement\",
+      \"Absence of celestial or dreamlike elements\",
+      \"Stars missing glowing texture or gradient\",
+      \"Windmill rotation too fast or too slow, disrupting emotional pacing\",
+      \"Impasto layers overly thick or disjointed, causing visual chaos\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Visible impasto texture and swirling motion (1.0–2.0mm thickness in central area)\",
+      \"High contrast between warm (40–50%) and cool (50–60%) hues with luminous highlights\",
+      \"Soft, flowing transitions between windmill and starfield\",
+      \"Emotional intensity conveyed through color and form\",
+      \"Celestial spatial composition with stars above and diagonally as symbolic counterpoint\",
+      \"Slow, wobbling rotation of windmill blades with rhythmic emotional pacing\",
+      \"Radial bloom with 10–30% luminance gradient and soft diffusion for dreamy atmosphere\",
+      \"Thick buildup with dry brushing on windmill body for tactile grounding without visual disruption\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A swirling, impasto painting with bold emotional colors and dreamy celestial lighting, featuring a central windmill in warm ochres and vermilion (40–50%) with slow, wobbling rotation and thick buildup with dry brushing, contrasted by cobalt blues (50–60%) in the starfield above and diagonally with radial bloom and 10–30% luminance gradient, combining Van Gogh’s expressive brushwork with Studio Ghibli’s luminous, dreamy atmosphere.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added slow and steady rotation with slight wobbling to align with emotional rhythm of inner turmoil and transcendent joy\",
+    \"Specified radial bloom with 10–30% luminance gradient for Ghibli-style softness and smooth transitions\",
+    \"Defined thick buildup with dry brushing and light layering for windmill texture and tactile grounding\",
+    \"Expanded evaluation criteria to include motion pacing, gradient parameters, and brush layering techniques\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the windmill’s base or foundation show subtle cracks or wear to imply age and emotional weight?\",
+    \"Is there a specific color shift or gradient in the windmill’s body as it rotates (e.g., from ochre to vermilion) to enhance emotional movement?\",
+    \"Could the stars' glow subtly pulse or fade in rhythm with the windmill’s rotation to create a dynamic emotional beat?\"
+  ]
+}"
+  }
+]

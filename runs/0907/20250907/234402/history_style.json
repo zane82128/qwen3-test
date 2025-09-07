@@ -1,0 +1,235 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Impressionism blended with Ukiyo-e aesthetics: soft brushwork, delicate ink washes, and subtle color tones, inspired by misty bridges and paper lanterns with a touch of naïve elegance and seasonal atmosphere.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical layouts with horizontal and vertical rhythm; emphasis on natural elements like bridges, waterways, and paper lanterns; shallow depth, flat planes, and subtle spatial recession; balanced compositions with seasonal motifs (e.g., cherry blossoms, autumn leaves) placed in foreground or midground.\",
+    \"COLOR_TONALITY\": \"Soft pastel palettes with muted earth tones, warm neutral greys, and delicate pinks and blues; low saturation, high contrast between light and shadow; subtle gradations mimicking dawn or mist; inspired by traditional Japanese color schemes such as *shibui* and *wabi-sabi*.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Delicate, flowing ink washes with light, blurred strokes; soft blending of ink and water; minimal detail; emphasis on suggestion over form; occasional spontaneous, gentle line work resembling naïve or folk art.\",
+    \"EXPRESSION_THEME\": \"Serene, contemplative atmosphere; quiet beauty of fleeting moments; seasonal transitions (kigo); ephemeral nature of light and mist; peaceful coexistence between human structures and natural landscapes.\",
+    \"HISTORICAL_CONTEXT\": \"Late 19th to early 20th century; fusion of French Impressionist light and color theories with Japanese woodblock print traditions; influenced by the *Nihonga* and *Yōga* movements; reflects cross-cultural exchange in East Asia and Europe.\"
+  },
+  \"MERGE_STRATEGY\": \"Harmonize Impressionist color observation and light sensitivity with Ukiyo-e compositional balance and aesthetic restraint; prioritize atmospheric softness over sharp definition; resolve tension between Impressionist brushwork dynamism and Ukiyo-e precision by adopting a fluid, flowing ink wash technique that maintains both spontaneity and compositional harmony.\",
+  \"PROMPT_SNIPPET\": \"A soft, misty bridge at dawn under paper lanterns, rendered in delicate ink washes with muted pastel tones, blending Impressionist light effects and Ukiyo-e composition for a serene, seasonal atmosphere.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Sharp outlines, detailed realism, heavy textures, bold colors, or mechanical precision\",
+    \"Overly complex compositions, cluttered foregrounds, or dramatic contrasts\",
+    \"Modern urban settings or industrial elements\",
+    \"Exaggerated emotional expression or narrative storytelling\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of soft, flowing brushwork and ink washes\",
+    \"Muted pastel palette with seasonal color cues\",
+    \"Balanced, asymmetrical composition with traditional Japanese elements\",
+    \"Atmospheric mist or light effects resembling both Impressionist and Ukiyo-e sensibilities\",
+    \"Absence of sharp lines, detailed realism, or modern distortions\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of pastel tones (e.g., RGB or hex values) is used for the paper lanterns to reflect the soft, muted palette described in the style?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Precise color values ensure alignment with the specified soft pastel and shibui aesthetic\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3–5 hex codes (e.g., #F5F0E6, #D1C4E9)\",
+      \"DEPENDENCIES\": [\"soft pastel palettes\", \"muted earth tones\", \"delicate pinks and blues\"]
+    },
+    {
+      \"Q\": \"How is the misty bridge rendered in terms of brushwork thickness and ink density—specifically, what is the range of water-to-ink ratio and stroke opacity?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies the balance between fluidity and atmospheric softness in ink washes\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"range (e.g., 10% to 40% water content, 30% to 60% opacity)\",
+      \"DEPENDENCIES\": [\"delicate, flowing ink washes\", \"soft blending of ink and water\", \"subtle gradations\"]
+    },
+    {
+      \"Q\": \"In the composition, how far from the center is the fox typically placed relative to the misty bridge and paper lanterns—specifically, what is the horizontal or vertical offset range?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Establishes spatial relationships that maintain asymmetry and seasonal balance\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"range (e.g., ±15% from center, or 10–30% off-center)\",
+      \"DEPENDENCIES\": [\"asymmetrical layouts\", \"balanced compositions\", \"seasonal motifs placed in foreground or midground\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Could the fox be depicted with sharp outlines or high-contrast details that violate the 'no sharp outlines' constraint?\",
+    \"Are the paper lanterns using bold or saturated colors that contradict the 'low saturation' requirement?\",
+    \"Is the misty bridge shown with clear structural lines or strong shadows that break the 'flat planes' and 'soft recession' rule?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'delicate pinks and blues' THEN ask for specific seasonal associations (e.g., cherry blossoms = pink, autumn = amber)\",
+    \"IF BRUSHWORK_TECHNIQUE references 'spontaneous line work' THEN ask for frequency or density of such lines per square inch\",
+    \"IF COMPOSITIONAL_DEVICES mentions 'off-center placement' THEN ask for how this affects the perceived depth or balance\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": [\"#F5F0E6\", \"#D1C4E9\", \"#E6D9F0\", \"#F0E6D1\", \"#D9E6F5\"],
+      \"RATIONALE\": \"These hex values represent soft pastel tones aligned with muted earth tones, delicate pinks, and blues, reflecting the shibui and wabi-sabi aesthetic.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"20% to 40% water content, 30% to 60% opacity\",
+      \"RATIONALE\": \"This range ensures fluid, soft ink washes that blend seamlessly, maintaining atmospheric softness and avoiding sharp or defined edges.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"10% to 30% off-center\",
+      \"RATIONALE\": \"Maintains asymmetrical balance while placing the fox in a natural, contemplative position relative to the bridge and lanterns in the midground or foreground.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical layouts with horizontal and vertical rhythm; emphasis on natural elements like bridges, waterways, and paper lanterns; shallow depth, flat planes, and subtle spatial recession; balanced compositions with seasonal motifs (e.g., cherry blossoms, autumn leaves) placed in foreground or midground.\",
+    \"COLOR_TONALITY\": \"Soft pastel palettes with muted earth tones, warm neutral greys, and delicate pinks and blues; low saturation, high contrast between light and shadow; subtle gradations mimicking dawn or mist; inspired by traditional Japanese color schemes such as *shibui* and *wabi-sabi*; specific hex values: #F5F0E6, #D1C4E9, #E6D9F0, #F0E6D1, #D9E6F5\",
+    \"BRUSHWORK_TECHNIQUE\": \"Delicate, flowing ink washes with light, blurred strokes; soft blending of ink and water; minimal detail; emphasis on suggestion over form; occasional spontaneous, gentle line work resembling naïve or folk art; water-to-ink ratio: 20% to 40%, stroke opacity: 30% to 60%\",
+    \"EXPRESSION_THEME\": \"Serene, contemplative atmosphere; quiet beauty of fleeting moments; seasonal transitions (kigo); ephemeral nature of light and mist; peaceful coexistence between human structures and natural landscapes.\",
+    \"HISTORICAL_CONTEXT\": \"Late 19th to early 20th century; fusion of French Impressionist light and color theories with Japanese woodblock print traditions; influenced by the *Nihonga* and *Yōga* movements; reflects cross-cultural exchange in East Asia and Europe.\",
+    \"SUBJECT_MATTER\": \"Misty bridge, paper lantern, fox in natural or mystical landscape settings\",
+    \"COMPOSITIONAL_DEVICES\": \"Asymmetrical layouts with 10% to 30% off-center placement of the fox; balanced foreground or midground positioning of seasonal motifs; visual anchoring via paper lanterns and bridge structure\",
+    \"LIGHTING_CAMERA\": \"Diffused, flat lighting with no strong directional source; wide angle, slightly elevated, soft focus on mist; medium close-up or wide angle on fox with slight tilt\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Sharp outlines, detailed realism, heavy textures, bold colors, or mechanical precision\",
+      \"Overly complex compositions, cluttered foregrounds, or dramatic contrasts\",
+      \"Modern urban settings or industrial elements\",
+      \"Exaggerated emotional expression or narrative storytelling\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of soft, flowing brushwork and ink washes with 20%–40% water and 30%–60% opacity\",
+      \"Muted pastel palette using specified hex codes with low saturation\",
+      \"Balanced, asymmetrical composition with 10%–30% off-center fox placement\",
+      \"Atmospheric mist or light effects resembling both Impressionist and Ukiyo-e sensibilities\",
+      \"Absence of sharp lines, detailed realism, or modern distortions\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A soft, misty bridge at dawn under paper lanterns, with a fox placed 10–30% off-center, rendered in delicate ink washes with muted pastel tones (#F5F0E6, #D1C4E9, #E6D9F0, #F0E6D1, #D9E6F5), using 20–40% water and 30–60% opacity for flowing brushwork, evoking serene, seasonal contemplation.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific hex code range for paper lanterns\",
+    \"Quantified brushwork water-to-ink ratio and opacity\",
+    \"Defined fox placement offset range in composition\",
+    \"Updated evaluation criteria to include measurable style parameters\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could the fox's placement in the 10–30% off-center range affect the perception of depth or balance in the scene?\",
+    \"Are there specific seasonal associations (e.g., cherry blossoms = pink) that should be tied to the color palette for authenticity?\",
+    \"How does the soft glow of the lanterns interact with the mist and fox's form in terms of lighting harmony?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What is the exact range of water-to-ink ratio and stroke opacity used for the misty bridge's ink washes, and how does this affect the softness and atmospheric depth of the mist?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies how brushwork parameters directly influence the visual softness and spatial recession of the bridge and mist\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 20% to 40% water content, 30% to 60% opacity)\",
+      \"DEPENDENCIES\": [\"delicate, flowing ink washes\", \"soft blending of ink and water\", \"subtle gradations mimicking dawn or mist\"]
+    },
+    {
+      \"Q\": \"How does the fox’s 10–30% off-center placement interact with the seasonal motifs (e.g., cherry blossoms or autumn leaves) in terms of compositional balance and visual rhythm?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Establishes how spatial positioning affects the harmony between subject, environment, and seasonal cues\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of balance/rhythm (e.g., 'creates dynamic asymmetry without disrupting visual equilibrium')\",
+      \"DEPENDENCIES\": [\"asymmetrical layouts\", \"seasonal motifs in foreground or midground\", \"visual anchoring via lanterns and bridge\"]
+    },
+    {
+      \"Q\": \"What specific lighting interaction occurs between the paper lantern’s soft internal glow and the surrounding mist or fox form—particularly in terms of contrast, color bleed, or softness?\",
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"WHY\": \"Determines how light sources contribute to atmospheric unity and avoid harsh contrasts or over-illumination\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description of interaction (e.g., 'glow diffuses into mist, softening edges and enhancing ambient harmony')\",
+      \"DEPENDENCIES\": [\"diffused, flat lighting\", \"soft internal glow\", \"atmospheric mist effects\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the misty bridge use a water-to-ink ratio that results in overly thick or defined strokes, violating the 'soft, flowing' brushwork rule?\",
+    \"Is the fox’s off-center placement so extreme that it creates imbalance or visual disorientation?\",
+    \"Does the lantern glow create sharp highlights or strong shadows that break the 'flat lighting' and 'soft focus' requirement?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK_TECHNIQUE mentions 20–40% water THEN ask for ink density variation across bridge sections (e.g., thicker near base, thinner at edges)\",
+    \"IF COMPOSITIONAL_DEVICES references off-center placement THEN ask for how it aligns with the horizontal/vertical rhythm of the scene\",
+    \"IF LIGHTING_CAMERA mentions soft glow THEN ask for how it affects the fox’s form (e.g., illuminated eye, blurred silhouette)\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"20% to 40% water content, 30% to 60% opacity\",
+      \"RATIONALE\": \"Maintains fluid, soft ink washes that blend seamlessly, ensuring the misty bridge appears partially obscured and atmospheric without sharp edges or defined structure.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Creates dynamic asymmetry without disrupting visual equilibrium; the fox’s off-center placement anchors the scene while allowing seasonal motifs (e.g., cherry blossoms or autumn leaves) to establish rhythm in the foreground or midground, reinforcing natural flow and balance.\",
+      \"RATIONALE\": \"The 10–30% off-center fox placement introduces visual movement without imbalance, harmonizing with the horizontal/vertical rhythm of the bridge and lanterns.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"ANSWER\": \"The lantern’s soft internal glow diffuses into the mist, softening edges and enhancing ambient harmony; it illuminates the fox subtly, creating a gentle, non-dramatic glow that blends with the background without sharp highlights or contrast.\",
+      \"RATIONALE\": \"Ensures light remains diffused and flat, preserving the overall softness and unity of the atmosphere.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical layouts with horizontal and vertical rhythm; emphasis on natural elements like bridges, waterways, and paper lanterns; shallow depth, flat planes, and subtle spatial recession; balanced compositions with seasonal motifs (e.g., cherry blossoms, autumn leaves) placed in foreground or midground.\",
+    \"COLOR_TONALITY\": \"Soft pastel palettes with muted earth tones, warm neutral greys, and delicate pinks and blues; low saturation, high contrast between light and shadow; subtle gradations mimicking dawn or mist; inspired by traditional Japanese color schemes such as *shibui* and *wabi-sabi*; specific hex values: #F5F0E6, #D1C4E9, #E6D9F0, #F0E6D1, #D9E6F5; seasonal associations: cherry blossoms → pink #D1C4E9, autumn leaves → soft amber #F5F0E6, early morning mist → gray-blue #D9E6F5\",
+    \"BRUSHWORK_TECHNIQUE\": \"Delicate, flowing ink washes with light, blurred strokes; soft blending of ink and water; minimal detail; emphasis on suggestion over form; occasional spontaneous, gentle line work resembling naïve or folk art; water-to-ink ratio: 20% to 40%, stroke opacity: 30% to 60%; misty bridge rendered with consistent softness, no defined edges or structural clarity\",
+    \"EXPRESSION_THEME\": \"Serene, contemplative atmosphere; quiet beauty of fleeting moments; seasonal transitions (kigo); ephemeral nature of light and mist; peaceful coexistence between human structures and natural landscapes.\",
+    \"HISTORICAL_CONTEXT\": \"Late 19th to early 20th century; fusion of French Impressionist light and color theories with Japanese woodblock print traditions; influenced by the *Nihonga* and *Yōga* movements; reflects cross-cultural exchange in East Asia and Europe.\",
+    \"SUBJECT_MATTER\": \"Misty bridge, paper lantern, fox in natural or mystical landscape settings with seasonal motifs\",
+    \"COMPOSITIONAL_DEVICES\": \"Asymmetrical layouts with 10% to 30% off-center fox placement; balanced foreground or midground positioning of seasonal motifs; visual anchoring via paper lanterns and bridge structure; rhythmic flow established through horizontal/vertical alignment of bridge, lanterns, and foliage\",
+    \"LIGHTING_CAMERA\": \"Diffused, flat lighting with no strong directional source; wide angle, slightly elevated, soft focus on mist; medium close-up or wide angle on fox with slight tilt; paper lanterns emit soft internal glow that diffuses into mist and gently illuminates the fox without sharp highlights or contrast\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Sharp outlines, detailed realism, heavy textures, bold colors, or mechanical precision\",
+      \"Overly complex compositions, cluttered foregrounds, or dramatic contrasts\",
+      \"Modern urban settings or industrial elements\",
+      \"Exaggerated emotional expression or narrative storytelling\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of soft, flowing brushwork and ink washes with 20%–40% water and 30%–60% opacity\",
+      \"Muted pastel palette using specified hex codes with low saturation and seasonal color cues\",
+      \"Balanced, asymmetrical composition with 10%–30% off-center fox placement and rhythmic alignment of elements\",
+      \"Atmospheric mist or light effects resembling both Impressionist and Ukiyo-e sensibilities\",
+      \"Absence of sharp lines, detailed realism, or modern distortions; lantern glow diffuses into mist, no strong highlights\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A misty bridge spanning a river, partially hidden in gray-blue mist #D9E6F5, with a fox 10–30% off-center in a natural setting, and paper lanterns emitting soft internal glow that diffuses into the mist; rendered in delicate ink washes with 20–40% water and 30–60% opacity, using pastel tones (#F5F0E6, #D1C4E9, #E6D9F0, #F0E6D1, #D9E6F5) and seasonal motifs (cherry blossoms → pink #D1C4E9, autumn leaves → soft amber #F5F0E6), creating dynamic asymmetry and soft atmospheric harmony.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Reinforced brushwork parameters for misty bridge with explicit link to softness and atmospheric depth\",
+    \"Expanded compositional rationale to include interaction between fox placement and seasonal rhythm\",
+    \"Added detailed lighting interaction between lantern glow and mist/fox form\",
+    \"Updated evaluation criteria to include lighting diffusion and absence of sharp highlights\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Could varying ink density across the bridge (e.g., thinner at edges, denser at base) enhance the perception of depth without breaking the softness rule?\",
+    \"How does the fox’s off-center position affect the visual rhythm when paired with a floating lantern in the foreground?\",
+    \"Is there a cultural precedent for lanterns glowing during cherry blossom festivals or autumn nights in traditional art?\"
+  ]
+}"
+  }
+]

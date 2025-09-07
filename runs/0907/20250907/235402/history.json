@@ -1,0 +1,612 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical, expressive line and soft, dreamlike colorism.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic shapes with dynamic, non-geometric arrangements; emphasis on emotional resonance over realism; flowing, fluid forms that suggest movement and fantasy\",
+    \"COLOR_TONALITY\": \"Vibrant, saturated palettes dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green); soft gradients and pastel overlays to maintain dreamlike quality; high contrast between bold Fauve accents and gentle Miyazaki tonal transitions\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible impasto layers; soft blending in areas of emotional softness; clean, flowing lines with minimal detail to preserve whimsy and narrative fluidity\",
+    \"EXPRESSION_THEME\": \"Whimsical, childlike wonder; gentle fantasy elements; emotional intimacy with nature and animals; a sense of quiet joy and surreal calm\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, particularly 'My Neighbor Totoro' and 'Spirited Away') as a hybrid of emotional expression and visual poetry\"
+  },
+  \"MERGE_STRATEGY\": \"Balance Fauvism’s radical color use and emotional intensity with Miyazaki’s lyrical line quality and atmospheric softness; prioritize emotional tone over formal precision, using Fauvist color as emotional drivers and Miyazaki’s line as narrative scaffolding.\",
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold, expressive Fauve colors and flowing, whimsical lines reminiscent of Miyazaki’s animation, evoking quiet joy and emotional warmth in a soft, surreal environment.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Overly detailed realism\",
+    \"Stiff or mechanical line work\",
+    \"Cold or desaturated color palettes\",
+    \"Dark, dramatic, or anxious atmospheres\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of vivid, non-naturalistic color contrasts\",
+    \"Use of soft, flowing lines with emotional intent\",
+    \"Balance between Fauvist intensity and Miyazaki’s dreamlike calm\",
+    \"Absence of literal realism or sharp, technical precision\"
+  ],
+  \"CONFIDENCE\": 0.96
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "girl, dragon",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"The figure of a girl is a common subject in fantasy and mythical art, especially when paired with dragons, symbolizing youthful vitality, innocence, or heroism in a fantastical world.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"humanoid, slender, soft curves\",
+        \"MATERIAL\": \"figurative form, often rendered in soft shading\",
+        \"COLOR_PALETTE\": \"pastel tones, soft skin tones with highlights in white or light pink\",
+        \"SCALE_POSE\": \"medium scale, standing or seated, often facing the dragon or in dynamic pose\",
+        \"TEXTURE\": \"smooth skin, subtle gradients, soft brushwork\",
+        \"LIGHTING\": \"soft natural lighting, gentle chiaroscuro\",
+        \"CONTEXT\": \"fantasy landscape, mountainous or enchanted forest\",
+        \"COMPOSITION_ROLE\": \"central subject, often in balance with the dragon\",
+        \"CAMERA\": \"medium close-up, slightly elevated angle\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes hope, courage, and the bridge between human and mythical realms\",
+      \"VARIANTS\": [
+        \"dressed in traditional clothing\",
+        \"wearing armor or magical garments\",
+        \"holding a weapon or staff\"
+      ],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Dragons are iconic mythical creatures in fantasy art, frequently depicted as large, powerful, and coiled or flying, often in interaction with human figures like girls.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body, segmented scales, wings, tail\",
+        \"MATERIAL\": \"scale-based, often with metallic or glossy appearance\",
+        \"COLOR_PALETTE\": \"deep reds, golds, dark blues, with high contrast and saturated hues\",
+        \"SCALE_POSE\": \"large scale, coiled or soaring, often in dynamic or threatening pose\",
+        \"TEXTURE\": \"rough, scaled surface, sometimes with visible ridges or patterns\",
+        \"LIGHTING\": \"dramatic chiaroscuro, strong backlighting or side lighting\",
+        \"CONTEXT\": \"mountain peaks, skies, ruins, or mystical forests\",
+        \"COMPOSITION_ROLE\": \"primary antagonist or companion, often in contrast to the girl\",
+        \"CAMERA\": \"wide-angle or low-angle view, emphasizing size and power\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes power, wisdom, danger, or guardianship\",
+      \"VARIANTS\": [
+        \"fire-breathing dragon\",
+        \"winged and massive\",
+        \"partially humanoid with dragon features\"
+      ],
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the girl and dragon in a specific cultural or historical context (e.g., Chinese, Western fantasy)?\",
+    \"Is the dragon purely mythical or inspired by real-world animals?\",
+    \"Are there specific cultural symbols or regional elements expected in the composition?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of cobalt blue to burnt orange contrast ratios should be used to maintain Fauvist intensity while preserving Miyazaki’s soft transitions?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"This quantifies the core emotional color contrast required to balance Fauvism and Miyazaki’s dreamlike calm\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"ratio range (e.g., 3:1 to 7:1)\",
+      \"DEPENDENCIES\": [\"vibrant, saturated palettes dominated by primary and complementary hues\", \"high contrast between bold Fauve accents and gentle Miyazaki tonal transitions\"]
+    },
+    {
+      \"Q\": \"What percentage of the composition should be covered by visible impasto brushwork, and where should it be concentrated (e.g., face, wings, background)?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This operationalizes the expressive brushwork requirement while avoiding mechanical or overly detailed rendering\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage with location (e.g., 40% on dragon’s wings, 20% on girl’s face)\",
+      \"DEPENDENCIES\": [\"expressive, gestural brushstrokes with visible impasto layers\", \"minimal detail to preserve whimsy\"]
+    },
+    {
+      \"Q\": \"How should the girl and dragon be positioned in terms of spatial balance and line flow to evoke emotional intimacy without visual tension?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"This ensures the dynamic, organic arrangement supports the theme of quiet joy and emotional warmth\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial relationship (e.g., girl slightly behind, facing dragon with flowing diagonal lines)\",
+      \"DEPENDENCIES\": [\"loose, organic shapes with dynamic, non-geometric arrangements\", \"emotional resonance over realism\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the girl or dragon have sharp, technical details that break the soft, flowing line quality?\",
+    \"Is any part of the scene using cold tones (e.g., blue-gray, slate) that would violate the warm, vibrant palette?\",
+    \"Does the composition include a dark or anxious atmosphere that contradicts the quiet joy theme?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions specific ratios THEN ask for exact hue names (e.g., cobalt blue, burnt orange)\",
+    \"IF BRUSHWORK_TECHNIQUE specifies impasto THEN ask for thickness ranges (e.g., 0.5mm to 2mm)\",
+    \"IF FORM_COMPOSITION references emotional intimacy THEN ask for narrative flow direction (e.g., from girl to dragon, upward motion)\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"4:1 to 8:1\",
+      \"RATIONALE\": \"Maintains Fauvist intensity through high contrast while allowing Miyazaki-style soft transitions in adjacent tones.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"50% on dragon’s wings (20% impasto), 30% on girl’s face (10% impasto)\",
+      \"RATIONALE\": \"Concentrates expressive energy where emotional and narrative impact is strongest, avoiding mechanical detail.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"Girl slightly behind, facing dragon with flowing diagonal lines from left to right\",
+      \"RATIONALE\": \"Creates emotional intimacy through gentle motion and balance, avoiding tension or visual conflict.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Girl slightly behind, facing dragon with flowing diagonal lines from left to right; loose, organic shapes with dynamic, non-geometric arrangements; emphasis on emotional resonance over realism\",
+    \"COLOR_TONALITY\": \"Vibrant, saturated palettes with 4:1 to 8:1 cobalt blue to burnt orange contrast ratios; soft gradients and pastel overlays to maintain dreamlike quality; high contrast between bold Fauve accents and gentle Miyazaki tonal transitions\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible impasto layers (50% on dragon’s wings, 30% on girl’s face); soft blending in areas of emotional softness; clean, flowing lines with minimal detail to preserve whimsy and narrative fluidity\",
+    \"EXPRESSION_THEME\": \"Whimsical, childlike wonder; gentle fantasy elements; emotional intimacy with nature and animals; a sense of quiet joy and surreal calm\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, particularly 'My Neighbor Totoro' and 'Spirited Away') as a hybrid of emotional expression and visual poetry\",
+    \"SUBJECT_MATTER\": \"A girl and dragon in a soft, surreal fantasy landscape, positioned in emotional balance\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal flow from girl to dragon; spatial balance with soft organic forms; implied movement without tension\",
+    \"LIGHTING_CAMERA\": \"Soft natural lighting with gentle chiaroscuro; medium close-up on girl, wide-angle on dragon to emphasize scale and presence\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Overly detailed realism\",
+      \"Stiff or mechanical line work\",
+      \"Cold or desaturated color palettes\",
+      \"Dark, dramatic, or anxious atmospheres\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of vivid, non-naturalistic color contrasts (4:1 to 8:1 ratio)\",
+      \"Use of soft, flowing lines with emotional intent (diagonal flow from girl to dragon)\",
+      \"Balance between Fauvist intensity and Miyazaki’s dreamlike calm (impasto concentrated on wings and face)\",
+      \"Absence of literal realism or sharp, technical precision\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold Fauve color contrasts (4:1 to 8:1 cobalt blue to burnt orange), flowing diagonal lines from a girl to a dragon, expressive impasto on wings and face, evoking quiet joy and emotional warmth in a soft, surreal environment.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific color contrast ratio range (4:1 to 8:1)\",
+    \"Quantified impasto coverage (50% on dragon’s wings, 30% on girl’s face)\",
+    \"Defined spatial relationship (girl slightly behind, facing dragon with diagonal flow)\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should specific hue names (e.g., cobalt blue, burnt orange) be used for exact color matching?\",
+    \"Is there a desired narrative flow direction (e.g., from girl to dragon, upward motion) beyond the current diagonal?\",
+    \"Should the dragon’s wings or girl’s clothing include subtle cultural motifs (e.g., traditional patterns)?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific cultural motifs or patterns should be included in the girl’s clothing or the dragon’s scales to reflect regional or traditional inspirations without compromising the whimsical, soft aesthetic?\",
+      \"DIMENSION\": \"ICONOGRAPHY\",
+      \"WHY\": \"Cultural motifs can deepen narrative authenticity while aligning with Miyazaki’s regional storytelling traditions without introducing realism or stiffness\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of motifs (e.g., cherry blossom patterns, traditional Japanese kimonos, tribal scales)\",
+      \"DEPENDENCIES\": [\"Miyazaki’s Studio Ghibli films\", \"whimsical, childlike wonder\", \"soft, dreamlike colorism\"]
+    },
+    {
+      \"Q\": \"What range of texture variation should be applied to the girl’s skin and dragon’s scales to balance softness and expressiveness, while avoiding mechanical or sharp surface details?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture directly affects emotional resonance; soft gradients preserve whimsy, while subtle variation enhances organic, living qualities without breaking the flowing line style\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"range of texture descriptors (e.g., smooth to slightly rough, velvety to matte)\",
+      \"DEPENDENCIES\": [\"soft brushwork\", \"minimal detail\", \"emotional softness in areas of emotional intimacy\"]
+    },
+    {
+      \"Q\": \"Are there specific environmental elements (e.g., trees, clouds, rivers) that should be included to define the fantasy landscape, and what should be their scale and color relationship to the girl and dragon?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Environmental elements ground the composition in a dreamlike setting and support the emotional flow between the girl and dragon through spatial and color harmony\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of elements with scale and color (e.g., soft green trees, pale gray clouds, warm golden river)\",
+      \"DEPENDENCIES\": [\"fantasy landscape\", \"soft, surreal environment\", \"diagonal flow from girl to dragon\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the girl or dragon have rigid, geometric patterns (e.g., grid lines, sharp edges) that disrupt the organic, flowing form?\",
+    \"Are any environmental elements overly detailed or realistic (e.g., realistic foliage, clear water reflections) that violate the soft, surreal quality?\",
+    \"Do the cultural motifs or textures introduce literal cultural realism or historical accuracy that contradicts the whimsical, emotional tone?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF ICONOGRAPHY mentions cultural motifs THEN ask for specific examples (e.g., cherry blossoms, origami patterns)\",
+    \"IF TEXTURE references variation THEN ask for brushwork intensity (e.g., 10% to 30% impasto in texture areas)\",
+    \"IF CONTEXT includes environmental elements THEN ask for their color contrast ratio to the main subjects (e.g., 2:1 to 4:1)\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"ICONOGRAPHY\",
+      \"ANSWER\": [\"cherry blossom patterns\", \"origami fold motifs\", \"soft wave lines resembling water or wind\"],
+      \"RATIONALE\": \"These motifs are rooted in Miyazaki’s aesthetic traditions and evoke whimsy without rigidity or realism.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"smooth to slightly rough, velvety to matte\",
+      \"RATIONALE\": \"Provides organic variation in surface quality while maintaining softness and emotional warmth.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": [\"soft green trees (2:1 to 4:1 color contrast to girl’s clothing)\", \"pale gray clouds (1:1 to 2:1 contrast to sky tones)\", \"warm golden river (3:1 to 5:1 contrast to dragon’s scales)\"],
+      \"RATIONALE\": \"Environmental elements support emotional flow and color harmony without introducing realism or detail.\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central figure in emotional narrative, her clothing can carry subtle cultural motifs to deepen authenticity within the whimsical tone.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"humanoid, slender, soft curves\",
+        \"MATERIAL\": \"figurative form, rendered in soft shading\",
+        \"COLOR_PALETTE\": \"pastel tones, soft skin tones with highlights in white or light pink\",
+        \"SCALE_POSE\": \"medium scale, standing or seated, slightly behind, facing dragon with diagonal flow\",
+        \"TEXTURE\": \"smooth to slightly rough, velvety to matte; with subtle origami or cherry blossom pattern overlays\",
+        \"LIGHTING\": \"soft natural lighting, gentle chiaroscuro\",
+        \"CONTEXT\": \"fantasy landscape with soft green trees, pale gray clouds, warm golden river\",
+        \"COMPOSITION_ROLE\": \"central subject, emotionally connected to dragon via diagonal flow\",
+        \"CAMERA\": \"medium close-up, slightly elevated angle\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes hope, courage, and the bridge between human and mythical realms; includes cherry blossom and origami motifs for cultural resonance\",
+      \"VARIANTS\": [
+        \"dressed in traditional clothing with subtle origami folds\",
+        \"wearing a light kimono with cherry blossom embroidery\",
+        \"holding a woven leaf or paper crane\"
+      ],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"The dragon serves as a powerful, calm presence; its scales and form reflect both mythic strength and soft, organic textures to match the emotional tone.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body, segmented scales, wings, tail\",
+        \"MATERIAL\": \"scale-based, glossy with soft transitions between tones\",
+        \"COLOR_PALETTE\": \"deep reds, golds, dark blues, with high contrast and saturated hues (4:1 to 8:1 cobalt blue to burnt orange)\",
+        \"SCALE_POSE\": \"large scale, coiled or soaring, in dynamic but calm pose, wings open slightly\",
+        \"TEXTURE\": \"rough, scaled surface with soft wave patterns; slightly rough to matte, with subtle origami-like scale edges\",
+        \"LIGHTING\": \"soft natural lighting, gentle chiaroscuro\",
+        \"CONTEXT\": \"mountain peaks, skies, near warm golden river, with soft green trees in background\",
+        \"COMPOSITION_ROLE\": \"primary companion, balanced with girl through diagonal flow\",
+        \"CAMERA\": \"wide-angle or low-angle view, emphasizing scale and presence\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes power, wisdom, and guardianship; scales feature soft wave and origami patterns for emotional softness\",
+      \"VARIANTS\": [
+        \"with wave-like scale patterns\",
+        \"wings slightly open, glowing softly\",
+        \"tail gently curled like a sleeping creature\"
+      ],
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki Whimsy\": [
+        \"girl\",
+        \"dragon\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"girl\",
+      \"dragon\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"rigid geometric patterns\",
+    \"realistic foliage or water reflections\",
+    \"sharp or mechanical edges\",
+    \"cold or desaturated tones\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"girl in traditional clothing with cherry blossom and origami motifs, soft velvety texture\",
+    \"dragon with wave-like scale patterns and soft matte texture, glowing gently in warm reds and golds\",
+    \"soft green trees, pale gray clouds, warm golden river forming a gentle background with 2:1 to 5:1 color contrast to main subjects\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added cultural motifs (cherry blossoms, origami) to girl’s clothing and dragon’s scales\",
+    \"Expanded texture range to smooth to slightly rough, velvety to matte\",
+    \"Defined environmental elements with scale and color contrast ratios (2:1 to 4:1, 1:1 to 2:1, 3:1 to 5:1)\",
+    \"Refined composition to include soft, flowing environmental integration\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the girl’s clothing or dragon’s scales include motion lines (e.g., wind or ripple effects) to enhance the flowing aesthetic?\",
+    \"Is there a preferred direction of the diagonal flow (e.g., from girl to dragon, upward, or toward a river)?\",
+    \"Can the environmental elements include subtle animation-like transitions (e.g., drifting clouds, rippling water) without breaking softness?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of impasto thickness (e.g., 0.5mm to 2mm) should be applied to the dragon’s wings and girl’s face to achieve expressive depth while maintaining soft, flowing lines?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Impasto thickness directly affects texture and emotional impact, and precise ranges ensure expressive intent without mechanical detail\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range of thickness (e.g., 0.5mm to 2mm)\",
+      \"DEPENDENCIES\": [\"50% on dragon’s wings (20% impasto), 30% on girl’s face\", \"visible impasto layers\", \"minimal detail to preserve whimsy\"]
+    },
+    {
+      \"Q\": \"What specific direction or narrative flow should the diagonal line follow—such as from girl to dragon, upward, or toward the river—to enhance emotional intimacy and movement in the composition?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"The flow direction defines the emotional arc and narrative rhythm, reinforcing the theme of quiet joy and connection between the girl and dragon\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"flow direction (e.g., from girl to dragon, upward, toward river)\",
+      \"DEPENDENCIES\": [\"girl slightly behind, facing dragon with flowing diagonal lines\", \"emotional intimacy without visual tension\", \"diagonal flow from girl to dragon\"]
+    },
+    {
+      \"Q\": \"What specific color contrast ratios should be applied between the environmental elements (e.g., trees, clouds, river) and the main subjects (girl and dragon) to maintain visual harmony and emotional balance?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Environmental color relationships support the emotional tone and Fauvist-Miyazaki balance, ensuring soft transitions without losing vibrancy or contrast\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of elements with contrast ratios (e.g., soft green trees: 2:1 to 4:1, pale gray clouds: 1:1 to 2:1, warm golden river: 3:1 to 5:1)\",
+      \"DEPENDENCIES\": [\"soft green trees (2:1 to 4:1)\", \"pale gray clouds (1:1 to 2:1)\", \"warm golden river (3:1 to 5:1)\", \"high contrast between bold Fauve accents and gentle transitions\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the impasto thickness introduce sharp, mechanical edges or excessive texture that breaks the soft, flowing style?\",
+    \"Does the flow direction create visual tension or imbalance instead of emotional intimacy?\",
+    \"Are any environmental color contrasts too low or too high, violating the 4:1 to 8:1 Fauve intensity baseline?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK_TECHNIQUE specifies impasto thickness THEN ask for brushstroke density (e.g., 5 to 15 strokes per square inch)\",
+    \"IF FORM_COMPOSITION references flow direction THEN ask for implied motion (e.g., gentle drift, subtle ripple)\",
+    \"IF COLOR_TONALITY references environmental ratios THEN ask for hue names (e.g., cobalt blue, burnt orange) in those contexts\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"0.8mm to 1.5mm\",
+      \"RATIONALE\": \"Provides expressive depth without introducing mechanical texture or sharp edges, maintaining soft flow in key emotional areas.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"from girl to dragon, gently curving toward the warm golden river\",
+      \"RATIONALE\": \"Establishes a clear emotional arc of connection and peaceful movement, reinforcing quiet joy and narrative intimacy.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": [
+        \"soft green trees: 2:1 to 4:1\",
+        \"pale gray clouds: 1:1 to 2:1\",
+        \"warm golden river: 3:1 to 5:1\"
+      ],
+      \"RATIONALE\": \"Maintains visual harmony with the main subjects while preserving Fauvist contrast and Miyazaki-style soft transitions.\",
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Girl slightly behind, facing dragon with a gently curving diagonal line flowing from girl to dragon and toward the warm golden river; loose, organic shapes with dynamic, non-geometric arrangements; emphasis on emotional resonance over realism\",
+    \"COLOR_TONALITY\": \"Vibrant, saturated palettes with 4:1 to 8:1 cobalt blue to burnt orange contrast ratios; soft gradients and pastel overlays; environmental elements maintain 2:1 to 4:1 (trees), 1:1 to 2:1 (clouds), 3:1 to 5:1 (river) color contrasts to main subjects\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible impasto layers (0.8mm to 1.5mm thickness on dragon’s wings and girl’s face); soft blending in emotional softness areas; clean, flowing lines with minimal detail to preserve whimsy and narrative fluidity\",
+    \"EXPRESSION_THEME\": \"Whimsical, childlike wonder; gentle fantasy elements; emotional intimacy with nature and animals; a sense of quiet joy and surreal calm\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, particularly 'My Neighbor Totoro' and 'Spirited Away') as a hybrid of emotional expression and visual poetry\",
+    \"SUBJECT_MATTER\": \"A girl and dragon in a soft, surreal fantasy landscape, positioned in emotional balance with a flowing diagonal from girl to dragon and toward a golden river\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal flow from girl to dragon, curving toward warm golden river; spatial balance with soft organic forms; implied gentle motion (drift, ripple) without tension\",
+    \"LIGHTING_CAMERA\": \"Soft natural lighting with gentle chiaroscuro; medium close-up on girl, wide-angle on dragon to emphasize scale and presence\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Overly detailed realism\",
+      \"Stiff or mechanical line work\",
+      \"Cold or desaturated color palettes\",
+      \"Dark, dramatic, or anxious atmospheres\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of vivid, non-naturalistic color contrasts (4:1 to 8:1 cobalt blue to burnt orange)\",
+      \"Use of soft, flowing lines with emotional intent (diagonal flow from girl to dragon, curving toward river)\",
+      \"Balance between Fauvist intensity and Miyazaki’s dreamlike calm (impasto 0.8mm to 1.5mm on wings and face)\",
+      \"Absence of literal realism or sharp, technical precision\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold Fauve color contrasts (4:1 to 8:1 cobalt blue to burnt orange), flowing diagonal lines from a girl to a dragon curving toward a warm golden river, expressive impasto (0.8mm to 1.5mm) on wings and face, evoking quiet joy and emotional warmth in a soft, surreal environment with soft green trees (2:1 to 4:1), pale gray clouds (1:1 to 2:1), and warm golden river (3:1 to 5:1).\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific impasto thickness range (0.8mm to 1.5mm)\",
+    \"Defined flow direction as 'from girl to dragon, curving toward warm golden river'\",
+    \"Confirmed environmental color contrast ratios with exact ranges and alignment to main subjects\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the diagonal flow include subtle motion lines (e.g., wind or ripple) to enhance the drifting aesthetic?\",
+    \"Is there a desired hue name (e.g., cobalt blue, burnt orange) to anchor the primary color contrast in the prompt?\",
+    \"Could the river or dragon’s wings include soft glow effects without breaking the soft, flowing style?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"Are there additional small, recurring objects (e.g., paper cranes, floating leaves, wind-blown flowers) that should be included in the scene to enhance the whimsical, flowing aesthetic without disrupting the soft composition?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Small environmental objects reinforce emotional intimacy and narrative flow while staying within the soft, organic style\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of specific small objects (e.g., paper crane, floating leaf, wind-blown cherry blossom)\",
+      \"DEPENDENCIES\": [\"soft, surreal environment\", \"whimsical, childlike wonder\", \"flowing diagonal lines\"]
+    },
+    {
+      \"Q\": \"Should the girl or dragon include subtle motion lines (e.g., wind, ripple, wave patterns) to indicate gentle movement or breath, and if so, what should their density and direction be?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Motion lines enhance the dynamic, flowing quality without introducing mechanical detail or realism\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"presence and description (e.g., 'subtle wind lines, 5% density, flowing from girl to dragon')\",
+      \"DEPENDENCIES\": [\"soft, flowing lines\", \"emotional intimacy\", \"diagonal flow from girl to dragon\"]
+    },
+    {
+      \"Q\": \"Do any of the existing objects (e.g., girl’s clothing, dragon’s scales) include dynamic or animated transitions (e.g., folding, rippling, soft glow) that should be standardized or expanded to match the narrative flow?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Animated transitions support the emotional rhythm and narrative arc, reinforcing the theme of quiet joy and gentle motion\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of transitions with description (e.g., 'dragon’s scales ripple gently', 'girl’s kimono folds softly')\",
+      \"DEPENDENCIES\": [\"flow from girl to dragon and toward river\", \"emotional intimacy\", \"soft, organic shapes\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should any of the new objects or motion lines introduce sharp, geometric shapes or realistic details that break the flowing, organic style?\",
+    \"Do the motion or transition elements create visual tension or imbalance instead of gentle, harmonious movement?\",
+    \"Are the added objects or transitions overly literal or tied to cultural realism that contradicts the whimsical, emotional tone?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF CONTEXT includes small objects THEN ask for their scale and placement (e.g., floating near river, near girl’s feet)\",
+    \"IF TEXTURE mentions motion lines THEN ask for their intensity (e.g., 3% to 8% coverage)\",
+    \"IF FORM_COMPOSITION references transitions THEN ask for their direction (e.g., from girl to dragon, curving toward river)\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": [\"floating paper cranes\", \"wind-blown cherry blossoms\", \"soft floating leaves\", \"drifting clouds with gentle ripples\"],
+      \"RATIONALE\": \"These small, recurring elements enhance whimsy and narrative flow without introducing realism or sharp detail.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"subtle wind lines, 5% density, flowing from girl to dragon and curving toward the river\",
+      \"RATIONALE\": \"Provides gentle motion cues that support emotional flow without disrupting soft, organic forms or creating tension.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": [\"dragon’s scales ripple gently\", \"girl’s kimono folds softly\", \"paper cranes unfold slowly as if breathing\"],
+      \"RATIONALE\": \"Animated transitions mirror the narrative arc and emotional rhythm, reinforcing quiet joy and organic movement.\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"floating paper crane\",
+      \"WHY\": \"A recurring whimsical object that aligns with Miyazaki’s storytelling traditions and enhances emotional flow without realism.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simple, folded paper shape, slightly asymmetrical\",
+        \"MATERIAL\": \"paper-based, translucent with soft edges\",
+        \"COLOR_PALETTE\": \"soft white with light pink or pale gold accents\",
+        \"SCALE_POSE\": \"tiny, floating mid-air, near river or girl’s feet\",
+        \"TEXTURE\": \"smooth, slightly translucent, with subtle wind lines (5% density)\",
+        \"LIGHTING\": \"soft natural lighting, gently illuminated from behind\",
+        \"CONTEXT\": \"floating near warm golden river or in background air currents\",
+        \"COMPOSITION_ROLE\": \"background accent, adds narrative rhythm and quiet movement\",
+        \"CAMERA\": \"wide-angle, slightly off-center to show flow\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes hope, peace, and gentle transitions in emotional journeys\",
+      \"VARIANTS\": [
+        \"folding slowly as if breathing\",
+        \"drifting with wind lines\",
+        \"one gently near girl’s hand\"
+      ],
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"NAME\": \"wind-blown cherry blossom\",
+      \"WHY\": \"A natural yet whimsical element that reinforces the soft, flowing aesthetic and emotional intimacy with nature.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"single petal or small bloom, gently parted by wind\",
+        \"MATERIAL\": \"soft, delicate petals with translucent edges\",
+        \"COLOR_PALETTE\": \"pink to pale white, soft gradients\",
+        \"SCALE_POSE\": \"small, floating in air near girl or trees\",
+        \"TEXTURE\": \"smooth, slightly translucent, with light wind lines (3% density)\",
+        \"LIGHTING\": \"soft natural lighting, glowing faintly in backlight\",
+        \"CONTEXT\": \"drifting near soft green trees or along riverbank\",
+        \"COMPOSITION_ROLE\": \"background detail, enhances flow and emotional warmth\",
+        \"CAMERA\": \"wide-angle, slightly tilted to capture movement\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes fleeting beauty, gentle change, and emotional transience\",
+      \"VARIANTS\": [
+        \"partially open, drifting upward\",
+        \"flying in a soft arc from tree to girl\",
+        \"one caught in a breeze near dragon’s tail\"
+      ],
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"NAME\": \"soft floating leaf\",
+      \"WHY\": \"Adds organic, fluid movement to the environment, reinforcing the flowing, dreamlike quality of the scene.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simple oval leaf, slightly wavy edges\",
+        \"MATERIAL\": \"paper-like or natural, soft and thin\",
+        \"COLOR_PALETTE\": \"light green to pale yellow, soft gradients\",
+        \"SCALE_POSE\": \"small, floating on surface of golden river or air\",
+        \"TEXTURE\": \"smooth, slightly rough, with 4% wind lines\",
+        \"LIGHTING\": \"soft natural lighting, reflecting warm tones\",
+        \"CONTEXT\": \"floating on warm golden river or drifting in air\",
+        \"COMPOSITION_ROLE\": \"background rhythm, supports diagonal flow\",
+        \"CAMERA\": \"low-angle or medium wide, showing movement\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes passage of time, gentle change, and natural harmony\",
+      \"VARIANTS\": [
+        \"drifting slowly from tree to river\",
+        \"floating near dragon’s feet\",
+        \"resting gently on river surface\"
+      ],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki Whimsy\": [
+        \"girl\",
+        \"dragon\",
+        \"floating paper crane\",
+        \"wind-blown cherry blossom\",
+        \"soft floating leaf\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"girl\",
+      \"dragon\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"sharp geometric shapes\",
+    \"realistic foliage or water reflections\",
+    \"overly dense or mechanical motion lines\",
+    \"cold or desaturated tones\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"floating paper cranes gently drifting in the air, soft white with pale gold edges\",
+    \"wind-blown cherry blossoms floating near trees and girl, soft pink to white\",
+    \"soft floating leaves drifting on golden river, light green to yellow\",
+    \"subtle wind lines, 5% density, flowing from girl to dragon and toward river\",
+    \"dragon’s scales ripple gently, girl’s kimono folds softly, paper cranes unfold slowly as if breathing\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added floating paper crane, wind-blown cherry blossom, and soft floating leaf as small environmental objects\",
+    \"Introduced subtle wind lines (5% density) flowing from girl to dragon and toward river\",
+    \"Standardized animated transitions: dragon’s scales ripple, girl’s kimono folds, cranes unfold slowly\",
+    \"Expanded environmental context with motion and soft transitions aligned to narrative flow\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should any of the floating objects include slight glow or transparency effects to enhance the dreamlike quality?\",
+    \"Is there a preferred density range for motion lines (e.g., 3% to 8%) beyond the current 5%?\",
+    \"Could the cranes or blossoms follow the diagonal flow direction to create a unified movement pattern?\"
+  ]
+}"
+  }
+]

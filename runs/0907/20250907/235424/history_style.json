@@ -1,0 +1,229 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Impressionism blended with Ukiyo-e aesthetics: soft brushwork, muted natural colors, and delicate linework, enhanced by a hint of nostalgic atmosphere and ethereal mist.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical compositions with floating elements and negative space; emphasis on natural scenes (e.g., rivers, gardens, city edges); horizontal or diagonal horizons with gentle spatial recession.\",
+    \"COLOR_TONALITY\": \"Muted earth tones, soft greens, faded blues, and warm ochres; low saturation with subtle gradations; cool-to-warm tonal transitions in daylight scenes.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Light, visible brushstrokes with soft blending; delicate, flowing linework suggesting outlines or contours; slight imperfections to evoke spontaneity.\",
+    \"EXPRESSION_THEME\": \"Nostalgic, serene, and introspective; quiet moments of stillness in nature or urban peripheries; sense of fleeting beauty and transience.\",
+    \"HISTORICAL_CONTEXT\": \"19th-century French Impressionism combined with 18th–19th century Japanese Ukiyo-e woodblock prints, particularly from the Edo period.\"
+  },
+  \"MERGE_STRATEGY\": \"Balance Impressionist light and color handling with Ukiyo-e compositional clarity and flat planes; retain softness and impermanence from both traditions while merging their distinct visual rhythms.\",
+  \"PROMPT_SNIPPET\": \"A soft, nostalgic scene of a quiet riverbank at dawn, rendered with impressionistic brushwork, muted natural tones, and delicate linework inspired by Ukiyo-e, bathed in ethereal mist.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Sharp, defined outlines\",
+    \"High contrast or bold color blocking\",
+    \"Overly dramatic lighting or shadows\",
+    \"Geometric or rigid compositions\",
+    \"Modernist or abstract distortions\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of soft, blended brushstrokes\",
+    \"Muted, naturalistic color palette\",
+    \"Delicate, flowing linework\",
+    \"Atmospheric mist or haze\",
+    \"Asymmetrical, open composition with natural elements\"
+  ],
+  \"CONFIDENCE\": 0.96
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"In the composition of a riverbank scene at dawn, what specific range of horizontal or diagonal horizons (e.g., 30° to 45°) and how much negative space (e.g., 40% to 60%) should be allocated to the floating elements or natural elements like mist to maintain the loose, asymmetrical structure?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"This defines the spatial rhythm and balance between grounded elements and open atmosphere, critical to the style's natural and fluid feel.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 30°–45°) and percentage (e.g., 40%–60%)\",
+      \"DEPENDENCIES\": [\"horizontal or diagonal horizons\", \"negative space\", \"floating elements\"]
+    },
+    {
+      \"Q\": \"What specific color palette (e.g., muted greens, faded blues, warm ochres) should be used for the fox in a misty riverbank scene, and how should the saturation levels (e.g., 10% to 30%) and cool-to-warm transitions be applied to reflect dawn lighting?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Color choices directly influence the nostalgic, ethereal mood and must align with both Impressionist lighting and Ukiyo-e naturalism.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"color palette (e.g., tan, gray, soft green) and saturation range (e.g., 10%–30%)\",
+      \"DEPENDENCIES\": [\"muted natural tones\", \"cool-to-warm transitions\", \"dawn lighting\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the fox's fur and outline—specifically, what stroke thickness (e.g., 0.5mm to 1.5mm) and blending technique (e.g., soft feathering, light layering) should be used to maintain the delicate, flowing linework while avoiding sharp outlines or bold blocking?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This ensures the spontaneous, soft aesthetic is preserved without violating the negative constraints of sharp lines or high contrast.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"stroke thickness range and blending technique (e.g., soft feathering)\",
+      \"DEPENDENCIES\": [\"light, visible brushstrokes\", \"delicate linework\", \"no sharp outlines\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the fox’s form include sharp, defined outlines or geometric shapes?\",
+    \"Is the color palette dominated by high saturation or bold blocking (e.g., red, black, bright yellow)?\",
+    \"Does the brushwork show heavy impasto or rigid, structured strokes?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation above 30% THEN ask for justification and lighting source\",
+    \"IF BRUSHWORK_TECHNIQUE references thick strokes or hard lines THEN ask for contradiction with negative constraints\",
+    \"IF FORM_COMPOSITION specifies a rigid horizon or balanced symmetry THEN ask for deviation from asymmetrical structure\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"30°–45° diagonal horizon, 50%–70% negative space for floating elements and mist\",
+      \"RATIONALE\": \"Diagonal horizons enhance natural flow; ample negative space preserves the loose, open feel of the composition.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"tan, gray, soft green, and pale blue; saturation 10%–25%; cool-to-warm transition from left to right\",
+      \"RATIONALE\": \"Aligns with dawn lighting and muted natural tones, supporting the nostalgic, ethereal atmosphere.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"stroke thickness 0.5mm–1.0mm, soft feathering and light layering\",
+      \"RATIONALE\": \"Maintains delicate, flowing linework without sharp outlines or heavy blocking.\",
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical compositions with 30°–45° diagonal horizons and 50%–70% negative space allocated to floating elements and mist; horizontal or diagonal horizons with gentle spatial recession.\",
+    \"COLOR_TONALITY\": \"Tan, gray, soft green, and pale blue; saturation 10%–25%; cool-to-warm transitions from left to right in dawn lighting.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Light, visible brushstrokes with 0.5mm–1.0mm stroke thickness and soft feathering; delicate, flowing linework with no sharp outlines.\",
+    \"EXPRESSION_THEME\": \"Nostalgic, serene, and introspective; quiet moments of stillness in nature or urban peripheries; sense of fleeting beauty and transience.\",
+    \"HISTORICAL_CONTEXT\": \"19th-century French Impressionism combined with 18th–19th century Japanese Ukiyo-e woodblock prints, particularly from the Edo period.\",
+    \"SUBJECT_MATTER\": \"Riverbank scenes at dawn featuring a fox, paper lantern, and misty bridge in natural, asymmetrical settings.\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal horizons, open negative space, atmospheric mist, floating elements, asymmetry\",
+    \"LIGHTING_CAMERA\": \"Soft, diffused dawn light; medium to low angle camera to emphasize presence and atmosphere\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Sharp, defined outlines\",
+      \"High contrast or bold color blocking\",
+      \"Overly dramatic lighting or shadows\",
+      \"Geometric or rigid compositions\",
+      \"Modernist or abstract distortions\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"30°–45° diagonal horizon with gentle recession\",
+      \"50%–70% negative space for mist and floating elements\",
+      \"Tan, gray, soft green, pale blue palette with 10%–25% saturation\",
+      \"0.5mm–1.0mm soft feathered brushstrokes with no sharp lines\",
+      \"Cool-to-warm transition from left to right in dawn lighting\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A soft, nostalgic scene of a riverbank at dawn, featuring a fox, paper lantern, and misty bridge, rendered with impressionistic brushwork, muted natural tones (tan, gray, soft green, pale blue), 10%–25% saturation, 30°–45° diagonal horizon, and 50%–70% negative space for mist, using soft feathered brushstrokes with no sharp outlines.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific horizon range (30°–45°)\",
+    \"Defined negative space range (50%–70%)\",
+    \"Refined color palette to tan, gray, soft green, pale blue with 10%–25% saturation\",
+    \"Specified brushstroke thickness (0.5mm–1.0mm) and blending technique (soft feathering)\"
+  ],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"In the riverbank scene at dawn, what specific range of diagonal horizons (e.g., 30°–45°) and how much negative space (e.g., 50%–70%) should be allocated to the mist and floating elements to maintain the loose, asymmetrical structure and natural flow of the composition?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"This directly defines the spatial rhythm and balance between grounded elements and open atmosphere, critical to the style's natural and fluid feel.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 30°–45°) and percentage (e.g., 50%–70%)\",
+      \"DEPENDENCIES\": [\"diagonal horizon\", \"negative space\", \"floating elements\", \"asymmetrical structure\"]
+    },
+    {
+      \"Q\": \"What specific color palette (e.g., tan, gray, soft green, pale blue) and saturation range (e.g., 10%–25%) should be applied to the fox's fur and eyes to reflect dawn lighting and the nostalgic, ethereal mood, and how should the cool-to-warm transition be structured across the scene?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Color choices directly influence the nostalgic, ethereal mood and must align with both Impressionist lighting and Ukiyo-e naturalism.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"color palette (e.g., tan, gray, soft green) and saturation range (e.g., 10%–25%)\",
+      \"DEPENDENCIES\": [\"dawn lighting\", \"muted natural tones\", \"cool-to-warm transition\", \"fox form\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the paper lantern's frame and surface—specifically, what stroke thickness (e.g., 0.5mm–1.0mm) and blending technique (e.g., soft feathering) should be used to maintain delicate, flowing linework while avoiding sharp edges or patterned textures?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This ensures the spontaneous, soft aesthetic is preserved without violating the negative constraints of sharp lines or rigid forms.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"stroke thickness range and blending technique (e.g., soft feathering)\",
+      \"DEPENDENCIES\": [\"soft brushstrokes\", \"no sharp outlines\", \"paper lantern\", \"Ukiyo-e influence\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the composition include sharp, defined outlines or geometric shapes on any object?\",
+    \"Is the color palette dominated by high saturation (above 25%) or bold, unnatural colors?\",
+    \"Does the brushwork show heavy impasto, rigid strokes, or patterned textures like embossing?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation above 25% THEN ask for justification and lighting source\",
+    \"IF BRUSHWORK_TECHNIQUE references thick strokes or hard lines THEN ask for contradiction with negative constraints\",
+    \"IF FORM_COMPOSITION specifies a horizontal horizon or rigid symmetry THEN ask for deviation from asymmetrical structure\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"30°–45° diagonal horizon, 50%–70% negative space for mist and floating elements\",
+      \"RATIONALE\": \"Maintains natural flow and loose asymmetry, allowing atmospheric depth without structural rigidity.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"tan, gray, soft green, pale blue; saturation 10%–25%; cool-to-warm transition from left to right\",
+      \"RATIONALE\": \"Aligns with dawn lighting and nostalgic atmosphere, preserving muted naturalism and ethereal mood.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"stroke thickness 0.5mm–1.0mm, soft feathering and light layering\",
+      \"RATIONALE\": \"Ensures delicate, flowing linework on the lantern without sharp edges or patterned textures.\",
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical compositions with 30°–45° diagonal horizons and 50%–70% negative space allocated to mist and floating elements; gentle spatial recession and natural flow.\",
+    \"COLOR_TONALITY\": \"Tan, gray, soft green, and pale blue; saturation 10%–25%; cool-to-warm transition from left to right in dawn lighting.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Light, visible brushstrokes with 0.5mm–1.0mm stroke thickness and soft feathering; no sharp outlines or patterned textures.\",
+    \"EXPRESSION_THEME\": \"Nostalgic, serene, and introspective; quiet moments of stillness in nature or urban peripheries; sense of fleeting beauty and transience.\",
+    \"HISTORICAL_CONTEXT\": \"19th-century French Impressionism combined with 18th–19th century Japanese Ukiyo-e woodblock prints, particularly from the Edo period.\",
+    \"SUBJECT_MATTER\": \"Riverbank scene at dawn featuring a fox, paper lantern, and misty bridge in natural, asymmetrical settings.\",
+    \"COMPOSITIONAL_DEVICES\": \"30°–45° diagonal horizon, 50%–70% negative space, atmospheric mist, floating elements, asymmetry\",
+    \"LIGHTING_CAMERA\": \"Soft, diffused dawn light; medium to low angle camera to emphasize presence and atmosphere\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Sharp, defined outlines\",
+      \"High contrast or bold color blocking\",
+      \"Overly dramatic lighting or shadows\",
+      \"Geometric or rigid compositions\",
+      \"Modernist or abstract distortions\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"30°–45° diagonal horizon with gentle recession\",
+      \"50%–70% negative space for mist and floating elements\",
+      \"Tan, gray, soft green, pale blue palette with 10%–25% saturation\",
+      \"0.5mm–1.0mm soft feathered brushstrokes with no sharp lines or patterns\",
+      \"Cool-to-warm transition from left to right in dawn lighting\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A soft, nostalgic scene of a riverbank at dawn, featuring a fox, paper lantern, and misty bridge, rendered with impressionistic brushwork, muted natural tones (tan, gray, soft green, pale blue), 10%–25% saturation, 30°–45° diagonal horizon, and 50%–70% negative space for mist, using soft feathered brushstrokes with no sharp outlines or patterned textures.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Confirmed horizon range (30°–45°) and negative space (50%–70%) for mist and floating elements\",
+    \"Reinforced color palette and saturation (tan, gray, soft green, pale blue; 10%–25%) for fox and lantern\",
+    \"Specified brushwork for paper lantern: 0.5mm–1.0mm strokes with soft feathering, no sharp edges or patterns\"
+  ],
+  \"OPEN_QUESTIONS\": []
+}"
+  }
+]

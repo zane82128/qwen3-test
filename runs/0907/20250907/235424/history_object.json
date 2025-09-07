@@ -1,0 +1,374 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "fox, paper lantern, misty bridge",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are common symbolic animals in East Asian art, especially in Chinese and Japanese traditions, often appearing in misty, forested settings with a sense of quiet mystery and spiritual presence.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, expressive eyes\",
+        \"MATERIAL\": \"anthropomorphic form, often stylized or simplified\",
+        \"COLOR_PALETTE\": \"tan, gray, white, with black or red accents\",
+        \"SCALE_POSE\": \"medium scale, often mid-ground or slightly elevated, walking or standing still\",
+        \"TEXTURE\": \"smooth, soft lines, sometimes with subtle hatching or brushwork\",
+        \"LIGHTING\": \"soft, diffused light, often with chiaroscuro to emphasize depth\",
+        \"CONTEXT\": \"forest, mountain path, rural village, twilight\",
+        \"COMPOSITION_ROLE\": \"main subject or focal point\",
+        \"CAMERA\": \"medium shot, slightly low angle to emphasize presence\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, luck, or spiritual guidance in East Asian cultures\",
+      \"VARIANTS\": [\"red fox\", \"white fox\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are traditional decorative objects in East Asian art, especially in Chinese, Japanese, and Korean traditions, often used in festivals and to represent light, hope, and spiritual energy.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or oval frame, open canopy, often with a central light source\",
+        \"MATERIAL\": \"paper (typically rice paper), bamboo frame\",
+        \"COLOR_PALETTE\": \"soft whites, pale yellows, reds, and blues; often with patterned designs\",
+        \"SCALE_POSE\": \"small to medium scale, hanging or placed on structures\",
+        \"TEXTURE\": \"smooth paper surface, sometimes with subtle folds or creases\",
+        \"LIGHTING\": \"emits soft, warm light from within; often illuminated at night\",
+        \"CONTEXT\": \"festivals, bridges, temples, gardens, night scenes\",
+        \"COMPOSITION_ROLE\": \"foreground accent or atmospheric element\",
+        \"CAMERA\": \"low-angle or side view to capture light and form\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, peace, and spiritual illumination\",
+      \"VARIANTS\": [\"round lantern\", \"tall lantern\", \"lantern with carved patterns\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges are common in East Asian landscape painting and modern fantasy art, representing transition, mystery, and the boundary between worlds.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or straight structure, partially obscured by fog or mist\",
+        \"MATERIAL\": \"wood, stone, or metal, often stylized\",
+        \"COLOR_PALETTE\": \"grays, whites, soft blues, muted tones\",
+        \"SCALE_POSE\": \"medium to large scale, spanning a river or valley\",
+        \"TEXTURE\": \"smooth, soft edges, with soft blending into mist\",
+        \"LIGHTING\": \"diffused, flat lighting with low contrast, emphasizing atmosphere\",
+        \"CONTEXT\": \"rural landscape, mountainous terrain, twilight or dawn\",
+        \"COMPOSITION_ROLE\": \"background or central structural element\",
+        \"CAMERA\": \"wide-angle, slightly elevated view to capture depth and mist\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, journey, or spiritual passage\",
+      \"VARIANTS\": [\"wooden bridge\", \"stone bridge\", \"bridge over river or valley\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"In the riverbank scene at dawn, what specific texture characteristics (e.g., smooth, soft lines, subtle hatching) should be applied to the paper lantern's surface and frame to reflect both Ukiyo-e flatness and the soft brushwork of Impressionism?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture defines the tactile quality of traditional East Asian objects and must align with the style's soft, flowing brushwork and non-geometric realism.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"texture description (e.g., smooth, soft lines, subtle hatching)\",
+      \"DEPENDENCIES\": [\"paper lantern\", \"Ukiyo-e influence\", \"soft brushwork\"]
+    },
+    {
+      \"Q\": \"How should the misty bridge be composed in terms of scale and spatial relationship to the riverbank—specifically, what percentage of the composition should be occupied by the bridge and how much should be left as open negative space to preserve the flowing, asymmetrical structure?\",
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"WHY\": \"The bridge’s scale and placement directly affect the composition’s balance and the sense of spatial recession, which is central to the style’s natural rhythm.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"scale percentage (e.g., 20%–30%) and negative space percentage (e.g., 40%–60%)\",
+      \"DEPENDENCIES\": [\"misty bridge\", \"asymmetrical composition\", \"negative space\"]
+    },
+    {
+      \"Q\": \"What specific iconographic role does the fox play in relation to the paper lantern and misty bridge—e.g., is it a guide, a symbol of transition, or a quiet observer—and how should this be visually represented in the composition’s narrative flow?\",
+      \"DIMENSION\": \"ICONOGRAPHY\",
+      \"WHY\": \"The interplay of symbolic meanings between objects enhances the nostalgic, introspective theme and must reflect the cultural fusion of Impressionism and Ukiyo-e traditions.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"iconographic role (e.g., guide, observer) and narrative function (e.g., leading into the bridge)\",
+      \"DEPENDENCIES\": [\"fox\", \"paper lantern\", \"misty bridge\", \"narrative flow\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the paper lantern show sharp edges or geometric patterns that violate soft, flowing linework?\",
+    \"Is the bridge depicted as a rigid, dominant structure that breaks the asymmetrical flow?\",
+    \"Does the fox appear as a modern or abstract figure rather than a culturally grounded, symbolic presence?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF SCALE_POSE assigns bridge more than 30% of the composition THEN ask for justification in terms of spatial recession and negative space\",
+    \"IF ICONOGRAPHY assigns the fox a modern or abstract role THEN ask for alignment with East Asian symbolism\",
+    \"IF TEXTURE references heavy patterns or textures like embossing or grain THEN ask for contradiction with soft, blended brushwork\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"smooth, soft lines, subtle hatching with no sharp edges or patterned textures\",
+      \"RATIONALE\": \"Aligns with Ukiyo-e flatness and Impressionist softness, avoiding rigid patterns or embossing.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"ANSWER\": \"20%–30% of composition for the bridge, 40%–60% negative space for mist and floating elements\",
+      \"RATIONALE\": \"Maintains asymmetrical flow and gentle spatial recession, allowing the bridge to act as a subtle structural element without dominance.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"ICONOGRAPHY\",
+      \"ANSWER\": \"observer and quiet guide, leading the viewer’s eye toward the misty bridge with a sense of gentle transition\",
+      \"RATIONALE\": \"Reflects East Asian symbolic traditions of wisdom and journey, integrated into the narrative flow of the scene.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are symbolic of wisdom and quiet presence in East Asian traditions, naturally acting as a meditative observer in rural, misty settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, expressive eyes\",
+        \"MATERIAL\": \"anthropomorphic form, stylized and simplified\",
+        \"COLOR_PALETTE\": \"tan, gray, white, with black or red accents\",
+        \"SCALE_POSE\": \"medium scale, mid-ground, slightly elevated, walking or standing still\",
+        \"TEXTURE\": \"smooth, soft lines, subtle hatching\",
+        \"LIGHTING\": \"soft, diffused light with gentle chiaroscuro\",
+        \"CONTEXT\": \"forest, mountain path, rural village, twilight\",
+        \"COMPOSITION_ROLE\": \"main subject or focal point\",
+        \"CAMERA\": \"medium shot, slightly low angle to emphasize presence\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, luck, and spiritual guidance; acts as a quiet observer and guide in the narrative\",
+      \"VARIANTS\": [\"red fox\", \"white fox\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns represent spiritual light and hope in East Asian traditions, blending with Impressionist softness through minimal, flowing form.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or oval frame, open canopy, central light source\",
+        \"MATERIAL\": \"paper (rice paper), bamboo frame\",
+        \"COLOR_PALETTE\": \"soft whites, pale yellows, reds, and blues; patterned but minimal\",
+        \"SCALE_POSE\": \"small to medium scale, hanging or placed on low structure\",
+        \"TEXTURE\": \"smooth, soft lines, subtle hatching with no sharp edges or patterns\",
+        \"LIGHTING\": \"emits soft, warm light from within; illuminated at night\",
+        \"CONTEXT\": \"festivals, bridges, temples, gardens, night scenes\",
+        \"COMPOSITION_ROLE\": \"foreground accent or atmospheric element\",
+        \"CAMERA\": \"low-angle or side view to capture light and form\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, peace, and spiritual illumination; gently illuminates the path and atmosphere\",
+      \"VARIANTS\": [\"round lantern\", \"tall lantern\", \"lantern with carved patterns\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges symbolize transition and journey in East Asian landscape traditions, fitting the loose, flowing composition and atmospheric depth.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or straight structure, partially obscured by fog or mist\",
+        \"MATERIAL\": \"wood, stone, or metal, stylized\",
+        \"COLOR_PALETTE\": \"grays, whites, soft blues, muted tones\",
+        \"SCALE_POSE\": \"20%–30% of composition, mid-background, partially hidden in mist\",
+        \"TEXTURE\": \"smooth, soft edges, blending into mist with no sharp lines\",
+        \"LIGHTING\": \"diffused, flat lighting with low contrast, emphasizing atmosphere\",
+        \"CONTEXT\": \"rural landscape, mountainous terrain, twilight or dawn\",
+        \"COMPOSITION_ROLE\": \"background structural element with gentle recession\",
+        \"CAMERA\": \"wide-angle, slightly elevated view to capture depth and mist\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, journey, or spiritual passage; bridges the physical and ethereal worlds\",
+      \"VARIANTS\": [\"wooden bridge\", \"stone bridge\", \"bridge over river or valley\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Impressionism + Ukiyo-e\": [
+        \"fox\",
+        \"paper lantern\",
+        \"misty bridge\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"fox\",
+      \"paper lantern\",
+      \"misty bridge\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"sharp-edged paper lanterns with geometric patterns\",
+    \"rigid bridge structure occupying over 30% of composition\",
+    \"modern or abstract fox form\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A soft, nostalgic scene of a riverbank at dawn featuring a fox, paper lantern, and misty bridge, rendered with impressionistic brushwork, muted natural tones (tan, gray, soft green, pale blue), 10%–25% saturation, 30°–45° diagonal horizon, and 50%–70% negative space for mist, using soft feathered brushstrokes with no sharp outlines.\",
+    \"The paper lantern has smooth, soft lines and subtle hatching, no sharp edges or patterns, emitting soft warm light from within.\",
+    \"The misty bridge occupies 20%–30% of the composition, partially obscured by mist, blending softly into the atmosphere with no sharp lines.\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added texture specification for paper lantern: smooth, soft lines, subtle hatching\",
+    \"Updated scale pose for misty bridge to 20%–30% composition\",
+    \"Refined iconographic role of fox as quiet observer and guide leading into the bridge\",
+    \"Adjusted negative space for bridge and mist to 40%–60% to preserve asymmetry\"
+  ],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of color saturation (e.g., 10%–25%) and how should the cool-to-warm transition be applied across the entire riverbank scene—particularly in the fox's fur, paper lantern, and mist—to reflect dawn lighting and maintain the ethereal, nostalgic mood?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation and color transition directly define the mood and light quality, which must remain consistent with dawn and the style’s muted, naturalistic aesthetic.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"saturation range (e.g., 10%–25%) and transition direction (e.g., cool-left to warm-right)\",
+      \"DEPENDENCIES\": [\"dawn lighting\", \"muted natural tones\", \"fox\", \"paper lantern\", \"mist\"]
+    },
+    {
+      \"Q\": \"In the composition, what specific texture characteristics (e.g., soft lines, subtle hatching) should be applied to the fox's fur and tail to preserve the flowing, Ukiyo-e-inspired linework and avoid any sharp edges or patterned detailing?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"The texture of the fox's fur must align with the soft, flowing brushwork and avoid rigid or stylized patterns that contradict the style’s naturalism and softness.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"texture description (e.g., soft lines, subtle hatching)\",
+      \"DEPENDENCIES\": [\"fox\", \"Ukiyo-e influence\", \"soft brushwork\", \"no sharp edges\"]
+    },
+    {
+      \"Q\": \"How should the paper lantern’s scale and spatial placement relate to the fox and misty bridge—specifically, what percentage of the composition should it occupy, and how does its positioning contribute to the narrative flow of the scene from observer to transition?\",
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"WHY\": \"The lantern’s placement affects the visual rhythm and narrative progression, linking the observer to the bridge and misty journey in a culturally grounded, flowing sequence.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"scale percentage (e.g., 5%–15%) and narrative role (e.g., mid-foreground, leading to bridge)\",
+      \"DEPENDENCIES\": [\"paper lantern\", \"fox\", \"misty bridge\", \"narrative flow\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the fox’s fur show sharp lines, patterned hatching, or modern textures like stripes or dots?\",
+    \"Is the paper lantern too large or positioned centrally, breaking the asymmetrical flow?\",
+    \"Is the color transition abrupt or dominated by high saturation or unnatural tones?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF SCALE_POSE assigns lantern over 15% of composition THEN ask for justification in terms of narrative flow and negative space\",
+    \"IF TEXTURE references patterned hatching or embossing THEN ask for contradiction with soft, flowing linework\",
+    \"IF COLOR_TONALITY exceeds 25% saturation THEN ask for lighting source and mood justification\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"saturation 10%–25%; cool-to-warm transition from left to right, with soft greens and grays on the left fading into pale blues and warm tans on the right\",
+      \"RATIONALE\": \"Maintains the dawn lighting mood and muted naturalism, aligning with Impressionist light and Ukiyo-e tonal harmony.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"smooth, soft lines, subtle hatching with no sharp edges or patterned detailing\",
+      \"RATIONALE\": \"Preserves flowing, Ukiyo-e-inspired linework and avoids rigid or stylized textures that contradict softness and naturalism.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"ANSWER\": \"5%–15% of composition, positioned mid-foreground, slightly offset to the left, leading the viewer’s eye toward the misty bridge\",
+      \"RATIONALE\": \"Balances narrative flow and asymmetry, positioning the lantern as a quiet guide from observer to transition without dominating the scene.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are symbolic of wisdom and quiet presence in East Asian traditions, naturally acting as a meditative observer in rural, misty settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, expressive eyes\",
+        \"MATERIAL\": \"anthropomorphic form, stylized and simplified\",
+        \"COLOR_PALETTE\": \"tan, gray, white, with black or red accents\",
+        \"SCALE_POSE\": \"medium scale, mid-ground, slightly elevated, walking or standing still\",
+        \"TEXTURE\": \"smooth, soft lines, subtle hatching with no sharp edges or patterned detailing\",
+        \"LIGHTING\": \"soft, diffused light with gentle chiaroscuro\",
+        \"CONTEXT\": \"forest, mountain path, rural village, twilight\",
+        \"COMPOSITION_ROLE\": \"main subject or focal point\",
+        \"CAMERA\": \"medium shot, slightly low angle to emphasize presence\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, luck, and spiritual guidance; acts as a quiet observer and guide in the narrative\",
+      \"VARIANTS\": [\"red fox\", \"white fox\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns represent spiritual light and hope in East Asian traditions, blending with Impressionist softness through minimal, flowing form.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or oval frame, open canopy, central light source\",
+        \"MATERIAL\": \"paper (rice paper), bamboo frame\",
+        \"COLOR_PALETTE\": \"soft whites, pale yellows, reds, and blues; patterned but minimal\",
+        \"SCALE_POSE\": \"5%–15% of composition, mid-foreground, slightly offset to the left\",
+        \"TEXTURE\": \"smooth, soft lines, subtle hatching with no sharp edges or patterns\",
+        \"LIGHTING\": \"emits soft, warm light from within; illuminated at night\",
+        \"CONTEXT\": \"festivals, bridges, temples, gardens, night scenes\",
+        \"COMPOSITION_ROLE\": \"foreground accent, narrative guide to the bridge\",
+        \"CAMERA\": \"low-angle or side view to capture light and form\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, peace, and spiritual illumination; gently illuminates the path and atmosphere\",
+      \"VARIANTS\": [\"round lantern\", \"tall lantern\", \"lantern with carved patterns\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges symbolize transition and journey in East Asian landscape traditions, fitting the loose, flowing composition and atmospheric depth.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or straight structure, partially obscured by fog or mist\",
+        \"MATERIAL\": \"wood, stone, or metal, stylized\",
+        \"COLOR_PALETTE\": \"grays, whites, soft blues, muted tones\",
+        \"SCALE_POSE\": \"20%–30% of composition, mid-background, partially hidden in mist\",
+        \"TEXTURE\": \"smooth, soft edges, blending into mist with no sharp lines\",
+        \"LIGHTING\": \"diffused, flat lighting with low contrast, emphasizing atmosphere\",
+        \"CONTEXT\": \"rural landscape, mountainous terrain, twilight or dawn\",
+        \"COMPOSITION_ROLE\": \"background structural element with gentle recession\",
+        \"CAMERA\": \"wide-angle, slightly elevated view to capture depth and mist\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, journey, or spiritual passage; bridges the physical and ethereal worlds\",
+      \"VARIANTS\": [\"wooden bridge\", \"stone bridge\", \"bridge over river or valley\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Impressionism + Ukiyo-e\": [
+        \"fox\",
+        \"paper lantern\",
+        \"misty bridge\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"fox\",
+      \"paper lantern\",
+      \"misty bridge\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"sharp-edged paper lanterns with geometric patterns\",
+    \"rigid bridge structure occupying over 30% of composition\",
+    \"modern or abstract fox form\",
+    \"paper lantern over 15% of composition or centrally placed\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A soft, nostalgic scene of a riverbank at dawn, featuring a fox, paper lantern, and misty bridge, rendered with impressionistic brushwork, muted natural tones (tan, gray, soft green, pale blue), 10%–25% saturation, 30°–45° diagonal horizon, and 50%–70% negative space for mist, using soft feathered brushstrokes with no sharp outlines or patterned textures.\",
+    \"The fox has smooth, soft lines and subtle hatching, no sharp edges or patterned detailing, with tan and gray fur and expressive eyes.\",
+    \"The paper lantern occupies 5%–15% of the composition, placed mid-foreground slightly to the left, gently leading the viewer’s eye toward the misty bridge.\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Refined paper lantern scale to 5%–15% for narrative flow and asymmetry\",
+    \"Clarified cool-to-warm transition from left to right in color palette\",
+    \"Added narrative role for lantern as a guide from observer to bridge\",
+    \"Strengthened texture description to exclude any patterned or embossed elements\"
+  ],
+  \"OPEN_QUESTIONS\": []
+}"
+  }
+]

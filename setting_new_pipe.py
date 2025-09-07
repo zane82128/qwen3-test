@@ -317,7 +317,9 @@ OUTPUT RULES
 SELF-CHECK (must pass before output)
 - If any noun can take “a/an” (e.g., a dragon/a child), remove it or generalize.
 
-End the line with END_OF_PROMPT.
+Write one clear, meaningful sentence of at most 60 words. 
+Use simple, everyday words; avoid complex terms or jargon. 
+End the sentence with the exact token END_OF_PROMPT and nothing after it.
 """
 
 SYS_MSG_FINAL_OBJECT = """
@@ -346,7 +348,9 @@ OUTPUT RULES
 SELF-CHECK (must pass before output)
 - Remove any clause that applies to the whole image rather than to a named object.
 
-End the line with END_OF_PROMPT.
+Write one clear, meaningful sentence of at most 60 words. 
+Use simple, everyday words; avoid complex terms or jargon. 
+End the sentence with the exact token END_OF_PROMPT and nothing after it.
 """
 
 
