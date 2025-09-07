@@ -24,65 +24,12 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# MODEL_NAME = "Qwen/Qwen3-4B-Thinking-2507"
-MODEL_NAME = "Qwen/Qwen3-4B-Instruct-2507"
-
-# system message that is used in the first round
-SYS_MSG_STYLE ="""
-You are an art style analysis assistant. 
-Your task is to take a simple user prompt describing an art style (e.g., "van Gogh style") and expand it into a precise and detailed description of the style, 
-if there are multiple style, you need to propose a method that can trying to merge two styles, and conclude with a final prompt. 
-Always structure your analysis according to the following criteria: 
-
-1. **Form & Composition** – Describe the typical structure, shapes, spatial arrangement, and overall organization of artworks in this style. 
-2. **Color & Tonality** – Explain the common color palette, tonal range, and use of contrast or harmony. 
-3. **Brushwork & Technique** – Identify characteristic brushstrokes, textures, and technical methods used in this style. 
-4. **Expression & Theme** – Describe the mood, atmosphere, or emotional quality conveyed through the artworks. 
-5. **Historical & Cultural Context** – Provide the cultural background, historical period, and artistic influences that define this style. 
-
-Your output should always be clear, structured, and specific, even if the user prompt is vague. 
-If the style has multiple phases (e.g., early vs. late period), highlight key distinctions. 
-Do not invent unrelated attributes—base your elaboration on widely recognized features of the style. 
-"""
-
-SYS_MSG_OBJECT = """
-Provide objects that related to the user prompt.
-"""
-
-SYS_MSG_STY_ASK = """
-請用繁體中文回答。請根據history中，style agent的回答提出對應的問題。
-"""
-
-SYS_MSG_OBJ_ASL = """
-請用繁體中文回答。請根據history中，object agent的回答提出對應的問題。
-"""
-
-# message that is used from second rounds
-USER_MSG_STY_ROUND="""
-You need to study the message history log, which includes the few rounds of your answer and the question from ask agent.
-You need to take the initial prompt which is from the user into consideratrion, 
-and find out is there anything about style is that you missed before, 
-then answer the question from the asking agent last time.
-"""
-
-USER_MSG_OBJ_ROUND="""
-You need to study the message history log, which includes the few rounds of your answer and the question from ask agent.
-You need to take the initial prompt which is from the user into consideratrion, 
-and find out is there anything about style is that you missed before, 
-then answer the question from the asking agent last time.
-"""
-
-USER_MSG_STY_ASK_ROUND="""
-your job is to ask questions about style related to the user prompt,
-based on the message history log, you need to find out what details is missed and ask about style agent.
-the details should be as many as possible.
-"""
-
-USER_MSG_OBJ_ASK_ROUND="""
-your job is to ask questions about objects related to the user prompt,
-based on the message history log, you need to find out what details is missed and ask about object agent.
-the details should be as many as possible.
-"""
+from setting import (
+    MODEL_NAME,
+    SYS_MSG_STYLE, SYS_MSG_OBJECT, SYS_MSG_STY_ASK, SYS_MSG_OBJ_ASK,
+    USER_MSG_STY_ROUND, USER_MSG_OBJ_ROUND, USER_MSG_STY_ASK_ROUND, USER_MSG_OBJ_ASK_ROUND,
+    SYS_MSG_FINAL_STYLE, SYS_MSG_FINAL_OBJECT
+)
 
 # generator
 def build_model_and_tokenizer(model_name: str):
@@ -139,7 +86,7 @@ def dump_json(obj, path: Path):
 
 
 def fmt_hist(history: list) -> str:
-    # 依序展開：每輪 STYLE / SUM
+    # 依序展開：每輪 STYLE / OBJECT / RESPONSE
     lines = []
     for h in history:
         if(h.get('STYLE_RESPONSE')):
@@ -165,7 +112,7 @@ def fmt_hist(history: list) -> str:
 #     也會寫入 round_{r}/ 檔案。
 #     """
 #     name = name.isupper() # name should be upper type
-#     hist_path = outdir / "history.json"
+#     hist_path_all = outdir / "history.json"
 
 #     # first round
 #     print("-----Round 1 started.-----")
@@ -185,7 +132,11 @@ def run_rounds(tok, model,
                init_prompt:str, 
                rounds: int, outdir: Path):
     history = []
-    hist_path = outdir / "history.json"
+    history_style = []
+    history_object = []
+    hist_path_all = outdir / "history.json"
+    hist_path_style = outdir / "history_style.json"
+    hist_path_object = outdir / "history_object.json"
 
     # first round
     print("-----Round 1 started.-----")
@@ -201,7 +152,9 @@ def run_rounds(tok, model,
     response_ask_sty_this_round = run_agent(tok, model, SYS_MSG_STY_ASK, prompt_ask_sty1)  
 
     history.append({"ROUND": 1, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
-    dump_json(history, hist_path)
+    history_style.append({"ROUND": 1, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
+    dump_json(history, hist_path_all)
+    dump_json(history_style, hist_path_style)
     
     print("-----Style agent finished.-----")
 
@@ -213,10 +166,12 @@ def run_rounds(tok, model,
     hist_txt1 = fmt_hist([{"ROUND": 1, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": ""}])
     
     prompt_ask_obj1 = f"【HISTORY】\n{hist_txt1}\n\n【USER PROMPT (ASK)】\n{response_ask_obj}"
-    response_ask_obj_this_round = run_agent(tok, model, SYS_MSG_STY_ASK, prompt_ask_obj1)  
+    response_ask_obj_this_round = run_agent(tok, model, SYS_MSG_OBJ_ASK, prompt_ask_obj1)  
 
     history.append({"ROUND": 1, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
-    dump_json(history, hist_path)
+    history_object.append({"ROUND": 1, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
+    dump_json(history, hist_path_all)
+    dump_json(history_object, hist_path_object)
     
     print("-----Object agent finished.-----")
 
@@ -246,7 +201,9 @@ def run_rounds(tok, model,
 
         # 累積並即時寫檔
         history.append({"ROUND": r, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
-        dump_json(history, hist_path)
+        history_style.append({"ROUND": r, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
+        dump_json(history, hist_path_all)
+        dump_json(history_style, hist_path_style)
 
         print("-----Style agent finished.-----")
 
@@ -271,11 +228,32 @@ def run_rounds(tok, model,
 
         # 累積並即時寫檔
         history.append({"ROUND": r, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
-        dump_json(history, hist_path)
+        history_object.append({"ROUND": r, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
+        dump_json(history, hist_path_all)
+        dump_json(history_object, hist_path_object)
 
         print("-----Object agent finished.-----")
 
         print(f"-----Round {r} finished.-----")
+
+    hist_txt_style = fmt_hist(history_style)  
+    user_prompt_style = (
+        f"USER INITIAL PROMPT: {init_prompt}\n"
+        f"HISTORY:\n{hist_txt_style}\n\n"
+        f"Study HISTORY and produce one precise English prompt that clearly and specifically describes the painting style implied by the USER PROMPT."
+    )
+    final_prompt_style = run_agent(tok, model, SYS_MSG_FINAL_STYLE, user_prompt_style)
+    (outdir / f"final_style_prompt.json").write_text(final_prompt_style, encoding="utf-8")
+
+    hist_txt_object = fmt_hist(history_object)  
+    user_prompt_object = (
+        f"USER INITIAL PROMPT: {init_prompt}\n"
+        f"HISTORY:\n{hist_txt_object}\n\n"
+        f"Study HISTORY and produce one precise English prompt line that clearly specifies the key objects/motifs characteristic of the style(s), adding only essential cues (form, color palette, lighting, composition role) when critical."
+    )
+    final_prompt_object = run_agent(tok, model, SYS_MSG_FINAL_OBJECT, user_prompt_object)
+    (outdir / f"final_object_prompt.json").write_text(final_prompt_object, encoding="utf-8")
+
 
     return history
 
@@ -283,10 +261,7 @@ def run_rounds(tok, model,
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--prompt", type=str, required=True, help="user prompt K 給 agent A")
-    # parser.add_argument("--L", type=str, required=True, help="user prompt L 給 agent B（會與 X 一起提供）")
     parser.add_argument("--outdir", type=str, default="logs_run", help="輸出資料夾")
-    # parser.add_argument("--spa", type=str, default="請用精簡、具體的中文回答。", help="agent A 的 system prompt")
-    # parser.add_argument("--spb", type=str, default="請用條列與結論給出可執行建議。", help="agent B 的 system prompt")
     parser.add_argument("--rounds", type=int, default="3", help="debating rounds")
     args = parser.parse_args()
 
@@ -301,7 +276,7 @@ def main():
         tok, model,
         sys_sty=SYS_MSG_STYLE,
         sys_ask_sty=SYS_MSG_STY_ASK,
-        sys_ask_obj=SYS_MSG_OBJ_ASL,
+        sys_ask_obj=SYS_MSG_OBJ_ASK,
         init_prompt=args.prompt,
         response_sty=USER_MSG_STY_ROUND,
         response_ask_sty=USER_MSG_STY_ASK_ROUND,
@@ -310,54 +285,6 @@ def main():
         rounds=args.rounds,
         outdir=outdir
     )
-
-    # dump_json({
-    #     "t": f"{date_str}-{time_str}",
-    #     "model": MODEL_NAME,
-    #     "sys_sty": SYS_MSG_STYLE,
-    #     "sys_ask_sty": SYS_MSG_STY_ASK,
-    #     "response_sty": args.p,
-    #     "response_ask_sty": SYS_MSG_STYLE,
-    #     "history": history
-    # }, outdir / "combined_log.json")
-
-    # 1. user prompt -> style agent
-    # resp_sty = run_agent(tok, model, SYS_MSG_STYLE, args.p)
-
-    # # 2. save response
-    # dump_json(
-    #     {"TIME": ts, "AGENT": "style", "INPUT": args.p, "RESPONSE": resp_sty},
-    #     outdir / "style_agent_response.json"
-    # )
-    
-    # # 3. summarize agent
-    # prompt_sum = "請總結上述對話重點。"
-    # combined_prompt_sum = f"【RESPONSE FROM STYLE AGENT】\n{resp_sty}\n\n【USER PROMPT】\n{prompt_sum}"
-    # resp_sum = run_agent(tok, model, SYS_MSG_STY_ASK, combined_prompt_sum)
-
-    # # 4. save response
-    # dump_json(
-    #     {"TIME": ts, "AGENT": "summarize", "INPUT": combined_prompt_sum, "RESPONSE": resp_sum},
-    #     outdir / "summarize_agent_response.json"
-    # )
-
-    # 5. summary
-    # summary = {
-    #     "TIME": ts,
-    #     "MODEL": MODEL_NAME,
-    #     "STYLE AGENT": {
-    #         "SYSTEM PROMPT": SYS_MSG_STYLE,
-    #         "INPUT": args.p,
-    #         "RESPONSE": resp_sty
-    #     },
-    #     "SUMMARIZE AGENT": {
-    #         "SYSTEM PROMPT": SYS_MSG_STY_ASK,
-    #         "INPUT": prompt_sum,
-    #         "RESPONSE": resp_sum
-    #     }
-    # }
-    # dump_json(summary, outdir / "combined_log.json")
-
 
     print("Done.")
 

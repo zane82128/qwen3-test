@@ -1,0 +1,880 @@
+[
+  {
+    "ROUND": 1,
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, dynamic compositions with exaggerated, expressive forms; organic, fluid shapes inspired by nature and movement; non-logical spatial arrangements emphasizing emotional impact over realism.\",
+    \"COLOR_TONALITY\": \"Vivid, unnatural color palettes with high saturation; bold, contrasting hues (e.g., electric blues, burnt oranges, lime greens) used to convey emotion; non-naturalistic color application with intentional chromatic juxtapositions.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible texture; layered impasto applications; spontaneous and energetic handling of paint to convey movement and emotion.\",
+    \"EXPRESSION_THEME\": \"Emotional intensity, childlike wonder, and a sense of magical realism; themes of nature, fantasy, and inner emotional states; harmony between the natural and the surreal.\",
+    \"HISTORICAL_CONTEXT\": \"Fauvism (early 20th century, post-impressionist rebellion against naturalism); Miyazaki Hayao's anime style (contemporary Japanese animation, rooted in folklore, environmentalism, and emotional storytelling).\"
+  },
+  \"MERGE_STRATEGY\": \"Prioritize emotional expressiveness and vivid color over formal structure; blend Fauvism's bold, non-naturalistic color with Miyazaki's organic, narrative-driven forms and gentle emotional tone. Resolve tension by softening Fauvism's aggressive contrasts with Miyazaki's naturalistic flow and emotional subtlety.\",
+  \"PROMPT_SNIPPET\": \"A vibrant, emotionally resonant scene with exaggerated natural forms, bold and harmonious yet expressive colors, and soft, flowing brushwork that blends wild Fauvist energy with Miyazaki-style wonder and narrative warmth.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Avoid strict realism or naturalistic color accuracy\",
+    \"Avoid mechanical, rigid forms or cartoonish exaggeration without emotional grounding\",
+    \"Avoid overly chaotic or disjointed compositions without narrative or emotional coherence\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of vivid, non-naturalistic color with emotional tone\",
+    \"Organic, flowing forms with narrative or emotional context\",
+    \"Balanced fusion of Fauvist color intensity and Miyazaki's emotional subtlety\",
+    \"No literal or mechanical representation of objects\"
+  ],
+  \"CONFIDENCE\": 0.92
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 80–120%) is intended for the bold, non-naturalistic colors in the painting?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation levels determine how vivid and emotionally charged the color palette feels, directly impacting the Fauvist expression.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80–120%)\",
+      \"DEPENDENCIES\": [\"vivid, unnatural color palettes\", \"bold, contrasting hues\"]
+    },
+    {
+      \"Q\": \"How are the organic forms defined in terms of spatial relationships—specifically, what percentage of the composition is left as negative space to allow for emotional flow and narrative breathing?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Negative space contributes to emotional impact and narrative coherence, which are central to the style’s balance between Fauvism and Miyazaki’s warmth.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 30–50%)\",
+      \"DEPENDENCIES\": [\"non-logical spatial arrangements\", \"emotional impact over realism\"]
+    },
+    {
+      \"Q\": \"What specific brushwork characteristics (e.g., stroke direction, layering method) are used to achieve the soft, flowing texture that blends Fauvist energy with Miyazaki’s emotional subtlety?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"The brushwork directly mediates the tension between energetic expression and gentle emotional tone, a key fusion point in the style.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description with technical detail (e.g., 'wet-on-wet layering with horizontal strokes')\",
+      \"DEPENDENCIES\": [\"expressive, gestural brushstrokes\", \"soft, flowing brushwork\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the style avoid using literal representations of objects or mechanical forms, even in exaggerated forms?\",
+    \"Is the emotional tone consistently warm and wonder-filled, or does it include aggressive or dark elements that contradict Miyazaki’s narrative warmth?\",
+    \"Are the color contrasts sharp and jarring, or are they harmonious despite being vivid?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions specific palettes (e.g., 'electric blues', 'lime greens') THEN ask for exact RGB or HEX values\",
+    \"IF BRUSHWORK_TECHNIQUE mentions impasto THEN ask for paint thickness ranges (e.g., 0.5–2mm)\",
+    \"IF FORM_COMPOSITION references negative space THEN ask for how it supports narrative flow\"
+  ]
+}"
+  },
+  {
+    "ROUND": 1,
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"Wildflower\",
+      \"WHY\": \"Fauvism emphasizes bold, non-naturalistic color; Miyazaki often depicts nature with vibrant, expressive flora. Wildflowers fit both styles through emotional coloration and organic forms.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, irregular, flowing\",
+        \"MATERIAL\": \"imaginary, conceptual\",
+        \"COLOR_PALETTE\": \"high saturation, contrasting reds, yellows, purples\",
+        \"SCALE_POSE\": \"mid-ground, softly arranged\",
+        \"TEXTURE\": \"soft brushwork, expressive impasto\",
+        \"LIGHTING\": \"flat, non-photorealistic, emotionally charged\",
+        \"CONTEXT\": \"natural landscape, forest edge\",
+        \"COMPOSITION_ROLE\": \"foreground accent\",
+        \"CAMERA\": \"wide, slightly elevated, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"purity, innocence, emotional connection to nature\",
+      \"VARIANTS\": [\"dandelion\", \"sunflower\", \"orchid\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"Floating Island\",
+      \"WHY\": \"Miyazaki frequently features surreal, floating landmasses; Fauvism's expressive color can enhance their dreamlike quality through vibrant, non-representational hues.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rounded, abstract, slightly irregular\",
+        \"MATERIAL\": \"imaginary, ethereal\",
+        \"COLOR_PALETTE\": \"vibrant, saturated, often complementary (e.g., turquoise with orange)\",
+        \"SCALE_POSE\": \"mid-background, slightly elevated\",
+        \"TEXTURE\": \"smooth, painterly, soft edges\",
+        \"LIGHTING\": \"diffused, flat, with emotional glow\",
+        \"CONTEXT\": \"sky, mountain range, fantasy landscape\",
+        \"COMPOSITION_ROLE\": \"main subject or visual anchor\",
+        \"CAMERA\": \"bird's-eye view, wide angle\"
+      },
+      \"ICONOGRAPHY\": \"isolation, wonder, harmony with nature\",
+      \"VARIANTS\": [\"floating village\", \"cloud island\", \"mountain island\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Child's Expression\",
+      \"WHY\": \"Miyazaki emphasizes emotional authenticity in children; Fauvism uses bold color to convey emotional states, making child expressions visually expressive and emotionally resonant.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, rounded, simplified facial features\",
+        \"MATERIAL\": \"conceptual, expressive\",
+        \"COLOR_PALETTE\": \"high contrast, warm tones (red, yellow, blue)\",
+        \"SCALE_POSE\": \"centered, close-up, intimate\",
+        \"TEXTURE\": \"smooth, expressive, slightly stylized\",
+        \"LIGHTING\": \"soft, flat, emotionally warm\",
+        \"CONTEXT\": \"natural setting, home, forest\",
+        \"COMPOSITION_ROLE\": \"main subject\",
+        \"CAMERA\": \"close-up, slightly tilted\"
+      },
+      \"ICONOGRAPHY\": \"innocence, emotional truth, hope\",
+      \"VARIANTS\": [\"smiling child\", \"wandering child\", \"dreaming child\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How does Fauvism's color use specifically interact with Miyazaki's narrative themes in visual storytelling?\",
+    \"Are there specific recurring objects in Miyazaki films that are traditionally rendered with Fauvist color palettes?\",
+    \"Is there a known example of Fauvism influencing Miyazaki’s artistic process directly?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color combinations in Fauvist palettes are most frequently paired with the floating island's turquoise and orange tones in Miyazaki's compositions?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Identifies recurring, emotionally charged color pairings that reinforce the dreamlike and expressive quality of floating islands.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3-5 specific complementary or contrasting color pairs (e.g., 'magenta and teal', 'lime and violet')\",
+      \"DEPENDENCIES\": [\"floating island\", \"color palette\", \"Fauvism\"]
+    },
+    {
+      \"Q\": \"How does the scale and pose of wildflowers differ when rendered in close-up versus mid-ground compositions, and what visual effects does this create in terms of emotional emphasis?\",
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"WHY\": \"Clarifies how spatial positioning affects emotional engagement and narrative focus in nature-based scenes.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"comparison table: [close-up: scale, pose, emotional effect] vs [mid-ground: scale, pose, emotional effect]\",
+      \"DEPENDENCIES\": [\"wildflower\", \"scale_pose\", \"emotional connection\"]
+    },
+    {
+      \"Q\": \"Are there any specific textures or brushwork techniques in Fauvist renderings that are consistently applied to child expressions to convey emotional authenticity?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Links texture to emotional expression, helping identify technical markers of Fauvist influence on child-centric narratives.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of 2-3 texture terms (e.g., 'impasto', 'soft blending', 'dramatic stroke') with associated emotional impact\",
+      \"DEPENDENCIES\": [\"child's expression\", \"texture\", \"emotional truth\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are there any objects in Miyazaki films that use photorealistic color palettes or naturalistic lighting that contradict Fauvist principles?\",
+    \"Do any of the listed objects (e.g., floating island, wildflower) appear in non-Fauvist or non-Miyazaki contexts without expressive color use?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes 'magenta and teal' OR 'lime and violet' THEN ask for specific examples of films where these palettes appear in child or nature scenes\",
+    \"IF SCALE_POSE is 'close-up' AND CONTEXT is 'home' THEN ask for 2 specific emotional reactions tied to that composition\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": [\"magenta and teal\", \"lime and violet\", \"electric blue and burnt orange\", \"sunrise pink and forest green\", \"crimson and sky blue\"],
+      \"RATIONALE\": \"These combinations align with Fauvist bold contrasts and Miyazaki's dreamlike, emotionally resonant color pairings in nature and fantasy settings.\",
+      \"CONFIDENCE\": 0.91
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"ANSWER\": {
+        \"close-up\": {
+          \"scale\": \"life-size, intimate\",
+          \"pose\": \"centered, slightly tilted, eyes focused on viewer\",
+          \"emotional effect\": \"feels personal, warm, and emotionally direct, evoking innocence and connection\"
+        },
+        \"mid-ground\": {
+          \"scale\": \"small to medium, softly arranged\",
+          \"pose\": \"spreading, flowing, integrated into natural landscape\",
+          \"emotional effect\": \"feels part of a larger emotional ecosystem, reinforcing harmony with nature\"
+        }
+      },
+      \"RATIONALE\": \"Close-up emphasizes emotional intimacy; mid-ground integrates the wildflower into narrative flow and environmental balance.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": [\"soft blending\", \"expressive impasto\", \"dramatic stroke with gentle fade\"],
+      \"RATIONALE\": \"These textures convey emotional authenticity in child expressions through visible, warm, and organic brushwork.\",
+      \"CONFIDENCE\": 0.89
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Organic, fluid forms with non-logical spatial arrangements; 40–50% negative space to allow emotional flow and narrative breathing; forms arranged to emphasize emotional connection and narrative movement.\",
+    \"COLOR_TONALITY\": \"High saturation (100–130%) with vivid, non-naturalistic palettes; dominant pairs: magenta and teal, lime and violet, electric blue and burnt orange; harmonious yet expressive contrasts avoiding harsh jarring clashes.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Wet-on-wet layering with horizontal and flowing strokes; soft blending and expressive impasto (0.8–1.5mm thickness) to create gentle texture and emotional warmth.\",
+    \"EXPRESSION_THEME\": \"Emotional warmth, childlike wonder, and harmony between nature and the surreal; themes of innocence, emotional truth, and quiet wonder in natural settings.\",
+    \"HISTORICAL_CONTEXT\": \"Fauvism (early 20th century) fused with Miyazaki Hayao's anime style (contemporary Japanese animation), emphasizing emotional storytelling and environmental harmony.\",
+    \"SUBJECT_MATTER\": \"Wildflowers, floating islands, and child expressions in natural or fantasy landscapes.\",
+    \"COMPOSITIONAL_DEVICES\": \"Negative space (40–50%), flowing spatial arrangements, emotional focal points (e.g., child close-up), color harmony with expressive contrast.\",
+    \"LIGHTING_CAMERA\": \"Flat, emotionally charged lighting; wide or bird's-eye view for landscapes, close-up with slight tilt for child expressions.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid strict realism or naturalistic color accuracy\",
+      \"Avoid mechanical, rigid forms or cartoonish exaggeration without emotional grounding\",
+      \"Avoid overly chaotic or disjointed compositions without narrative or emotional coherence\",
+      \"Avoid photorealistic lighting or naturalistic color palettes\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of high-saturation (100–130%) vivid, non-naturalistic color with harmonious contrast\",
+      \"Organic, flowing forms with 40–50% negative space supporting emotional flow\",
+      \"Use of wet-on-wet layering and soft blending to achieve emotional warmth\",
+      \"Emotional authenticity in child expressions through expressive texture and warm tone\",
+      \"No literal or mechanical representation of objects\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A vibrant, emotionally warm scene with flowing organic forms, high-saturation color pairs like magenta and teal or lime and violet, soft wet-on-wet brushwork, and 40–50% negative space to allow emotional breathing, centered on a child's expression or wildflower in a floating island landscape.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific color pairs (magenta and teal, lime and violet) with saturation range (100–130%)\",
+    \"Defined negative space as 40–50% for emotional flow\",
+    \"Specified brushwork as wet-on-wet with 0.8–1.5mm impasto thickness\",
+    \"Updated expression theme to emphasize emotional warmth and innocence\",
+    \"Added subject matter, compositional devices, and lighting/camera details\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there documented examples of Fauvist color palettes used in Miyazaki films for child expressions or wildflowers?\",
+    \"How does the emotional tone shift when transitioning from a close-up child expression to a mid-ground wildflower in the landscape?\",
+    \"Is there a known technical method in Fauvism that translates to Miyazaki’s soft blending in child facial rendering?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific emotional shift occurs in the viewer when moving from a close-up child expression to a mid-ground wildflower in the floating island landscape, and how is this shift supported by composition and color?\",
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"WHY\": \"The transition between intimate emotional focus and environmental harmony is central to the style's narrative depth and emotional arc.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"description with emotional progression (e.g., 'from personal warmth to environmental belonging') and supporting elements (e.g., color, composition, negative space)\",
+      \"DEPENDENCIES\": [\"close-up child expression\", \"mid-ground wildflower\", \"emotional warmth\", \"floating island landscape\"]
+    },
+    {
+      \"Q\": \"How does the wet-on-wet layering technique specifically contribute to the emotional warmth in child expressions, and what are the exact paint layering sequences (e.g., base layer → highlight layer) used?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"The layering sequence directly determines how emotional authenticity and softness are visually achieved in facial rendering.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"stepwise paint layering sequence (e.g., 'base layer of soft blending → mid-layer of expressive impasto → final fade with gentle stroke')\",
+      \"DEPENDENCIES\": [\"wet-on-wet layering\", \"soft blending\", \"emotional authenticity\", \"child expression\"]
+    },
+    {
+      \"Q\": \"In what specific narrative or compositional context does the 40–50% negative space serve as a bridge between emotional intimacy and environmental harmony, and how does it change when the subject is a floating island versus a child?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Negative space is a key compositional device that mediates emotional flow and narrative structure, and its function varies by subject.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"comparison: [child scene: context, role of negative space] vs [floating island: context, role of negative space]\",
+      \"DEPENDENCIES\": [\"40–50% negative space\", \"emotional flow\", \"narrative coherence\", \"floating island\", \"child expression\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the emotional shift between child and wildflower involve a loss of warmth or a sudden emotional jolt that contradicts the style’s consistent harmony?\",
+    \"Is the wet-on-wet layering technique applied only to children or also to floating islands, and does it maintain emotional warmth in both?\",
+    \"Does the 40–50% negative space create visual disconnection or chaos instead of emotional breathing in either scene?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK_TECHNIQUE mentions 'base layer → highlight layer' THEN ask for exact timing or duration of each layer in painting process\",
+    \"IF EXPRESSION_THEME references 'emotional progression' THEN ask for specific emotional descriptors (e.g., 'hope', 'calm') tied to each scene\",
+    \"IF FORM_COMPOSITION references 'bridge between intimacy and harmony' THEN ask for a visual example or description of that transition\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"SCALE_POSE\",
+      \"ANSWER\": {
+        \"close-up\": {
+          \"scale\": \"life-size, intimate\",
+          \"pose\": \"centered, slightly tilted, eyes focused on viewer\",
+          \"emotional effect\": \"feels personal, warm, and emotionally direct, evoking innocence and connection\"
+        },
+        \"mid-ground\": {
+          \"scale\": \"small to medium, softly arranged\",
+          \"pose\": \"spreading, flowing, integrated into natural landscape\",
+          \"emotional effect\": \"feels part of a larger emotional ecosystem, reinforcing harmony with nature\"
+        }
+      },
+      \"RATIONALE\": \"The shift from intimate focus to environmental integration reflects the style's narrative progression from emotional intimacy to natural harmony.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"base layer of soft blending → mid-layer of expressive impasto → final fade with gentle stroke\",
+      \"RATIONALE\": \"This sequence creates emotional warmth and organic texture in child expressions through gradual, flowing transitions.\",
+      \"CONFIDENCE\": 0.89
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": [\"magenta and teal\", \"lime and violet\", \"electric blue and burnt orange\", \"sunrise pink and forest green\", \"crimson and sky blue\"],
+      \"RATIONALE\": \"These pairs align with Fauvist bold contrasts and Miyazaki's dreamlike, emotionally resonant color pairings in nature and fantasy settings.\",
+      \"CONFIDENCE\": 0.91
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Wildflower\",
+      \"WHY\": \"Fauvism emphasizes bold, non-naturalistic color; Miyazaki often depicts nature with vibrant, expressive flora. Wildflowers fit both styles through emotional coloration and organic forms.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, irregular, flowing\",
+        \"MATERIAL\": \"imaginary, conceptual\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), contrasting reds, yellows, purples with pairs like magenta and teal\",
+        \"SCALE_POSE\": \"mid-ground, softly arranged\",
+        \"TEXTURE\": \"soft brushwork, expressive impasto (0.8–1.5mm)\",
+        \"LIGHTING\": \"flat, non-photorealistic, emotionally charged\",
+        \"CONTEXT\": \"natural landscape, forest edge\",
+        \"COMPOSITION_ROLE\": \"foreground accent\",
+        \"CAMERA\": \"wide, slightly elevated, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"purity, innocence, emotional connection to nature\",
+      \"VARIANTS\": [\"dandelion\", \"sunflower\", \"orchid\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"Floating Island\",
+      \"WHY\": \"Miyazaki frequently features surreal, floating landmasses; Fauvism's expressive color enhances their dreamlike quality through vibrant, non-representational hues.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rounded, abstract, slightly irregular\",
+        \"MATERIAL\": \"imaginary, ethereal\",
+        \"COLOR_PALETTE\": \"vibrant, saturated (100–130%), complementary pairs like lime and violet or electric blue and burnt orange\",
+        \"SCALE_POSE\": \"mid-background, slightly elevated\",
+        \"TEXTURE\": \"smooth, painterly, soft edges\",
+        \"LIGHTING\": \"diffused, flat, with emotional glow\",
+        \"CONTEXT\": \"sky, mountain range, fantasy landscape\",
+        \"COMPOSITION_ROLE\": \"main subject or visual anchor\",
+        \"CAMERA\": \"bird's-eye view, wide angle\"
+      },
+      \"ICONOGRAPHY\": \"isolation, wonder, harmony with nature\",
+      \"VARIANTS\": [\"floating village\", \"cloud island\", \"mountain island\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Child's Expression\",
+      \"WHY\": \"Miyazaki emphasizes emotional authenticity in children; Fauvism uses bold color to convey emotional states, making child expressions visually expressive and emotionally resonant.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, rounded, simplified facial features\",
+        \"MATERIAL\": \"conceptual, expressive\",
+        \"COLOR_PALETTE\": \"high contrast, warm tones (red, yellow, blue) with magenta and teal or sunrise pink and forest green\",
+        \"SCALE_POSE\": \"centered, close-up, intimate\",
+        \"TEXTURE\": \"soft blending, expressive impasto (0.8–1.5mm), dramatic stroke with gentle fade\",
+        \"LIGHTING\": \"soft, flat, emotionally warm\",
+        \"CONTEXT\": \"natural setting, home, forest\",
+        \"COMPOSITION_ROLE\": \"main subject\",
+        \"CAMERA\": \"close-up, slightly tilted\"
+      },
+      \"ICONOGRAPHY\": \"innocence, emotional truth, hope\",
+      \"VARIANTS\": [\"smiling child\", \"wandering child\", \"dreaming child\"],
+      \"CONFIDENCE\": 0.88
+    },
+    {
+      \"NAME\": \"Rainbow Bridge\",
+      \"WHY\": \"Fauvist color palettes naturally extend to arching, dreamlike structures; Miyazaki uses bridges as narrative connectors with emotional and symbolic weight, especially in nature transitions.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curved, flowing, arching\",
+        \"MATERIAL\": \"imaginary, ethereal\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), vibrant complementary pairs (e.g., magenta and teal, lime and violet) spanning the arc\",
+        \"SCALE_POSE\": \"mid-background, spanning between landscape elements\",
+        \"TEXTURE\": \"smooth, soft blending with subtle impasto edges\",
+        \"LIGHTING\": \"diffused, flat, glowing with emotional warmth\",
+        \"CONTEXT\": \"between forest and mountain, or village and sky\",
+        \"COMPOSITION_ROLE\": \"narrative connector or visual transition\",
+        \"CAMERA\": \"wide, low-angle, showing full arc\"
+      },
+      \"ICONOGRAPHY\": \"transition, hope, connection between worlds\",
+      \"VARIANTS\": [\"forest-to-mountain\", \"village-to-sky\", \"cloud-to-forest\"],
+      \"CONFIDENCE\": 0.82
+    },
+    {
+      \"NAME\": \"Glowing Tree\",
+      \"WHY\": \"Miyazaki features trees with emotional resonance; Fauvism's expressive color can transform trees into luminous, living entities with emotional presence.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, branching, slightly irregular\",
+        \"MATERIAL\": \"imaginary, luminous\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), warm tones with electric blue and burnt orange or crimson and sky blue accents\",
+        \"SCALE_POSE\": \"mid-background, rising into sky\",
+        \"TEXTURE\": \"soft blending, expressive impasto with glowing edge\",
+        \"LIGHTING\": \"emotional glow, flat with internal radiance\",
+        \"CONTEXT\": \"forest edge, mountain clearing\",
+        \"COMPOSITION_ROLE\": \"emotional focal point or atmospheric anchor\",
+        \"CAMERA\": \"wide, slightly elevated\"
+      },
+      \"ICONOGRAPHY\": \"growth, life, quiet wonder\",
+      \"VARIANTS\": [\"twilight tree\", \"frost tree\", \"sunlit tree\"],
+      \"CONFIDENCE\": 0.80
+    },
+    {
+      \"NAME\": \"Wind-Blown Leaves\",
+      \"WHY\": \"Organic movement and flow are central to the style; wind-blown leaves embody dynamic form and expressive texture in natural settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"flowing, irregular, in motion\",
+        \"MATERIAL\": \"conceptual, painted as motion\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), dynamic pairings like sunrise pink and forest green or lime and violet\",
+        \"SCALE_POSE\": \"mid-ground, scattered, in motion\",
+        \"TEXTURE\": \"expressive impasto, wet-on-wet layering with flowing strokes\",
+        \"LIGHTING\": \"flat, emotionally charged\",
+        \"CONTEXT\": \"forest edge, open field\",
+        \"COMPOSITION_ROLE\": \"dynamic rhythm or background movement\",
+        \"CAMERA\": \"wide, slightly tilted to show motion\"
+      },
+      \"ICONOGRAPHY\": \"change, movement, natural energy\",
+      \"VARIANTS\": [\"autumn leaves\", \"spring leaves\", \"wind-swept grass\"],
+      \"CONFIDENCE\": 0.78
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [\"Wildflower\", \"Floating Island\", \"Rainbow Bridge\", \"Glowing Tree\", \"Wind-Blown Leaves\"],
+      \"Miyazaki\": [\"Child's Expression\", \"Floating Island\", \"Rainbow Bridge\", \"Glowing Tree\", \"Wind-Blown Leaves\"]
+    },
+    \"INTERSECTION\": [\"Floating Island\", \"Rainbow Bridge\", \"Glowing Tree\", \"Wind-Blown Leaves\"]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"mechanical objects (e.g., cars, machines)\",
+    \"literal or photorealistic trees or flowers\",
+    \"objects with rigid, geometric forms (e.g., buildings, cubes)\",
+    \"objects with naturalistic color palettes (e.g., realistic greens, browns)\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A vibrant, emotionally warm scene with flowing organic forms, high-saturation color pairs like magenta and teal or lime and violet, soft wet-on-wet brushwork, and 40–50% negative space to allow emotional breathing, centered on a child's expression or wildflower in a floating island landscape.\",
+    \"A glowing tree with high-saturation, expressive color (e.g., electric blue and burnt orange) rising into the sky, soft impasto texture, in a forest clearing.\",
+    \"Wind-blown leaves in motion, flowing with expressive impasto and wet-on-wet strokes, vibrant magenta and teal or sunrise pink and forest green, in a forest edge.\",
+    \"A rainbow bridge spanning between forest and mountain, composed of luminous, complementary color pairs (e.g., lime and violet), smooth texture, in wide-angle view.\",
+    \"A child's expression in close-up, soft blending and expressive impasto, warm tones with magenta and teal, slightly tilted, in natural setting.\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added Rainbow Bridge, Glowing Tree, and Wind-Blown Leaves as new objects\",
+    \"Updated color palettes to include specific pairs (magenta and teal, lime and violet) with saturation range (100–130%)\",
+    \"Refined scale and pose attributes with emotional effects\",
+    \"Enhanced texture descriptions with layering sequences and thickness ranges (0.8–1.5mm)\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How does the emotional tone of a glowing tree differ when viewed from a close-up versus a wide-angle perspective?\",
+    \"Are there known examples in Miyazaki films where a rainbow bridge or glowing tree is rendered with Fauvist color palettes?\",
+    \"Can the wet-on-wet layering technique be applied to wind-blown leaves to enhance their dynamic flow?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific emotional or narrative function does the glowing tree serve when positioned at the edge of a forest versus in a mountain clearing, and how do the color palettes and texture differ between these contexts?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Context determines the emotional and narrative role of the glowing tree, which is central to its symbolic meaning in the style.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"comparison: [forest edge: emotional function, color palette, texture] vs [mountain clearing: emotional function, color palette, texture]\",
+      \"DEPENDENCIES\": [\"glowing tree\", \"context\", \"emotional tone\", \"color palette\", \"texture\"]
+    },
+    {
+      \"Q\": \"How does the wet-on-wet layering technique apply to wind-blown leaves in motion, and what specific stroke direction (e.g., horizontal, diagonal, swirling) enhances their dynamic flow and emotional energy?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Stroke direction directly influences the perception of movement and emotional energy in flowing organic forms.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of 2–3 stroke directions (e.g., 'swirling', 'diagonal', 'horizontal') with associated emotional effect (e.g., 'suggests wind movement and quiet energy')\",
+      \"DEPENDENCIES\": [\"wind-blown leaves\", \"wet-on-wet layering\", \"dynamic form\", \"expressive impasto\"]
+    },
+    {
+      \"Q\": \"Are there specific compositional relationships between the rainbow bridge and either the child's expression or the floating island that define their narrative connection, and what role does negative space play in this relationship?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"The compositional interaction between the rainbow bridge and other objects establishes narrative flow and emotional progression in the scene.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description of relationship (e.g., 'bridge connects child to floating island; negative space allows emotional transition') and role of negative space\",
+      \"DEPENDENCIES\": [\"rainbow bridge\", \"child's expression\", \"floating island\", \"negative space\", \"composition role\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the glowing tree use naturalistic colors (e.g., realistic green, brown) or photorealistic lighting that contradicts the style’s non-naturalistic requirement?\",
+    \"Are wind-blown leaves rendered with rigid, geometric forms or mechanical motion that violates the style’s emphasis on organic flow?\",
+    \"Does the rainbow bridge lack emotional or narrative connection to other elements, resulting in visual isolation?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF CONTEXT is 'forest edge' AND COLOR_PALETTE includes 'electric blue and burnt orange' THEN ask for a specific emotional descriptor (e.g., 'quiet wonder', 'calm')\",
+    \"IF TEXTURE mentions 'swirling' OR 'diagonal' THEN ask for a visual example of that stroke in motion\",
+    \"IF COMPOSITION_ROLE references 'narrative connection' THEN ask for a specific emotional shift when crossing the bridge\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": {
+        \"forest edge\": {
+          \"emotional function\": \"quiet wonder, emotional boundary between nature and the unknown\",
+          \"color palette\": \"electric blue and burnt orange, crimson and sky blue\",
+          \"texture\": \"soft blending, expressive impasto with glowing edge\"
+        },
+        \"mountain clearing\": {
+          \"emotional function\": \"growth, quiet hope, life emerging from stillness\",
+          \"color palette\": \"sunrise pink and forest green, lime and violet\",
+          \"texture\": \"soft blending, expressive impasto with subtle glow\"
+        }
+      },
+      \"RATIONALE\": \"Context shifts emotional tone from mystery to emergence, supported by color and texture variations.\",
+      \"CONFIDENCE\": 0.90
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": [\"swirling\", \"diagonal\", \"horizontal\"],
+      \"RATIONALE\": \"These stroke directions create dynamic motion and emotional energy in wind-blown leaves.\",
+      \"CONFIDENCE\": 0.87
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"ANSWER\": \"The rainbow bridge connects the child's expression to the floating island; negative space allows emotional transition from intimacy to wonder and environmental harmony.\",
+      \"RATIONALE\": \"Establishes narrative continuity and emotional progression through visual and spatial flow.\",
+      \"CONFIDENCE\": 0.89
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Organic, fluid forms with non-logical spatial arrangements; 40–50% negative space to allow emotional flow and narrative breathing; forms arranged to emphasize emotional connection and narrative movement, with clear compositional links (e.g., child to floating island via rainbow bridge).\",
+    \"COLOR_TONALITY\": \"High saturation (100–130%) with vivid, non-naturalistic palettes; dominant pairs: magenta and teal, lime and violet, electric blue and burnt orange, sunrise pink and forest green, crimson and sky blue; harmonious yet expressive contrasts avoiding harsh jarring clashes.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Wet-on-wet layering with horizontal, diagonal, and swirling strokes; soft blending and expressive impasto (0.8–1.5mm thickness) to create gentle texture and emotional warmth, applied to all organic forms including leaves, trees, and faces.\",
+    \"EXPRESSION_THEME\": \"Emotional warmth, childlike wonder, and harmony between nature and the surreal; themes of innocence, emotional truth, quiet wonder, and quiet hope in natural or fantasy settings; narrative progression from intimate emotion to environmental belonging.\",
+    \"HISTORICAL_CONTEXT\": \"Fauvism (early 20th century) fused with Miyazaki Hayao's anime style (contemporary Japanese animation), emphasizing emotional storytelling, environmental harmony, and symbolic transitions.\",
+    \"SUBJECT_MATTER\": \"Wildflowers, floating islands, child expressions, rainbow bridges, glowing trees, and wind-blown leaves in natural or fantasy landscapes.\",
+    \"COMPOSITIONAL_DEVICES\": \"Negative space (40–50%), flowing spatial arrangements, emotional focal points (e.g., child close-up), color harmony with expressive contrast, narrative connections (e.g., bridge linking child to island).\",
+    \"LIGHTING_CAMERA\": \"Flat, emotionally charged lighting; wide or bird's-eye view for landscapes, close-up with slight tilt for child expressions, wide-angle with low angle for bridges and trees.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid strict realism or naturalistic color accuracy\",
+      \"Avoid mechanical, rigid forms or cartoonish exaggeration without emotional grounding\",
+      \"Avoid overly chaotic or disjointed compositions without narrative or emotional coherence\",
+      \"Avoid photorealistic lighting or naturalistic color palettes\",
+      \"Avoid literal or mechanical representation of objects\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of high-saturation (100–130%) vivid, non-naturalistic color with harmonious contrast\",
+      \"Organic, flowing forms with 40–50% negative space supporting emotional flow\",
+      \"Use of wet-on-wet layering with horizontal, diagonal, and swirling strokes to achieve emotional warmth\",
+      \"Emotional authenticity in child expressions and natural elements through expressive texture and warm tone\",
+      \"Clear narrative or emotional progression (e.g., child to floating island via bridge)\",
+      \"No literal or mechanical representation of objects\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A vibrant, emotionally warm scene with flowing organic forms, high-saturation color pairs like magenta and teal or lime and violet, soft wet-on-wet brushwork with horizontal, diagonal, and swirling strokes, and 40–50% negative space to allow emotional breathing, centered on a child's expression connected via a rainbow bridge to a floating island landscape.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added glowing tree context differences (forest edge vs. mountain clearing) with specific color and texture details\",
+    \"Expanded stroke directions to include swirling, diagonal, and horizontal for wind-blown leaves\",
+    \"Defined narrative connection between child and floating island via rainbow bridge with role of negative space\",
+    \"Updated expression theme to include quiet hope and narrative progression\",
+    \"Added specific emotional functions for glowing tree in different contexts\",
+    \"Refined brushwork to include dynamic stroke directions for motion and emotional energy\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there known examples in Miyazaki films where a glowing tree or rainbow bridge is rendered with Fauvist color palettes?\",
+    \"Can the swirling stroke technique be applied to child facial features to enhance emotional movement?\",
+    \"How does the emotional shift differ when a child crosses a rainbow bridge compared to simply looking at it from a distance?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of emotional descriptors (e.g., 'quiet wonder', 'hope', 'calm') is associated with the child's expression when viewed from a close-up versus when the child is connected to the floating island via the rainbow bridge?\",
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"WHY\": \"The emotional shift between intimate focus and narrative progression is central to the style's emotional arc and must be operationally defined.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"pairing: [close-up: emotional descriptors] vs [connected to bridge: emotional descriptors]\",
+      \"DEPENDENCIES\": [\"child's expression\", \"rainbow bridge\", \"emotional progression\", \"narrative connection\"]
+    },
+    {
+      \"Q\": \"How does the wet-on-wet layering technique with swirling strokes specifically affect the perceived emotional energy in wind-blown leaves compared to horizontal or diagonal strokes alone?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Swirling strokes introduce dynamic movement and emotional intensity; clarifying their impact helps differentiate emotional energy across form types.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"comparison: [swirling: emotional effect] vs [horizontal/diagonal: emotional effect]\",
+      \"DEPENDENCIES\": [\"swirling\", \"wet-on-wet layering\", \"dynamic form\", \"emotional energy\"]
+    },
+    {
+      \"Q\": \"In what specific compositional configurations does the 40–50% negative space serve as a transition zone between the child's expression and the floating island, and how does its size or shape influence the emotional pacing of the scene?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Negative space is a key narrative and emotional device; its form and size directly affect the viewer's emotional pacing and sense of transition.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description of configuration (e.g., 'open central negative space', 'diagonal gap') and its impact on emotional pacing (e.g., 'slows transition', 'builds anticipation')\",
+      \"DEPENDENCIES\": [\"40–50% negative space\", \"child's expression\", \"floating island\", \"narrative connection\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the emotional shift from child to bridge involve a sudden or jarring drop in warmth, contradicting the style’s emphasis on quiet wonder and hope?\",
+    \"Are swirling strokes applied only to leaves or also to facial features, and does their use maintain emotional warmth without becoming chaotic?\",
+    \"Does the 40–50% negative space create visual disconnection or feel empty, rather than serving as a meaningful emotional or narrative bridge?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF EXPRESSION_THEME mentions 'quiet wonder' OR 'hope' THEN ask for specific scenes or visual cues that evoke these emotions\",
+    \"IF BRUSHWORK_TECHNIQUE mentions 'swirling' AND emotional effect is 'dynamic' THEN ask for a visual example of that stroke in motion\",
+    \"IF FORM_COMPOSITION references 'transition zone' THEN ask for a specific spatial measurement (e.g., width, shape) of the negative space\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": {
+        \"forest edge\": {
+          \"emotional function\": \"quiet wonder, emotional boundary between nature and the unknown\",
+          \"color palette\": \"electric blue and burnt orange, crimson and sky blue\",
+          \"texture\": \"soft blending, expressive impasto with glowing edge\"
+        },
+        \"mountain clearing\": {
+          \"emotional function\": \"growth, quiet hope, life emerging from stillness\",
+          \"color palette\": \"sunrise pink and forest green, lime and violet\",
+          \"texture\": \"soft blending, expressive impasto with subtle glow\"
+        }
+      },
+      \"RATIONALE\": \"Context shifts emotional tone from mystery to emergence, supported by color and texture variations.\",
+      \"CONFIDENCE\": 0.90
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": [\"swirling\", \"diagonal\", \"horizontal\"],
+      \"RATIONALE\": \"These stroke directions create dynamic motion and emotional energy in wind-blown leaves.\",
+      \"CONFIDENCE\": 0.87
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"ANSWER\": \"The rainbow bridge connects the child's expression to the floating island; negative space allows emotional transition from intimacy to wonder and environmental harmony.\",
+      \"RATIONALE\": \"Establishes narrative continuity and emotional progression through visual and spatial flow.\",
+      \"CONFIDENCE\": 0.89
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Wildflower\",
+      \"WHY\": \"Fauvism emphasizes bold, non-naturalistic color; Miyazaki often depicts nature with vibrant, expressive flora. Wildflowers fit both styles through emotional coloration and organic forms.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, irregular, flowing\",
+        \"MATERIAL\": \"imaginary, conceptual\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), contrasting reds, yellows, purples with pairs like magenta and teal\",
+        \"SCALE_POSE\": \"mid-ground, softly arranged\",
+        \"TEXTURE\": \"soft brushwork, expressive impasto (0.8–1.5mm)\",
+        \"LIGHTING\": \"flat, non-photorealistic, emotionally charged\",
+        \"CONTEXT\": \"natural landscape, forest edge\",
+        \"COMPOSITION_ROLE\": \"foreground accent\",
+        \"CAMERA\": \"wide, slightly elevated, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"purity, innocence, emotional connection to nature\",
+      \"VARIANTS\": [\"dandelion\", \"sunflower\", \"orchid\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"Floating Island\",
+      \"WHY\": \"Miyazaki frequently features surreal, floating landmasses; Fauvism's expressive color enhances their dreamlike quality through vibrant, non-representational hues.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rounded, abstract, slightly irregular\",
+        \"MATERIAL\": \"imaginary, ethereal\",
+        \"COLOR_PALETTE\": \"vibrant, saturated (100–130%), complementary pairs like lime and violet or electric blue and burnt orange\",
+        \"SCALE_POSE\": \"mid-background, slightly elevated\",
+        \"TEXTURE\": \"smooth, painterly, soft edges\",
+        \"LIGHTING\": \"diffused, flat, with emotional glow\",
+        \"CONTEXT\": \"sky, mountain range, fantasy landscape\",
+        \"COMPOSITION_ROLE\": \"main subject or visual anchor\",
+        \"CAMERA\": \"bird's-eye view, wide angle\"
+      },
+      \"ICONOGRAPHY\": \"isolation, wonder, harmony with nature\",
+      \"VARIANTS\": [\"floating village\", \"cloud island\", \"mountain island\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Child's Expression\",
+      \"WHY\": \"Miyazaki emphasizes emotional authenticity in children; Fauvism uses bold color to convey emotional states, making child expressions visually expressive and emotionally resonant.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, rounded, simplified facial features\",
+        \"MATERIAL\": \"conceptual, expressive\",
+        \"COLOR_PALETTE\": \"high contrast, warm tones (red, yellow, blue) with magenta and teal or sunrise pink and forest green\",
+        \"SCALE_POSE\": \"centered, close-up, intimate\",
+        \"TEXTURE\": \"soft blending, expressive impasto (0.8–1.5mm), dramatic stroke with gentle fade\",
+        \"LIGHTING\": \"soft, flat, emotionally warm\",
+        \"CONTEXT\": \"natural setting, home, forest\",
+        \"COMPOSITION_ROLE\": \"main subject\",
+        \"CAMERA\": \"close-up, slightly tilted\"
+      },
+      \"ICONOGRAPHY\": \"innocence, emotional truth, hope\",
+      \"VARIANTS\": [\"smiling child\", \"wandering child\", \"dreaming child\"],
+      \"CONFIDENCE\": 0.88
+    },
+    {
+      \"NAME\": \"Rainbow Bridge\",
+      \"WHY\": \"Fauvist color palettes naturally extend to arching, dreamlike structures; Miyazaki uses bridges as narrative connectors with emotional and symbolic weight, especially in nature transitions.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curved, flowing, arching\",
+        \"MATERIAL\": \"imaginary, ethereal\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), vibrant complementary pairs (e.g., magenta and teal, lime and violet) spanning the arc\",
+        \"SCALE_POSE\": \"mid-background, spanning between landscape elements\",
+        \"TEXTURE\": \"smooth, soft blending with subtle impasto edges\",
+        \"LIGHTING\": \"diffused, flat, glowing with emotional warmth\",
+        \"CONTEXT\": \"between forest and mountain, or village and sky\",
+        \"COMPOSITION_ROLE\": \"narrative connector or visual transition\",
+        \"CAMERA\": \"wide, low-angle, showing full arc\"
+      },
+      \"ICONOGRAPHY\": \"transition, hope, connection between worlds\",
+      \"VARIANTS\": [\"forest-to-mountain\", \"village-to-sky\", \"cloud-to-forest\"],
+      \"CONFIDENCE\": 0.82
+    },
+    {
+      \"NAME\": \"Glowing Tree\",
+      \"WHY\": \"Miyazaki features trees with emotional resonance; Fauvism's expressive color can transform trees into luminous, living entities with emotional presence.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, branching, slightly irregular\",
+        \"MATERIAL\": \"imaginary, luminous\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), warm tones with electric blue and burnt orange or crimson and sky blue accents\",
+        \"SCALE_POSE\": \"mid-background, rising into sky\",
+        \"TEXTURE\": \"soft blending, expressive impasto with glowing edge\",
+        \"LIGHTING\": \"emotional glow, flat with internal radiance\",
+        \"CONTEXT\": \"forest edge, mountain clearing\",
+        \"COMPOSITION_ROLE\": \"emotional focal point or atmospheric anchor\",
+        \"CAMERA\": \"wide, slightly elevated\"
+      },
+      \"ICONOGRAPHY\": \"growth, life, quiet wonder\",
+      \"VARIANTS\": [\"twilight tree\", \"frost tree\", \"sunlit tree\"],
+      \"CONFIDENCE\": 0.80
+    },
+    {
+      \"NAME\": \"Wind-Blown Leaves\",
+      \"WHY\": \"Organic movement and flow are central to the style; wind-blown leaves embody dynamic form and expressive texture in natural settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"flowing, irregular, in motion\",
+        \"MATERIAL\": \"conceptual, painted as motion\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), dynamic pairings like sunrise pink and forest green or lime and violet\",
+        \"SCALE_POSE\": \"mid-ground, scattered, in motion\",
+        \"TEXTURE\": \"expressive impasto, wet-on-wet layering with swirling, diagonal, or horizontal strokes\",
+        \"LIGHTING\": \"flat, emotionally charged\",
+        \"CONTEXT\": \"forest edge, open field\",
+        \"COMPOSITION_ROLE\": \"dynamic rhythm or background movement\",
+        \"CAMERA\": \"wide, slightly tilted to show motion\"
+      },
+      \"ICONOGRAPHY\": \"change, movement, natural energy\",
+      \"VARIANTS\": [\"autumn leaves\", \"spring leaves\", \"wind-swept grass\"],
+      \"CONFIDENCE\": 0.78
+    },
+    {
+      \"NAME\": \"Sunrise Over Hills\",
+      \"WHY\": \"Fauvism's bold color and expressive form naturally extend to natural dawn scenes; Miyazaki uses sunrise as a symbolic moment of emotional renewal and quiet hope, especially in transition scenes.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, flowing, gradient-like arcs\",
+        \"MATERIAL\": \"imaginary, conceptual\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), warm tones with sunrise pink and forest green or electric blue and burnt orange\",
+        \"SCALE_POSE\": \"mid-sky, expansive horizon\",
+        \"TEXTURE\": \"soft blending, wet-on-wet layering with gentle gradients\",
+        \"LIGHTING\": \"flat, emotionally charged, glowing from edges\",
+        \"CONTEXT\": \"hills, mountain range at dawn\",
+        \"COMPOSITION_ROLE\": \"emotional backdrop or atmospheric frame\",
+        \"CAMERA\": \"wide, low-angle, showing horizon\"
+      },
+      \"ICONOGRAPHY\": \"new beginning, quiet hope, renewal\",
+      \"VARIANTS\": [\"dawn over forest\", \"dawn over lake\", \"dawn over valley\"],
+      \"CONFIDENCE\": 0.75
+    },
+    {
+      \"NAME\": \"Cloud-Swelling Lake\",
+      \"WHY\": \"Fauvism's expressive color and fluid forms apply to natural bodies of water; Miyazaki uses lakes with cloud interactions as serene, emotionally resonant spaces reflecting inner states.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, undulating, gently curving\",
+        \"MATERIAL\": \"imaginary, reflective\",
+        \"COLOR_PALETTE\": \"high saturation (100–130%), complementary pairs like lime and violet or magenta and teal\",
+        \"SCALE_POSE\": \"mid-ground to mid-background, reflecting sky\",
+        \"TEXTURE\": \"soft blending, smooth with subtle impasto edges\",
+        \"LIGHTING\": \"diffused, flat, with emotional glow from sky\",
+        \"CONTEXT\": \"forest edge, mountain clearing\",
+        \"COMPOSITION_ROLE\": \"atmospheric anchor or reflective surface\",
+        \"CAMERA\": \"wide, slightly elevated, showing reflection\"
+      },
+      \"ICONOGRAPHY\": \"stillness, reflection, inner peace\",
+      \"VARIANTS\": [\"cloud-lake at dawn\", \"cloud-lake at twilight\", \"cloud-lake under sky\"],
+      \"CONFIDENCE\": 0.73
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [\"Wildflower\", \"Floating Island\", \"Rainbow Bridge\", \"Glowing Tree\", \"Wind-Blown Leaves\", \"Sunrise Over Hills\", \"Cloud-Swelling Lake\"],
+      \"Miyazaki\": [\"Child's Expression\", \"Floating Island\", \"Rainbow Bridge\", \"Glowing Tree\", \"Wind-Blown Leaves\", \"Sunrise Over Hills\", \"Cloud-Swelling Lake\"]
+    },
+    \"INTERSECTION\": [\"Floating Island\", \"Rainbow Bridge\", \"Glowing Tree\", \"Wind-Blown Leaves\", \"Sunrise Over Hills\", \"Cloud-Swelling Lake\"]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"mechanical objects (e.g., cars, machines)\",
+    \"literal or photorealistic trees or flowers\",
+    \"objects with rigid, geometric forms (e.g., buildings, cubes)\",
+    \"objects with naturalistic color palettes (e.g., realistic greens, browns)\",
+    \"objects with strict realism or photorealistic lighting\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A vibrant, emotionally warm scene with flowing organic forms, high-saturation color pairs like magenta and teal or lime and violet, soft wet-on-wet brushwork, and 40–50% negative space to allow emotional breathing, centered on a child's expression or wildflower in a floating island landscape.\",
+    \"A glowing tree with high-saturation, expressive color (e.g., electric blue and burnt orange) rising into the sky, soft impasto texture, in a forest clearing.\",
+    \"Wind-blown leaves in motion, flowing with expressive impasto and wet-on-wet strokes, vibrant magenta and teal or sunrise pink and forest green, in a forest edge.\",
+    \"A rainbow bridge spanning between forest and mountain, composed of luminous, complementary color pairs (e.g., lime and violet), smooth texture, in wide-angle view.\",
+    \"A child's expression in close-up, soft blending and expressive impasto, warm tones with magenta and teal, slightly tilted, in natural setting.\",
+    \"Sunrise over hills with high-saturation, warm tones (sunrise pink and forest green), soft blending, in wide low-angle view.\",
+    \"Cloud-swelling lake reflecting sky with vibrant magenta and teal or lime and violet, soft texture, in forest edge with slight elevation.\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added Sunrise Over Hills and Cloud-Swelling Lake as new objects\",
+    \"Updated color palettes to include specific pairs (magenta and teal, lime and violet) with saturation range (100–130%)\",
+    \"Refined scale and pose attributes with emotional effects\",
+    \"Enhanced texture descriptions with layering sequences and thickness ranges (0.8–1.5mm)\",
+    \"Expanded stroke directions to include swirling, diagonal, and horizontal for wind-blown leaves\",
+    \"Defined narrative connection between child and floating island via rainbow bridge with role of negative space\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there known examples in Miyazaki films where a glowing tree or rainbow bridge is rendered with Fauvist color palettes?\",
+    \"Can the swirling stroke technique be applied to child facial features to enhance emotional movement?\",
+    \"How does the emotional shift differ when a child crosses a rainbow bridge compared to simply looking at it from a distance?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific emotional descriptors are associated with a child's expression when directly observing the rainbow bridge from a close-up versus when the child is actively crossing it, and how do these shifts relate to the narrative progression?\",
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"WHY\": \"The emotional shift during interaction with the bridge directly reflects the style's narrative arc from intimacy to wonder and environmental belonging.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"pairing: [observing: emotional descriptors] vs [crossing: emotional descriptors]\",
+      \"DEPENDENCIES\": [\"child's expression\", \"rainbow bridge\", \"emotional progression\", \"narrative connection\"]
+    },
+    {
+      \"Q\": \"How does the wet-on-wet layering technique with swirling strokes specifically affect the perceived emotional energy in a cloud-swelling lake compared to a static, reflective surface, and what color pairings are most effective in enhancing its emotional resonance?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Swirling strokes introduce dynamic movement; their application to a static lake challenges the expectation of stillness and enhances emotional depth through motion and color interaction.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"comparison: [swirling: emotional effect] vs [static: emotional effect] and list of 2-3 effective color pairs (e.g., magenta and teal, lime and violet)\",
+      \"DEPENDENCIES\": [\"cloud-swelling lake\", \"swirling\", \"wet-on-wet layering\", \"emotional resonance\"]
+    },
+    {
+      \"Q\": \"In what specific compositional configurations does the 40–50% negative space serve as a visual and emotional buffer between the sunrise over hills and the child's expression, and how does its shape or size influence the viewer's sense of transition and hope?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Negative space mediates emotional pacing and narrative flow; its role in connecting sunrise (symbol of renewal) and child (emotional center) defines the scene's emotional progression.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description of configuration (e.g., 'diagonal negative space', 'open horizon gap') and its impact on emotional pacing (e.g., 'builds anticipation', 'transitions to hope')\",
+      \"DEPENDENCIES\": [\"sunrise over hills\", \"child's expression\", \"40–50% negative space\", \"emotional progression\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the emotional shift when crossing the bridge involve a sudden or jarring drop in warmth, contradicting the style’s emphasis on quiet wonder and hope?\",
+    \"Are swirling strokes applied only to leaves or also to water surfaces, and does their use maintain emotional warmth without creating visual chaos?\",
+    \"Does the negative space between sunrise and child feel empty or disconnected, rather than serving as a meaningful emotional or narrative bridge?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF EXPRESSION_THEME mentions 'hope' OR 'quiet wonder' THEN ask for a specific visual cue or scene that evokes these emotions\",
+    \"IF TEXTURE mentions 'swirling' AND emotional effect is 'dynamic' THEN ask for a visual example of that stroke in motion\",
+    \"IF FORM_COMPOSITION references 'transition' THEN ask for a specific spatial measurement (e.g., width, shape) of the negative space\"
+  ]
+}"
+  }
+]

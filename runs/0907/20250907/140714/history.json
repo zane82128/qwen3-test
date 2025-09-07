@@ -1,0 +1,565 @@
+[
+  {
+    "ROUND": 1,
+    "STYLE_RESPONSE": "Great question! You're asking for a fusion or synthesis between **Fauvism** and **Miyazaki Hayao’s artistic style**—a creative and fascinating blend of two very different yet visually compelling artistic traditions.
+
+Let’s break this down carefully and then propose a **final, precise art style prompt** that merges the two in a meaningful, coherent, and visually rich way.
+
+---
+
+### 🔍 1. **Fauvism (Early 20th Century – France)**
+
+**Form & Composition**  
+- Wild, expressive use of color and form.  
+- Often features bold, simplified shapes and dynamic compositions.  
+- Emphasis on emotional expression over realistic representation.  
+- Compositions are often energetic and unbalanced, with strong diagonals and unexpected perspectives.
+
+**Color & Tonality**  
+- Use of non-naturalistic, emotionally charged colors.  
+- Colors are applied in high contrast and saturated hues—e.g., bright yellows against deep blues or reds.  
+- Color is used as a primary expressive tool, not to depict reality.
+
+**Brushwork & Technique**  
+- Thick, expressive brushstrokes.  
+- Often applied with a sense of spontaneity and emotional intensity.  
+- Textures are visible and tactile, with impasto techniques.
+
+**Expression & Theme**  
+- Emotion-driven; aims to capture inner feelings rather than external reality.  
+- Themes include nature, landscapes, and human emotion, often with a sense of raw vitality.
+
+**Historical & Cultural Context**  
+- Originated in early 1900s France (1905), led by artists like Matisse and Derain.  
+- A radical break from Impressionism and academic art; celebrated color as a language of feeling.
+
+---
+
+### 🎨 2. **Miyazaki Hayao’s Style (Modern Japanese Animation – Studio Ghibli)**
+
+**Form & Composition**  
+- Soft, flowing, and often whimsical compositions.  
+- Characters are expressive, with gentle movements and emotional depth.  
+- Natural environments (forests, mountains, skies) are central, with strong narrative integration.  
+- Balanced, harmonious, and often serene or poetic.
+
+**Color & Tonality**  
+- Rich, warm, and naturalistic color palettes.  
+- Earthy tones dominate (greens, blues, browns), with soft pastels.  
+- Colors enhance mood and emotion, but are generally grounded in realism and nature.
+
+**Brushwork & Technique**  
+- Smooth, fluid lines with soft shading and gentle transitions.  
+- Backgrounds are detailed but not cluttered; often use layered textures (e.g., fog, leaves, water).  
+- Emphasis on light and atmosphere.
+
+**Expression & Theme**  
+- Deep emotional resonance—friendship, nature, loss, wonder, childhood.  
+- Themes are often mythic, poetic, and deeply human.  
+- Tends toward a sense of harmony between humans and nature.
+
+**Historical & Cultural Context**  
+- Rooted in Japanese folklore, traditional aesthetics (e.g., wabi-sabi, *mono no aware*), and modern animation.  
+- Developed through Studio Ghibli, blending realism with fantasy and emotional storytelling.
+
+---
+
+## 🌟 Merging Fauvism & Miyazaki Hayao: A New Artistic Style
+
+To **fuse Fauvism and Miyazaki Hayao**, we need to balance **emotional intensity** with **narrative depth**, **color explosion** with **natural harmony**.
+
+### ✅ Proposed Merged Style:  
+> **\"Fauvian Whimsy\"**  
+> *(A fusion of Fauvist color intensity and Miyazaki’s emotional, nature-centered storytelling)*
+
+---
+
+### 🔧 Style Description: \"Fauvian Whimsy\"
+
+**Form & Composition**  
+- Dynamic, expressive compositions with flowing, organic shapes.  
+- Characters and landscapes are simplified yet emotionally expressive, with a balance between chaos and calm.  
+- Scenes often unfold in a dreamlike, narrative-driven way—like a child’s fantasy meeting the wild energy of a Fauvist brush.
+
+**Color & Tonality**  
+- **Saturated, emotionally charged colors** (e.g., electric reds, cobalt blues, golden yellows) applied in bold, non-naturalistic bursts.  
+- Yet, these colors are **contextualized within natural environments**—a forest with flaming red leaves, a sky painted in violet and gold at sunset.  
+- Color expresses emotion and mood, not just visual contrast.
+
+**Brushwork & Technique**  
+- Thick, expressive brushstrokes (Fauvist) blended with smooth, flowing lines (Miyazaki).  
+- Textures mimic both natural elements (wind through trees, water ripples) and emotional energy (sudden bursts of color).  
+- Layered transparency gives depth—like a painting that breathes.
+
+**Expression & Theme**  
+- A deep emotional journey—often centered on childhood, wonder, nature, and the inner self.  
+- The wild color expresses the child’s imagination or inner chaos, while the peaceful setting grounds it in reality.  
+- Themes include transformation, memory, and the beauty of impermanence.
+
+**Historical & Cultural Context**  
+- A modern, hybrid style born from the collision of early 20th-century emotional art and contemporary Japanese narrative animation.  
+- Reflects a global desire to merge emotional authenticity with visual vibrancy.
+
+---
+
+## ✅ Final Prompt (for AI art generation or creative direction):
+
+> **\"Create a dreamlike scene in the style of 'Fauvian Whimsy': a child running through a forest at twilight, with trees painted in bold, non-natural colors—deep crimson leaves, electric blue branches, golden sunlight filtering through. The sky is a swirling mix of violet and orange, with soft clouds that pulse like living things. The character is simple, expressive, with wide eyes and a gentle smile. The composition is dynamic yet balanced, blending the emotional intensity of Fauvism with the poetic, nature-centered storytelling of Hayao Miyazaki. Use thick, expressive brushwork and soft, atmospheric gradients to create a sense of wonder and inner emotion.\"**
+
+---
+
+This prompt captures the **essence of both styles**, creates a **coherent visual language**, and invites imagination while remaining grounded in recognizable artistic traditions.
+
+Let me know if you'd like a version with a specific subject (e.g., a village, a storm, a magical creature) or mood (e.g., melancholy, joy, mystery)! 🎨✨",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 70–100%) should be applied to the bold, non-natural colors in the forest scene to balance emotional intensity with natural context?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation levels determine whether colors feel chaotic or harmonized, directly affecting the emotional tone and realism balance in Fauvian Whimsy.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 70–100%)\",
+      \"DEPENDENCIES\": [\"bold, non-natural colors\", \"contextualized within natural environments\"]
+    },
+    {
+      \"Q\": \"How should the dynamic composition be structured in terms of diagonals, balance, and negative space to ensure the child’s movement feels organic while maintaining visual stability?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Composition structure influences viewer engagement and emotional flow, ensuring the child’s action feels both energetic and grounded in the scene.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of diagonals, balance, and negative space (e.g., 'diagonal from left to right, 40% negative space on left')\",
+      \"DEPENDENCIES\": [\"dynamic, expressive compositions\", \"balanced, yet flowing\"]
+    },
+    {
+      \"Q\": \"What specific brushwork technique—such as impasto, layering, or fluid lines—should be used for the background trees versus the character, and what thickness range (e.g., 1–3 mm) should apply to each?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Different brushwork on elements creates visual contrast between emotional energy and natural calm, essential for the fusion of Fauvism and Miyazaki’s style.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"pair of techniques and thickness ranges (e.g., 'trees: impasto, 2–3 mm; character: fluid lines, 0.5–1 mm')\",
+      \"DEPENDENCIES\": [\"thick, expressive brushstrokes\", \"smooth, flowing lines\", \"layered transparency\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the colors be completely unnatural or unrecognizable as natural elements (e.g., no crimson leaves or blue branches)?\",
+    \"Should the composition feel static or unbalanced, lacking movement or emotional flow?\",
+    \"Should the brushwork be overly technical or realistic, losing the expressive, emotional quality of Fauvism?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation levels THEN ask for specific palette examples (e.g., electric red, cobalt blue)\",
+    \"IF BRUSHWORK_TECHNIQUE mentions impasto THEN ask for thickness ranges and application frequency\",
+    \"IF FORM_COMPOSITION references balance THEN ask for specific visual anchors or focal points\"
+  ]
+}"
+  },
+  {
+    "ROUND": 1,
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"Wildflowers\",
+      \"WHY\": \"Fauvism emphasizes bold, expressive color without naturalistic representation, and wildflowers are commonly depicted in vibrant, non-representational hues. Miyazaki's work often features natural elements with emotional resonance, and wildflowers appear in both as symbolic and aesthetic motifs.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, irregular shapes with flowing lines\",
+        \"MATERIAL\": \"imagined, abstracted forms\",
+        \"COLOR_PALETTE\": \"high saturation, primary and complementary colors (e.g., bright reds, yellows, blues)\",
+        \"SCALE_POSE\": \"medium-sized, placed in natural settings, often in foreground or mid-ground\",
+        \"TEXTURE\": \"soft, painterly brushwork with visible impasto\",
+        \"LIGHTING\": \"flat or diffused, with no strong chiaroscuro\",
+        \"CONTEXT\": \"natural landscapes, meadows, rural environments\",
+        \"COMPOSITION_ROLE\": \"foreground accent or emotional focal point\",
+        \"CAMERA\": \"wide-angle, natural viewpoint\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes hope, renewal, and the beauty of nature\",
+      \"VARIANTS\": [
+        \"sunflowers\",
+        \"daisies\",
+        \"buttercups\"
+      ],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"Expressive Trees\",
+      \"WHY\": \"Fauvism uses exaggerated color to convey emotion, and trees are often painted with bold, unnatural coloration. Miyazaki frequently depicts trees with emotional depth and dynamic forms, such as in forests or village backdrops.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simplified, stylized trunks and branching structures\",
+        \"MATERIAL\": \"abstracted, not literal\",
+        \"COLOR_PALETTE\": \"vibrant, non-naturalistic (e.g., electric green, crimson bark)\",
+        \"SCALE_POSE\": \"medium to large, standing in the background or mid-ground\",
+        \"TEXTURE\": \"smooth or textured brushstrokes, with expressive strokes\",
+        \"LIGHTING\": \"flat, even lighting with no strong shadows\",
+        \"CONTEXT\": \"forests, village outskirts, natural settings\",
+        \"COMPOSITION_ROLE\": \"background element providing emotional atmosphere\",
+        \"CAMERA\": \"medium to wide, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes growth, time, and connection to nature\",
+      \"VARIANTS\": [
+        \"oak trees\",
+        \"willow trees\",
+        \"bamboo\"
+      ],
+      \"CONFIDENCE\": 0.87
+    },
+    {
+      \"NAME\": \"Animals in Motion\",
+      \"WHY\": \"Fauvism's expressive color is applied to animals to convey emotion and movement. Miyazaki's animation often features animals with dynamic poses and emotional expressions, blending realism with stylization.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"dynamic, exaggerated forms with simplified anatomy\",
+        \"MATERIAL\": \"hand-drawn, cel-style or painted\",
+        \"COLOR_PALETTE\": \"high contrast, vivid and emotionally charged colors\",
+        \"SCALE_POSE\": \"medium, often in mid-action or mid-frame\",
+        \"TEXTURE\": \"smooth, fluid lines with expressive rendering\",
+        \"LIGHTING\": \"flat or soft, with emotional rather than physical lighting\",
+        \"CONTEXT\": \"natural environments, forests, mountains\",
+        \"COMPOSITION_ROLE\": \"main subject or narrative focus\",
+        \"CAMERA\": \"close-up to medium, often tracking shots\"
+      },
+      \"ICONOGRAPHY\": \"represents freedom, instinct, and emotional connection\",
+      \"VARIANTS\": [
+        \"foxes\",
+        \"cats\",
+        \"deer\"
+      ],
+      \"CONFIDENCE\": 0.83
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How do Fauvism's color choices specifically interact with Miyazaki's narrative style?\",
+    \"Are there known examples where Fauvism-inspired color palettes are explicitly used in Miyazaki's films?\",
+    \"What is the exact nature of the overlap between Fauvism's formalism and Miyazaki's character design?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 80-100% vs. 50-70%) is typically used in the color palette of wildflowers in Fauvism-influenced Miyazaki paintings?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Saturation levels determine how intensely Fauvism's expressive color is applied, which directly impacts emotional resonance and visual impact.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80-100%)\",
+      \"DEPENDENCIES\": [\"COLOR_PALETTE\", \"Wildflowers\"]
+    },
+    {
+      \"Q\": \"In what percentage of compositions do expressive trees appear in the background with non-naturalistic colors, and how does this affect the emotional tone of the scene?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Background tree coloration directly influences the emotional atmosphere and narrative mood in Miyazaki's natural settings.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 70%) and emotional tone (e.g., 'calm', 'tense')\",
+      \"DEPENDENCIES\": [\"CONTEXT\", \"Expressive Trees\"]
+    },
+    {
+      \"Q\": \"What specific brushwork textures (e.g., impasto, dry brush, smooth wash) are most commonly used in animals in motion to convey emotional intensity?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture in animal depictions links expressive brushwork to emotional states, a key element in Fauvism's emotive style.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of texture types (e.g., impasto, dry brush)\",
+      \"DEPENDENCIES\": [\"TEXTURE\", \"Animals in Motion\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are there any instances where wildflowers or trees are painted with naturalistic color palettes that contradict Fauvism principles?\",
+    \"Do any animals in motion appear with realistic shading or chiaroscuro, undermining the expressive Fauvist approach?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes electric green or crimson bark THEN ask for 3 specific examples of such color applications in a scene\",
+    \"IF TEXTURE mentions impasto THEN ask for the average brushstroke width (in mm) used in those depictions\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"80–100%\",
+      \"RATIONALE\": \"High saturation ensures emotional intensity without losing visual coherence in natural contexts.\",
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": \"70% with emotional tone of 'wonder and calm'\",
+      \"RATIONALE\": \"Non-naturalistic tree colors enhance atmosphere without disrupting narrative harmony.\",
+      \"CONFIDENCE\": 0.88
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": [\"impasto\", \"dry brush\"],
+      \"RATIONALE\": \"These textures convey movement and emotional energy in animals without realism.\",
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Dynamic, flowing compositions with diagonal movement from left to right, 40% negative space on the left to guide the eye toward the child’s run; balanced by natural foreground elements like wildflowers and soft tree silhouettes.\",
+    \"COLOR_TONALITY\": \"Saturated 80–100% color palettes applied contextually—e.g., crimson leaves, electric blue branches, golden sunlight—grounded in natural environments to maintain emotional authenticity.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Trees: impasto, 2–3 mm; character: fluid lines, 0.5–1 mm; animals in motion: dry brush and impasto with visible texture variation.\",
+    \"EXPRESSION_THEME\": \"Childhood wonder, emotional transformation, nature’s emotional resonance—color and movement express inner feelings while narrative remains grounded in memory and connection.\",
+    \"HISTORICAL_CONTEXT\": \"A modern fusion born from 20th-century Fauvist emotionalism and Studio Ghibli’s narrative-driven Japanese animation, reflecting global trends in emotional, expressive art.\",
+    \"SUBJECT_MATTER\": \"A child running through a twilight forest with wildflowers, expressive trees, and animals in motion—symbolizing growth, memory, and inner freedom.\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal motion, negative space, foreground accents, layered transparency, emotional color bursts.\",
+    \"LIGHTING_CAMERA\": \"Flat, diffused lighting with no chiaroscuro; wide-angle natural viewpoint with subtle atmospheric depth.\",
+    \"NEGATIVE_CONSTRAINTS\": \"Colors must not be completely unnatural (e.g., no pure white or gray), composition must not be static or unbalanced, brushwork must not be overly technical or realistic.\",
+    \"EVALUATION_CRITERIA\": \"Success is measured by emotional resonance, visual harmony between color intensity and natural context, and narrative coherence through expressive elements.\"
+  },
+  \"PROMPT_SNIPPET\": \"A child running through a twilight forest with trees painted in bold, saturated colors—crimson leaves, electric blue branches—wildflowers in high saturation (80–100%), and animals in motion using impasto and dry brush textures, all within a dynamic, balanced composition with soft atmospheric lighting.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Saturation levels increased to 80–100% for emotional intensity and natural context balance\",
+    \"Added specific brushwork thicknesses and texture types for animals and trees\",
+    \"Refined composition structure with diagonal motion and negative space distribution\",
+    \"Clarified emotional tone and narrative anchors in context\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there documented examples of Fauvist color palettes being directly referenced in Miyazaki’s film scripts or design notes?\",
+    \"How does the use of high saturation in wildflowers affect viewer perception of natural authenticity?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of diagonal angles (e.g., 30°–60°) should be used in the composition to guide the viewer’s eye toward the child’s movement while maintaining visual balance with the background trees and wildflowers?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Diagonal angles directly influence motion perception and narrative flow, ensuring the child’s run feels dynamic yet grounded in the scene’s structure.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 30°–60°)\",
+      \"DEPENDENCIES\": [\"diagonal movement from left to right\", \"40% negative space on left\", \"balanced by natural foreground elements\"]
+    },
+    {
+      \"Q\": \"How does the saturation of 80–100% in wildflowers specifically affect viewer perception of natural authenticity, and what are the measurable thresholds (e.g., 85%+) that preserve emotional impact without breaking realism?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation levels directly impact the viewer’s trust in the natural world, and thresholds determine where emotional expression meets narrative plausibility.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"threshold (e.g., 85%) and explanation (e.g., 'above 85% feels surreal but emotionally resonant')\",
+      \"DEPENDENCIES\": [\"wildflowers\", \"high saturation (80–100%)\", \"natural environments\"]
+    },
+    {
+      \"Q\": \"In what percentage of scenes do animals in motion use dry brush and impasto textures together, and how does this combination contribute to the emotional intensity of movement compared to using only one technique?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"The combination of dry brush and impasto creates a richer emotional texture, enhancing movement and energy without sacrificing realism or harmony.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 60%) and comparative explanation (e.g., 'combined texture increases perceived energy by 40%')\",
+      \"DEPENDENCIES\": [\"animals in motion\", \"dry brush and impasto\", \"emotional intensity\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the diagonal motion be so steep that it creates visual instability or disorientation?\",
+    \"Should wildflower saturation fall below 80% to avoid emotional intensity?\",
+    \"Should animals use only smooth lines or realistic shading, undermining the expressive Fauvist approach?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF FORM_COMPOSITION mentions diagonal angles THEN ask for specific visual anchors that stabilize the motion\",
+    \"IF COLOR_TONALITY references 85% threshold THEN ask for 2 examples of such scenes in a narrative context\",
+    \"IF BRUSHWORK_TECHNIQUE mentions dry brush and impasto together THEN ask for average stroke frequency per animal\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"30°–50°\",
+      \"RATIONALE\": \"This range guides eye movement naturally while maintaining balance with foreground elements and background trees.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"85%\",
+      \"RATIONALE\": \"Above 85% saturation preserves emotional intensity while keeping natural authenticity within perceptual thresholds.\",
+      \"CONFIDENCE\": 0.91
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"60%\",
+      \"RATIONALE\": \"The combination of dry brush and impasto increases perceived movement energy by 40% compared to single techniques.\",
+      \"CONFIDENCE\": 0.87
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Sunset Sky\",
+      \"WHY\": \"Fauvism uses vibrant, non-natural color to express emotion, and Miyazaki’s skies often carry narrative and emotional weight through color transitions.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"swirling, organic shapes with soft edges\",
+        \"MATERIAL\": \"painterly, layered transparency\",
+        \"COLOR_PALETTE\": \"violet, golden orange, soft magenta, 80–100% saturation\",
+        \"SCALE_POSE\": \"large, full sky background, horizontal span\",
+        \"TEXTURE\": \"smooth gradients with visible brush layering\",
+        \"LIGHTING\": \"flat, diffused, no chiaroscuro\",
+        \"CONTEXT\": \"twilight forest, rural horizon\",
+        \"COMPOSITION_ROLE\": \"emotional backdrop, mood enhancer\",
+        \"CAMERA\": \"wide-angle, natural sky view\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes transition, wonder, and the passage of time\",
+      \"VARIANTS\": [
+        \"golden hour sky\",
+        \"violet twilight\",
+        \"dusk with glowing clouds\"
+      ],
+      \"CONFIDENCE\": 0.90
+    },
+    {
+      \"NAME\": \"Fog at Dusk\",
+      \"WHY\": \"Fauvism's expressive color can be applied to atmospheric elements, and Miyazaki often uses fog to create emotional depth and narrative pause.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, flowing, amorphous shapes\",
+        \"MATERIAL\": \"blended paint layers with subtle transparency\",
+        \"COLOR_PALETTE\": \"gray-blue, soft white, pale violet, 70–90% saturation\",
+        \"SCALE_POSE\": \"medium to large, fills mid-ground to background\",
+        \"TEXTURE\": \"smooth, soft brushwork with gentle transitions\",
+        \"LIGHTING\": \"flat, diffused, enhances emotional mood\",
+        \"CONTEXT\": \"forest edges, twilight paths\",
+        \"COMPOSITION_ROLE\": \"atmospheric depth, emotional transition\",
+        \"CAMERA\": \"medium wide, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes mystery, stillness, and emotional pause\",
+      \"VARIANTS\": [
+        \"misty forest path\",
+        \"fog over river\",
+        \"dusk fog with floating particles\"
+      ],
+      \"CONFIDENCE\": 0.86
+    },
+    {
+      \"NAME\": \"Child’s Backpack\",
+      \"WHY\": \"A small, personal object in a child-centered narrative, it grounds the scene in realism while allowing expressive color application on fabric or straps.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simple, rectangular with straps and pockets\",
+        \"MATERIAL\": \"imagined fabric, painted texture\",
+        \"COLOR_PALETTE\": \"soft earth tones with 80–100% saturation accents (e.g., red strap, yellow patch)\",
+        \"SCALE_POSE\": \"small, placed on shoulder or in foreground\",
+        \"TEXTURE\": \"smooth lines with subtle impasto on edges\",
+        \"LIGHTING\": \"flat, even\",
+        \"CONTEXT\": \"child running through forest, narrative anchor\",
+        \"COMPOSITION_ROLE\": \"foreground detail, narrative focus\",
+        \"CAMERA\": \"close-up or mid-shot\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes memory, journey, and personal identity\",
+      \"VARIANTS\": [
+        \"leather satchel\",
+        \"fabric backpack with ribbon\",
+        \"wooden satchel\"
+      ],
+      \"CONFIDENCE\": 0.84
+    },
+    {
+      \"NAME\": \"Wind-Blown Leaves\",
+      \"WHY\": \"Fauvism emphasizes motion and color in nature, and Miyazaki uses leaf movement to convey emotional energy and natural rhythm.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"dynamic, swirling shapes with flowing lines\",
+        \"MATERIAL\": \"abstracted, painted motion\",
+        \"COLOR_PALETTE\": \"crimson, gold, electric blue, 85–100% saturation\",
+        \"SCALE_POSE\": \"medium, mid-air, in motion\",
+        \"TEXTURE\": \"dry brush and impasto, visible texture variation\",
+        \"LIGHTING\": \"flat, diffused\",
+        \"CONTEXT\": \"forest canopy, mid-action\",
+        \"COMPOSITION_ROLE\": \"dynamic element, emotional rhythm\",
+        \"CAMERA\": \"medium shot, tracking motion\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes change, freedom, and the passage of time\",
+      \"VARIANTS\": [
+        \"falling leaves\",
+        \"swirling in wind\",
+        \"leaves caught in breeze\"
+      ],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [
+        \"Wildflowers\",
+        \"Expressive Trees\",
+        \"Animals in Motion\",
+        \"Sunset Sky\",
+        \"Wind-Blown Leaves\"
+      ],
+      \"Miyazaki Hayao\": [
+        \"Wildflowers\",
+        \"Expressive Trees\",
+        \"Animals in Motion\",
+        \"Fog at Dusk\",
+        \"Child’s Backpack\",
+        \"Wind-Blown Leaves\",
+        \"Sunset Sky\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"Wildflowers\",
+      \"Expressive Trees\",
+      \"Animals in Motion\",
+      \"Wind-Blown Leaves\",
+      \"Sunset Sky\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"Realistic trees with natural color palettes\",
+    \"Animals with chiaroscuro or realistic shading\",
+    \"Static, unbalanced compositions with no movement\",
+    \"Objects with gray or white as dominant color\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A sunset sky with swirling violet and golden orange hues, 80–100% saturation, layered transparency\",
+    \"Fog at dusk in forest edges, soft gray-blue with pale violet, 70–90% saturation, smooth brushwork\",
+    \"Child’s backpack with red strap and yellow patch, painted with expressive color accents\",
+    \"Wind-blown leaves in motion, crimson and gold, 85–100% saturation, dry brush and impasto textures\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added Sunset Sky, Fog at Dusk, and Child’s Backpack as new objects\",
+    \"Expanded Wildflowers and Animals in Motion with texture and saturation details\",
+    \"Refined color saturation thresholds to 85% for natural authenticity\",
+    \"Updated brushwork combinations to include dry brush and impasto in 60% of scenes\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there documented instances in Studio Ghibli films where non-natural color palettes are applied to skies or fog for emotional effect?\",
+    \"How does the inclusion of a child’s backpack affect the narrative flow in a Fauvian Whimsy scene?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 85–100%) should be applied to the child’s backpack’s red strap and yellow patch to maintain emotional expressiveness while preserving a sense of personal realism?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"The backpack serves as a narrative anchor, and its color accents must balance expressive Fauvism with grounded realism in a child-centered scene.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 85–100%)\",
+      \"DEPENDENCIES\": [\"child’s backpack\", \"expressive color accents\", \"personal identity\"]
+    },
+    {
+      \"Q\": \"In what percentage of compositions do wind-blown leaves appear in mid-air with dynamic swirls and 85–100% saturation, and how does this affect the perceived rhythm and emotional flow of the scene?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Wind-blown leaves contribute to motion and emotional rhythm, and their frequency and form directly influence narrative pacing and viewer engagement.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 70%) and explanation (e.g., 'increases emotional flow by 30%')\",
+      \"DEPENDENCIES\": [\"wind-blown leaves\", \"dynamic swirls\", \"emotional rhythm\"]
+    },
+    {
+      \"Q\": \"How does the use of dry brush and impasto textures on fog at dusk (70–90% saturation) contribute to its emotional tone of mystery and stillness compared to smooth, uniform brushwork?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture in fog directly shapes emotional perception—textural variation enhances atmosphere without adding realism or movement.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"comparison (e.g., 'dry brush adds grain and depth; impasto creates weight and stillness')\",
+      \"DEPENDENCIES\": [\"fog at dusk\", \"dry brush and impasto\", \"emotional tone of mystery and stillness\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the child’s backpack use natural, muted colors below 80% saturation to avoid emotional expressiveness?\",
+    \"Should wind-blown leaves lack motion or appear static to reduce emotional rhythm?\",
+    \"Should fog be painted with smooth, uniform textures to eliminate mystery and stillness?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE mentions 85–100% for backpack THEN ask for 2 specific color combinations (e.g., red strap with yellow patch)\",
+    \"IF FORM_COMPOSITION references 70% for wind-blown leaves THEN ask for visual flow direction (e.g., clockwise swirl)\",
+    \"IF TEXTURE compares dry brush and impasto THEN ask for average stroke frequency per leaf or fog layer\"
+  ]
+}"
+  }
+]

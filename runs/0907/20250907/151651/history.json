@@ -1,0 +1,867 @@
+[
+  {
+    "ROUND": 1,
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, expressive forms with dynamic, organic spatial arrangements; biomorphic shapes inspired by nature and movement, often with a childlike or fantastical sense of proportion.\",
+    \"COLOR_TONALITY\": \"Vivid, non-naturalistic palettes dominated by primary and complementary hues (e.g., bright reds, emerald greens, cobalt blues); high saturation with bold contrasts; inspired by Fauvism’s emotional colorism and Miyazaki’s whimsical, saturated tonal choices.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Fluid, gestural brushstrokes with visible impasto textures; layered and blended with soft transitions in some areas, combined with Miyazaki’s clean, hand-drawn line work and subtle ink-like detailing.\",
+    \"EXPRESSION_THEME\": \"Whimsical, heartwarming, and imaginative narratives centered on nature, childhood, and emotional resonance; a blend of emotional depth and playful fantasy.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (1905–1910) emphasizing emotional expression through color; modern Japanese animation (1980s–present) influenced by Miyazaki’s studio aesthetics and environmental storytelling.\"
+  },
+  \"MERGE_STRATEGY\": \"Fauvism provides the emotional intensity and bold color usage; Miyazaki contributes narrative depth, naturalistic forms, and a soft, lyrical line quality. The merge balances expressive color with narrative coherence and organic composition, resulting in a style that is vibrant yet emotionally grounded.\",
+  \"PROMPT_SNIPPET\": \"A vibrant, expressive painting with bold, non-naturalistic colors, fluid brushwork, and organic forms inspired by Fauvism and Miyazaki Hayao’s whimsical naturalism.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Avoid realistic perspective or photorealistic rendering\",
+    \"Avoid cold or muted color palettes\",
+    \"Avoid stiff, mechanical line work or cartoonish exaggeration without emotional context\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of at least three bold, non-naturalistic colors in high saturation\",
+    \"Organic, dynamic forms with emotional resonance\",
+    \"Blend of expressive brushwork with gentle, flowing line quality\",
+    \"Narrative or emotional tone suggesting wonder and natural harmony\"
+  ],
+  \"CONFIDENCE\": 0.95
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation (e.g., 80–120%) is expected for the primary colors like red, green, and blue in the painting?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation levels define whether the colors remain vivid and non-naturalistic as described in the style brief\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80–120%)\",
+      \"DEPENDENCIES\": [\"vivid, non-naturalistic palettes\", \"bold contrasts\"]
+    },
+    {
+      \"Q\": \"How should the organic forms be structured in terms of spatial dynamics—specifically, what percentage of the composition should be occupied by dynamic, biomorphic shapes versus static, grounded elements?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"This clarifies the balance between movement and stability, ensuring the dynamic forms remain emotionally resonant without losing coherence\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"percentage range (e.g., 60–80%)\",
+      \"DEPENDENCIES\": [\"dynamic, organic spatial arrangements\", \"biomorphic shapes\"]
+    },
+    {
+      \"Q\": \"What is the expected thickness range of impasto brushwork, and in which areas (e.g., edges, centers, backgrounds) should it be most prominent?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Impasto texture contributes to tactile depth and emotional intensity, and its placement affects the overall visual rhythm\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"thickness range (e.g., 0.5–2mm) and area-specific distribution (e.g., 'edges and highlights')\",
+      \"DEPENDENCIES\": [\"fluid, gestural brushstrokes\", \"impasto textures\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Can the painting include any realistic perspective or photorealistic features despite the style constraints?\",
+    \"Is it acceptable to use a muted or cool-toned color like gray or blue-green in any part of the palette?\",
+    \"Can the line work be stiff, mechanical, or cartoonishly exaggerated without emotional context?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation ranges THEN ask for specific color examples (e.g., cobalt blue, emerald green)\",
+    \"IF FORM_COMPOSITION references dynamic forms THEN ask for a specific example of a biomorphic shape (e.g., a swirling leaf or flowing wave)\",
+    \"IF BRUSHWORK_TECHNIQUE mentions impasto THEN ask for thickness ranges and application zones\"
+  ]
+}"
+  },
+  {
+    "ROUND": 1,
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"Wild animal in natural setting\",
+      \"WHY\": \"Fauvism emphasizes bold color and expressive forms, while Miyazaki's work often features animals in vibrant, emotionally resonant natural environments. The fusion highlights expressive coloration and organic forms.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, simplified\",
+        \"MATERIAL\": \"Implied by color and form; no physical material\",
+        \"COLOR_PALETTE\": \"High saturation, non-naturalistic, emotionally charged (e.g., electric blue, burnt orange, lime green)\",
+        \"SCALE_POSE\": \"Medium to large scale, dynamic poses, often in motion\",
+        \"TEXTURE\": \"Impasto-like, expressive brushwork, visible strokes\",
+        \"LIGHTING\": \"High contrast, dramatic, non-realistic, often with strong directional light\",
+        \"CONTEXT\": \"Natural landscapes (forests, mountains, rivers)\",
+        \"COMPOSITION_ROLE\": \"Main subject or emotional focus\",
+        \"CAMERA\": \"Wide-angle, slightly tilted, naturalistic but stylized\"
+      },
+      \"ICONOGRAPHY\": \"Freedom, wildness, emotional connection to nature\",
+      \"VARIANTS\": [\"Fox\", \"Wolf\", \"Bird\", \"Dragon\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Floating island or fantasy landscape\",
+      \"WHY\": \"Fauvism's expressive color is applied to surreal or dreamlike settings, and Miyazaki frequently depicts fantastical, floating islands. This combination creates a visually rich, emotionally charged environment.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Surreal, geometrically irregular, layered\",
+        \"MATERIAL\": \"Implied by color and form; ethereal\",
+        \"COLOR_PALETTE\": \"Vivid, contrasting, saturated (e.g., pastel purple, neon yellow, deep teal)\",
+        \"SCALE_POSE\": \"Large scale, elevated, often isolated\",
+        \"TEXTURE\": \"Smooth gradients, soft edges, some textured brushwork\",
+        \"LIGHTING\": \"Soft, diffused, with internal glowing sources\",
+        \"CONTEXT\": \"Fantasy or dreamlike environments (sky, clouds, floating terrain)\",
+        \"COMPOSITION_ROLE\": \"Background or setting for emotional narrative\",
+        \"CAMERA\": \"High-angle, aerial view, wide frame\"
+      },
+      \"ICONOGRAPHY\": \"Dreams, possibility, otherworldliness\",
+      \"VARIANTS\": [\"Floating village\", \"cloud forest\", \"crystal peak\"],
+      \"CONFIDENCE\": 0.75
+    },
+    {
+      \"NAME\": \"Child playing in a field\",
+      \"WHY\": \"Miyazaki often portrays children in simple, joyful settings with strong emotional resonance. Fauvism adds expressive color to everyday scenes, enhancing emotional impact.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Simplified, rounded, childlike proportions\",
+        \"MATERIAL\": \"Implied by environment; natural elements\",
+        \"COLOR_PALETTE\": \"Warm, joyful, high contrast (e.g., bright red, yellow, green)\",
+        \"SCALE_POSE\": \"Small scale, active, often in motion\",
+        \"TEXTURE\": \"Soft, smooth, with gentle brushwork\",
+        \"LIGHTING\": \"Natural daylight, even and bright\",
+        \"CONTEXT\": \"Open fields, rural countryside\",
+        \"COMPOSITION_ROLE\": \"Foreground emotional anchor\",
+        \"CAMERA\": \"Close-up, slightly low angle, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"Purity, innocence, joy\",
+      \"VARIANTS\": [\"Running\", \"building a sandcastle\", \"holding a kite\"],
+      \"CONFIDENCE\": 0.80
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How does Fauvism's color theory specifically influence Miyazaki's animal depictions?\",
+    \"Are there known examples of direct stylistic fusion between Fauvism and Miyazaki's work?\",
+    \"What role does cultural symbolism play in the emotional tone of these combined objects?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 70–100% or 90%+) is typically used in Fauvism-influenced animal depictions in Miyazaki-style paintings?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Saturation levels define the intensity of Fauvism's expressive color and help distinguish it from naturalistic rendering.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"Range (e.g., 70–100%) or percentage threshold\",
+      \"DEPENDENCIES\": [\"high saturation\", \"emotionally charged\", \"electric blue\", \"burnt orange\"]
+    },
+    {
+      \"Q\": \"In floating island scenes, what is the average gradient transition between background and foreground colors, and how does it affect the perception of depth?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Gradient transitions influence the surreal and dreamlike quality of the floating island setting, which is central to the style's emotional tone.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Range (e.g., 0–30% gradient) or descriptive scale (e.g., soft to sharp)\",
+      \"DEPENDENCIES\": [\"smooth gradients\", \"soft edges\", \"ethereal\"]
+    },
+    {
+      \"Q\": \"Are there specific cultural or seasonal motifs (e.g., cherry blossoms, harvest festivals) that appear in child playing scenes and how do they influence the emotional tone?\",
+      \"DIMENSION\": \"ICONOGRAPHY\",
+      \"WHY\": \"Cultural motifs ground the emotional resonance of the child scenes and provide deeper narrative context in Miyazaki’s work.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"List of specific motifs with associated emotional or seasonal context\",
+      \"DEPENDENCIES\": [\"joy\", \"innocence\", \"rural countryside\", \"child playing\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are there any depictions of animals in natural settings using realistic color palettes or muted tones that contradict the Fauvism influence?\",
+    \"Do any floating island scenes feature sharp, mechanical textures or hard edges that break the ethereal quality?\",
+    \"Is there any child scene that lacks emotional resonance or joyful coloration despite being in a rural field?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes neon yellow or deep teal THEN ask for 3 specific color combinations used in animal depictions\",
+    \"IF CONTEXT includes rural countryside AND SCALE_POSE is small THEN ask for 2 specific child activities with associated colors\",
+    \"IF ICONOGRAPHY includes seasonal motifs THEN ask for 1 example of a festival or event depicted in a child scene\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": \"70–100% saturation for primary and complementary hues (e.g., electric blue, burnt orange, lime green)\",
+      \"RATIONALE\": \"Fauvism emphasizes intense emotional color, requiring high saturation to maintain non-naturalistic intensity while remaining within Miyazaki’s expressive range.\",
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"0–30% gradient transition between background and foreground colors, with soft, diffused edges\",
+      \"RATIONALE\": \"Ensures ethereal, dreamlike depth in floating island scenes without mechanical or sharp contrasts.\",
+      \"CONFIDENCE\": 0.88
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"ICONOGRAPHY\",
+      \"ANSWER\": [\"Cherry blossoms (spring season, transience, beauty)\", \"Harvest festival (autumn, community, joy)\"],
+      \"RATIONALE\": \"These motifs reinforce emotional resonance and seasonal context in child scenes, aligning with Miyazaki’s cultural storytelling.\",
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Dynamic, biomorphic forms occupy 60–80% of the composition; structured with organic spatial flow, featuring swirling leaves, flowing waves, or floating islands with layered, irregular geometry; static elements (e.g., grounded trees or children) make up 20–40% and serve as emotional anchors.\",
+    \"COLOR_TONALITY\": \"High-saturation, non-naturalistic palette (70–100% saturation) dominated by primary and complementary hues (e.g., electric blue, burnt orange, lime green, neon yellow, deep teal); bold contrasts between warm and cool tones; inspired by Fauvism’s emotional colorism and Miyazaki’s naturalistic, joyful palettes.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Fluid, gestural brushstrokes with impasto textures (0.5–2mm thickness) applied to edges, highlights, and dynamic forms; soft transitions in background areas; layered with clean, flowing lines resembling Miyazaki’s hand-drawn ink quality.\",
+    \"EXPRESSION_THEME\": \"Whimsical, emotionally resonant narratives centered on nature, childhood, and seasonal cycles; themes of freedom, joy, transience, and harmony between humans and the natural world.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (1905–1910) for emotional color and expressive form; modern Japanese animation (1980s–present) for narrative depth, cultural symbolism, and environmental storytelling.\",
+    \"SUBJECT_MATTER\": \"Wild animals in natural settings, floating fantasy landscapes, or children playing in rural fields with seasonal motifs.\",
+    \"COMPOSITIONAL_DEVICES\": \"Dynamic forms (60–80%) balanced with grounded elements (20–40%); aerial or wide-angle perspective; soft gradients (0–30%) for depth in fantasy settings.\",
+    \"LIGHTING_CAMERA\": \"High-contrast, dramatic lighting with strong directional sources for animals; soft, diffused internal glow for floating islands; natural daylight with even brightness for child scenes; camera angles include wide-angle, tilted, or high-angle views.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid realistic perspective or photorealistic rendering\",
+      \"Avoid cold or muted color palettes (e.g., gray, blue-green, neutral tones)\",
+      \"Avoid stiff, mechanical line work or cartoonish exaggeration without emotional context\",
+      \"Avoid sharp, hard edges or mechanical textures in fantasy or natural elements\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"At least three bold, non-naturalistic colors with 70–100% saturation\",
+      \"Dynamic biomorphic forms (60–80% of composition) with soft transitions (0–30% gradient)\",
+      \"Impasto texture (0.5–2mm) applied to edges and highlights, with clean flowing lines in background areas\",
+      \"Emotional narrative tied to nature, childhood, or seasonal themes (e.g., cherry blossoms, harvest festival)\",
+      \"Balance between expressive form and grounded emotional anchor\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A vibrant, expressive painting with high-saturation (70–100%) non-naturalistic colors, dynamic biomorphic forms (60–80% of composition), fluid brushwork with impasto textures on edges and highlights, and emotional themes of nature, childhood, and seasonal joy.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added saturation range (70–100%) for primary colors\",
+    \"Defined dynamic form percentage (60–80%) and static element balance (20–40%)\",
+    \"Specified impasto thickness (0.5–2mm) and application zones (edges, highlights)\",
+    \"Added gradient transition range (0–30%) for floating island scenes\",
+    \"Included seasonal motifs (cherry blossoms, harvest festival) in child scenes\",
+    \"Updated negative constraints to exclude cold tones and mechanical textures\",
+    \"Expanded evaluation criteria to include saturation, form balance, gradients, and seasonal themes\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How do specific color combinations (e.g., electric blue + burnt orange) influence emotional perception in animal depictions?\",
+    \"Are there known artistic collaborations or direct references between Fauvist artists and Miyazaki’s studio in terms of color theory?\",
+    \"How does the scale of the child in a field relate to the emotional impact of the scene?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific emotional tone is activated when electric blue and burnt orange are paired in animal depictions, and how does this compare to other color combinations like lime green and neon yellow?\",
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"WHY\": \"Color combinations directly influence emotional resonance, which is central to the whimsical and heartwarming narrative theme\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of emotional responses (e.g., 'energetic joy', 'tension and freedom') for each pair, with comparative notes\",
+      \"DEPENDENCIES\": [\"electric blue + burnt orange\", \"color combinations\", \"emotional perception\", \"animal depictions\"]
+    },
+    {
+      \"Q\": \"In child playing scenes, what is the minimum size ratio (e.g., 1:3 or 1:5) between the child's scale and the surrounding landscape, and how does this ratio affect the sense of emotional anchor or scale?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Scale proportionality determines how the child functions as a grounded emotional focus within the dynamic natural environment\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Size ratio (e.g., 1:3 to 1:5) and brief explanation of its emotional impact\",
+      \"DEPENDENCIES\": [\"small scale\", \"active poses\", \"emotional anchor\", \"rural countryside\"]
+    },
+    {
+      \"Q\": \"How does the gradient transition (0–30%) in floating island scenes interact with the lighting (soft, diffused internal glow) to create depth, and what happens if the gradient exceeds 30%?\",
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"WHY\": \"Gradient and lighting work together to produce ethereal depth; exceeding the threshold risks breaking the dreamlike quality defined in the style\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"Description of interaction and consequence of exceeding 30% gradient\",
+      \"DEPENDENCIES\": [\"0–30% gradient\", \"soft, diffused internal glow\", \"floating island scenes\", \"depth perception\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Can the painting use a gradient over 30% in floating island scenes without compromising the ethereal quality?\",
+    \"Is it acceptable to use a child scale larger than 1:3, which might diminish emotional intimacy?\",
+    \"Can any animal depiction use a color combination outside the 70–100% saturation range or lack emotional charge?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF EXPRESSION_THEME mentions emotional tone of color pairs THEN ask for one example scene where that tone is visually represented\",
+    \"IF FORM_COMPOSITION references scale ratio THEN ask for a specific activity tied to that ratio (e.g., running toward a tree)\",
+    \"IF LIGHTING_CAMERA references gradient and glow THEN ask for a specific lighting direction or source in a floating island scene\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"EXPRESSION_THEME\",
+      \"ANSWER\": [
+        \"Electric blue + burnt orange: energetic joy, tension and freedom\",
+        \"Lime green + neon yellow: playful vibrancy, youthful exuberance\"
+      ],
+      \"RATIONALE\": \"These combinations evoke distinct emotional responses aligned with the whimsical and emotionally resonant nature of the style.\",
+      \"CONFIDENCE\": 0.87
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"1:3 to 1:5 size ratio between child and landscape; creates a sense of emotional intimacy and scale balance within the natural environment\",
+      \"RATIONALE\": \"A small child relative to the expansive field reinforces the role of the child as a grounded emotional anchor.\",
+      \"CONFIDENCE\": 0.89
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"ANSWER\": \"Gradient and soft internal glow create seamless, dreamlike depth; exceeding 30% gradient causes visual harshness and breaks ethereal quality\",
+      \"RATIONALE\": \"The interaction maintains surreal softness; over 30% gradient introduces mechanical contrast, violating the style’s dreamlike constraints.\",
+      \"CONFIDENCE\": 0.91
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Wild animal in natural setting\",
+      \"WHY\": \"Fauvism’s bold color and expressive forms align with emotional animal depictions in nature, enhanced by Miyazaki’s naturalistic storytelling.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, simplified biomorphic shapes\",
+        \"MATERIAL\": \"Implied by color and form; no physical material\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), primary and complementary hues (e.g., electric blue, burnt orange, lime green)\",
+        \"SCALE_POSE\": \"Medium to large scale, dynamic poses in motion\",
+        \"TEXTURE\": \"Impasto-like, expressive brushwork on edges and highlights; soft transitions in background\",
+        \"LIGHTING\": \"High contrast, dramatic directional light\",
+        \"CONTEXT\": \"Forests, mountains, rivers\",
+        \"COMPOSITION_ROLE\": \"Main subject or emotional focus\",
+        \"CAMERA\": \"Wide-angle, slightly tilted, stylized natural view\"
+      },
+      \"ICONOGRAPHY\": \"Freedom, wildness, emotional connection to nature\",
+      \"VARIANTS\": [\"Fox\", \"Wolf\", \"Bird\", \"Dragon\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Floating island or fantasy landscape\",
+      \"WHY\": \"Fauvism’s expressive color applied to surreal settings creates emotionally rich, dreamlike environments consistent with Miyazaki’s fantasy worlds.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Surreal, geometrically irregular, layered\",
+        \"MATERIAL\": \"Ethereal, implied by color and form\",
+        \"COLOR_PALETTE\": \"Vivid, saturated (e.g., pastel purple, neon yellow, deep teal), warm-cool contrast\",
+        \"SCALE_POSE\": \"Large scale, elevated, isolated\",
+        \"TEXTURE\": \"Smooth gradients (0–30%), soft edges, minimal texture\",
+        \"LIGHTING\": \"Soft, diffused internal glow\",
+        \"CONTEXT\": \"Sky, clouds, floating terrain\",
+        \"COMPOSITION_ROLE\": \"Background or setting for emotional narrative\",
+        \"CAMERA\": \"High-angle, aerial view, wide frame\"
+      },
+      \"ICONOGRAPHY\": \"Dreams, possibility, otherworldliness\",
+      \"VARIANTS\": [\"Floating village\", \"cloud forest\", \"crystal peak\"],
+      \"CONFIDENCE\": 0.75
+    },
+    {
+      \"NAME\": \"Child playing in a field\",
+      \"WHY\": \"Miyazaki’s child-centered narratives with emotional joy are enhanced by Fauvism’s expressive color and seasonal motifs.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Simplified, rounded, childlike proportions\",
+        \"MATERIAL\": \"Implied by environment; natural elements\",
+        \"COLOR_PALETTE\": \"Warm, joyful, high contrast (e.g., bright red, yellow, green), 70–100% saturation\",
+        \"SCALE_POSE\": \"Small scale (1:3 to 1:5 ratio), active, in motion\",
+        \"TEXTURE\": \"Soft, smooth, gentle brushwork\",
+        \"LIGHTING\": \"Natural daylight, even and bright\",
+        \"CONTEXT\": \"Open fields, rural countryside\",
+        \"COMPOSITION_ROLE\": \"Foreground emotional anchor\",
+        \"CAMERA\": \"Close-up, slightly low angle, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"Purity, innocence, joy\",
+      \"VARIANTS\": [\"Running\", \"building a sandcastle\", \"holding a kite\"],
+      \"CONFIDENCE\": 0.80
+    },
+    {
+      \"NAME\": \"Cherry blossom tree in spring field\",
+      \"WHY\": \"Cherry blossoms represent transience and beauty, a key seasonal motif in Miyazaki’s work, enhanced by Fauvism’s vivid, expressive color palette.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, branching with soft curves\",
+        \"MATERIAL\": \"Implied by color and form; ethereal petals\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), pink and white with electric blue or lime green accents\",
+        \"SCALE_POSE\": \"Medium scale, full bloom, gently swaying\",
+        \"TEXTURE\": \"Soft gradients, delicate brushwork, slightly impasto edges\",
+        \"LIGHTING\": \"Soft, diffused daylight with warm highlights\",
+        \"CONTEXT\": \"Spring fields, rural countryside\",
+        \"COMPOSITION_ROLE\": \"Background or emotional transition element\",
+        \"CAMERA\": \"Medium wide-angle, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"Transience, beauty, seasonal change\",
+      \"VARIANTS\": [\"Full bloom\", \"dying petals\", \"drifting in wind\"],
+      \"CONFIDENCE\": 0.78
+    },
+    {
+      \"NAME\": \"Harvest festival celebration\",
+      \"WHY\": \"Harvest festivals symbolize community and joy, aligning with Miyazaki’s cultural storytelling and Fauvism’s emotional color intensity.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Clustered, circular, human-scale groupings with natural elements\",
+        \"MATERIAL\": \"Implied by environment and color; handmade, organic\",
+        \"COLOR_PALETTE\": \"Warm, joyful (e.g., bright red, gold, orange), 70–100% saturation\",
+        \"SCALE_POSE\": \"Medium scale, group activity, dynamic movement\",
+        \"TEXTURE\": \"Soft, smooth, with gentle brushwork and soft gradients\",
+        \"LIGHTING\": \"Even natural daylight, warm tones\",
+        \"CONTEXT\": \"Autumn countryside, village field\",
+        \"COMPOSITION_ROLE\": \"Foreground narrative anchor\",
+        \"CAMERA\": \"Slightly low angle, wide frame capturing group\"
+      },
+      \"ICONOGRAPHY\": \"Community, joy, seasonal harmony\",
+      \"VARIANTS\": [\"Harvest dance\", \"grain gathering\", \"shared meal\"],
+      \"CONFIDENCE\": 0.76
+    },
+    {
+      \"NAME\": \"Dragon soaring over mountains\",
+      \"WHY\": \"A dragon in a dynamic natural setting combines Fauvism’s expressive forms with Miyazaki’s mythological and emotional narratives.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Biomorphic, fluid, dynamic wings and body\",
+        \"MATERIAL\": \"Implied by color and form; ethereal and glowing\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), electric blue, burnt orange, deep teal\",
+        \"SCALE_POSE\": \"Large scale, soaring, dynamic motion\",
+        \"TEXTURE\": \"Impasto on edges and wings, soft transitions in body\",
+        \"LIGHTING\": \"Dramatic directional light from sky\",
+        \"CONTEXT\": \"Mountain ranges, open sky\",
+        \"COMPOSITION_ROLE\": \"Main subject with emotional impact\",
+        \"CAMERA\": \"Wide-angle, slightly tilted, dynamic view\"
+      },
+      \"ICONOGRAPHY\": \"Power, freedom, harmony with nature\",
+      \"VARIANTS\": [\"Soaring over clouds\", \"navigating storm\", \"resting on peak\"],
+      \"CONFIDENCE\": 0.72
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [\"Wild animal in natural setting\", \"Floating island or fantasy landscape\", \"Cherry blossom tree in spring field\"],
+      \"Miyazaki\": [\"Child playing in a field\", \"Harvest festival celebration\", \"Dragon soaring over mountains\"]
+    },
+    \"INTERSECTION\": [\"Wild animal in natural setting\", \"Child playing in a field\"]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"Realistic animals with naturalistic color palettes\",
+    \"Sharp, mechanical textures or hard edges in fantasy or natural forms\",
+    \"Cold or muted tones (e.g., gray, blue-green)\",
+    \"Stiff, cartoonish exaggeration without emotional context\",
+    \"Photorealistic perspective or detailed realism\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A vibrant painting with high-saturation (70–100%) non-naturalistic colors, dynamic biomorphic forms (60–80% of composition), and emotional themes of nature, childhood, and seasonal joy.\",
+    \"A wild animal in a forest with electric blue and burnt orange hues, dynamic pose, impasto texture on edges, high-contrast lighting.\",
+    \"A floating island with soft gradients (0–30%), internal glow, and vivid saturated colors in pastel purple and neon yellow.\",
+    \"A child playing in a field with 1:3 to 1:5 scale ratio, bright red and yellow colors, joyful expression, natural daylight.\",
+    \"A cherry blossom tree in spring with soft pink and electric blue, swaying gently, full bloom in a rural field.\",
+    \"A harvest festival with warm red, gold, and orange colors, community gathering, even daylight, joyful atmosphere.\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added cherry blossom tree and harvest festival as new objects\",
+    \"Expanded variants for animal and fantasy objects\",
+    \"Updated scale ratio for child scenes to 1:3 to 1:5\",
+    \"Refined color palettes with saturation ranges (70–100%)\",
+    \"Added emotional tone for color combinations in animal depictions\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How does the emotional tone of a dragon scene compare to that of a child scene in terms of narrative pacing?\",
+    \"Are there specific brushwork patterns (e.g., swirls, strokes) that distinguish Fauvism-influenced animal forms from naturalistic depictions?\",
+    \"What seasonal transitions (e.g., from spring to autumn) are visually represented in the object compositions?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific brushwork patterns (e.g., swirling strokes, flowing lines) are used to depict the dynamic forms of a dragon soaring over mountains, and where are they most concentrated in the composition?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Brushwork patterns distinguish Fauvism-influenced forms from naturalistic depictions and anchor the expressive quality of dynamic animals\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of specific patterns (e.g., 'swirling strokes', 'flowing lines') and their application zones (e.g., 'wings', 'body edges')\",
+      \"DEPENDENCIES\": [\"biomorphic, fluid forms\", \"impasto on edges and wings\", \"dynamic motion\", \"dragon soaring\"]
+    },
+    {
+      \"Q\": \"In cherry blossom scenes, what is the minimum and maximum density of petals (e.g., 50–100 petals per square inch) and how does it affect the perception of transience and softness?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Petal density influences the emotional tone of transience and the overall softness of the scene, critical to the seasonal motif’s impact\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Range (e.g., 50–100 petals per square inch) and brief explanation of emotional effect\",
+      \"DEPENDENCIES\": [\"soft gradients\", \"delicate brushwork\", \"swaying gently\", \"full bloom\", \"transience\"]
+    },
+    {
+      \"Q\": \"How does the composition of a harvest festival scene balance group dynamics (e.g., number of people, activity types) with the emotional tone of community and joy, and what is the ideal ratio of human figures to natural elements?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Group dynamics and human-nature interaction define the emotional anchor and narrative coherence of the festival scene\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"Ratio (e.g., 3:1 human to natural elements) and description of activity distribution\",
+      \"DEPENDENCIES\": [\"community\", \"joy\", \"group activity\", \"shared meal\", \"village field\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Can a dragon scene use mechanical or stiff line work in its wings or body without emotional context?\",
+    \"Is it acceptable to depict cherry blossoms with low petal density (e.g., under 50 per square inch) that lacks the sense of transience?\",
+    \"Can a harvest festival scene lack visible group interaction or emotional expression despite having warm colors and joyful lighting?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK_TECHNIQUE mentions swirling strokes THEN ask for one example of a specific animal form where this pattern is used\",
+    \"IF TEXTURE references petal density THEN ask for one example of a scene with full bloom versus dying petals\",
+    \"IF COMPOSITION_ROLE references group dynamics THEN ask for a specific activity (e.g., dance) that defines the community joy\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"Swirling strokes and flowing lines concentrated on wings and body edges of the dragon; impasto applied to dynamic contours and trailing edges\",
+      \"RATIONALE\": \"These patterns emphasize fluid motion and Fauvism’s expressive form in dynamic animal depictions\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"50–100 petals per square inch; higher density enhances softness and transience, lower density reduces emotional impact\",
+      \"RATIONALE\": \"Petal density directly affects the perception of fleeting beauty and seasonal change\",
+      \"CONFIDENCE\": 0.91
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"ANSWER\": \"3:1 human to natural elements; group activity distributed across dance, gathering, and shared meal scenes\",
+      \"RATIONALE\": \"Balances community joy with interaction between humans and natural environment\",
+      \"CONFIDENCE\": 0.89
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Dynamic, biomorphic forms occupy 60–80% of the composition; structured with organic spatial flow, featuring swirling leaves, flowing waves, floating islands, or dragons with fluid, dynamic bodies; static elements (e.g., grounded trees, children, or festival groups) make up 20–40% and serve as emotional anchors.\",
+    \"COLOR_TONALITY\": \"High-saturation (70–100%) non-naturalistic palette dominated by primary and complementary hues (e.g., electric blue, burnt orange, lime green, neon yellow, deep teal, pink, gold); bold warm-cool contrasts; inspired by Fauvism’s emotional colorism and Miyazaki’s naturalistic, joyful palettes.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Fluid, gestural brushstrokes with impasto textures (0.5–2mm thickness) applied to edges, highlights, and dynamic forms; swirling strokes and flowing lines concentrated on wings and body edges of dragons or moving animals; soft transitions in background areas; layered with clean, flowing lines resembling Miyazaki’s hand-drawn ink quality.\",
+    \"EXPRESSION_THEME\": \"Whimsical, emotionally resonant narratives centered on nature, childhood, seasonal cycles, and human-nature harmony; themes of freedom, joy, transience, community, and emotional connection to the environment.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (1905–1910) for emotional color and expressive form; modern Japanese animation (1980s–present) for narrative depth, cultural symbolism, and environmental storytelling.\",
+    \"SUBJECT_MATTER\": \"Wild animals in natural settings, floating fantasy landscapes, children playing in rural fields, cherry blossom trees, harvest festivals, or dragons soaring over mountains.\",
+    \"COMPOSITIONAL_DEVICES\": \"Dynamic forms (60–80%) balanced with grounded elements (20–40%); aerial or wide-angle perspective; soft gradients (0–30%) for depth in fantasy settings; 1:3 to 1:5 child-to-landscape scale; 3:1 human-to-natural elements in festivals\",
+    \"LIGHTING_CAMERA\": \"High-contrast, dramatic directional light for animals and dragons; soft, diffused internal glow for floating islands; natural daylight with even brightness for child and festival scenes; camera angles include wide-angle, tilted, high-angle, or close-up views\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid realistic perspective or photorealistic rendering\",
+      \"Avoid cold or muted color palettes (e.g., gray, blue-green, neutral tones)\",
+      \"Avoid stiff, mechanical line work or cartoonish exaggeration without emotional context\",
+      \"Avoid sharp, hard edges or mechanical textures in fantasy or natural elements\",
+      \"Avoid low petal density (<50 per square inch) in cherry blossom scenes\",
+      \"Avoid lack of group interaction or emotional expression in festival scenes\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"At least three bold, non-naturalistic colors with 70–100% saturation\",
+      \"Dynamic biomorphic forms (60–80% of composition) with soft transitions (0–30% gradient)\",
+      \"Impasto texture (0.5–2mm) applied to edges and highlights, with swirling strokes on dragon wings or animal bodies\",
+      \"Emotional narrative tied to nature, childhood, seasonal themes (e.g., cherry blossoms, harvest festival), or human-nature harmony\",
+      \"Balance between expressive form and grounded emotional anchor (e.g., 1:3–1:5 child scale, 3:1 human-to-natural ratio)\",
+      \"Petal density in cherry blossoms between 50–100 per square inch for transience and softness\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A vibrant, expressive painting with high-saturation (70–100%) non-naturalistic colors, dynamic biomorphic forms (60–80% of composition), fluid brushwork with impasto textures and swirling strokes on dynamic edges, and emotional themes of nature, childhood, seasonal change, and human-nature harmony.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added swirling strokes and flowing lines on dragon wings and body edges\",
+    \"Added petal density range (50–100 per square inch) for cherry blossoms\",
+    \"Added human-to-natural element ratio (3:1) for harvest festivals\",
+    \"Expanded composition and texture details with measurable ranges and emotional anchors\",
+    \"Updated negative constraints to include petal density and group interaction requirements\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How does the emotional pacing of a dragon scene compare to a harvest festival in terms of narrative rhythm?\",
+    \"Are there specific brushstroke rhythms (e.g., faster vs. slower) that differentiate Fauvism-influenced forms from naturalistic ones?\",
+    \"What visual transitions (e.g., from spring to autumn) are represented in the seasonal object compositions?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific ratio of warm to cool tones (e.g., 3:2 or 4:1) is maintained in the color palette for dragon scenes, and how does this ratio influence the perception of power and freedom?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Warm-cool contrast defines emotional tension and dynamic energy in dynamic animal forms like dragons\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"Ratio (e.g., 3:2) and brief explanation of emotional impact\",
+      \"DEPENDENCIES\": [\"high-saturation palette\", \"burnt orange, electric blue\", \"dynamic forms\", \"dragon soaring\"]
+    },
+    {
+      \"Q\": \"In floating island scenes, how is the soft gradient (0–30%) distributed across the sky and terrain, and what percentage of the composition should exhibit visible gradient transitions to maintain ethereal depth?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Gradient distribution directly affects the perceived depth and dreamlike quality of the floating island setting\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Distribution (e.g., '70% sky, 30% terrain') and percentage of composition with gradient transitions\",
+      \"DEPENDENCIES\": [\"soft gradients (0–30%)\", \"internal glow\", \"floating island scenes\", \"ethereal depth\"]
+    },
+    {
+      \"Q\": \"How does the scale of a child in a field (1:3 to 1:5 ratio) interact with the background elements (e.g., trees, horizon) in terms of visual balance and emotional intimacy, and what happens if the child is positioned too centrally or too far from the edge?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Child scale and positioning affect emotional anchor strength and narrative focus within the natural environment\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"Description of balance and emotional impact, plus consequences of central or off-center placement\",
+      \"DEPENDENCIES\": [\"1:3 to 1:5 size ratio\", \"emotional anchor\", \"rural countryside\", \"foreground composition\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Can a floating island scene use sharp gradients over 30% or mechanical edges that break the ethereal quality?\",
+    \"Is it acceptable to reduce the warm-cool contrast in a dragon scene below 3:2, weakening the sense of dynamic power?\",
+    \"Can a child scene have a scale ratio outside 1:3 to 1:5, reducing emotional intimacy or grounding?\",
+    \"Can a festival scene lack visible group interaction despite warm colors and joyful lighting?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions warm-cool ratio THEN ask for one specific example of a scene where this ratio is visually represented\",
+    \"IF COMPOSITIONAL_DEVICES references gradient distribution THEN ask for a specific example of a sky-to-terrain transition\",
+    \"IF FORM_COMPOSITION references child positioning THEN ask for a specific activity (e.g., running toward a tree) that defines emotional intimacy\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"3:2 warm-to-cool ratio (e.g., burnt orange to electric blue); enhances perception of power, freedom, and dynamic energy in the dragon\",
+      \"RATIONALE\": \"The warm-cool contrast amplifies emotional tension and movement in dynamic animal forms.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"70% sky, 30% terrain; 80% of composition shows visible gradient transitions to maintain ethereal depth\",
+      \"RATIONALE\": \"Balances aerial dominance with grounded terrain while preserving dreamlike softness.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"Child positioned near the edge of the field, not centrally; creates visual balance and emotional intimacy by allowing natural flow of background elements; central placement disrupts grounding and reduces emotional focus\",
+      \"RATIONALE\": \"Edge positioning reinforces the child as a natural, grounded anchor within the expansive landscape.\",
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Wild animal in natural setting\",
+      \"WHY\": \"Fauvism’s bold color and expressive forms align with emotional animal depictions in nature, enhanced by Miyazaki’s naturalistic storytelling.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, simplified biomorphic shapes\",
+        \"MATERIAL\": \"Implied by color and form; no physical material\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), primary and complementary hues (e.g., electric blue, burnt orange, lime green)\",
+        \"SCALE_POSE\": \"Medium to large scale, dynamic poses in motion\",
+        \"TEXTURE\": \"Impasto-like, expressive brushwork on edges and highlights; soft transitions in background\",
+        \"LIGHTING\": \"High contrast, dramatic directional light\",
+        \"CONTEXT\": \"Forests, mountains, rivers\",
+        \"COMPOSITION_ROLE\": \"Main subject or emotional focus\",
+        \"CAMERA\": \"Wide-angle, slightly tilted, stylized natural view\"
+      },
+      \"ICONOGRAPHY\": \"Freedom, wildness, emotional connection to nature\",
+      \"VARIANTS\": [\"Fox\", \"Wolf\", \"Bird\", \"Dragon\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Floating island or fantasy landscape\",
+      \"WHY\": \"Fauvism’s expressive color applied to surreal settings creates emotionally rich, dreamlike environments consistent with Miyazaki’s fantasy worlds.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Surreal, geometrically irregular, layered\",
+        \"MATERIAL\": \"Ethereal, implied by color and form\",
+        \"COLOR_PALETTE\": \"Vivid, saturated (e.g., pastel purple, neon yellow, deep teal), warm-cool contrast\",
+        \"SCALE_POSE\": \"Large scale, elevated, isolated\",
+        \"TEXTURE\": \"Smooth gradients (0–30%), soft edges, minimal texture\",
+        \"LIGHTING\": \"Soft, diffused internal glow\",
+        \"CONTEXT\": \"Sky, clouds, floating terrain\",
+        \"COMPOSITION_ROLE\": \"Background or setting for emotional narrative\",
+        \"CAMERA\": \"High-angle, aerial view, wide frame\"
+      },
+      \"ICONOGRAPHY\": \"Dreams, possibility, otherworldliness\",
+      \"VARIANTS\": [\"Floating village\", \"cloud forest\", \"crystal peak\"],
+      \"CONFIDENCE\": 0.75
+    },
+    {
+      \"NAME\": \"Child playing in a field\",
+      \"WHY\": \"Miyazaki’s child-centered narratives with emotional joy are enhanced by Fauvism’s expressive color and seasonal motifs.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Simplified, rounded, childlike proportions\",
+        \"MATERIAL\": \"Implied by environment; natural elements\",
+        \"COLOR_PALETTE\": \"Warm, joyful, high contrast (e.g., bright red, yellow, green), 70–100% saturation\",
+        \"SCALE_POSE\": \"Small scale (1:3 to 1:5 ratio), active, in motion, positioned near field edge\",
+        \"TEXTURE\": \"Soft, smooth, gentle brushwork\",
+        \"LIGHTING\": \"Natural daylight, even and bright\",
+        \"CONTEXT\": \"Open fields, rural countryside\",
+        \"COMPOSITION_ROLE\": \"Foreground emotional anchor\",
+        \"CAMERA\": \"Close-up, slightly low angle, natural perspective\"
+      },
+      \"ICONOGRAPHY\": \"Purity, innocence, joy\",
+      \"VARIANTS\": [\"Running\", \"building a sandcastle\", \"holding a kite\"],
+      \"CONFIDENCE\": 0.80
+    },
+    {
+      \"NAME\": \"Cherry blossom tree in spring field\",
+      \"WHY\": \"Cherry blossoms represent transience and beauty, a key seasonal motif in Miyazaki’s work, enhanced by Fauvism’s vivid, expressive color palette.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, branching with soft curves\",
+        \"MATERIAL\": \"Implied by color and form; ethereal petals\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), pink and white with electric blue or lime green accents\",
+        \"SCALE_POSE\": \"Medium scale, full bloom, gently swaying\",
+        \"TEXTURE\": \"Soft gradients, delicate brushwork, slightly impasto edges\",
+        \"LIGHTING\": \"Soft, diffused daylight with warm highlights\",
+        \"CONTEXT\": \"Spring fields, rural countryside\",
+        \"COMPOSITION_ROLE\": \"Background or emotional transition element\",
+        \"CAMERA\": \"Medium wide-angle, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"Transience, beauty, seasonal change\",
+      \"VARIANTS\": [\"Full bloom\", \"dying petals\", \"drifting in wind\"],
+      \"CONFIDENCE\": 0.78
+    },
+    {
+      \"NAME\": \"Harvest festival celebration\",
+      \"WHY\": \"Harvest festivals symbolize community and joy, aligning with Miyazaki’s cultural storytelling and Fauvism’s emotional color intensity.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Clustered, circular, human-scale groupings with natural elements\",
+        \"MATERIAL\": \"Implied by environment and color; handmade, organic\",
+        \"COLOR_PALETTE\": \"Warm, joyful (e.g., bright red, gold, orange), 70–100% saturation\",
+        \"SCALE_POSE\": \"Medium scale, group activity, dynamic movement\",
+        \"TEXTURE\": \"Soft, smooth, with gentle brushwork and soft gradients\",
+        \"LIGHTING\": \"Even natural daylight, warm tones\",
+        \"CONTEXT\": \"Autumn countryside, village field\",
+        \"COMPOSITION_ROLE\": \"Foreground narrative anchor\",
+        \"CAMERA\": \"Slightly low angle, wide frame capturing group\"
+      },
+      \"ICONOGRAPHY\": \"Community, joy, seasonal harmony\",
+      \"VARIANTS\": [\"Harvest dance\", \"grain gathering\", \"shared meal\"],
+      \"CONFIDENCE\": 0.76
+    },
+    {
+      \"NAME\": \"Dragon soaring over mountains\",
+      \"WHY\": \"A dragon in a dynamic natural setting combines Fauvism’s expressive forms with Miyazaki’s mythological and emotional narratives.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Biomorphic, fluid, dynamic wings and body\",
+        \"MATERIAL\": \"Implied by color and form; ethereal and glowing\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), electric blue, burnt orange, deep teal\",
+        \"SCALE_POSE\": \"Large scale, soaring, dynamic motion\",
+        \"TEXTURE\": \"Impasto on edges and wings, soft transitions in body, swirling strokes on wings and body edges\",
+        \"LIGHTING\": \"Dramatic directional light from sky\",
+        \"CONTEXT\": \"Mountain ranges, open sky\",
+        \"COMPOSITION_ROLE\": \"Main subject with emotional impact\",
+        \"CAMERA\": \"Wide-angle, slightly tilted, dynamic view\"
+      },
+      \"ICONOGRAPHY\": \"Power, freedom, harmony with nature\",
+      \"VARIANTS\": [\"Soaring over clouds\", \"navigating storm\", \"resting on peak\"],
+      \"CONFIDENCE\": 0.72
+    },
+    {
+      \"NAME\": \"Rainbow bridge over a river\",
+      \"WHY\": \"A rainbow bridge combines Fauvism’s vibrant color and emotional resonance with Miyazaki’s themes of hope and natural harmony, creating a visually symbolic and emotionally uplifting scene.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, arched with soft curves\",
+        \"MATERIAL\": \"Implied by color and form; ethereal light\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), warm-cool spectrum (red to violet), with electric blue and gold accents\",
+        \"SCALE_POSE\": \"Medium scale, spanning river, elevated and visible\",
+        \"TEXTURE\": \"Smooth gradients (0–30%), soft edges, gentle brushwork with flowing lines\",
+        \"LIGHTING\": \"Soft, diffused daylight with internal glow from bridge\",
+        \"CONTEXT\": \"River crossing, rural landscape\",
+        \"COMPOSITION_ROLE\": \"Narrative bridge between natural elements and emotional transition\",
+        \"CAMERA\": \"Wide-angle, slightly low to mid-angle, capturing full arc\"
+      },
+      \"ICONOGRAPHY\": \"Hope, connection, harmony between nature and humanity\",
+      \"VARIANTS\": [\"Crossing for children\", \"connecting two villages\", \"after rain\"],
+      \"CONFIDENCE\": 0.70
+    },
+    {
+      \"NAME\": \"Seasonal transition: falling cherry petals into autumn leaves\",
+      \"WHY\": \"Represents the visual and emotional shift from spring to autumn, embodying transience and cyclical harmony, a core theme in Miyazaki’s work and Fauvism’s expressive color use.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Organic, flowing, layered with soft curves and motion\",
+        \"MATERIAL\": \"Implied by color and form; ethereal, falling elements\",
+        \"COLOR_PALETTE\": \"High saturation (70–100%), pink and white petals with golden and brown autumn leaves\",
+        \"SCALE_POSE\": \"Medium scale, dynamic motion, soft flow across field\",
+        \"TEXTURE\": \"Soft gradients, delicate brushwork, slight impasto on edges\",
+        \"LIGHTING\": \"Soft, diffused daylight with warm highlights\",
+        \"CONTEXT\": \"Spring-to-autumn transition in rural field\",
+        \"COMPOSITION_ROLE\": \"Emotional transition element between seasons\",
+        \"CAMERA\": \"Medium wide-angle, slightly low angle, capturing flow\"
+      },
+      \"ICONOGRAPHY\": \"Transience, cyclical harmony, seasonal change\",
+      \"VARIANTS\": [\"Petals drifting over grass\", \"falling into a stream\", \"settling on a path\"],
+      \"CONFIDENCE\": 0.68
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [
+        \"Wild animal in natural setting\",
+        \"Floating island or fantasy landscape\",
+        \"Cherry blossom tree in spring field\",
+        \"Rainbow bridge over a river\",
+        \"Seasonal transition: falling cherry petals into autumn leaves\"
+      ],
+      \"Miyazaki\": [
+        \"Child playing in a field\",
+        \"Harvest festival celebration\",
+        \"Dragon soaring over mountains\",
+        \"Rainbow bridge over a river\",
+        \"Seasonal transition: falling cherry petals into autumn leaves\"
+      ]
+    },
+    \"INTERSECTION\": [
+      \"Rainbow bridge over a river\",
+      \"Cherry blossom tree in spring field\",
+      \"Seasonal transition: falling cherry petals into autumn leaves\"
+    ]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"Realistic animals with naturalistic color palettes\",
+    \"Sharp, mechanical textures or hard edges in fantasy or natural forms\",
+    \"Cold or muted tones (e.g., gray, blue-green)\",
+    \"Stiff, mechanical line work or cartoonish exaggeration without emotional context\",
+    \"Photorealistic perspective or detailed realism\",
+    \"Low petal density (<50 per square inch) in cherry blossom scenes\",
+    \"Lack of group interaction or emotional expression in festival scenes\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A vibrant painting with high-saturation (70–100%) non-naturalistic colors, dynamic biomorphic forms (60–80% of composition), and emotional themes of nature, childhood, seasonal joy.\",
+    \"A wild animal in a forest with electric blue and burnt orange hues, dynamic pose, impasto texture on edges, high-contrast lighting.\",
+    \"A floating island with soft gradients (0–30%), internal glow, and vivid saturated colors in pastel purple and neon yellow.\",
+    \"A child playing in a field with 1:3 to 1:5 scale ratio, bright red and yellow colors, joyful expression, natural daylight.\",
+    \"A cherry blossom tree in spring with soft pink and electric blue, swaying gently, full bloom in a rural field.\",
+    \"A harvest festival with warm red, gold, and orange colors, community gathering, even daylight, joyful atmosphere.\",
+    \"A dragon soaring over mountains with swirling strokes on wings, electric blue and burnt orange hues, dramatic directional light.\",
+    \"A rainbow bridge over a river with warm-cool spectrum, soft gradients, and ethereal glow, connecting two natural elements.\",
+    \"Falling cherry petals into autumn leaves with high saturation, soft motion, and seasonal transition in a rural field.\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added rainbow bridge over a river as a new object\",
+    \"Added seasonal transition: falling cherry petals into autumn leaves as a new object\",
+    \"Refined child positioning to edge of field for emotional intimacy\",
+    \"Updated warm-cool ratio for dragon scenes to 3:2\",
+    \"Specified gradient distribution in floating island scenes (70% sky, 30% terrain)\",
+    \"Clarified that 80% of composition must show gradient transitions for ethereal depth\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How does the emotional pacing of a rainbow bridge scene compare to a harvest festival in terms of narrative rhythm?\",
+    \"Are there specific brushstroke rhythms (e.g., faster vs. slower) that differentiate Fauvism-influenced forms from naturalistic ones?\",
+    \"What visual transitions (e.g., from spring to autumn) are represented in the seasonal object compositions?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific warm-cool color transitions are used in the rainbow bridge scene to convey harmony between nature and humanity, and how do they differ from those in the dragon or cherry blossom scenes?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Warm-cool transitions define emotional tone and narrative function in symbolic natural elements, requiring precise differentiation across objects\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of specific transitions (e.g., red to violet) and comparison to dragon or cherry blossom scenes\",
+      \"DEPENDENCIES\": [\"warm-cool spectrum\", \"rainbow bridge\", \"harmony between nature and humanity\", \"dragon scene\", \"cherry blossom scene\"]
+    },
+    {
+      \"Q\": \"In the seasonal transition scene of falling cherry petals into autumn leaves, what is the minimum and maximum rate of petal and leaf fall (e.g., 1–3 petals per second), and how does this affect the perception of cyclical time and transience?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Fall rate directly influences the dynamic texture and emotional impact of seasonal change, critical to the transience theme\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Rate range (e.g., 1–3 petals per second) and brief explanation of emotional effect\",
+      \"DEPENDENCIES\": [\"falling cherry petals\", \"autumn leaves\", \"soft motion\", \"transience\", \"cyclical harmony\"]
+    },
+    {
+      \"Q\": \"How does the composition of a rainbow bridge scene balance its role as a narrative bridge between two natural elements (e.g., river banks) with the emotional tone of hope and connection, and what percentage of the composition should be dedicated to the bridge itself?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"The bridge's scale and placement determine its symbolic function and emotional resonance within the landscape\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"Percentage range (e.g., 30–40%) and description of narrative function\",
+      \"DEPENDENCIES\": [\"narrative bridge\", \"connection between nature and humanity\", \"emotional transition\", \"bridge spanning river\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Can the rainbow bridge use a muted or cold color spectrum that undermines its symbolic hope?\",
+    \"Is it acceptable to depict the seasonal transition with no visible motion or fall rate, reducing the sense of transience?\",
+    \"Can the bridge be positioned centrally or too large, disrupting its role as a subtle emotional connector?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE mentions warm-cool transitions in rainbow bridge THEN ask for one example of a specific color sequence in the bridge arc\",
+    \"IF TEXTURE references petal fall rate THEN ask for a specific variant (e.g., falling into stream vs. settling on path) with corresponding rate\",
+    \"IF COMPOSITION_ROLE references bridge percentage THEN ask for a specific activity (e.g., children crossing) that defines emotional connection\"
+  ]
+}"
+  }
+]

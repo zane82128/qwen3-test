@@ -1,0 +1,483 @@
+[
+  {
+    "ROUND": 1,
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"Wild flowers\",
+      \"WHY\": \"Fauvism emphasizes bold, non-natural colors and expressive forms; Miyazaki often depicts vibrant, natural flora in whimsical settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"organic, exaggerated, flowing curves\",
+        \"MATERIAL\": \"imagined, non-physical\",
+        \"COLOR_PALETTE\": \"high saturation, primary colors (red, yellow, blue), unnatural contrasts\",
+        \"SCALE_POSE\": \"medium scale, softly arranged in natural clusters\",
+        \"TEXTURE\": \"soft brushwork, expressive strokes\",
+        \"LIGHTING\": \"flat lighting, no chiaroscuro, strong color contrast\",
+        \"CONTEXT\": \"natural landscapes, forests, meadows\",
+        \"COMPOSITION_ROLE\": \"foreground accent, visual rhythm\",
+        \"CAMERA\": \"wide-angle, slightly elevated view\"
+      },
+      \"ICONOGRAPHY\": \"purity, nature's beauty, emotional expression\",
+      \"VARIANTS\": [\"sunflowers\", \"daisies\", \"orchids\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"Flying creatures\",
+      \"WHY\": \"Fauvism values emotional expression through form and color; Miyazaki frequently features fantastical, animated beings in motion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simplified, dynamic, elongated bodies\",
+        \"MATERIAL\": \"imagined, ethereal\",
+        \"COLOR_PALETTE\": \"jarring, saturated, non-natural combinations\",
+        \"SCALE_POSE\": \"medium to large, mid-air, dynamic poses\",
+        \"TEXTURE\": \"smooth, fluid lines with expressive color bursts\",
+        \"LIGHTING\": \"flat, even, color-based illumination\",
+        \"CONTEXT\": \"sky, open fields, fantasy realms\",
+        \"COMPOSITION_ROLE\": \"main subject, narrative focus\",
+        \"CAMERA\": \"low-angle, tracking shot\"
+      },
+      \"ICONOGRAPHY\": \"freedom, imagination, innocence\",
+      \"VARIANTS\": [\"butterflies\", \"unicorns\", \"fox spirits\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"Trees\",
+      \"WHY\": \"Trees are common in both Fauvism and Miyazaki's environments, with both styles using them to convey emotion and setting.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simplified, expressive, branching patterns\",
+        \"MATERIAL\": \"imagined, natural\",
+        \"COLOR_PALETTE\": \"vibrant greens, reds, yellows in foliage\",
+        \"SCALE_POSE\": \"large scale, standing in foreground or mid-ground\",
+        \"TEXTURE\": \"bold, flat brushwork, sometimes with color blocks\",
+        \"LIGHTING\": \"flat, colorful, no depth cues\",
+        \"CONTEXT\": \"forest edges, village outskirts, natural settings\",
+        \"COMPOSITION_ROLE\": \"background anchor, emotional setting\",
+        \"CAMERA\": \"medium distance, slightly tilted\"
+      },
+      \"ICONOGRAPHY\": \"growth, continuity, natural harmony\",
+      \"VARIANTS\": [\"willow trees\", \"oak trees\", \"magnolias\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific Fauvist color palettes that directly influence Miyazaki’s natural elements?\",
+    \"Do any objects in Miyazaki’s work reflect Fauvist forms more than others?\",
+    \"Is there a known technical overlap between Fauvism’s brushwork and Miyazaki’s animation style?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color combinations in Fauvist paintings (e.g., red-yellow, blue-orange) are most frequently mirrored in Miyazaki’s wild flowers or trees?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Identifying direct color transfer helps establish stylistic influence between Fauvism and Miyazaki’s natural elements.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"bullet list of 3-5 specific color pairs (e.g., 'red-orange', 'blue-yellow')\",
+      \"DEPENDENCIES\": [\"COLOR_PALETTE\", \"wild flowers\", \"trees\"]
+    },
+    {
+      \"Q\": \"Which form types—such as flowing curves or angular branches—are more prevalent in Miyazaki’s flying creatures compared to trees or wild flowers?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Comparing form usage reveals which Fauvist principles are most expressed in dynamic versus static objects.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"ranked list (1=most common) of 3 form types (e.g., 'elongated bodies', 'flowing curves', 'simplified branching')\",
+      \"DEPENDENCIES\": [\"FORM\", \"flying creatures\", \"trees\", \"wild flowers\"]
+    },
+    {
+      \"Q\": \"Are there specific lighting conditions (e.g., golden hour, overcast, midday) that consistently appear in Miyazaki’s depictions of natural elements, and how do they compare to Fauvist flat lighting?\",
+      \"DIMENSION\": \"LIGHTING\",
+      \"WHY\": \"Lighting differences can reveal whether Miyazaki adopts Fauvist color-based illumination or maintains a distinct narrative lighting approach.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of 2-3 lighting conditions with a brief note on their Fauvism alignment (e.g., 'golden hour: mimics flat color contrast')\",
+      \"DEPENDENCIES\": [\"LIGHTING\", \"wild flowers\", \"trees\", \"flying creatures\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Do any of Miyazaki’s natural elements (e.g., trees, flowers) use naturalistic lighting or realistic shading that contradicts Fauvist flatness or color contrast?\",
+    \"Are there any objects in Miyazaki’s work that lack exaggerated form or saturated color, thus breaking the Fauvist influence pattern?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes 'red-yellow' or 'blue-orange' combinations THEN ask for specific examples in wild flowers or trees\",
+    \"IF FORM shows 'simplified branching' or 'flowing curves' in trees THEN ask for similar forms in flying creatures\",
+    \"IF LIGHTING is described as 'naturalistic' or 'dramatic chiaroscuro' THEN ask for exceptions in natural elements\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"Red-yellow and blue-orange pairs most directly appear in wild flowers and trees; red-yellow expands during joy (90%+ saturation), contracts in melancholy; blue-orange deepens in melancholy (violet-blue gradients) and brightens in joy (lime-green bursts)\",
+      \"RATIONALE\": \"These Fauvist pairs mirror emotional transitions in natural elements, aligning with the style’s emotional color encoding.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Joyful scenes: 60% dynamic diagonals, 40% leading lines; melancholic scenes: 40% dynamic diagonals, 60% leading lines with expanded negative space\",
+      \"RATIONALE\": \"Dynamic diagonals drive movement and energy in joy, while leading lines and negative space create emotional stillness in melancholy.\",
+      \"CONFIDENCE\": 0.91
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"Thick strokes (70%) during high emotion, medium (20%) in calm, thin (10%) in background; thick strokes correlate with 90%+ saturation and color bursts\",
+      \"RATIONALE\": \"Stroke thickness physically encodes emotional intensity, matching saturation and color dynamics in action scenes.\",
+      \"CONFIDENCE\": 0.89
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Sunset skies\",
+      \"WHY\": \"Fauvism uses dramatic, non-natural color transitions; Miyazaki often renders sunsets with emotional depth and narrative significance, making them a natural fusion point.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"expansive, curved, layered gradients\",
+        \"MATERIAL\": \"imagined, atmospheric\",
+        \"COLOR_PALETTE\": \"high saturation, red-orange to violet-blue, with Fauvist contrasts (e.g., red-yellow, blue-orange)\",
+        \"SCALE_POSE\": \"large scale, filling the upper half of the frame\",
+        \"TEXTURE\": \"smooth gradients with bold color blocks, thick brushwork in emotional transitions\",
+        \"LIGHTING\": \"flat, color-based, no chiaroscuro; color shifts define mood\",
+        \"CONTEXT\": \"sky over forests, villages, or open fields\",
+        \"COMPOSITION_ROLE\": \"background emotional anchor, narrative transition\",
+        \"CAMERA\": \"wide-angle, slightly tilted upward\"
+      },
+      \"ICONOGRAPHY\": \"transition between joy and melancholy, emotional climax\",
+      \"VARIANTS\": [\"dawn skies\", \"twilight skies\"],
+      \"CONFIDENCE\": 0.90
+    },
+    {
+      \"NAME\": \"Children’s laughter\",
+      \"WHY\": \"Fauvism expresses emotion through form and color; Miyazaki captures childlike joy with expressive, non-literal gestures — a perfect fusion point.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"abstract, circular, expanding waves\",
+        \"MATERIAL\": \"imagined, energetic\",
+        \"COLOR_PALETTE\": \"yellow-orange bursts, high saturation (90–100%)\",
+        \"SCALE_POSE\": \"small to medium, centered or mid-frame, radiating outward\",
+        \"TEXTURE\": \"thick, gestural strokes, with color bursts and fluid lines\",
+        \"LIGHTING\": \"flat, color-based, with no depth cues\",
+        \"CONTEXT\": \"meadows, village paths, forests\",
+        \"COMPOSITION_ROLE\": \"emotional trigger, narrative pivot\",
+        \"CAMERA\": \"medium close-up, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"joy, innocence, emotional awakening\",
+      \"VARIANTS\": [\"laughing children\", \"children playing\"],
+      \"CONFIDENCE\": 0.87
+    },
+    {
+      \"NAME\": \"Rainbow bridges\",
+      \"WHY\": \"Fauvism’s vibrant, non-natural color fields merge with Miyazaki’s whimsical, narrative bridges — a symbolic and visual fusion of fantasy and emotion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curved, flowing, arching lines\",
+        \"MATERIAL\": \"imagined, ethereal\",
+        \"COLOR_PALETTE\": \"full spectrum, high saturation, non-natural color combinations (e.g., red-yellow, blue-orange)\",
+        \"SCALE_POSE\": \"medium to large, spanning landscape or sky\",
+        \"TEXTURE\": \"smooth flowing lines with bold color bursts at edges\",
+        \"LIGHTING\": \"flat, color-based, no shadows\",
+        \"CONTEXT\": \"forests, villages, fantasy realms\",
+        \"COMPOSITION_ROLE\": \"narrative transition, emotional connection\",
+        \"CAMERA\": \"wide-angle, low-to-medium elevation\"
+      },
+      \"ICONOGRAPHY\": \"connection, transformation, hope\",
+      \"VARIANTS\": [\"rainbow path\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.83
+    },
+    {
+      \"NAME\": \"Floating leaves\",
+      \"WHY\": \"Fauvism emphasizes expressive form and color; Miyazaki often shows leaves drifting with wind — combining naturalism with emotional motion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simplified, elongated, flowing curves\",
+        \"MATERIAL\": \"imagined, light-based\",
+        \"COLOR_PALETTE\": \"vibrant greens, reds, yellows with high saturation\",
+        \"SCALE_POSE\": \"small to medium, drifting in air\",
+        \"TEXTURE\": \"soft, flowing lines with expressive color bursts\",
+        \"LIGHTING\": \"flat, color-based, no depth\",
+        \"CONTEXT\": \"rivers, forests, meadows\",
+        \"COMPOSITION_ROLE\": \"background rhythm, movement cue\",
+        \"CAMERA\": \"tracking shot, low angle\"
+      },
+      \"ICONOGRAPHY\": \"transience, natural flow, emotional drift\",
+      \"VARIANTS\": [\"leaves in wind\", \"drifting petals\"],
+      \"CONFIDENCE\": 0.81
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [\"wild flowers\", \"flying creatures\", \"trees\", \"sunset skies\", \"children’s laughter\", \"rainbow bridges\", \"floating leaves\"],
+      \"Hayao Miyazaki\": [\"wild flowers\", \"flying creatures\", \"trees\", \"sunset skies\", \"children’s laughter\", \"rainbow bridges\", \"floating leaves\"]
+    },
+    \"INTERSECTION\": [\"wild flowers\", \"flying creatures\", \"trees\", \"sunset skies\", \"children’s laughter\", \"rainbow bridges\", \"floating leaves\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"literal realistic plants with natural shading\", \"objects with chiaroscuro lighting\", \"desaturated or muted tones in emotional scenes\"],
+  \"PROMPT_SNIPPETS\": [
+    \"A sunset sky with red-yellow and blue-orange bursts, flowing diagonally across the upper frame\",
+    \"Children laughing with yellow-orange color bursts and thick gestural strokes\",
+    \"A rainbow bridge spanning a forest with high-saturation, non-natural color fields\",
+    \"Floating leaves in wind with flowing curves and vibrant green-red color shifts\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added sunset skies, children’s laughter, and rainbow bridges as new objects\",
+    \"Expanded color palette and emotional transitions for existing objects (e.g., wild flowers, trees)\",
+    \"Linked brushwork thickness to saturation and emotional state\",
+    \"Added compositional devices to emotional transitions in flying creatures and skies\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific Fauvist color pairs used in Miyazaki’s children’s expressions beyond flowers and trees?\",
+    \"How do floating leaves’ forms compare to flying creatures in terms of flowing curves versus angular shapes?\",
+    \"Do any of the new objects (e.g., rainbow bridges) appear in actual Miyazaki films or paintings?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"Which specific Fauvist color pairs (e.g., red-yellow, blue-orange) are most prominently used in children’s laughter and rainbow bridges, and how do these pairs shift during emotional transitions like joy to melancholy?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Identifying consistent color pairs across key emotional objects confirms stylistic fusion and enables precise emotional-to-color mapping.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"bullet list of 3-5 color pairs with shift description (e.g., 'red-yellow expands during joy, contracts in melancholy')\",
+      \"DEPENDENCIES\": [\"children’s laughter\", \"rainbow bridges\", \"Fauvist color pairs in wild flowers and trees\", \"emotion-to-color mapping in EXPRESSION_THEME\"]
+    },
+    {
+      \"Q\": \"In floating leaves, what proportion of the form consists of flowing curves versus simplified elongated shapes, and how does this vary between calm and dynamic wind conditions?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Form variation reflects environmental dynamics and emotional states, revealing how Fauvism's expressive forms translate into natural motion.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"proportion (e.g., 70% flowing curves, 30% elongated) with condition breakdown (calm vs. dynamic)\",
+      \"DEPENDENCIES\": [\"floating leaves\", \"flying creatures\", \"flowing curves vs. angular branching\", \"wind conditions in context\"]
+    },
+    {
+      \"Q\": \"How does the camera angle and composition role of rainbow bridges change when they serve as narrative transitions versus emotional connections (e.g., joy to hope), and what compositional devices (e.g., leading lines, symmetry) support these shifts?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Composition role determines narrative function, and its variation by emotional function reveals deeper structural storytelling patterns.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"two scenarios (transition vs. connection) with camera angle, composition role, and at least one compositional device per scenario\",
+      \"DEPENDENCIES\": [\"rainbow bridges\", \"narrative transition\", \"emotional connection\", \"compositional devices in flying creatures and skies\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Do any of the new objects (e.g., rainbow bridges) use naturalistic shading or chiaroscuro, violating the flat, color-based lighting rule?\",
+    \"Are floating leaves or children’s laughter described with desaturated tones or muted color fields in emotional scenes?\",
+    \"Is the form of rainbow bridges overly angular or realistic, contradicting Fauvism’s expressive, curvilinear nature?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE mentions red-yellow or blue-orange in children’s laughter THEN ask for a visual example in a scene with joy-to-melancholy shift\",
+    \"IF FORM shows 70% flowing curves in floating leaves THEN ask for similar form in flying creatures during wind motion\",
+    \"IF COMPOSITION_ROLE references narrative transition THEN ask for a specific scene where it guides emotional progression\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"2:3 for emotional connection (emphasizes symmetry and centered balance), 16:9 for narrative transition (enhances leading lines and wide flow)\",
+      \"RATIONALE\": \"Wider aspect ratios support narrative progression through leading lines, while 2:3 promotes symmetry and emotional resonance in connections.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"Saturation range: 50–60%; brushwork thickness: medium (20%); rationale: reduced saturation matches melancholic tone, medium strokes maintain emotional presence without intensity spikes\",
+      \"RATIONALE\": \"Medium brushwork and reduced saturation preserve emotional continuity while avoiding desaturation or loss of form clarity in low-emotion scenes.\",
+      \"CONFIDENCE\": 0.91
+    },
+    {
+      \"INDEX\": 3,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Calm wind: expanded negative space and soft symmetry; dynamic wind: dynamic diagonals and flowing curves with reduced symmetry\",
+      \"RATIONALE\": \"Expanded negative space signals emotional stillness, while dynamic diagonals and flowing lines convey movement and tension in wind motion.\",
+      \"CONFIDENCE\": 0.89
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"Sunset skies\",
+      \"WHY\": \"Fauvism uses dramatic, non-natural color transitions; Miyazaki often renders sunsets with emotional depth and narrative significance, making them a natural fusion point.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"expansive, curved, layered gradients\",
+        \"MATERIAL\": \"imagined, atmospheric\",
+        \"COLOR_PALETTE\": \"high saturation, red-orange to violet-blue, with Fauvist contrasts (e.g., red-yellow, blue-orange)\",
+        \"SCALE_POSE\": \"large scale, filling the upper half of the frame\",
+        \"TEXTURE\": \"smooth gradients with bold color blocks, thick brushwork in emotional transitions\",
+        \"LIGHTING\": \"flat, color-based, no chiaroscuro; color shifts define mood\",
+        \"CONTEXT\": \"sky over forests, villages, or open fields\",
+        \"COMPOSITION_ROLE\": \"background emotional anchor, narrative transition\",
+        \"CAMERA\": \"wide-angle, slightly tilted upward\"
+      },
+      \"ICONOGRAPHY\": \"transition between joy and melancholy, emotional climax\",
+      \"VARIANTS\": [\"dawn skies\", \"twilight skies\"],
+      \"CONFIDENCE\": 0.90
+    },
+    {
+      \"NAME\": \"Children’s laughter\",
+      \"WHY\": \"Fauvism expresses emotion through form and color; Miyazaki captures childlike joy with expressive, non-literal gestures — a perfect fusion point.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"abstract, circular, expanding waves\",
+        \"MATERIAL\": \"imagined, energetic\",
+        \"COLOR_PALETTE\": \"yellow-orange bursts, high saturation (90–100%)\",
+        \"SCALE_POSE\": \"small to medium, centered or mid-frame, radiating outward\",
+        \"TEXTURE\": \"thick, gestural strokes, with color bursts and fluid lines\",
+        \"LIGHTING\": \"flat, color-based, with no depth cues\",
+        \"CONTEXT\": \"meadows, village paths, forests\",
+        \"COMPOSITION_ROLE\": \"emotional trigger, narrative pivot\",
+        \"CAMERA\": \"medium close-up, slightly low angle\"
+      },
+      \"ICONOGRAPHY\": \"joy, innocence, emotional awakening\",
+      \"VARIANTS\": [\"laughing children\", \"children playing\"],
+      \"CONFIDENCE\": 0.87
+    },
+    {
+      \"NAME\": \"Rainbow bridges\",
+      \"WHY\": \"Fauvism’s vibrant, non-natural color fields merge with Miyazaki’s whimsical, narrative bridges — a symbolic and visual fusion of fantasy and emotion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curved, flowing, arching lines\",
+        \"MATERIAL\": \"imagined, ethereal\",
+        \"COLOR_PALETTE\": \"full spectrum, high saturation, non-natural color combinations (e.g., red-yellow, blue-orange)\",
+        \"SCALE_POSE\": \"medium to large, spanning landscape or sky\",
+        \"TEXTURE\": \"smooth flowing lines with bold color bursts at edges\",
+        \"LIGHTING\": \"flat, color-based, no shadows\",
+        \"CONTEXT\": \"forests, villages, fantasy realms\",
+        \"COMPOSITION_ROLE\": \"narrative transition, emotional connection\",
+        \"CAMERA\": \"wide-angle, low-to-medium elevation\"
+      },
+      \"ICONOGRAPHY\": \"connection, transformation, hope\",
+      \"VARIANTS\": [\"rainbow path\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.83
+    },
+    {
+      \"NAME\": \"Floating leaves\",
+      \"WHY\": \"Fauvism emphasizes expressive form and color; Miyazaki often shows leaves drifting with wind — combining naturalism with emotional motion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simplified, elongated, flowing curves\",
+        \"MATERIAL\": \"imagined, light-based\",
+        \"COLOR_PALETTE\": \"vibrant greens, reds, yellows with high saturation\",
+        \"SCALE_POSE\": \"small to medium, drifting in air\",
+        \"TEXTURE\": \"soft, flowing lines with expressive color bursts\",
+        \"LIGHTING\": \"flat, color-based, no depth\",
+        \"CONTEXT\": \"rivers, forests, meadows\",
+        \"COMPOSITION_ROLE\": \"background rhythm, movement cue\",
+        \"CAMERA\": \"tracking shot, low angle\"
+      },
+      \"ICONOGRAPHY\": \"transience, natural flow, emotional drift\",
+      \"VARIANTS\": [\"leaves in wind\", \"drifting petals\"],
+      \"CONFIDENCE\": 0.81
+    },
+    {
+      \"NAME\": \"Wind patterns\",
+      \"WHY\": \"Fauvism uses dynamic, expressive form to convey movement; Miyazaki captures wind with fluid motion and emotional resonance — a natural extension of flowing forms and color shifts.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curved, dynamic, wave-like motion patterns\",
+        \"MATERIAL\": \"imagined, atmospheric\",
+        \"COLOR_PALETTE\": \"red-yellow and blue-orange bursts, high saturation during motion\",
+        \"SCALE_POSE\": \"medium, filling sky or landscape edges\",
+        \"TEXTURE\": \"flowing lines with thick color bursts at edges, gestural strokes\",
+        \"LIGHTING\": \"flat, color-based, no depth cues\",
+        \"CONTEXT\": \"forests, meadows, open fields\",
+        \"COMPOSITION_ROLE\": \"movement cue, emotional transition trigger\",
+        \"CAMERA\": \"tracking shot, slightly elevated\"
+      },
+      \"ICONOGRAPHY\": \"emotional energy, transformation, natural breath\",
+      \"VARIANTS\": [\"wind in trees\", \"wind across meadow\"],
+      \"CONFIDENCE\": 0.78
+    },
+    {
+      \"NAME\": \"Clouds in motion\",
+      \"WHY\": \"Fauvism uses bold, expressive color fields for emotional form; Miyazaki depicts clouds with narrative flow and emotional tone — a natural fusion of color and movement.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curved, layered, dynamic shapes\",
+        \"MATERIAL\": \"imagined, atmospheric\",
+        \"COLOR_PALETTE\": \"high saturation, red-orange to violet-blue with Fauvist contrasts\",
+        \"SCALE_POSE\": \"large, filling sky or mid-frame\",
+        \"TEXTURE\": \"smooth gradients with bold color blocks and gestural strokes\",
+        \"LIGHTING\": \"flat, color-based, no chiaroscuro\",
+        \"CONTEXT\": \"sky over forests, villages, or open fields\",
+        \"COMPOSITION_ROLE\": \"emotional backdrop, narrative flow\",
+        \"CAMERA\": \"wide-angle, slightly tilted upward\"
+      },
+      \"ICONOGRAPHY\": \"emotional atmosphere, transition, hope\",
+      \"VARIANTS\": [\"storm clouds\", \"calm clouds\", \"dawn clouds\"],
+      \"CONFIDENCE\": 0.80
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism\": [\"wild flowers\", \"flying creatures\", \"trees\", \"sunset skies\", \"children’s laughter\", \"rainbow bridges\", \"floating leaves\", \"wind patterns\", \"clouds in motion\"],
+      \"Hayao Miyazaki\": [\"wild flowers\", \"flying creatures\", \"trees\", \"sunset skies\", \"children’s laughter\", \"rainbow bridges\", \"floating leaves\", \"wind patterns\", \"clouds in motion\"]
+    },
+    \"INTERSECTION\": [\"wild flowers\", \"flying creatures\", \"trees\", \"sunset skies\", \"children’s laughter\", \"rainbow bridges\", \"floating leaves\", \"wind patterns\", \"clouds in motion\"]
+  },
+  \"NEGATIVE_OBJECTS\": [
+    \"literal realistic plants with natural shading\",
+    \"objects with chiaroscuro lighting\",
+    \"desaturated or muted tones in emotional scenes\",
+    \"static, angular forms without flowing curves\",
+    \"realistic wind or cloud textures with depth cues\"
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A sunset sky with red-yellow and blue-orange bursts, flowing diagonally across the upper frame\",
+    \"Children laughing with yellow-orange color bursts and thick gestural strokes\",
+    \"A rainbow bridge spanning a forest with high-saturation, non-natural color fields\",
+    \"Floating leaves in wind with flowing curves and vibrant green-red color shifts\",
+    \"Wind patterns moving through trees with red-yellow and blue-orange bursts\",
+    \"Clouds in motion with curved, layered forms and high-saturation color fields\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added wind patterns and clouds in motion as new objects\",
+    \"Refined form and color attributes for floating leaves and rainbow bridges with wind and emotion conditions\",
+    \"Specified frame ratios for emotional connection (2:3) and narrative transition (16:9)\",
+    \"Clarified emotional consistency in children’s laughter during melancholy with saturation and brushwork\",
+    \"Added compositional devices for calm vs. dynamic wind scenes\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are wind patterns or clouds in motion directly inspired by specific Fauvist paintings or Miyazaki films?\",
+    \"How do the color shifts in wind patterns during joy or melancholy compare to those in children’s laughter?\",
+    \"Do rainbow bridges or wind patterns appear in actual Miyazaki films as narrative or emotional devices?\"
+  ]
+}",
+    "ASK_RESPONSE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific form types—such as wave-like motion or layered curves—are most prevalent in wind patterns and clouds in motion during moments of high emotional intensity (e.g., joy or melancholy), and how do these forms differ from neutral or calm conditions?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Form variation during emotional states reveals how Fauvism’s expressive dynamics translate into atmospheric motion and narrative tension.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"ranked list of 3 form types (e.g., 'layered curves', 'wave-like motion', 'dynamic spirals') with description of emotional state differences\",
+      \"DEPENDENCIES\": [\"wind patterns\", \"clouds in motion\", \"emotional intensity in COLOR_TONALITY\", \"flowing curves in floating leaves\"]
+    },
+    {
+      \"Q\": \"In cloud scenes, how does the saturation of red-yellow and blue-orange pairs shift during a transition from calm dawn to melancholic twilight, and what specific brushwork thickness (e.g., thick, medium) is used to maintain visual consistency with the emotional tone?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Color saturation and brushwork must align across time-based transitions to ensure emotional continuity and stylistic coherence.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"saturation range (e.g., 70–80% at dawn → 50–60% at twilight) with corresponding brushwork thickness (e.g., thick at dawn, medium at twilight)\",
+      \"DEPENDENCIES\": [\"clouds in motion\", \"red-yellow and blue-orange shifts\", \"saturation ranges in emotional scenes\", \"brushwork thickness in children’s laughter\"]
+    },
+    {
+      \"Q\": \"How do the composition roles of wind patterns and clouds in motion differ when they serve as emotional triggers versus environmental backdrops, and what compositional devices (e.g., leading lines, symmetry) support each function?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Composition role determines narrative function, and its variation clarifies how atmospheric elements drive emotional or environmental storytelling.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"two scenarios (emotional trigger vs. environmental backdrop) with composition role, camera angle, and at least one compositional device per scenario\",
+      \"DEPENDENCIES\": [\"wind patterns\", \"clouds in motion\", \"narrative transition\", \"emotional connection\", \"compositional devices in rainbow bridges\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Do wind patterns or clouds in motion use naturalistic textures, depth cues, or realistic shading that contradict the flat, color-based lighting rule?\",
+    \"Are emotional transitions in wind or cloud scenes described without corresponding shifts in form, color, or brushwork thickness?\",
+    \"Do wind or cloud forms lack flowing curves or dynamic motion, contradicting Fauvism’s expressive, curvilinear nature?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF FORM mentions wave-like motion or layered curves THEN ask for a visual example in a joy-to-melancholy shift\",
+    \"IF COLOR_TONALITY references dawn to twilight THEN ask for a specific scene with saturation and brushwork alignment\",
+    \"IF COMPOSITION_ROLE references emotional trigger THEN ask for a scene where it drives narrative progression\"
+  ]
+}"
+  }
+]
