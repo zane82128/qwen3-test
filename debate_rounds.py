@@ -14,7 +14,7 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from setting_new_pipe import (
+from setting import (
     MODEL_NAME,
     SYS_MSG_STYLE, SYS_MSG_OBJECT, SYS_MSG_STY_ASK, SYS_MSG_OBJ_ASK,
     USER_MSG_STY_ROUND, USER_MSG_OBJ_ROUND, USER_MSG_STY_ASK_ROUND, USER_MSG_OBJ_ASK_ROUND,
