@@ -1,18 +1,8 @@
-# merge_two_agents_pipeline.py
-# 功能：
-# 1) 讀入 user prompt K 與 L
-# 2) agent A 回覆 X，存成 JSON
-# 3) 將 X 與 L 一起給 agent B，得到 Y，存成 JSON
-# 4) 最後把 K、L、X、Y 全部存成一個彙整 JSON
-#
-# 依賴：pip install transformers accelerate torch
-# 模型：Qwen/Qwen3-4B-Thinking-2507（可依需求替換）
-
 """
 python debate_rounds.py \
   --prompt "Fauvism, Miyazaki Hayao" \
-  --rounds 1 \
-  --outdir runs/0906
+  --rounds 3 \
+  --outdir runs/0907
 """
 
 import argparse
