@@ -1,6 +1,6 @@
 """
-python debate_rounds.py \
-  --prompt "Fauvism, Miyazaki Hayao" \
+python debate_rounds_new_pipe.py \
+  --prompt "Fauvism, Miyazaki Hayao, a girl and a dragon in the cave" \
   --rounds 3 \
   --outdir runs/0907
 """
@@ -14,11 +14,12 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from setting_new_pipe import (
+from setting import (
     MODEL_NAME,
     SYS_MSG_STYLE, SYS_MSG_OBJECT, SYS_MSG_STY_ASK, SYS_MSG_OBJ_ASK,
     USER_MSG_STY_ROUND, USER_MSG_OBJ_ROUND, USER_MSG_STY_ASK_ROUND, USER_MSG_OBJ_ASK_ROUND,
-    SYS_MSG_FINAL_STYLE, SYS_MSG_FINAL_OBJECT
+    SYS_MSG_FINAL_STYLE, SYS_MSG_FINAL_OBJECT,
+    SYS_MSG_STY_ASK_FIRST, SYS_MSG_OBJ_ASK_FIRST
 )
 
 # generator
@@ -76,44 +77,21 @@ def dump_json(obj, path: Path):
 
 
 def fmt_hist(history: list) -> str:
-    # 依序展開：每輪 STYLE / OBJECT / RESPONSE
     lines = []
     for h in history:
-        if(h.get('STYLE_RESPONSE')):
-            lines.append(f"[Round {h['ROUND']}][STYLE AGENT]\n{h['STYLE_RESPONSE']}")
-        if(h.get('OBJECT_RESPONSE')):
-            lines.append(f"[Round {h['ROUND']}][OBJECT AGENT]\n{h['OBJECT_RESPONSE']}")
-        lines.append(f"[Round {h['ROUND']}][ASK AGENT]\n{h['ASK_RESPONSE']}")
+        tag = f"[Round {h.get('ROUND', '?')}]"
+        if 'STYLE_RESPONSE' in h:
+            lines.append(f"{tag}[STYLE]\n{h['STYLE_RESPONSE']}")
+        if 'OBJECT_RESPONSE' in h:
+            lines.append(f"{tag}[OBJECT]\n{h['OBJECT_RESPONSE']}")
+        if 'ASK_STYLE' in h:
+            lines.append(f"{tag}[ASK_STYLE]\n{h['ASK_STYLE']}")
+        if 'ASK_OBJECT' in h:
+            lines.append(f"{tag}[ASK_OBJECT]\n{h['ASK_OBJECT']}")
+        if 'ASK_RESPONSE' in h:
+            lines.append(f"{tag}[ASK]\n{h['ASK_RESPONSE']}")
     return "\n\n".join(lines)
 
-# def run_pair(tok, model, *,
-#              name: str,                  # "STYLE" 或 "OBJECT"
-#              sys_msg_main: str,              # 主 agent 的 system
-#              sys_msg_ask: str,               # 對應 ask agent 的 system
-#              init_prompt: str,           # 第 1 輪專用使用者初始題
-#              response_main: str,         # 第 2 輪起，每輪提供主 agent 的使用者指令
-#              response_ask: str,          # 每輪提供 ask agent 的使用者指令
-#              rounds: int,
-#              history: list,              # 共享 history（就地累積）
-#              outdir: Path):
-#     """
-#     會把每輪兩個輸出都 append 進 history：
-#       {"ROUND": r, f"{name}_RESPONSE": 主回覆, "ASK_RESPONSE": 詢問回覆}
-#     也會寫入 round_{r}/ 檔案。
-#     """
-#     name = name.isupper() # name should be upper type
-#     hist_path_all = outdir / "history.json"
-
-#     # first round
-#     print("-----Round 1 started.-----")
-#     print(f"-----{name} agent start.-----")
-#     # user prompt into style agent
-#     prompt_main = f"【USER PROMPT ({name})】\n{init_prompt}"
-#     response = run_agent(tok, model, sys_msg_main, prompt_main)
-#     hist_txt1 = fmt_hist([{"ROUND": 1, f"{name}_RESPONSE": response, "ASK_RESPONSE": ""}])
-
-#     prompt_ask = f"【HISTORY】\n{hist_txt1}\n\n【USER PROMPT (ASK)】\n{response_ask}"
-#     response_ask_this_round = run_agent(tok, model, sys_msg_ask, prompt_ask_sty1) 
 
 def run_rounds(tok, model,
                sys_sty: str, sys_ask_sty: str, sys_ask_obj: str,
@@ -128,97 +106,79 @@ def run_rounds(tok, model,
     hist_path_style = outdir / "history_style.json"
     hist_path_object = outdir / "history_object.json"
 
+    # first ask agent divide user prompt into style and object
+    print("-----ask agent analyzing.-----")
+    style_description = run_agent(tok, model, SYS_MSG_STY_ASK_FIRST, init_prompt)
+    object_description = run_agent(tok, model, SYS_MSG_OBJ_ASK_FIRST, init_prompt)
     # first round
     print("-----Round 1 started.-----")
-
     # style agent and asking agent
     print("-----Style agent start.-----")
-    
-    prompt_sty1 = f"【USER PROMPT (STYLE)】\n{init_prompt}"
-    response_sty_this_round = run_agent(tok, model, SYS_MSG_STYLE, prompt_sty1)
-    hist_txt1 = fmt_hist([{"ROUND": 1, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": ""}])
-    
-    prompt_ask_sty1 = f"【HISTORY】\n{hist_txt1}\n\n【USER PROMPT (ASK)】\n{response_ask_sty}"
-    response_ask_sty_this_round = run_agent(tok, model, SYS_MSG_STY_ASK, prompt_ask_sty1)  
 
-    history.append({"ROUND": 1, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
-    history_style.append({"ROUND": 1, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
+    prompt_sty1 = f"【USER PROMPT (STYLE)】\n{style_description}"
+    response_sty_this_round = run_agent(tok, model, SYS_MSG_STYLE, prompt_sty1)
+    history.append({"ROUND": 1, "ASK_STYLE": style_description, "STYLE_RESPONSE": response_sty_this_round})
+    history_style.append({"ROUND": 1, "ASK_STYLE": style_description, "STYLE_RESPONSE": response_sty_this_round})
+
     dump_json(history, hist_path_all)
     dump_json(history_style, hist_path_style)
-    
+
     print("-----Style agent finished.-----")
 
     # object agent and asking agent
     print("-----Object agent start.-----")
     
-    prompt_obj1 = f"【USER PROMPT (OBJECT)】\n{init_prompt}"
+    prompt_obj1 = f"【USER PROMPT (OBJECT)】\n{object_description}"
     response_obj_this_round = run_agent(tok, model, SYS_MSG_OBJECT, prompt_obj1)
-    hist_txt1 = fmt_hist([{"ROUND": 1, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": ""}])
-    
-    prompt_ask_obj1 = f"【HISTORY】\n{hist_txt1}\n\n【USER PROMPT (ASK)】\n{response_ask_obj}"
-    response_ask_obj_this_round = run_agent(tok, model, SYS_MSG_OBJ_ASK, prompt_ask_obj1)  
-
-    history.append({"ROUND": 1, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
-    history_object.append({"ROUND": 1, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
+    history.append({"ROUND": 1, "ASK_OBJECT": object_description, "OBJECT_RESPONSE": response_obj_this_round})
+    history_object.append({"ROUND": 1, "ASK_OBJECT": object_description, "OBJECT_RESPONSE": response_obj_this_round})
     dump_json(history, hist_path_all)
     dump_json(history_object, hist_path_object)
-    
-    print("-----Object agent finished.-----")
 
+    print("-----Object agent finished.-----")
     print("-----Round 1 finished.-----")
 
     for r in range(2, rounds + 1):
         print(f"-----Round {r} started.-----")
-
-        # --- Style：看前面所有輪（若無則只看使用者 style prompt）---
+        # Style agent
         print("-----Style agent start.-----")
-
+        
         hist_txt = fmt_hist(history)
-        prompt_sty = (
+        hist_prompt = (
+            (f"【HISTORY】\n{hist_txt}\n\n" if hist_txt else "")
+        )
+        response_ask_sty_this_round = run_agent(tok, model, SYS_MSG_STY_ASK, hist_prompt)
+
+        sty_prompt = (
             (f"【HISTORY】\n{hist_txt}\n\n" if hist_txt else "") +
-            f"【USER PROMPT (style)】\n{response_sty}"
+            f"【QUESTIONS (style)】\n{response_ask_sty_this_round}"
         )
-        response_sty_this_round = run_agent(tok, model, sys_sty, prompt_sty)
 
-        # --- Ask：看「前面所有輪 + 本輪新 X」---
-        tmp_hist = history + [{"ROUND": r, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": ""}]
-        hist_txt2 = fmt_hist(tmp_hist)
-        prompt_sum = (
-            f"【HISTORY】\n{hist_txt2}\n\n"
-            f"【USER PROMPT】\n{response_ask_sty}"
-        )
-        response_ask_sty_this_round = run_agent(tok, model, sys_ask_sty, prompt_sum)
+        response_sty_this_round = run_agent(tok, model, USER_MSG_STY_ROUND, sty_prompt)
 
-        # 累積並即時寫檔
-        history.append({"ROUND": r, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
-        history_style.append({"ROUND": r, "STYLE_RESPONSE": response_sty_this_round, "ASK_RESPONSE": response_ask_sty_this_round})
+        history.append({"ROUND": r, "ASK_STYLE": response_ask_sty_this_round, "STYLE_RESPONSE": response_sty_this_round})
+        history_style.append({"ROUND": r, "ASK_STYLE": response_ask_sty_this_round, "STYLE_RESPONSE": response_sty_this_round})
         dump_json(history, hist_path_all)
         dump_json(history_style, hist_path_style)
 
         print("-----Style agent finished.-----")
-
-        # --- Object：看前面所有輪（若無則只看使用者 style prompt）---
+        # Object agent
         print("-----Object agent start.-----")
-
         hist_txt = fmt_hist(history)
-        prompt_obj = (
+        hist_prompt = (
+            (f"【HISTORY】\n{hist_txt}\n\n" if hist_txt else "")
+        )
+        response_ask_obj_this_round = run_agent(tok, model, SYS_MSG_OBJ_ASK, hist_prompt)
+
+        obj_prompt = (
             (f"【HISTORY】\n{hist_txt}\n\n" if hist_txt else "") +
-            f"【USER PROMPT (object)】\n{response_obj}"
+            f"【QUESTIONS (object)】\n{response_ask_obj_this_round}"
         )
-        response_obj_this_round = run_agent(tok, model, sys_ask_obj, prompt_obj)
 
-        # --- Ask：看「前面所有輪 + 本輪新 X」---
-        tmp_hist = history + [{"ROUND": r, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": ""}]
-        hist_txt2 = fmt_hist(tmp_hist)
-        prompt_sum = (
-            f"【HISTORY】\n{hist_txt2}\n\n"
-            f"【USER PROMPT】\n{response_ask_obj}"
-        )
-        response_ask_obj_this_round = run_agent(tok, model, sys_ask_obj, prompt_sum)
+        response_obj_this_round = run_agent(tok, model, USER_MSG_OBJ_ROUND, obj_prompt)
 
-        # 累積並即時寫檔
-        history.append({"ROUND": r, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
-        history_object.append({"ROUND": r, "OBJECT_RESPONSE": response_obj_this_round, "ASK_RESPONSE": response_ask_obj_this_round})
+        history.append({"ROUND": r, "ASK_OBJECT": response_ask_obj_this_round, "OBJECT_RESPONSE": response_obj_this_round})
+        history_object.append({"ROUND": r, "ASK_OBJECT": response_ask_obj_this_round, "OBJECT_RESPONSE": response_obj_this_round})
         dump_json(history, hist_path_all)
         dump_json(history_object, hist_path_object)
 

@@ -1,0 +1,322 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "(No objects)",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific organic forms or natural motifs (e.g., flowing vines, blooming flowers, wave patterns) are commonly depicted in this style, and how are they rendered in terms of form and motion?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Identifies core natural elements that embody the style's organic vitality and emotional resonance.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of organic forms or natural motifs (e.g., vines, blossoms, waves) and their rendering characteristics (e.g., flowing, expanding, pulsing)\",
+      \"DEPENDENCIES\": [\"organic natural forms\", \"fluid, flowing lines\", \"emotional vitality\"]
+    },
+    {
+      \"Q\": \"What range of color temperature contrasts (e.g., 60% warm reds vs. 30% cool blues) and how are they distributed across the composition to evoke emotional atmosphere?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Clarifies how warm-cool contrasts contribute to emotional mood, directly linking color to feeling in the style.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Warm-to-cool temperature ratio (e.g., 60% warm, 40% cool) and distribution (e.g., reds on left, blues on right)\",
+      \"DEPENDENCIES\": [\"bold contrasts between warm and cool tones\", \"emotional charge\", \"hue dominance: 50–60% red, 20–30% blue\"]
+    },
+    {
+      \"Q\": \"What types of textures or surface qualities (e.g., velvety, rough, shimmering) are implied or suggested by the brushwork, and how do they relate to the emotional tone of the scene?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Connects physical surface quality to emotional atmosphere, enhancing the expressive depth of the style.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"List of implied textures (e.g., velvety, shimmering, rough) and their emotional associations (e.g., warmth, movement, joy)\",
+      \"DEPENDENCIES\": [\"expressive brushstrokes\", \"fluid, sweeping motions\", \"minimal detail\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are any objects or forms rendered with realistic proportions or anatomical accuracy?\",
+    \"Are there any static, rigid, or geometric shapes that break the organic flow?\",
+    \"Is the color palette muted, flat, or desaturated in any section of the composition?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF FORM includes flowing vines or blossoms THEN ask for specific motion or growth direction (e.g., curling upward, spreading outward)\",
+    \"IF COLOR_PALETTE mentions warm-cool contrast THEN ask for spatial distribution of hues (e.g., reds on right, blues on left)\",
+    \"IF TEXTURE references shimmering or rough THEN ask for how it contributes to emotional tone (e.g., joy, tension)\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": [\"flowing vines\", \"blooming flowers\", \"wave patterns\", \"expanding leaves\", \"pulsing blossoms\"],
+      \"RATIONALE\": \"These organic forms embody natural vitality and motion, consistent with the style's emphasis on fluidity and emotional growth.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": \"Warm-to-cool ratio: 60% warm (electric reds), 40% cool (cerulean blue); distribution: warm tones on the right or center, cool tones on the left or background, creating a dynamic emotional gradient\",
+      \"RATIONALE\": \"Aligns with bold warm-cool contrasts and hue dominance to evoke emotional atmosphere through spatial color flow.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": [\"velvety\", \"shimmering\", \"rough\", \"wet-slick\"], 
+      \"RATIONALE\": \"These textures imply emotional depth and surface vitality, enhancing the expressive and atmospheric quality of the scene.\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"flowing vines\",
+      \"WHY\": \"Represents organic motion and growth, rendered with fluid, gestural lines that suggest natural rhythm and expansion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"curving, asymmetrical, expanding loops with dynamic flow\",
+        \"MATERIAL\": \"implied as living plant matter\",
+        \"COLOR_PALETTE\": \"50–60% electric red, 20–30% cerulean blue, 15–20% lime green\",
+        \"SCALE_POSE\": \"medium to large, filling diagonal space\",
+        \"TEXTURE\": \"velvety, wet-slick\",
+        \"LIGHTING\": \"no defined lighting; color and motion define atmosphere\",
+        \"CONTEXT\": \"natural landscape or garden setting\",
+        \"COMPOSITION_ROLE\": \"foreground rhythm and motion\",
+        \"CAMERA\": \"low-angle, slightly tilted to emphasize flow\"
+      },
+      \"ICONOGRAPHY\": \"growth, vitality, emotional unfolding\",
+      \"VARIANTS\": [\"vines curling upward\", \"vines spreading outward\", \"vines pulsing with color\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"blooming flowers\",
+      \"WHY\": \"Symbolizes emotional joy and inner life, rendered with organic expansion and vibrant color bursts.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"pulsing, blooming centers with radial symmetry and soft edges\",
+        \"MATERIAL\": \"implied as organic, living petals\",
+        \"COLOR_PALETTE\": \"dominated by electric red and lime green with cerulean accents\",
+        \"SCALE_POSE\": \"medium, central or mid-ground\",
+        \"TEXTURE\": \"shimmering, rough edges\",
+        \"LIGHTING\": \"no defined lighting; color-driven atmosphere\",
+        \"CONTEXT\": \"natural or emotional landscape\",
+        \"COMPOSITION_ROLE\": \"emotional focal point\",
+        \"CAMERA\": \"medium close-up with slight tilt\"
+      },
+      \"ICONOGRAPHY\": \"joy, inner emotion, blossoming potential\",
+      \"VARIANTS\": [\"single bloom\", \"cluster of blossoms\", \"petals expanding outward\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"wave patterns\",
+      \"WHY\": \"Embodies natural motion and fluid rhythm, rendered with flowing lines and dynamic color shifts.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"wavy, overlapping, flowing curves with diagonal movement\",
+        \"MATERIAL\": \"implied as water or sky\",
+        \"COLOR_PALETTE\": \"60% warm reds, 40% cool blues, with lime green reflections\",
+        \"SCALE_POSE\": \"large, filling background or horizon\",
+        \"TEXTURE\": \"wet-slick, shimmering\",
+        \"LIGHTING\": \"no defined lighting; color and motion dominate\",
+        \"CONTEXT\": \"coastal or sky setting\",
+        \"COMPOSITION_ROLE\": \"background motion and rhythm\",
+        \"CAMERA\": \"wide, low-angle view with flowing diagonal\"
+      },
+      \"ICONOGRAPHY\": \"motion, continuity, emotional flow\",
+      \"VARIANTS\": [\"calm waves\", \"chaotic ripples\", \"waves breaking into color bursts\"],
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki Hybrid\": [\"flowing vines\", \"blooming flowers\", \"wave patterns\"]
+    },
+    \"INTERSECTION\": [\"flowing vines\", \"blooming flowers\", \"wave patterns\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"realistic flowers\", \"geometric shapes\", \"static forms\", \"anatomically accurate figures\"],
+  \"PROMPT_SNIPPETS\": [
+    \"Flowing vines in electric red and cerulean blue, pulsing with velvety texture and dynamic motion\",
+    \"Blooming flowers with shimmering petals, expanding in warm red and lime green\",
+    \"Wave patterns with wet-slick, shimmering surfaces, flowing diagonally across the canvas\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific organic forms: flowing vines, blooming flowers, wave patterns\",
+    \"Defined rendering characteristics: flowing, expanding, pulsing\",
+    \"Specified color distribution: warm reds on right, cool blues on left\",
+    \"Included implied textures: velvety, shimmering, wet-slick\",
+    \"Linked textures to emotional tone: warmth, movement, joy\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"How do the forms interact dynamically in composition—do they overlap, branch, or merge?\",
+    \"Are there specific emotional transitions (e.g., from joy to calm) implied in the color and form shifts?\",
+    \"Can we define a typical emotional arc (e.g., growth → peak → release) in a single composition?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific organic forms (e.g., pulsing blossoms, spiraling leaves) beyond flowing vines, blooming flowers, and wave patterns are commonly depicted, and how are they rendered in terms of form, color, and motion?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Expands the known object set to uncover less obvious but emotionally resonant natural motifs that align with the style's organic vitality and growth themes.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of specific forms (e.g., pulsing blossoms, spiraling leaves) and their rendering characteristics (form, color, motion)\",
+      \"DEPENDENCIES\": [\"organic natural forms\", \"fluid, gestural lines\", \"emotional vitality\", \"growth and inner feeling\"]
+    },
+    {
+      \"Q\": \"What specific color transitions or fade sequences (e.g., red to cerulean, lime to white) occur during the emotional arc (growth → peak → release), and how are they spatially distributed across the composition?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Clarifies how color dynamics support narrative progression, identifying precise visual cues for emotional transitions beyond general warm-cool contrasts.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Sequence of color transitions (e.g., red → lime → blue) and their spatial placement (e.g., center → background)\",
+      \"DEPENDENCIES\": [\"emotional arc: growth → peak joy → release\", \"color bursts\", \"form expansion\", \"hue dominance: 50–60% red, 20–30% blue\"]
+    },
+    {
+      \"Q\": \"How do textures such as 'velvety' or 'wet-slick' vary across different forms (e.g., vines vs. flowers) and what emotional or narrative function do these variations serve?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Drills into texture specificity to reveal how surface quality differentiates forms and enhances emotional storytelling within the composition.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"Mapping of texture types to forms (e.g., vines: wet-slick; flowers: shimmering) and their emotional/narrative function (e.g., tension, joy)\",
+      \"DEPENDENCIES\": [\"velvety\", \"shimmering\", \"rough\", \"wet-slick\", \"emotional tone\", \"form rendering\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are any of the new forms rendered with realistic proportions or anatomical accuracy?\",
+    \"Do the color transitions lack a clear emotional or narrative sequence?\",
+    \"Are textures applied uniformly across all forms, or do they remain generic and unlinked to emotion?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF FORM includes pulsing blossoms OR spiraling leaves THEN ask for specific motion direction (e.g., expanding outward, curling inward)\",
+    \"IF COLOR_PALETTE mentions red-to-blue fade THEN ask for spatial progression (e.g., from center to edge)\",
+    \"IF TEXTURE varies by form THEN ask for emotional contrast (e.g., velvety = warmth, wet-slick = motion)\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"FORM\",
+      \"ANSWER\": [\"pulsing blossoms\", \"spiraling leaves\", \"expanding sunbursts\", \"fanning petals\"],
+      \"RATIONALE\": \"These forms extend the organic growth motif with dynamic motion and emotional intensity, aligning with the style's emphasis on vitality and inner feeling.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": \"Color transitions: red → lime green → cerulean blue; spatial distribution: center (red burst) → mid-ground (lime green expansion) → background (fading cerulean); fade sequence supports emotional arc from growth to release\",
+      \"RATIONALE\": \"Matches the narrative progression of growth → peak joy → gentle release with visible, spatially distributed color shifts that enhance emotional storytelling.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"Vines: wet-slick (motion, tension); flowers: shimmering (joy, vibrancy); pulsing blossoms: velvety (warmth, emotional depth); expanding sunbursts: rough (energy, release)\",
+      \"RATIONALE\": \"Texture variation by form enhances emotional narrative—wet-slick implies motion, velvety conveys intimacy, rough signals release—aligning with the emotional arc and form dynamics.\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"pulsing blossoms\",
+      \"WHY\": \"Embodies peak joy and emotional intensity, rendered with rhythmic expansion and vibrant color bursts that mirror the style's emotional peak.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"radial, pulsing centers with soft, expanding edges\",
+        \"MATERIAL\": \"implied as living, emotional flowers\",
+        \"COLOR_PALETTE\": \"dominated by electric red and lime green with cerulean accents\",
+        \"SCALE_POSE\": \"medium, central or slightly off-center\",
+        \"TEXTURE\": \"velvety\",
+        \"LIGHTING\": \"no defined lighting; color and motion define atmosphere\",
+        \"CONTEXT\": \"emotional landscape or garden peak\",
+        \"COMPOSITION_ROLE\": \"emotional peak and focal point\",
+        \"CAMERA\": \"medium close-up with slight tilt\"
+      },
+      \"ICONOGRAPHY\": \"emotional peak, joy, inner explosion\",
+      \"VARIANTS\": [\"single pulsing bloom\", \"cluster of expanding petals\", \"petals radiating outward\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"spiraling leaves\",
+      \"WHY\": \"Represents organic growth and quiet motion, rendered with slow, winding curves that suggest natural rhythm and emotional unfolding.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"asymmetrical, spiraling loops with gradual expansion\",
+        \"MATERIAL\": \"implied as living plant matter\",
+        \"COLOR_PALETTE\": \"50–60% electric red, 20–30% cerulean blue, 15–20% lime green\",
+        \"SCALE_POSE\": \"medium to large, flowing diagonally\",
+        \"TEXTURE\": \"wet-slick\",
+        \"LIGHTING\": \"no defined lighting; color and motion dominate\",
+        \"CONTEXT\": \"natural or wind-swept garden\",
+        \"COMPOSITION_ROLE\": \"background rhythm and growth trajectory\",
+        \"CAMERA\": \"low-angle, slightly tilted to emphasize spiral flow\"
+      },
+      \"ICONOGRAPHY\": \"growth, quiet motion, natural unfolding\",
+      \"VARIANTS\": [\"leaves spiraling upward\", \"leaves winding outward\", \"leaves with color gradients\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"expanding sunbursts\",
+      \"WHY\": \"Symbolizes emotional release and openness, rendered with outward-spreading radiance that visually resolves the peak joy into gentle diffusion.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular, expanding from a center point with radial arms\",
+        \"MATERIAL\": \"implied as light or energy field\",
+        \"COLOR_PALETTE\": \"red → lime green → cerulean blue gradient\",
+        \"SCALE_POSE\": \"large, filling background or horizon\",
+        \"TEXTURE\": \"rough\",
+        \"LIGHTING\": \"no defined lighting; color and motion define atmosphere\",
+        \"CONTEXT\": \"sky or open landscape at emotional release\",
+        \"COMPOSITION_ROLE\": \"narrative resolution and release\",
+        \"CAMERA\": \"wide, slightly elevated, showing full expansion\"
+      },
+      \"ICONOGRAPHY\": \"release, openness, emotional resolution\",
+      \"VARIANTS\": [\"sunburst fading into blue\", \"sunburst with jagged edges\", \"sunburst merging into sky\"],
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"NAME\": \"fanning petals\",
+      \"WHY\": \"Captures dynamic movement and emotional spill, rendered with sharp, outward-flaring motion that suggests joy spreading into the environment.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"sharp, angular, flaring edges with radial motion\",
+        \"MATERIAL\": \"implied as living, energetic petals\",
+        \"COLOR_PALETTE\": \"electric red and lime green with cerulean edges\",
+        \"SCALE_POSE\": \"medium, mid-ground or foreground\",
+        \"TEXTURE\": \"shimmering\",
+        \"LIGHTING\": \"no defined lighting; color and motion dominate\",
+        \"CONTEXT\": \"garden or emotional scene\",
+        \"COMPOSITION_ROLE\": \"dynamic motion and emotional spread\",
+        \"CAMERA\": \"medium close-up with dynamic angle\"
+      },
+      \"ICONOGRAPHY\": \"joy spreading, emotional overflow\",
+      \"VARIANTS\": [\"petals flaring outward\", \"petals with color bursts\", \"petals overlapping with vines\"],
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki Hybrid\": [\"flowing vines\", \"blooming flowers\", \"wave patterns\", \"pulsing blossoms\", \"spiraling leaves\", \"expanding sunbursts\", \"fanning petals\"]
+    },
+    \"INTERSECTION\": [\"flowing vines\", \"blooming flowers\", \"wave patterns\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"realistic flowers\", \"geometric shapes\", \"static forms\", \"anatomically accurate figures\"],
+  \"PROMPT_SNIPPETS\": [
+    \"Pulsing blossoms with velvety texture and electric red-lime green bursts at the center\",
+    \"Spiraling leaves with wet-slick surfaces, flowing diagonally from foreground to background\",
+    \"Expanding sunbursts in red-to-lime-to-blue gradient, fading into cerulean background\",
+    \"Fanning petals with shimmering edges, flaring outward in dynamic motion\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added new organic forms: pulsing blossoms, spiraling leaves, expanding sunbursts, fanning petals\",
+    \"Defined specific color fade sequence: red → lime → blue with spatial progression\",
+    \"Mapped texture to form: wet-slick (vines), velvety (blossoms), rough (sunbursts), shimmering (petals)\",
+    \"Linked textures to emotional function: tension, joy, release, overflow\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Can the fade sequence be animated or layered in time to suggest a temporal progression?\",
+    \"How would the composition change if the sunburst appeared earlier in the emotional arc?\",
+    \"Are there specific brushstroke patterns (e.g., pulsing, flaring) that match the form motion?\"
+  ]
+}"
+  }
+]

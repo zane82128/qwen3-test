@@ -1,0 +1,591 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s expressive, whimsical style—bold, vibrant colors, soft organic lines, and emotional depth in a painterly, dreamlike atmosphere.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, fluid lines; asymmetrical layouts emphasizing emotional resonance; dynamic yet harmonious spatial organization inspired by natural movements and whimsical environments.\",
+    \"COLOR_TONALITY\": \"Highly saturated, non-naturalistic palette dominated by primary and complementary hues (e.g., cobalt blue, cadmium red, lemon yellow, terracotta); warm and cool contrasts used to evoke mood; vibrant yet balanced to avoid chaos.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible texture; soft blending in transitional areas; layered impasto effects to enhance depth and emotional weight; painterly but not chaotic application.\",
+    \"EXPRESSION_THEME\": \"Whimsical emotional narratives; gentle melancholy intertwined with joy; nature-based scenes with anthropomorphized elements; dreamlike journeys and quiet wonder.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Vlaminck) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films), emphasizing emotional authenticity and visual poetry.\"
+  },
+  \"MERGE_STRATEGY\": \"Fuse Fauvism’s radical colorism and expressive brushwork with Miyazaki’s organic line quality and emotional storytelling; prioritize emotional coherence over strict adherence to either style’s formal rules; balance boldness with softness in form and tone.\",
+  \"PROMPT_SNIPPET\": \"A dreamlike landscape with bold, vibrant colors and soft organic lines, blending Fauvism's expressive palette with Miyazaki's emotional depth and whimsy.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Avoid realistic proportions or photorealistic details\",
+    \"Avoid harsh, mechanical lines or sharp geometric forms\",
+    \"Avoid overly abstract or decontextualized color fields without narrative grounding\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of at least three distinct Fauvist color palettes (primary hues, high saturation)\",
+    \"Use of flowing, organic forms and soft, naturalistic lines characteristic of Miyazaki’s style\",
+    \"Emotional narrative or atmosphere that evokes wonder and gentle melancholy\",
+    \"Painterly texture and brushwork that supports the dreamlike quality\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "girl, dragon",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"The figure of a girl is a common subject in fantasy art, especially when paired with mythical creatures like dragons, representing youthful innocence or heroism in a mythic setting.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Humanoid, upright posture with soft curves\",
+        \"MATERIAL\": \"Anthropomorphic, rendered in painted or digital form\",
+        \"COLOR_PALETTE\": \"Soft pastels to warm tones (e.g., pink, lavender, gold), balanced with contrast from dragon elements\",
+        \"SCALE_POSE\": \"Medium scale, centered, facing forward or slightly off-center\",
+        \"TEXTURE\": \"Smooth, soft brushwork with subtle skin texture\",
+        \"LIGHTING\": \"Soft, diffused lighting with gentle highlights\",
+        \"CONTEXT\": \"Fantasy landscape or mystical environment\",
+        \"COMPOSITION_ROLE\": \"Main subject, central focus\",
+        \"CAMERA\": \"Medium close-up, slightly angled to emphasize interaction with dragon\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes hope, courage, or the connection between humanity and the supernatural\",
+      \"VARIANTS\": [\"young girl\", \"dressed in traditional fantasy attire\", \"holding a staff or weapon\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Dragons are central mythological motifs in fantasy art, often depicted as powerful, winged serpents with fire-breathing abilities, frequently interacting with human figures like girls.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Serpentine body with large wings, elongated head, sharp teeth\",
+        \"MATERIAL\": \"Sculptural, rendered in oil, digital painting, or ink\",
+        \"COLOR_PALETTE\": \"Dark earth tones (brown, black) with fiery reds and oranges, high contrast\",
+        \"SCALE_POSE\": \"Large scale, often dominating the composition, coiled or flying\",
+        \"TEXTURE\": \"Rough, scaled texture with visible ridges and depth\",
+        \"LIGHTING\": \"Strong chiaroscuro with sharp highlights on wings and scales\",
+        \"CONTEXT\": \"Fantasy wilderness, mountain range, or aerial space\",
+        \"COMPOSITION_ROLE\": \"Dominant background or secondary subject with dynamic presence\",
+        \"CAMERA\": \"Wide-angle or low-angle view to emphasize size and power\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes power, destruction, wisdom, or ancient knowledge\",
+      \"VARIANTS\": [\"fire-breathing dragon\", \"winged dragon\", \"half-dragon hybrid\"],
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the girl and dragon interacting in a specific way (e.g., riding, fighting, bonding)?\",
+    \"Is the setting more grounded (real world) or purely fantastical?\",
+    \"Is the dragon explicitly a fire-breathing creature or more mystical?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 100–150 on a 0–255 scale) should be applied to the cobalt blue and cadmium red hues to maintain high vibrancy without causing visual chaos?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation levels directly impact whether the palette remains vibrant yet balanced, as required by Fauvism and the emotional coherence criteria.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 120–180)\",
+      \"DEPENDENCIES\": [\"highly saturated\", \"balanced to avoid chaos\"]
+    },
+    {
+      \"Q\": \"How should the flowing organic lines between the girl and dragon be structured in terms of curvature and continuity—specifically, are they continuous, interrupted, or segmented to convey emotional tension or harmony?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Line continuity directly affects the emotional resonance and narrative flow between the subjects, aligning with the whimsical emotional narratives theme.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of line structure (e.g., 'continuous and flowing', 'interrupted with gentle breaks')\",
+      \"DEPENDENCIES\": [\"flowing, fluid lines\", \"emotional resonance\"]
+    },
+    {
+      \"Q\": \"What specific brushstroke thickness range (e.g., 1–3 pixels in digital rendering or 0.5–1.5 mm in paint) should be used for the impasto effects on the dragon’s scales and the girl’s hair to support painterly texture without overwhelming the composition?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Thickness directly influences texture and emotional weight, ensuring the painterly quality supports the dreamlike atmosphere without becoming chaotic.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"range (e.g., 1.2–2.0 mm)\",
+      \"DEPENDENCIES\": [\"layered impasto effects\", \"painterly but not chaotic\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the color saturation drop below 100 to avoid Fauvist intensity?\",
+    \"Are the lines sharp or mechanical, violating the 'soft organic lines' constraint?\",
+    \"Is the brushwork uniform or too sparse to fail the 'painterly texture' evaluation?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'high saturation' THEN ask for specific saturation ranges per hue\",
+    \"IF FORM_COMPOSITION references 'dynamic yet harmonious' THEN ask about line continuity and emotional flow\",
+    \"IF BRUSHWORK_TECHNIQUE includes 'impasto' THEN ask for thickness ranges and application zones\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"140–180\",
+      \"RATIONALE\": \"Maintains high vibrancy while preventing visual chaos through balanced saturation across primary hues.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"Continuous and flowing, with gentle interruptions at emotional transition points (e.g., where the girl reaches out to the dragon)\",
+      \"RATIONALE\": \"Supports emotional resonance and narrative flow between the subjects without disrupting harmony.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"1.5–2.5 mm\",
+      \"RATIONALE\": \"Provides sufficient texture for impasto effects without overwhelming the composition or breaking painterly cohesion.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with continuous and flowing lines, gently interrupted at emotional transition points to convey narrative tension or harmony; asymmetrical layouts emphasize emotional resonance through dynamic yet harmonious spatial organization.\",
+    \"COLOR_TONALITY\": \"Highly saturated, non-naturalistic palette dominated by primary and complementary hues (e.g., cobalt blue, cadmium red, lemon yellow, terracotta) with saturation levels maintained between 140–180 on a 0–255 scale; warm and cool contrasts used to evoke mood while avoiding visual chaos.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible texture; soft blending in transitional areas; layered impasto effects (1.5–2.5 mm thickness) applied to dragon scales and girl’s hair to enhance depth and emotional weight; painterly but not chaotic application.\",
+    \"EXPRESSION_THEME\": \"Whimsical emotional narratives; gentle melancholy intertwined with joy; nature-based scenes with anthropomorphized elements; dreamlike journeys and quiet wonder, now reinforced by continuous emotional line flow.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Vlaminck) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films), emphasizing emotional authenticity and visual poetry, now with precise saturation and texture parameters for emotional coherence.\",
+    \"SUBJECT_MATTER\": \"A girl and a dragon in a dreamlike fantasy landscape, interacting with soft organic lines and painterly texture, conveying emotional connection and wonder.\",
+    \"COMPOSITIONAL_DEVICES\": \"Asymmetry, flowing line continuity, emotional transition points, layered impasto, soft lighting to support dreamlike atmosphere.\",
+    \"LIGHTING_CAMERA\": \"Soft, diffused lighting with gentle highlights on the girl and sharp chiaroscuro on the dragon’s wings and scales; medium close-up to medium wide-angle, slightly angled to emphasize interaction.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid realistic proportions or photorealistic details\",
+      \"Avoid harsh, mechanical lines or sharp geometric forms\",
+      \"Avoid overly abstract or decontextualized color fields without narrative grounding\",
+      \"Do not use saturation below 140 or brushwork thinner than 1.5 mm\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of at least three distinct Fauvist color palettes with saturation between 140–180\",
+      \"Use of continuous, flowing organic lines with gentle interruptions at emotional transition points\",
+      \"Emotional narrative or atmosphere that evokes wonder and gentle melancholy through interaction\",
+      \"Painterly texture with impasto effects (1.5–2.5 mm) applied to key elements (dragon scales, girl’s hair)\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike fantasy scene of a girl and a dragon, with bold vibrant colors (saturation 140–180), continuous flowing organic lines, and painterly impasto textures (1.5–2.5 mm) that support emotional interaction and harmony.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Specific saturation range (140–180) defined for Fauvist hues\",
+    \"Line structure updated to continuous with gentle interruptions for emotional narrative flow\",
+    \"Brushstroke thickness range (1.5–2.5 mm) established for impasto effects\",
+    \"Negative constraints now include minimum saturation and brushwork thickness thresholds\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"What specific emotional interaction (e.g., bonding, riding, dialogue) should be implied between the girl and dragon?\",
+    \"Should the dragon’s fire be visible or represented more mystically (e.g., glowing aura instead of flame)?\",
+    \"Is the setting more grounded in a natural landscape or in a surreal, floating environment?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific emotional interaction (e.g., gentle touch, shared gaze, quiet conversation) should be implied between the girl and dragon to convey the theme of gentle melancholy and quiet wonder?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"The emotional interaction directly anchors the narrative and supports the theme of whimsical emotional narratives with gentle melancholy.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"specific action or gesture (e.g., 'shared gaze', 'touching wing')\",
+      \"DEPENDENCIES\": [\"gentle melancholy\", \"emotional narrative\", \"whimsical interaction\"]
+    },
+    {
+      \"Q\": \"What color palette combinations (e.g., cobalt blue + terracotta, lemon yellow + cadmium red) should be applied to the girl and dragon respectively to maintain Fauvist contrast while ensuring warm-cool harmony and emotional balance?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Specific hue pairings influence emotional tone and visual balance, ensuring both vibrancy and narrative cohesion across subjects.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of paired hues (e.g., ['cobalt blue + terracotta', 'lemon yellow + cadmium red'])\",
+      \"DEPENDENCIES\": [\"primary and complementary hues\", \"warm and cool contrasts\", \"Fauvist palette\"]
+    },
+    {
+      \"Q\": \"What specific compositional role does the girl’s hair or the dragon’s wing play in the flow of organic lines—does it serve as a bridge, transition point, or emotional anchor between the two subjects?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Defining the role of key elements in line continuity clarifies how emotional transitions are structured and narratively grounded.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"function in composition (e.g., 'bridge between subjects', 'emotional anchor')\",
+      \"DEPENDENCIES\": [\"continuous and flowing lines\", \"emotional transition points\", \"line structure\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the interaction purely mechanical or action-based (e.g., fighting, riding) that contradicts the theme of gentle melancholy?\",
+    \"Are the color pairings monochromatic or naturalistic, violating the Fauvist non-naturalistic requirement?\",
+    \"Does the compositional role of hair or wings lack narrative function, making the flow of lines arbitrary?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF CONTEXT includes 'bonding' or 'gaze' THEN ask for specific gestures or visual cues\",
+    \"IF COLOR_PALETTE mentions 'primary and complementary' THEN list exact hue pairs with emotional implications\",
+    \"IF COMPOSITION_ROLE refers to 'flowing lines' THEN verify if key elements act as transition anchors\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": \"shared gaze with a soft, tender expression\",
+      \"RATIONALE\": \"Establishes emotional connection and quiet wonder while avoiding action-based conflict with gentle melancholy.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": [\"cobalt blue + terracotta\", \"lemon yellow + cadmium red\", \"cadmium red + lavender\"],
+      \"RATIONALE\": \"Balances warm and cool contrasts with primary-complementary pairings to evoke emotional depth and vibrancy without chaos.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"ANSWER\": \"the girl’s hair acts as a flowing bridge between the girl and dragon’s wing, serving as an emotional anchor and line continuity point\",
+      \"RATIONALE\": \"Provides narrative grounding for the emotional transition and supports continuous organic flow between subjects.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central figure in emotional narrative; her soft form and expressive gesture anchor the scene’s warmth and quiet wonder.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Humanoid, upright with soft, curved silhouette\",
+        \"MATERIAL\": \"Anthropomorphic, painted with expressive brushwork\",
+        \"COLOR_PALETTE\": \"Cobalt blue and terracotta, with lavender accents for warmth and contrast\",
+        \"SCALE_POSE\": \"Medium scale, centered, slightly off-center to allow flow toward dragon\",
+        \"TEXTURE\": \"Smooth with soft impasto on hair (1.5–2.5 mm), subtle skin texture\",
+        \"LIGHTING\": \"Soft diffused light with gentle highlights on face and hair\",
+        \"CONTEXT\": \"Dreamlike fantasy landscape with floating trees and misty hills\",
+        \"COMPOSITION_ROLE\": \"Main subject and emotional anchor\",
+        \"CAMERA\": \"Medium close-up, slightly angled to show shared gaze\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes innocence, quiet courage, and emotional connection to the supernatural\",
+      \"VARIANTS\": [\"young girl with braided hair\", \"dressed in flowing blue and terracotta robes\"],
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Dominant figure with emotional presence; its form and color contrast support narrative harmony through warm-cool balance and organic flow.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Serpentine body with large wings, elongated head, soft curves\",
+        \"MATERIAL\": \"Sculptural, rendered with layered impasto on scales and wings\",
+        \"COLOR_PALETTE\": \"Dark brown and deep orange with cadmium red accents; glowing aura of soft yellow\",
+        \"SCALE_POSE\": \"Large scale, coiled slightly to the side, wings extended toward girl\",
+        \"TEXTURE\": \"Rough, scaled texture with visible ridges; impasto (1.5–2.5 mm) on wing edges and tail\",
+        \"LIGHTING\": \"Chiaroscuro with sharp highlights on wings and glowing aura\",
+        \"CONTEXT\": \"Floating mountain range in a dreamlike, misty landscape\",
+        \"COMPOSITION_ROLE\": \"Dominant background with emotional presence and narrative transition\",
+        \"CAMERA\": \"Medium wide-angle, slightly low to emphasize size and flow\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes ancient wisdom, quiet power, and emotional depth beyond destruction\",
+      \"VARIANTS\": [\"winged dragon with glowing aura\", \"half-dragon with soft eyes\"],
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki Whimsy\": [\"girl\", \"dragon\"]
+    },
+    \"INTERSECTION\": [\"girl\", \"dragon\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"realistic proportions\", \"sharp mechanical lines\", \"fire-breathing flame without aura\", \"monochromatic color fields\"],
+  \"PROMPT_SNIPPETS\": [
+    \"A girl and dragon in a dreamlike landscape, sharing a tender gaze with soft organic lines and flowing hair connecting them\",
+    \"Cobalt blue and terracotta for the girl, cadmium red and lavender for the dragon, with warm-cool contrast\",
+    \"The girl’s hair flows as a bridge between her and the dragon’s wing, forming an emotional anchor and line continuity\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific emotional interaction: shared gaze with tender expression\",
+    \"Defined color palette pairs with emotional and visual balance: cobalt+terracotta, lemon+cadmium red, cadmium+lavender\",
+    \"Assigned compositional role of girl’s hair as a flowing bridge and emotional anchor\",
+    \"Refined color and form attributes to align with Fauvist saturation and emotional narrative\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the dragon’s glowing aura be visible or subtle?\",
+    \"Is the landscape more grounded in nature or surreal (e.g., floating islands)?\",
+    \"Are there additional elements (e.g., trees, clouds) that could enhance the organic flow?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 140–180 on a 0–255 scale) should be applied to the cobalt blue and cadmium red hues to ensure Fauvist vibrancy while maintaining visual balance and emotional coherence?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation directly determines whether the palette remains vibrant yet balanced, supporting both Fauvist intensity and narrative harmony.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 140–180)\",
+      \"DEPENDENCIES\": [\"highly saturated\", \"balanced to avoid chaos\", \"Fauvist colorism\"]
+    },
+    {
+      \"Q\": \"How should the flowing organic lines between the girl and dragon be structured in terms of curvature and continuity—specifically, are they continuous, gently interrupted, or segmented at emotional transition points such as the shared gaze?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Line structure defines emotional narrative flow and resonance, directly linking form to the theme of gentle melancholy and quiet wonder.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of line structure (e.g., 'continuous and flowing', 'interrupted at shared gaze with soft breaks')\",
+      \"DEPENDENCIES\": [\"continuous and flowing\", \"emotional transition points\", \"shared gaze\"]
+    },
+    {
+      \"Q\": \"What specific brushstroke thickness range (e.g., 1.5–2.5 mm) should be applied to the dragon’s scales and the girl’s hair to support layered impasto effects and emotional depth without overwhelming the composition?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Brushstroke thickness governs texture and emotional weight, ensuring painterly quality aligns with the dreamlike atmosphere and narrative tone.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"range (e.g., 1.5–2.5 mm)\",
+      \"DEPENDENCIES\": [\"layered impasto effects\", \"painterly but not chaotic\", \"impasto on key elements\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should saturation drop below 140, violating the Fauvist vibrancy threshold?\",
+    \"Are the lines sharp or mechanical, breaking the soft organic form constraint?\",
+    \"Is the brushwork uniform or too thin to fail the painterly texture evaluation?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'high saturation' THEN ask for specific saturation ranges per hue\",
+    \"IF FORM_COMPOSITION references 'emotional transition points' THEN ask about exact locations and types of interruptions\",
+    \"IF BRUSHWORK_TECHNIQUE includes 'impasto' THEN ask for thickness ranges and application zones\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"140–180\",
+      \"RATIONALE\": \"Maintains high vibrancy while preventing visual chaos through balanced saturation across primary hues.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"Continuous and flowing, gently interrupted at the shared gaze with soft, organic breaks that mirror emotional transition points\",
+      \"RATIONALE\": \"Supports emotional resonance and narrative flow, with interruptions aligning with key moments of connection and quiet tension.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"1.5–2.5 mm\",
+      \"RATIONALE\": \"Provides sufficient texture for impasto effects on dragon scales and girl’s hair without overwhelming the composition or breaking painterly cohesion.\",
+      \"CONFIDENCE\": 0.99
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with continuous and flowing lines, gently interrupted at emotional transition points (e.g., shared gaze) to convey narrative tension and harmony; asymmetrical layouts emphasize emotional resonance through dynamic yet harmonious spatial organization.\",
+    \"COLOR_TONALITY\": \"Highly saturated, non-naturalistic palette dominated by primary and complementary hues (e.g., cobalt blue, cadmium red, lemon yellow, terracotta) with saturation levels maintained between 140–180 on a 0–255 scale; warm and cool contrasts used to evoke mood while avoiding visual chaos.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible texture; soft blending in transitional areas; layered impasto effects (1.5–2.5 mm thickness) applied to dragon scales and girl’s hair to enhance depth and emotional weight; painterly but not chaotic application.\",
+    \"EXPRESSION_THEME\": \"Whimsical emotional narratives; gentle melancholy intertwined with joy; nature-based scenes with anthropomorphized elements; dreamlike journeys and quiet wonder, now reinforced by continuous emotional line flow and intentional interruptions at shared moments.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Vlaminck) fused with contemporary Japanese animation aesthetics (Miyazaki’s Studio Ghibli films), emphasizing emotional authenticity and visual poetry, now with precise saturation and texture parameters for emotional coherence.\",
+    \"SUBJECT_MATTER\": \"A girl and a dragon in a dreamlike fantasy landscape, interacting through a shared gaze with soft organic lines and painterly texture, conveying emotional connection and quiet wonder.\",
+    \"COMPOSITIONAL_DEVICES\": \"Asymmetry, flowing line continuity, emotional transition points (e.g., shared gaze), layered impasto, soft lighting to support dreamlike atmosphere.\",
+    \"LIGHTING_CAMERA\": \"Soft, diffused lighting with gentle highlights on the girl and sharp chiaroscuro on the dragon’s wings and scales; medium close-up to medium wide-angle, slightly angled to emphasize interaction and emotional connection.\",
+    \"NEGATIVE_CONSTRAINTS\": [
+      \"Avoid realistic proportions or photorealistic details\",
+      \"Avoid harsh, mechanical lines or sharp geometric forms\",
+      \"Avoid overly abstract or decontextualized color fields without narrative grounding\",
+      \"Do not use saturation below 140 or brushwork thinner than 1.5 mm\",
+      \"Do not use sharp, segmented lines at emotional points\"
+    ],
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of at least three distinct Fauvist color palettes with saturation between 140–180\",
+      \"Use of continuous, flowing organic lines with gentle interruptions at emotional transition points (e.g., shared gaze)\",
+      \"Emotional narrative or atmosphere that evokes wonder and gentle melancholy through interaction\",
+      \"Painterly texture with impasto effects (1.5–2.5 mm) applied to key elements (dragon scales, girl’s hair)\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike fantasy scene of a girl and a dragon sharing a tender gaze, with bold vibrant colors (saturation 140–180), continuous flowing organic lines gently interrupted at the shared gaze, and painterly impasto textures (1.5–2.5 mm) on dragon scales and girl’s hair to support emotional depth and harmony.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Refined form composition to specify gentle interruptions at shared gaze as emotional transition points\",
+    \"Reinforced saturation range (140–180) with explicit alignment to Fauvist vibrancy and narrative balance\",
+    \"Strengthened brushstroke range (1.5–2.5 mm) with clear application zones on key elements\",
+    \"Added negative constraint against sharp or segmented lines at emotional points\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the dragon’s glowing aura be visible or subtle?\",
+    \"Is the landscape more grounded in nature or surreal (e.g., floating islands)?\",
+    \"Are there additional organic elements (e.g., trees, clouds) that could enhance the flow of lines?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific organic elements (e.g., floating trees, misty clouds, flowing rivers) should be included in the landscape to enhance the continuity of flowing lines and support the dreamlike, nature-based atmosphere?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Additional organic elements reinforce the natural movement and emotional flow between the girl and dragon, deepening the narrative environment and visual poetry.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of specific elements (e.g., 'floating trees', 'misty clouds')\",
+      \"DEPENDENCIES\": [\"dreamlike landscape\", \"flowing organic lines\", \"nature-based scenes\"]
+    },
+    {
+      \"Q\": \"What specific range of warm and cool color contrasts (e.g., cobalt blue + terracotta, lemon yellow + cadmium red) should be applied to the girl and dragon to maintain Fauvist vibrancy while ensuring emotional balance and narrative cohesion?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Precise hue contrasts influence emotional tone and visual harmony, ensuring both vibrancy and narrative depth across subjects.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of paired hues (e.g., ['cobalt blue + terracotta', 'lemon yellow + cadmium red'])\",
+      \"DEPENDENCIES\": [\"primary and complementary hues\", \"warm and cool contrasts\", \"emotional balance\"]
+    },
+    {
+      \"Q\": \"How should the texture of the girl’s hair and dragon’s scales be distributed—specifically, are impasto effects applied uniformly, in zones of interaction, or only at emotional transition points like the shared gaze?\",
+      \"DIMENSION\": \"TEXTURE\",
+      \"WHY\": \"Texture distribution directly supports emotional narrative and compositional flow, ensuring painterly depth aligns with key emotional moments.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description of texture placement (e.g., 'uniform on hair', 'focused at shared gaze')\",
+      \"DEPENDENCIES\": [\"impasto effects\", \"emotional transition points\", \"painterly texture\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are the organic elements overly abstract or disconnected from the flowing line structure?\",
+    \"Do the color contrasts lack primary-complementary pairings or violate Fauvist saturation rules?\",
+    \"Is the texture applied randomly without alignment to emotional or compositional anchors?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF CONTEXT includes 'floating islands' THEN ask for specific types of natural elements (e.g., trees, fog, water)\",
+    \"IF COLOR_PALETTE mentions 'warm-cool balance' THEN list exact hue pairs with emotional implications\",
+    \"IF TEXTURE refers to 'impasto' THEN verify if it's applied at emotional transition points or key interaction zones\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"CONTEXT\",
+      \"ANSWER\": [\"floating trees\", \"misty clouds\", \"soft flowing rivers\"],
+      \"RATIONALE\": \"These organic elements reinforce natural movement and flow, connecting the girl and dragon through continuous, dreamlike lines in a nature-based environment.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"ANSWER\": [\"cobalt blue + terracotta\", \"lemon yellow + cadmium red\", \"cadmium red + lavender\"],
+      \"RATIONALE\": \"Balances warm and cool contrasts with primary-complementary pairings to evoke emotional depth, vibrancy, and narrative harmony without visual chaos.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"TEXTURE\",
+      \"ANSWER\": \"Impasto effects applied primarily at the shared gaze and along the girl’s hair and dragon’s wing edges, focused on emotional transition points\",
+      \"RATIONALE\": \"Texture distribution aligns with emotional narrative flow, enhancing depth and emotional weight at key interaction zones without overwhelming the composition.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central emotional anchor with flowing hair that bridges the girl and dragon, enhancing narrative continuity and dreamlike atmosphere.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Humanoid, upright with soft, curved silhouette\",
+        \"MATERIAL\": \"Anthropomorphic, painted with expressive brushwork\",
+        \"COLOR_PALETTE\": \"Cobalt blue and terracotta, with lavender accents for warmth and contrast\",
+        \"SCALE_POSE\": \"Medium scale, slightly off-center to allow flow toward dragon\",
+        \"TEXTURE\": \"Smooth with impasto (1.5–2.5 mm) applied along hair and at shared gaze point\",
+        \"LIGHTING\": \"Soft diffused light with gentle highlights on face and hair\",
+        \"CONTEXT\": \"Dreamlike fantasy landscape with floating trees, misty clouds, and soft flowing rivers\",
+        \"COMPOSITION_ROLE\": \"Main subject and emotional anchor\",
+        \"CAMERA\": \"Medium close-up, slightly angled to show shared gaze\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes innocence, quiet courage, and emotional connection to the supernatural\",
+      \"VARIANTS\": [\"young girl with braided hair\", \"dressed in flowing blue and terracotta robes\"],
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Dominant figure with emotional presence; its form and color contrast support narrative harmony through warm-cool balance and organic flow.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Serpentine body with large wings, elongated head, soft curves\",
+        \"MATERIAL\": \"Sculptural, rendered with layered impasto on scales and wings\",
+        \"COLOR_PALETTE\": \"Dark brown and deep orange with cadmium red accents; glowing aura of soft yellow\",
+        \"SCALE_POSE\": \"Large scale, coiled slightly to the side, wings extended toward girl\",
+        \"TEXTURE\": \"Rough, scaled texture with visible ridges; impasto (1.5–2.5 mm) on wing edges and tail, focused at shared gaze and wing contact point\",
+        \"LIGHTING\": \"Chiaroscuro with sharp highlights on wings and glowing aura\",
+        \"CONTEXT\": \"Floating mountain range in a dreamlike, misty landscape with floating trees and flowing rivers\",
+        \"COMPOSITION_ROLE\": \"Dominant background with emotional presence and narrative transition\",
+        \"CAMERA\": \"Medium wide-angle, slightly low to emphasize size and flow\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes ancient wisdom, quiet power, and emotional depth beyond destruction\",
+      \"VARIANTS\": [\"winged dragon with glowing aura\", \"half-dragon with soft eyes\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"floating trees\",
+      \"WHY\": \"Organic elements that extend the flow of natural movement and support continuous, dreamlike line continuity between the girl and dragon.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Elongated, gently curved branches with soft, flowing limbs\",
+        \"MATERIAL\": \"Painted with soft, fluid lines and blended textures\",
+        \"COLOR_PALETTE\": \"Cobalt blue, lemon yellow, and terracotta in soft gradients\",
+        \"SCALE_POSE\": \"Medium scale, floating slightly above ground, arranged in loose, asymmetrical clusters\",
+        \"TEXTURE\": \"Smooth, soft brushwork with subtle impasto at leaf tips\",
+        \"LIGHTING\": \"Diffused, ambient glow from mist and sky\",
+        \"CONTEXT\": \"Integrated into the dreamlike landscape as part of natural movement flow\",
+        \"COMPOSITION_ROLE\": \"Background rhythm and flow enhancer\",
+        \"CAMERA\": \"Wide-angle, slightly elevated to show environmental continuity\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes natural harmony and timeless growth in a whimsical world\",
+      \"VARIANTS\": [\"trees with glowing leaves\", \"trees shaped like dragon wings\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"misty clouds\",
+      \"WHY\": \"Soft, flowing elements that mirror the organic line structure and provide a soft, dreamlike backdrop that enhances emotional atmosphere and line continuity.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Soft, rounded masses with gentle wave-like edges\",
+        \"MATERIAL\": \"Rendered with soft, blended brushstrokes\",
+        \"COLOR_PALETTE\": \"Lavender, pale yellow, and soft white with subtle cobalt edges\",
+        \"SCALE_POSE\": \"Large scale, drifting in the sky with slow, natural motion\",
+        \"TEXTURE\": \"Smooth, airy texture with soft blending and slight impasto at edges\",
+        \"LIGHTING\": \"Diffused, ambient light with soft highlights\",
+        \"CONTEXT\": \"Floating above the landscape, forming a soft backdrop for emotional transitions\",
+        \"COMPOSITION_ROLE\": \"Atmospheric depth and emotional background\",
+        \"CAMERA\": \"High-angle, wide view to show sky and environmental flow\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes wonder, mystery, and the ethereal nature of the emotional journey\",
+      \"VARIANTS\": [\"clouds with faint dragon-like shapes\", \"clouds forming gentle arcs\"],
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"NAME\": \"soft flowing rivers\",
+      \"WHY\": \"Adds natural movement and continuity to the composition, reinforcing the organic flow between the girl and dragon through dynamic, fluid lines.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"Gentle, winding paths with soft curves and ripples\",
+        \"MATERIAL\": \"Rendered with flowing, soft lines and subtle texture\",
+        \"COLOR_PALETTE\": \"Lemon yellow and terracotta with soft blue reflections\",
+        \"SCALE_POSE\": \"Medium scale, meandering through the landscape\",
+        \"TEXTURE\": \"Smooth with soft brushwork and slight impasto at water surface ripples\",
+        \"LIGHTING\": \"Diffused, reflecting ambient light from sky and trees\",
+        \"CONTEXT\": \"Flowing through the dreamlike landscape, connecting natural elements\",
+        \"COMPOSITION_ROLE\": \"Narrative flow and environmental continuity\",
+        \"CAMERA\": \"Low-angle, slightly angled to follow river path and enhance movement\"
+      },
+      \"ICONOGRAPHY\": \"Symbolizes passage of time, quiet journey, and emotional flow\",
+      \"VARIANTS\": [\"rivers with floating leaves\", \"rivers reflecting the girl and dragon\"],
+      \"CONFIDENCE\": 0.91
+    }
+  ],
+  \"COVERAGE\": {
+    \"BY_STYLE\": {
+      \"Fauvism + Miyazaki Whimsy\": [\"girl\", \"dragon\", \"floating trees\", \"misty clouds\", \"soft flowing rivers\"]
+    },
+    \"INTERSECTION\": [\"girl\", \"dragon\"]
+  },
+  \"NEGATIVE_OBJECTS\": [\"realistic proportions\", \"sharp mechanical lines\", \"fire-breathing flame without aura\", \"monochromatic color fields\", \"overly abstract or disconnected elements\"],
+  \"PROMPT_SNIPPETS\": [
+    \"A girl and dragon sharing a tender gaze in a dreamlike landscape with floating trees, misty clouds, and soft flowing rivers\",
+    \"Cobalt blue and terracotta for the girl, cadmium red and lavender for the dragon, with warm-cool contrast\",
+    \"Impasto textures applied to the girl’s hair and dragon’s wing edges at the shared gaze, enhancing emotional transition\"
+  ],
+  \"CHANGES_SINCE_PREV\": [
+    \"Added floating trees, misty clouds, and soft flowing rivers as organic landscape elements to enhance line continuity\",
+    \"Refined texture placement to focus impasto at shared gaze and interaction zones\",
+    \"Expanded object list to include three new organic elements with specific form, context, and compositional roles\",
+    \"Strengthened emotional narrative through environmental flow and visual poetry\"
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Should the floating trees or clouds have subtle dragon-like shapes to enhance symbolic connection?\",
+    \"Is the glowing aura of the dragon visible or more subtle in tone?\",
+    \"Could a single flowing river directly connect the girl and dragon’s positions for stronger narrative flow?\"
+  ]
+}"
+  }
+]
