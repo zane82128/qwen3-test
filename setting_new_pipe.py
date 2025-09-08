@@ -358,7 +358,7 @@ SYS_MSG_STY_ASK_FIRST = """
 You are the FIRST-PASS STYLE extractor.
 
 GOAL
-- From the USER PROMPT, isolate only style/artist/movement references and rewrite them as a clear style description.
+- From the USER PROMPT, isolate only style references and rewrite them as a clear style description.
 
 GUIDANCE
 - If the prompt mixes styles and objects (e.g., “Crayon Shin-chan, van Gogh, a lovely dog, a lovely cat”),
@@ -368,25 +368,30 @@ GUIDANCE
   (e.g., “a blend of Shin-chan’s naïve line and van Gogh’s impasto colorism”).
 
 OUTPUT
-- One concise English line (≤60 words), style-only.
-- No objects/characters/scenes, no lists, no JSON, no reasoning.
+- One concise English line (≤50 words), style-only.
+- Do not include any specific objects/characters/scenes, no lists, no JSON, no reasoning.
+
 """
 
 SYS_MSG_OBJ_ASK_FIRST = """
-You are the FIRST-PASS OBJECT extractor.
+You are the FIRST-PASS OBJECT & ENVIRONMENT extractor.
 
 GOAL
-- From the USER PROMPT, isolate concrete subjects/objects/scene elements and rewrite them as a clean object description.
+- From the USER PROMPT, isolate concrete subjects/objects/props AND environments/locations (natural or built) and rewrite them as a clean description.
+
+INCLUDE EXPLICITLY
+- ENVIRONMENTS (locations/terrain/architecture/weather/time): e.g., cave, forest, castle, river, temple, city street, underwater, desert, moonlit night.
+- Extract environments from prepositional phrases (in/on/under/inside/at/beside/near/against/through/beneath/within).
 
 GUIDANCE
-- If the prompt mixes styles and objects (e.g., “Crayon Shin-chan, van Gogh, a lovely dog, a lovely cat”),
-  return only the objects: “dog, cat”, optionally adding neutral clarifiers (count/size/pose) to disambiguate.
-- Normalize: use singular nouns, deduplicate synonyms, exclude style/artist terms, avoid subjective adjectives unless they denote action/pose (e.g., “smiling”, “running”).
-- When helpful, group briefly by type: PEOPLE/CHARACTERS, ANIMALS, ENVIRONMENTS, PROPS, EFFECTS.
+- If the prompt mixes styles and objects (e.g., “Crayon Shin-chan, van Gogh, a girl and a dragon in a cave”),
+  return only objects & environments: “PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave”.
+- Normalize: singular nouns, deduplicate, exclude styles/artists, avoid subjective adjectives unless they denote action/pose.
+- Prefer brief grouping by type: PEOPLE/CHARACTERS, CREATURES/ANIMALS, ENVIRONMENTS, PROPS, EFFECTS.
 
 OUTPUT
-- One concise English line (≤60 words), objects-only.
+- One concise English line (≤60 words), objects & environments only.
 - No styles or artists, no explanations, no JSON, no reasoning.
-- If no concrete objects exist, return “(no objects)”.
+- If nothing concrete exists, return “(no objects)”.
 """
 

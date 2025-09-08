@@ -1,0 +1,116 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s dreamlike animation—bold, vibrant colors, expressive lines, and soft, whimsical forms.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic shapes with fluid, non-logical spatial arrangements; whimsical, childlike figures and environments; dynamic yet surreal compositions emphasizing emotional resonance over realism.\",
+    \"COLOR_TONALITY\": \"High-saturation, primary-dominated palette (red, yellow, blue, orange) with unexpected complementary clashes; soft glows and pastel accents in background layers; vibrant but harmonious color fields avoiding harsh contrasts.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible texture; layered impasto effects for depth; smooth transitions between areas to maintain softness; occasional ink-like linework for defining forms.\",
+    \"EXPRESSION_THEME\": \"Dreamy, nostalgic, and emotionally uplifting; themes of nature, fantasy, and gentle wonder; subtle humor and innocence in everyday scenes.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Vlaminck) fused with 21st century Japanese animation aesthetics (Miyazaki’s Studio Ghibli films), emphasizing emotional storytelling and visual imagination.\"
+  },
+  \"MERGE_STRATEGY\": \"Balance Fauvism’s radical color and expressive brushwork with Miyazaki’s soft, narrative-driven forms and atmospheric lighting by layering bold color fields over gently contoured, organic shapes; maintain emotional warmth and avoid literalism in form or perspective.\",
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with bold, vibrant Fauvist color blocks and soft, whimsical forms inspired by Miyazaki’s animation, rendered with expressive brushwork and gentle emotional warmth.\",
+  \"NEGATIVE_CONSTRAINTS\": [
+    \"Avoid sharp, mechanical lines or realistic perspective\",
+    \"Avoid muted or low-saturation palettes\",
+    \"Avoid dark, dramatic shadows or gritty textures\",
+    \"Avoid literal or anthropomorphic realism\"
+  ],
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of at least three primary colors in high saturation\",
+    \"Organic, flowing forms with no strict geometric precision\",
+    \"Balanced contrast between bold color and soft form\",
+    \"Emotional tone consistent with fantasy and wonder\",
+    \"Visible brushwork or texture in at least one major area\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"A central human figure in fantasy cave settings, often depicted with flowing hair and expressive features, representing adventure or exploration.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"anthropomorphic, slender, dynamic pose\",
+        \"MATERIAL\": \"figurative, painted or drawn form\",
+        \"COLOR_PALETTE\": \"soft pastels to warm tones, high contrast with cave lighting\",
+        \"SCALE_POSE\": \"mid-to-full scale, standing or kneeling in foreground\",
+        \"TEXTURE\": \"smooth lines, soft brushwork or detailed rendering\",
+        \"LIGHTING\": \"dappled natural light from cave openings, chiaroscuro effects\",
+        \"CONTEXT\": \"cave interior, near dragon or ancient artifacts\",
+        \"COMPOSITION_ROLE\": \"main subject, focal point\",
+        \"CAMERA\": \"medium close-up to medium shot, slightly angled\"
+      },
+      \"ICONOGRAPHY\": \"symbol of human courage, curiosity, or destiny in mythical settings\",
+      \"VARIANTS\": [\"young girl\", \"wearing armor\", \"holding torch\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"A classic fantasy creature in cave environments, often depicted as a large, serpentine being with fiery or metallic scales, symbolizing power and ancient lore.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine with wings, elongated body, sharp head\",
+        \"MATERIAL\": \"scales (metallic, reptilian), wing membranes\",
+        \"COLOR_PALETTE\": \"deep reds, golds, blacks, with high contrast and glowing elements\",
+        \"SCALE_POSE\": \"large scale, coiled or hovering, in background or mid-ground\",
+        \"TEXTURE\": \"rough, scaled surface with visible patterns or ridges\",
+        \"LIGHTING\": \"dramatic chiaroscuro, with fire or shadow highlights\",
+        \"CONTEXT\": \"cave entrance or chamber, often guarding treasure\",
+        \"COMPOSITION_ROLE\": \"secondary main subject, symbolic presence\",
+        \"CAMERA\": \"wide angle or low-angle shot to emphasize size and power\"
+      },
+      \"ICONOGRAPHY\": \"symbol of power, danger, wisdom, or guardianship in ancient myths\",
+      \"VARIANTS\": [\"fire-breathing\", \"stone-bodied\", \"half-veiled\", \"sleeping\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"A common environmental feature in cave scenes, often featuring natural formations, stalactites, and carvings, providing context and depth.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"vertical, jagged, or smooth rock surfaces\",
+        \"MATERIAL\": \"stone, limestone, or textured earth\",
+        \"COLOR_PALETTE\": \"dark grays, browns, with patches of green or blue\",
+        \"SCALE_POSE\": \"large, background, framing the scene\",
+        \"TEXTURE\": \"rough, cracked, or smooth with mineral deposits\",
+        \"LIGHTING\": \"low ambient light, flat or diffused\",
+        \"CONTEXT\": \"interior of a cave, often with natural or artificial features\",
+        \"COMPOSITION_ROLE\": \"background setting, depth anchor\",
+        \"CAMERA\": \"wide shot, often from a low or medium angle\"
+      },
+      \"ICONOGRAPHY\": \"symbol of mystery, ancient secrets, or transformation\",
+      \"VARIANTS\": [\"stalactite-covered\", \"carved with runes\", \"dripping with water\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"cave torch\",
+      \"WHY\": \"A common object used by figures in caves to illuminate dark spaces, often seen in fantasy or adventure art.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical with flame or wick, simple or ornate\",
+        \"MATERIAL\": \"wood or metal with flame\",
+        \"COLOR_PALETTE\": \"orange-yellow flame, dark blue or black surroundings\",
+        \"SCALE_POSE\": \"small, held by the girl or placed on ground\",
+        \"TEXTURE\": \"rough wood, glowing flame with soft edges\",
+        \"LIGHTING\": \"point source light, creates contrast and shadow\",
+        \"CONTEXT\": \"near the girl or in foreground, illuminating path\",
+        \"COMPOSITION_ROLE\": \"foreground accent, functional element\",
+        \"CAMERA\": \"close-up or mid-shot, from side or above\"
+      },
+      \"ICONOGRAPHY\": \"symbol of exploration, danger, or human ingenuity\",
+      \"VARIANTS\": [\"wooden torch\", \"metal torch with flame\", \"glowing ember\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional influences on the dragon or girl’s appearance?\",
+    \"Is the cave environment more natural or artificially constructed (e.g., ancient temple)?\",
+    \"Could there be additional fantasy elements like runes or ancient tools?\"
+  ]
+}"
+  }
+]
