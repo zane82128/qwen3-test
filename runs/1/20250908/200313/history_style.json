@@ -1,0 +1,23 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical, expressive style—bold, vibrant colors, soft organic lines, and dreamlike atmosphere.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, curvilinear shapes; asymmetrical layouts emphasizing dynamic movement and emotional resonance; minimal structural rigidity, favoring intuitive, childlike spatial arrangements.\",
+    \"COLOR_TONALITY\": \"Highly saturated, non-naturalistic palette featuring bold primary and secondary hues (e.g., electric blue, magenta, lime green, burnt orange); strong contrast between complementary colors; warm and cool tones used expressively to evoke mood rather than realism.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural strokes with soft, blended transitions; gentle layering of paint to create soft textures; emphasis on fluidity and emotional impact over precision or detail.\",
+    \"EXPRESSION_THEME\": \"Dreamlike, fantastical environments; gentle whimsy with a sense of wonder; emotional intimacy and harmony between nature and imagination; focus on joy, simplicity, and inner peace.\",
+    \"HISTORICAL_CONTEXT\": \"Rooted in early 20th-century Fauvism (Matisse, Derain) for color intensity and emotional expression, fused with Studio Ghibli’s Miyazaki aesthetic (post-1980s Japanese animation) for narrative warmth and organic form.\"
+  },
+  \"MERGE_STRATEGY\": \"Prioritize expressive color use from Fauvism and organic, flowing forms from Miyazaki’s animation style; resolve tension by balancing boldness with softness—using Fauvism’s chromatic intensity within Miyazaki’s gentle, flowing compositions to maintain emotional coherence and visual harmony.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of at least three bold, non-naturalistic colors in high saturation\",
+    \"Use of soft, organic lines and flowing forms without sharp geometric structure\",
+    \"Dreamlike atmosphere with emotional warmth and whimsy\",
+    \"No literal realism in form or color; all elements serve expressive purpose\"
+  ],
+  \"CONFIDENCE\": 0.96
+}"
+  }
+]

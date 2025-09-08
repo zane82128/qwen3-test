@@ -2,16 +2,16 @@
 CUDA_VISIBLE_DEVICES=4
 python debate_rounds_new_pipe.py \
   --prompt "Fauvism, Miyazaki Hayao, a girl and a dragon in the cave" \
-  --rounds 1 \
+  --rounds 3 \
   --outdir runs
 
-
+CUDA_VISIBLE_DEVICES=4
 python debate_rounds_new_pipe.py \
   --prompt "Impressionism, Ukiyo-e, a fox and a paper lantern on a misty bridge" \
   --rounds 3 \
   --outdir runs
 
-
+CUDA_VISIBLE_DEVICES=4
 python debate_rounds_new_pipe.py \
   --prompt "Van Gogh, Studio Ghibli, a windmill and a bicycle under swirling stars" \
   --rounds 3 \

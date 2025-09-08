@@ -1,0 +1,490 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Van Gogh’s bold impasto and swirling starry skies with Studio Ghibli’s soft, expressive animation—naïve yet emotive, painterly and dreamlike.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Dynamic, swirling compositions with loose, organic forms; layered celestial elements arranged in spirals and radiating patterns; soft, flowing contours that blend into atmospheric depth\",
+    \"COLOR_TONALITY\": \"Warm, luminous palettes with high saturation—dominated by golden yellows, soft blues, and deep violets; gentle contrasts between light and shadow to evoke emotion and dreaminess\",
+    \"BRUSHWORK_TECHNIQUE\": \"Bold, thick impasto strokes with visible texture reminiscent of Van Gogh; blended, soft edges and gentle transitions typical of Studio Ghibli's animation, creating a tactile yet smooth surface\",
+    \"EXPRESSION_THEME\": \"Emotive, introspective, and whimsical; evokes wonder, nostalgia, and inner emotional states through natural and celestial motifs\",
+    \"HISTORICAL_CONTEXT\": \"Late 19th century Post-Impressionism (Van Gogh) fused with 20th century Japanese-inspired animation aesthetics (Studio Ghibli), reflecting a modern synthesis of emotional expression and visual storytelling\"
+  },
+  \"MERGE_STRATEGY\": \"Balance Van Gogh’s textured, energetic brushwork with Ghibli’s soft, flowing lines and emotional narrative tone by layering impasto elements over fluid, atmospheric forms; maintain high contrast in color and texture while ensuring emotional coherence and dreamlike continuity\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of thick, visible impasto strokes in key areas (e.g., star fields, sky edges)\",
+    \"Use of soft, flowing lines and gentle transitions characteristic of Ghibli’s animation style\",
+    \"Color palette dominated by warm, saturated tones with emotional resonance\",
+    \"Compositional structure shows both swirling energy and harmonious, open spatial flow\",
+    \"Emotional tone is consistently expressive and dreamlike, avoiding harsh or mechanical elements\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "ENVIRONMENTS: windmill, bicycle, swirling stars",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Windmills are iconic structures in rural and historical landscapes, especially in Dutch and European countryside settings, often associated with wind-powered machinery and pastoral life.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical or tower-like with rotating blades\",
+        \"COLOR_PALETTE\": \"beige, brown, white, with dark wooden or metal accents\",
+        \"CONTEXT\": \"rural, countryside, open fields, coastal areas\",
+        \"COMPOSITION_ROLE\": \"foreground subject or background landmark\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes sustainability, rural life, and renewable energy\",
+      \"VARIANTS\": [\"tower windmill\", \"horizontal-axis windmill\", \"dutch windmill\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Bicycles are common in urban and rural scenes, representing mobility, simplicity, and modernity, especially in art depicting everyday life or travel.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"frame with two wheels, handlebars, and pedals\",
+        \"COLOR_PALETTE\": \"red, blue, black, white; often bright or vibrant\",
+        \"CONTEXT\": \"urban streets, countryside paths, parks\",
+        \"COMPOSITION_ROLE\": \"central subject or dynamic foreground element\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes freedom, individualism, and environmental consciousness\",
+      \"VARIANTS\": [\"road bike\", \"city bike\", \"mountain bike\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"swirling stars\",
+      \"WHY\": \"Swirling stars are a common motif in celestial or cosmic art, evoking motion, infinity, and the universe, often seen in abstract or symbolic representations of space.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"spiral or vortex-shaped, radiating lines or points\",
+        \"COLOR_PALETTE\": \"deep blues, purples, golds, white; high contrast and luminosity\",
+        \"CONTEXT\": \"night sky, abstract backgrounds, cosmic scenes\",
+        \"COMPOSITION_ROLE\": \"background accent or central visual rhythm\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes the universe, cosmic energy, and eternal motion\",
+      \"VARIANTS\": [\"galaxy swirl\", \"cosmic vortex\", \"nebula pattern\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional associations for windmill or bicycle depictions in this context?\",
+    \"Could 'swirling stars' be interpreted as a stylized representation of auroras or storms?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of impasto thickness (e.g., 1–5 mm) should be applied to the windmill's blades or bicycle's frame to balance Van Gogh's texture with Ghibli's softness?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Quantifies texture application to ensure both energetic brushwork and smooth flow coexist in key structural elements\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 2–4 mm)\",
+      \"DEPENDENCIES\": [\"impasto strokes\", \"Van Gogh's textured brushwork\"]
+    },
+    {
+      \"Q\": \"How should the color saturation of the swirling stars (e.g., golden yellows vs. deep violets) be distributed across the sky to maintain emotional resonance and contrast with the windmill and bicycle?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures emotional tone and visual harmony between celestial elements and grounded objects\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"palette distribution (e.g., 60% warm yellows, 30% deep violets, 10% soft blues)\",
+      \"DEPENDENCIES\": [\"warm, luminous palettes\", \"emotional resonance\", \"swirling stars\"]
+    },
+    {
+      \"Q\": \"In what compositional arrangement (e.g., windmill in foreground, bicycle mid-ground, stars in background) do the swirling stars, windmill, and bicycle create both dynamic energy and harmonious flow?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Defines spatial relationships that fulfill both dynamic and harmonious structural requirements\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial layout (e.g., foreground: windmill, mid-ground: bicycle, background: swirling stars)\",
+      \"DEPENDENCIES\": [\"swirling stars\", \"windmill\", \"bicycle\", \"spiral and radiating patterns\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the bicycle be rendered with sharp, mechanical lines to contradict Ghibli’s soft, flowing style?\",
+    \"Should the windmill lack texture or impasto to reduce Van Gogh’s influence?\",
+    \"Should the swirling stars use flat, uniform colors to avoid emotional resonance or dreamlike quality?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK mentions impasto thickness > 5 mm THEN ask for texture breakdown by element (e.g., blades vs. frame)\",
+    \"IF COLOR_TONALITY specifies low saturation THEN ask for emotional tone deviation and how it affects expression\",
+    \"IF COMPOSITIONAL_DEVICES lacks depth layers THEN ask for spatial hierarchy and visual flow analysis\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"3–4 mm\",
+      \"RATIONALE\": \"Balances Van Gogh’s energetic texture with Ghibli’s soft, flowing transitions in structural elements like windmill blades and bicycle frame.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"60% golden yellows, 30% deep violets, 10% soft blues\",
+      \"RATIONALE\": \"Maintains warm, luminous emotional resonance while creating contrast with grounded objects and enhancing dreamlike depth.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"foreground: windmill, mid-ground: bicycle, background: swirling stars\",
+      \"RATIONALE\": \"Establishes dynamic energy through foreground presence while allowing celestial elements to radiate harmonious, open flow.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Dynamic, swirling compositions with loose, organic forms; layered celestial elements arranged in spirals and radiating patterns; soft, flowing contours that blend into atmospheric depth, anchored by grounded objects like windmills and bicycles in clear spatial hierarchy\",
+    \"COLOR_TONALITY\": \"Warm, luminous palettes with high saturation—dominated by golden yellows (60%), deep violets (30%), and soft blues (10%); gentle contrasts between light and shadow to evoke emotion and dreaminess, especially in celestial elements\",
+    \"BRUSHWORK_TECHNIQUE\": \"Bold, thick impasto strokes (3–4 mm) applied selectively to windmill blades and bicycle frame to maintain Van Gogh’s texture, with soft, blended transitions elsewhere to preserve Ghibli’s emotional fluidity\",
+    \"EXPRESSION_THEME\": \"Emotive, introspective, and whimsical; evokes wonder, nostalgia, and inner emotional states through natural and celestial motifs, grounded by rural and personal symbols like windmills and bicycles\",
+    \"HISTORICAL_CONTEXT\": \"Late 19th century Post-Impressionism (Van Gogh) fused with 20th century Japanese-inspired animation aesthetics (Studio Ghibli), reflecting a modern synthesis of emotional expression and visual storytelling, now enriched with rural and transport iconography\",
+    \"SUBJECT_MATTER\": \"Celestial motifs (swirling stars) interacting with grounded rural and transport objects (windmill, bicycle) in a dreamlike, emotionally resonant landscape\",
+    \"COMPOSITIONAL_DEVICES\": \"Layered spatial arrangement: foreground windmill as stable anchor, mid-ground bicycle as dynamic element, background swirling stars as radiant, flowing motif creating both energy and harmony\",
+    \"EVALUATION_CRITERIA\": [
+      \"Impasto thickness of 3–4 mm on windmill blades and bicycle frame to balance texture and softness\",
+      \"Color distribution: 60% golden yellows, 30% deep violets, 10% soft blues for emotional and visual harmony\",
+      \"Spatial layout: foreground windmill, mid-ground bicycle, background swirling stars to ensure dynamic energy and harmonious flow\",
+      \"Brushwork remains visible but integrated—no sharp mechanical lines or flat colors\",
+      \"Emotional tone remains consistent, dreamlike, and introspective throughout\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike fusion of Van Gogh’s textured impasto and Ghibli’s soft animation, featuring a windmill in the foreground, a bicycle in the mid-ground, and swirling stars in the background—warm, luminous, emotionally resonant, with balanced texture and flow.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific impasto range (3–4 mm) for windmill and bicycle elements\",
+    \"Quantified color palette distribution (60% golden yellows, 30% deep violets, 10% soft blues)\",
+    \"Defined spatial composition with foreground, mid-ground, and background hierarchy\",
+    \"Enhanced expression theme to include rural and transport iconography\",
+    \"Updated brushwork and color tonality with measurable values and emotional grounding\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of impasto thickness (e.g., 2–4 mm) should be applied to the windmill's blades and bicycle's frame to balance Van Gogh’s textured energy with Ghibli’s soft, flowing lines?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Ensures visible texture in key structural elements without disrupting the soft, emotional flow of the composition\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 2–4 mm)\",
+      \"DEPENDENCIES\": [\"windmill blades\", \"bicycle frame\", \"Van Gogh’s impasto\", \"Ghibli’s soft transitions\"]
+    },
+    {
+      \"Q\": \"How is the color palette distributed across the windmill, bicycle, and swirling stars—specifically, what percentage of golden yellows, deep violets, and soft blues should each element use to maintain emotional resonance and contrast?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Establishes visual harmony between grounded objects and celestial elements through measurable color allocation\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"distribution by object (e.g., windmill: 40% yellow, 20% violet, 10% blue; bicycle: 50% yellow, 30% violet, 20% blue; stars: 60% yellow, 30% violet, 10% blue)\",
+      \"DEPENDENCIES\": [\"60% golden yellows\", \"30% deep violets\", \"10% soft blues\", \"emotional resonance\", \"swirling stars\"]
+    },
+    {
+      \"Q\": \"In what compositional role do the windmill, bicycle, and swirling stars function—specifically, how are their spatial relationships arranged (e.g., foreground, mid-ground, background) to create both dynamic energy and emotional flow?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Defines the spatial hierarchy that supports both visual movement and emotional narrative continuity\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial layout (e.g., foreground: windmill, mid-ground: bicycle, background: swirling stars)\",
+      \"DEPENDENCIES\": [\"foreground anchor\", \"mid-ground dynamic\", \"background radiating pattern\", \"spiral and radiating patterns\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle be rendered with flat, uniform colors or sharp mechanical lines to contradict the soft, expressive style?\",
+    \"Should the swirling stars lack luminosity or contrast to avoid dreamlike emotional tone?\",
+    \"Should the impasto be absent from the windmill or bicycle to eliminate Van Gogh’s influence?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK specifies impasto > 4 mm THEN ask for texture breakdown by element (e.g., blade vs. frame)\",
+    \"IF COLOR_PALETTE assigns less than 40% golden yellows to any object THEN ask for emotional tone impact and how it affects dreaminess\",
+    \"IF COMPOSITION_ROLE lacks clear foreground/mid-ground/background THEN ask for spatial flow and depth analysis\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"2–4 mm\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": {
+        \"windmill\": \"40% golden yellow, 20% deep violet, 10% soft blue\",
+        \"bicycle\": \"50% golden yellow, 30% deep violet, 20% soft blue\",
+        \"swirling stars\": \"60% golden yellow, 30% deep violet, 10% soft blue\"
+      },
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"foreground: windmill, mid-ground: bicycle, background: swirling stars\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Serves as a stable foreground anchor, grounded in rural realism with textured impasto to reflect Van Gogh’s energy while maintaining emotional warmth through warm yellow tones and soft blue accents\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with rotating blades\",
+        \"COLOR_PALETTE\": \"40% golden yellow, 20% deep violet, 10% soft blue\",
+        \"SCALE_POSE\": \"large, stable, slightly tilted to suggest motion and depth\",
+        \"CONTEXT\": \"rural countryside, open fields, golden-hour lighting\",
+        \"COMPOSITION_ROLE\": \"foreground anchor\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes sustainability, rural life, and enduring presence\",
+      \"VARIANTS\": [\"Dutch windmill\", \"tower windmill\", \"horizontal-axis\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Acts as a dynamic mid-ground element, blending mobility and emotional narrative with soft lines and textured frame to balance Van Gogh’s impasto and Ghibli’s fluidity\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"frame with two wheels, handlebars, pedals\",
+        \"COLOR_PALETTE\": \"50% golden yellow, 30% deep violet, 20% soft blue\",
+        \"SCALE_POSE\": \"medium, slightly leaning forward, in motion\",
+        \"CONTEXT\": \"countryside path, urban park, twilight setting\",
+        \"COMPOSITION_ROLE\": \"mid-ground dynamic element\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes freedom, personal journey, and modern simplicity\",
+      \"VARIANTS\": [\"road bike\", \"city bike\", \"mountain bike\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"swirling stars\",
+      \"WHY\": \"Provides celestial radiance and emotional depth as a background motif, using high saturation and luminous contrasts to evoke wonder and dreamlike continuity\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"spiral vortex with radiating lines and glowing points\",
+        \"COLOR_PALETTE\": \"60% golden yellow, 30% deep violet, 10% soft blue\",
+        \"SCALE_POSE\": \"large, floating, gently glowing, with soft edges\",
+        \"CONTEXT\": \"night sky, open horizon, twilight atmosphere\",
+        \"COMPOSITION_ROLE\": \"background radiant motif\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes the universe, infinite motion, and emotional resonance\",
+      \"VARIANTS\": [\"galaxy swirl\", \"cosmic vortex\", \"nebula pattern\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A windmill in the foreground with textured blades and warm yellow tones\",
+    \"A bicycle in mid-ground, slightly leaning, with vibrant golden and violet hues\",
+    \"Swirling stars in the background, glowing with golden yellow and deep violet spirals\"
+  ],
+  \"UPDATE_PROMPT\": \"A dreamlike scene with a textured windmill in the foreground, a dynamic bicycle in the mid-ground, and glowing swirling stars in the background—warm, emotional, and balanced with golden yellows, deep violets, and soft blues.\"
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of impasto thickness (e.g., 2–4 mm) should be applied to the windmill's blades and bicycle's frame to maintain Van Gogh’s energetic texture while preserving Ghibli’s soft, flowing transitions?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Ensures visible texture in key structural elements without disrupting the emotional fluidity and softness of the composition\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 2–4 mm)\",
+      \"DEPENDENCIES\": [\"impasto strokes\", \"Van Gogh’s textured brushwork\", \"Ghibli’s soft transitions\"]
+    },
+    {
+      \"Q\": \"How is the color palette distributed across the windmill, bicycle, and swirling stars—specifically, what percentage of golden yellows, deep violets, and soft blues should each element use to maintain emotional resonance and visual contrast?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Establishes harmonious emotional and visual balance between grounded objects and celestial elements through measurable color allocation\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"distribution by object (e.g., windmill: 40% yellow, 20% violet, 10% blue; bicycle: 50% yellow, 30% violet, 20% blue; stars: 60% yellow, 30% violet, 10% blue)\",
+      \"DEPENDENCIES\": [\"60% golden yellows\", \"30% deep violets\", \"10% soft blues\", \"emotional resonance\", \"swirling stars\"]
+    },
+    {
+      \"Q\": \"In what spatial arrangement (e.g., foreground: windmill, mid-ground: bicycle, background: swirling stars) do the three elements create both dynamic energy and harmonious emotional flow?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Defines the spatial hierarchy that supports both visual movement and emotional narrative continuity between grounded and celestial motifs\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial layout (e.g., foreground: windmill, mid-ground: bicycle, background: swirling stars)\",
+      \"DEPENDENCIES\": [\"swirling stars\", \"windmill\", \"bicycle\", \"spiral and radiating patterns\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle be rendered with sharp, mechanical lines or flat colors to contradict the soft, expressive style?\",
+    \"Should the swirling stars lack luminosity or high saturation to reduce dreamlike emotional tone?\",
+    \"Should the impasto be absent from key structural elements to eliminate Van Gogh’s influence?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK mentions impasto > 4 mm THEN ask for texture breakdown by element (e.g., blades vs. frame)\",
+    \"IF COLOR_TONALITY assigns less than 40% golden yellows to any object THEN ask for emotional tone deviation and how it affects dreaminess\",
+    \"IF COMPOSITIONAL_DEVICES lacks clear depth layers THEN ask for spatial flow and visual rhythm analysis\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"2–4 mm\",
+      \"RATIONALE\": \"Balances Van Gogh’s energetic texture with Ghibli’s soft, flowing transitions in windmill blades and bicycle frame without disrupting emotional fluidity.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": {
+        \"windmill\": \"40% golden yellow, 20% deep violet, 10% soft blue\",
+        \"bicycle\": \"50% golden yellow, 30% deep violet, 20% soft blue\",
+        \"swirling stars\": \"60% golden yellow, 30% deep violet, 10% soft blue\"
+      },
+      \"RATIONALE\": \"Maintains emotional resonance and visual contrast between grounded objects and celestial elements through warm, luminous distribution.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"foreground: windmill, mid-ground: bicycle, background: swirling stars\",
+      \"RATIONALE\": \"Creates dynamic energy through foreground stability and mid-ground motion, while allowing background stars to radiate harmonious, dreamlike flow.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Dynamic, swirling compositions with loose, organic forms; layered celestial elements arranged in spirals and radiating patterns; soft, flowing contours that blend into atmospheric depth, anchored by grounded objects like windmills and bicycles in clear spatial hierarchy\",
+    \"COLOR_TONALITY\": \"Warm, luminous palettes with high saturation—dominated by golden yellows (40–60%), deep violets (20–30%), and soft blues (10%); distributed per object to enhance emotional resonance and visual contrast between grounded and celestial elements\",
+    \"BRUSHWORK_TECHNIQUE\": \"Bold, thick impasto strokes (2–4 mm) applied selectively to windmill blades and bicycle frame to maintain Van Gogh’s texture, with soft, blended transitions elsewhere to preserve Ghibli’s emotional fluidity\",
+    \"EXPRESSION_THEME\": \"Emotive, introspective, and whimsical; evokes wonder, nostalgia, and inner emotional states through natural and celestial motifs, grounded by rural and personal symbols like windmills and bicycles\",
+    \"HISTORICAL_CONTEXT\": \"Late 19th century Post-Impressionism (Van Gogh) fused with 20th century Japanese-inspired animation aesthetics (Studio Ghibli), reflecting a modern synthesis of emotional expression and visual storytelling, now enriched with rural and transport iconography\",
+    \"SUBJECT_MATTER\": \"Celestial motifs (swirling stars) interacting with grounded rural and transport objects (windmill, bicycle) in a dreamlike, emotionally resonant landscape\",
+    \"COMPOSITIONAL_DEVICES\": \"Layered spatial arrangement: foreground windmill as stable anchor, mid-ground bicycle as dynamic element, background swirling stars as radiant, flowing motif creating both energy and harmony\",
+    \"EVALUATION_CRITERIA\": [
+      \"Impasto thickness of 2–4 mm on windmill blades and bicycle frame to balance texture and softness\",
+      \"Color distribution per object: windmill (40% yellow, 20% violet, 10% blue), bicycle (50% yellow, 30% violet, 20% blue), stars (60% yellow, 30% violet, 10% blue) for emotional and visual harmony\",
+      \"Spatial layout: foreground windmill, mid-ground bicycle, background swirling stars to ensure dynamic energy and harmonious flow\",
+      \"Brushwork remains visible but integrated—no sharp mechanical lines or flat colors\",
+      \"Emotional tone remains consistent, dreamlike, and introspective throughout\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A dreamlike scene with a textured windmill in the foreground, a dynamic bicycle in the mid-ground, and glowing swirling stars in the background—warm, emotional, and balanced with golden yellows, deep violets, and soft blues.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Refined impasto range to 2–4 mm for precise texture control on windmill and bicycle elements\",
+    \"Provided object-specific color palette distribution (windmill, bicycle, stars) to ensure emotional and visual balance\",
+    \"Confirmed spatial hierarchy as foreground: windmill, mid-ground: bicycle, background: swirling stars for dynamic and harmonious flow\",
+    \"Enhanced color tonality with per-object percentages to support emotional resonance between grounded and celestial motifs\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of impasto thickness (e.g., 2–4 mm) should be applied to the windmill's blades and bicycle's frame to balance Van Gogh’s textured energy with Ghibli’s soft, flowing lines?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Ensures visible texture in key structural elements without disrupting the emotional fluidity and softness of the composition\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 2–4 mm)\",
+      \"DEPENDENCIES\": [\"windmill blades\", \"bicycle frame\", \"Van Gogh’s impasto\", \"Ghibli’s soft transitions\"]
+    },
+    {
+      \"Q\": \"How is the color palette distributed across the windmill, bicycle, and swirling stars—specifically, what percentage of golden yellows, deep violets, and soft blues should each element use to maintain emotional resonance and visual contrast?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Establishes harmonious emotional and visual balance between grounded objects and celestial elements through measurable color allocation\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"distribution by object (e.g., windmill: 40% yellow, 20% violet, 10% blue; bicycle: 50% yellow, 30% violet, 20% blue; stars: 60% yellow, 30% violet, 10% blue)\",
+      \"DEPENDENCIES\": [\"golden yellows\", \"deep violets\", \"soft blues\", \"emotional resonance\", \"swirling stars\"]
+    },
+    {
+      \"Q\": \"In what spatial arrangement (e.g., foreground: windmill, mid-ground: bicycle, background: swirling stars) do the windmill, bicycle, and swirling stars create both dynamic energy and harmonious emotional flow?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Defines the spatial hierarchy that supports both visual movement and emotional narrative continuity between grounded and celestial motifs\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial layout (e.g., foreground: windmill, mid-ground: bicycle, background: swirling stars)\",
+      \"DEPENDENCIES\": [\"windmill\", \"bicycle\", \"swirling stars\", \"spiral and radiating patterns\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle be rendered with sharp, mechanical lines or flat colors to contradict the soft, expressive style?\",
+    \"Should the swirling stars lack luminosity or high saturation to reduce dreamlike emotional tone?\",
+    \"Should the impasto be absent from key structural elements to eliminate Van Gogh’s influence?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF BRUSHWORK mentions impasto > 4 mm THEN ask for texture breakdown by element (e.g., blades vs. frame)\",
+    \"IF COLOR_PALETTE assigns less than 40% golden yellows to any object THEN ask for emotional tone deviation and how it affects dreaminess\",
+    \"IF COMPOSITION_ROLE lacks clear foreground/mid-ground/background THEN ask for spatial flow and visual rhythm analysis\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"2–4 mm\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": {
+        \"windmill\": \"40% golden yellow, 20% deep violet, 10% soft blue\",
+        \"bicycle\": \"50% golden yellow, 30% deep violet, 20% soft blue\",
+        \"swirling stars\": \"60% golden yellow, 30% deep violet, 10% soft blue\"
+      },
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"foreground: windmill, mid-ground: bicycle, background: swirling stars\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Serves as a stable foreground anchor, grounded in rural realism with textured impasto to reflect Van Gogh’s energy while maintaining emotional warmth through warm yellow tones and soft blue accents\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with rotating blades\",
+        \"COLOR_PALETTE\": \"40% golden yellow, 20% deep violet, 10% soft blue\",
+        \"SCALE_POSE\": \"large, stable, slightly tilted to suggest motion and depth\",
+        \"CONTEXT\": \"rural countryside, open fields, golden-hour lighting\",
+        \"COMPOSITION_ROLE\": \"foreground anchor\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes sustainability, rural life, and enduring presence\",
+      \"VARIANTS\": [\"Dutch windmill\", \"tower windmill\", \"horizontal-axis\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Acts as a dynamic mid-ground element, blending mobility and emotional narrative with soft lines and textured frame to balance Van Gogh’s impasto and Ghibli’s fluidity\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"frame with two wheels, handlebars, pedals\",
+        \"COLOR_PALETTE\": \"50% golden yellow, 30% deep violet, 20% soft blue\",
+        \"SCALE_POSE\": \"medium, slightly leaning forward, in motion\",
+        \"CONTEXT\": \"countryside path, urban park, twilight setting\",
+        \"COMPOSITION_ROLE\": \"mid-ground dynamic element\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes freedom, personal journey, and modern simplicity\",
+      \"VARIANTS\": [\"road bike\", \"city bike\", \"mountain bike\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"swirling stars\",
+      \"WHY\": \"Provides celestial radiance and emotional depth as a background motif, using high saturation and luminous contrasts to evoke wonder and dreamlike continuity\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"spiral vortex with radiating lines and glowing points\",
+        \"COLOR_PALETTE\": \"60% golden yellow, 30% deep violet, 10% soft blue\",
+        \"SCALE_POSE\": \"large, floating, gently glowing, with soft edges\",
+        \"CONTEXT\": \"night sky, open horizon, twilight atmosphere\",
+        \"COMPOSITION_ROLE\": \"background radiant motif\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes the universe, infinite motion, and emotional resonance\",
+      \"VARIANTS\": [\"galaxy swirl\", \"cosmic vortex\", \"nebula pattern\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A windmill in the foreground with textured blades and warm yellow tones\",
+    \"A bicycle in mid-ground, slightly leaning, with vibrant golden and violet hues\",
+    \"Swirling stars in the background, glowing with golden yellow and deep violet spirals\"
+  ],
+  \"UPDATE_PROMPT\": \"A dreamlike scene with a textured windmill in the foreground, a dynamic bicycle in the mid-ground, and glowing swirling stars in the background—warm, emotional, and balanced with golden yellows, deep violets, and soft blues.\"
+}"
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "CREATURES: fox; PROPS: paper lantern; ENVIRONMENTS: misty bridge",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are common in Eastern Asian folklore and traditional art, especially in settings involving nature and misty environments, symbolizing wisdom, luck, or spiritual guidance.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, four legs\",
+        \"COLOR_PALETTE\": \"red, gray, white, with contrasting fur patterns\",
+        \"CONTEXT\": \"misty bridge, forest edge, rural landscape\",
+        \"COMPOSITION_ROLE\": \"main subject or dynamic foreground element\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, vigilance, or spiritual connection in Chinese and Japanese traditions\",
+      \"VARIANTS\": [\"red fox\", \"gray fox\", \"fox in moonlight\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are iconic in East Asian art, especially during festivals or in misty, serene settings, providing soft light and visual contrast against fog or water.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or oval, thin paper, hanging from a string or pole, often with a central light source\",
+        \"COLOR_PALETTE\": \"red, gold, white, pale blue; high contrast between light and dark\",
+        \"CONTEXT\": \"misty bridge, evening or night scene, festival atmosphere\",
+        \"COMPOSITION_ROLE\": \"foreground accent or rhythmic element\"
+      },
+      \"ICONOGRAPHY\": \"symbol of peace, good fortune, and celebration in Chinese and Japanese culture\",
+      \"VARIANTS\": [\"red lantern\", \"gold lantern\", \"lantern with floral patterns\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges are a common motif in traditional Asian landscape painting, evoking mystery, transition, and spiritual journey, often used to frame a scene with a creature or object.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or straight bridge, partially obscured by fog or mist, often over water or river\",
+        \"COLOR_PALETTE\": \"gray, white, blue, muted tones; low saturation\",
+        \"CONTEXT\": \"rural or mountainous landscape, transitional space\",
+        \"COMPOSITION_ROLE\": \"background setting or compositional frame\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, uncertainty, or spiritual path\",
+      \"VARIANTS\": [\"stone bridge in fog\", \"wooden bridge in mist\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the fox and paper lantern intended to interact (e.g., fox near lantern)?\",
+    \"Is the misty bridge specifically inspired by a particular cultural painting style (e.g., Chinese ink wash)?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific hex color values should be used for the fox's fur to reflect the muted, soft pastel palette and natural light diffusion in the style?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures accurate color fidelity aligned with the defined pastel and natural light gradients in the style.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3–5 hex codes (e.g., #D8BFD8, #B0C4DE) with descriptions (e.g., 'soft lavender', 'moss green')\",
+      \"DEPENDENCIES\": [\"muted hues\", \"soft pastel palettes\", \"natural light diffusion\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the fox and paper lantern to achieve soft, luminous effects with minimal visible texture or strokes?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies technical execution to maintain the impressionistic blur and softness central to the style.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of stroke type (e.g., 'thin, flowing washes') and layer count (e.g., '2–3 layers')\",
+      \"DEPENDENCIES\": [\"light, transparent washes\", \"soft, blended strokes\", \"luminous effects\"]
+    },
+    {
+      \"Q\": \"In what precise spatial relationship should the fox and paper lantern be positioned relative to the misty bridge to ensure asymmetrical composition and flowing negative space?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Ensures alignment with the style's structural principles derived from Ukiyo-e and Impressionism.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial placement (e.g., 'fox in lower left foreground, lantern slightly overlapping bridge midsection')\",
+      \"DEPENDENCIES\": [\"asymmetrical composition\", \"flowing negative space\", \"foreground/dynamic element\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the fox or paper lantern have sharp, defined outlines that contradict the soft, blended strokes and impressionistic blur?\",
+    \"Is the composition symmetrical, violating the emphasis on asymmetry and flowing negative space?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY includes specific palettes like 'shinrin' or 'fujin' THEN ask for cultural origins or references to those palettes\",
+    \"IF BRUSHWORK_TECHNIQUE mentions 'texture' or 'impasto' THEN ask for stroke density or layer thickness ranges\",
+    \"IF COMPOSITIONAL_DEVICES references a centered or balanced layout THEN ask for deviation from symmetry or directional flow\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": [
+        \"#D8BFD8\",
+        \"#B0C4DE\",
+        \"#E0F7E0\",
+        \"#F5F5DC\",
+        \"#E6E6FA\"
+      ],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"Apply thin, flowing washes with 2–3 subtle layers; use transparent glazes to create luminous softness and impressionistic blur, avoiding any visible brush marks or texture.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"Fox in lower left foreground, paper lantern slightly overlapping the bridge's midsection, creating flowing negative space and asymmetrical balance.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are common in Eastern Asian folklore and traditional art, especially in misty, rural settings, symbolizing wisdom and spiritual connection; fits the soft, natural tone and flowing composition of the style.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, four legs\",
+        \"COLOR_PALETTE\": [
+          \"#D8BFD8 (soft lavender)\",
+          \"#B0C4DE (light sky blue)\",
+          \"#E0F7E0 (moss green)\",
+          \"#F5F5DC (warm grey)\",
+          \"#E6E6FA (soft plum)\"
+        ],
+        \"SCALE_POSE\": \"small to medium size, slightly leaning forward, in lower left foreground\",
+        \"CONTEXT\": \"misty bridge, forest edge, rural landscape\",
+        \"COMPOSITION_ROLE\": \"main subject, dynamic foreground element\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, vigilance, or spiritual connection in Chinese and Japanese traditions\",
+      \"VARIANTS\": [\"red fox\", \"gray fox\", \"fox in moonlight\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are iconic in East Asian art, especially in misty, serene settings, providing soft light and visual contrast against fog or water; enhances rhythm and depth in the composition.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or oval, thin paper, hanging from a string or pole, often with a central light source\",
+        \"COLOR_PALETTE\": [
+          \"#D8BFD8 (soft lavender)\",
+          \"#B0C4DE (light sky blue)\",
+          \"#E0F7E0 (moss green)\",
+          \"#F5F5DC (warm grey)\",
+          \"#E6E6FA (soft plum)\"
+        ],
+        \"SCALE_POSE\": \"medium, slightly elevated, partially overlapping the bridge midsection\",
+        \"CONTEXT\": \"evening or night scene, misty bridge, festival atmosphere\",
+        \"COMPOSITION_ROLE\": \"rhythmic midground accent\"
+      },
+      \"ICONOGRAPHY\": \"symbol of peace, good fortune, and celebration in Chinese and Japanese culture\",
+      \"VARIANTS\": [\"red lantern\", \"gold lantern\", \"lantern with floral patterns\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges are a common motif in traditional Asian landscape painting, evoking mystery, transition, and spiritual journey; serves as a compositional frame and spatial anchor.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or straight bridge, partially obscured by fog or mist, often over water or river\",
+        \"COLOR_PALETTE\": [
+          \"#D8BFD8 (soft lavender)\",
+          \"#B0C4DE (light sky blue)\",
+          \"#E0F7E0 (moss green)\",
+          \"#F5F5DC (warm grey)\",
+          \"#E6E6FA (soft plum)\"
+        ],
+        \"SCALE_POSE\": \"midground, slightly blurred, with soft edges and flowing negative space\",
+        \"CONTEXT\": \"rural or mountainous landscape, transitional space\",
+        \"COMPOSITION_ROLE\": \"background setting and compositional frame\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, uncertainty, or spiritual path\",
+      \"VARIANTS\": [\"stone bridge in fog\", \"wooden bridge in mist\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A soft lavender fox in the lower left foreground, fur in #D8BFD8, #E0F7E0, and #F5F5DC tones\",
+    \"A paper lantern hanging midsection, glowing softly with #B0C4DE and #E6E6FA hues\",
+    \"A misty bridge partially hidden in fog, with flowing negative space and soft edges in muted pastel tones\"
+  ],
+  \"UPDATE_PROMPT\": \"A dreamy scene with a soft lavender fox near a misty bridge, a glowing paper lantern overlapping the bridge, all in gentle pastel tones with soft, blurred edges and flowing negative space.\"
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific hex color values should be used for the fox's fur to reflect the muted, soft pastel palette and natural light diffusion, including at least one hue for each of the primary tones (lavender, moss green, warm grey, soft plum, light sky blue)?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures precise color fidelity aligned with the defined Japanese nature palettes and natural light gradients in the style.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3–5 hex codes (e.g., #D8BFD8, #B0C4DE) with descriptions (e.g., 'soft lavender', 'moss green')\",
+      \"DEPENDENCIES\": [\"muted hues\", \"soft pastel palettes\", \"natural light diffusion\", \"shinrin/fujin palettes\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the fox and paper lantern to achieve soft, luminous effects with minimal visible texture or strokes, including the number of layers and stroke type (e.g., thin, flowing washes), and how does this ensure impressionistic blur and soft edges?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies technical execution to maintain the softness, luminosity, and impressionistic blur central to the Impressionism-Ukiyo-e fusion.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of stroke type (e.g., 'thin, flowing washes') and layer count (e.g., '2–3 layers')\",
+      \"DEPENDENCIES\": [\"light, transparent washes\", \"soft, blended strokes\", \"luminous effects\", \"impressionistic blur\"]
+    },
+    {
+      \"Q\": \"In what precise spatial relationship should the fox and paper lantern be positioned relative to the misty bridge—e.g., fox in lower left, lantern overlapping midsection—to ensure asymmetrical composition, flowing negative space, and directional rhythm?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Ensures alignment with Ukiyo-e compositional principles and Impressionist spatial fluidity, maintaining dynamic balance and visual flow.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial placement (e.g., 'fox in lower left foreground, lantern slightly overlapping bridge midsection')\",
+      \"DEPENDENCIES\": [\"asymmetrical composition\", \"flowing negative space\", \"foreground/dynamic element\", \"rhythmic midground accent\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the fox or paper lantern have sharp, defined outlines or visible brush marks that contradict the soft, blended strokes and impressionistic blur?\",
+    \"Is the composition symmetrical or centered, violating the emphasis on flowing negative space and asymmetrical balance?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY includes 'shinrin' or 'fujin' THEN ask for cultural origins or traditional references to those palettes\",
+    \"IF BRUSHWORK_TECHNIQUE mentions 'impasto' or 'texture' THEN ask for stroke density or layer thickness ranges\",
+    \"IF COMPOSITIONAL_DEVICES references 'centered' or 'balanced' THEN ask for deviation from symmetry or directional flow\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": [
+        \"#D8BFD8 (soft lavender)\",
+        \"#B0C4DE (light sky blue)\",
+        \"#E0F7E0 (moss green)\",
+        \"#F5F5DC (warm grey)\",
+        \"#E6E6FA (soft plum)\"
+      ],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"Apply thin, flowing washes with 2–3 subtle layers; use transparent glazes to create luminous softness and impressionistic blur, avoiding any visible brush marks or texture.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"Fox in lower left foreground, paper lantern slightly overlapping the bridge's midsection, creating flowing negative space and asymmetrical balance.\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are common in Eastern Asian folklore and traditional art, especially in misty, rural settings, symbolizing wisdom and spiritual connection; fits the soft, natural tone and flowing composition of the style.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail, four legs\",
+        \"COLOR_PALETTE\": [
+          \"#D8BFD8 (soft lavender)\",
+          \"#B0C4DE (light sky blue)\",
+          \"#E0F7E0 (moss green)\",
+          \"#F5F5DC (warm grey)\",
+          \"#E6E6FA (soft plum)\"
+        ],
+        \"SCALE_POSE\": \"small to medium size, slightly leaning forward, in lower left foreground\",
+        \"CONTEXT\": \"misty bridge, forest edge, rural landscape\",
+        \"COMPOSITION_ROLE\": \"main subject, dynamic foreground element\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, vigilance, or spiritual connection in Chinese and Japanese traditions\",
+      \"VARIANTS\": [\"red fox\", \"gray fox\", \"fox in moonlight\", \"fox with human features\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are iconic in East Asian art, especially in misty, serene settings, providing soft light and visual contrast against fog or water; enhances rhythm and depth in the composition.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular or oval, thin paper, hanging from a string or pole, often with a central light source\",
+        \"COLOR_PALETTE\": [
+          \"#D8BFD8 (soft lavender)\",
+          \"#B0C4DE (light sky blue)\",
+          \"#E0F7E0 (moss green)\",
+          \"#F5F5DC (warm grey)\",
+          \"#E6E6FA (soft plum)\"
+        ],
+        \"SCALE_POSE\": \"medium, slightly elevated, partially overlapping the bridge midsection\",
+        \"CONTEXT\": \"evening or night scene, misty bridge, festival atmosphere\",
+        \"COMPOSITION_ROLE\": \"rhythmic midground accent\"
+      },
+      \"ICONOGRAPHY\": \"symbol of peace, good fortune, and celebration in Chinese and Japanese culture\",
+      \"VARIANTS\": [\"red lantern\", \"gold lantern\", \"lantern with floral patterns\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges are a common motif in traditional Asian landscape painting, evoking mystery, transition, and spiritual journey; serves as a compositional frame and spatial anchor.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or straight bridge, partially obscured by fog or mist, often over water or river\",
+        \"COLOR_PALETTE\": [
+          \"#D8BFD8 (soft lavender)\",
+          \"#B0C4DE (light sky blue)\",
+          \"#E0F7E0 (moss green)\",
+          \"#F5F5DC (warm grey)\",
+          \"#E6E6FA (soft plum)\"
+        ],
+        \"SCALE_POSE\": \"midground, slightly blurred, with soft edges and flowing negative space\",
+        \"CONTEXT\": \"rural or mountainous landscape, transitional space\",
+        \"COMPOSITION_ROLE\": \"background setting and compositional frame\"
+      },
+      \"ICONOGRAPHY\": \"symbol of transition, uncertainty, or spiritual path\",
+      \"VARIANTS\": [\"stone bridge in fog\", \"wooden bridge in mist\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A soft lavender fox in the lower left foreground, fur in #D8BFD8, #E0F7E0, and #F5F5DC tones\",
+    \"A paper lantern hanging midsection, glowing softly with #B0C4DE and #E6E6FA hues\",
+    \"A misty bridge partially hidden in fog, with flowing negative space and soft edges in muted pastel tones\"
+  ],
+  \"UPDATE_PROMPT\": \"A dreamy scene with a soft lavender fox near a misty bridge, a glowing paper lantern overlapping the bridge, all in gentle pastel tones with soft, blurred edges and flowing negative space.\"
+}"
+  }
+]
