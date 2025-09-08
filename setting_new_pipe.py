@@ -24,8 +24,6 @@ REQUIRED OUTPUT (JSON ONLY)
     "HISTORICAL_CONTEXT": "<period, movements, cultural influences>"
   },
   "MERGE_STRATEGY": "<if multiple styles, how to combine; else empty>",
-  "PROMPT_SNIPPET": "<one-line English prompt capturing the style>",
-  "NEGATIVE_CONSTRAINTS": ["<what to avoid>"],
   "EVALUATION_CRITERIA": ["<checks to verify the result>"],
   "CONFIDENCE": 0.0
 }
@@ -54,14 +52,9 @@ REQUIRED OUTPUT (JSON ONLY)
       "WHY": "<why this fits the style, grounded in known features>",
       "ATTRIBUTES": {
         "FORM": "<shapes / geometry>",
-        "MATERIAL": "<medium / material if relevant>",
-        "COLOR_PALETTE": "<typical colors / saturation / contrast>",
-        "SCALE_POSE": "<relative scale, pose, arrangement>",
-        "TEXTURE": "<brushwork / texture>",
-        "LIGHTING": "<light source / chiaroscuro / flatness>",
+        "COLOR_PALETTE": "<typical colors / contrast>",
         "CONTEXT": "<common scene context: interior, nature, urban, etc.>",
         "COMPOSITION_ROLE": "<main subject / foreground accent / rhythm>",
-        "CAMERA": "<viewpoint / framing: top-down, low-angle, close-up, wide, etc.>"
       },
       "ICONOGRAPHY": "<symbolic meaning if any>",
       "VARIANTS": ["<variant 1>", "<variant 2>"],
@@ -142,7 +135,12 @@ INPUTS
 - LAST_RESPONSE: the most recent response from the OBJECT agent.
 
 TASK
-Produce a focused set of questions that:
+1.After reviewing the Object Agent’s response, 
+and taking both the HISTORY and the USER PROMPT into account, 
+produce a revised, objects-focused prompt that clearly describes every object mentioned in the USER PROMPT. 
+Ensure the revised prompt omits nothing from the USER PROMPT
+
+2.Produce a focused set of questions that:
 1) Cover multiple dimensions (breadth), and
 2) Drill down on specifics mentioned in LAST_RESPONSE (depth),
 aiming to surface additional common objects for the style(s) and to specify actionable attributes for each.
@@ -201,19 +199,15 @@ REQUIRED OUTPUT (JSON ONLY)
   "UPDATE_STYLE_BRIEF": {
     "FORM_COMPOSITION": "<updated>",
     "COLOR_TONALITY": "<updated>",
-    "BRUSHWORK_TECHNIQUE": "<updated>",
     "EXPRESSION_THEME": "<updated>",
     "HISTORICAL_CONTEXT": "<updated>",
     "SUBJECT_MATTER": "<updated>",
     "COMPOSITIONAL_DEVICES": "<updated>",
-    "LIGHTING_CAMERA": "<updated>",
-    "NEGATIVE_CONSTRAINTS": "<what to avoid>",
     "EVALUATION_CRITERIA": "<how to judge success>"
   },
   "PROMPT_SNIPPET": "<one-line English prompt capturing the style>",
   "CHANGES_SINCE_PREV": ["<delta item 1>", "<delta item 2>"],
-  "OPEN_QUESTIONS": ["<if info is still missing, 1–3 concrete follow-ups; else empty>"]
-}
+x}
 
 RULES
 - Answer all questions in the latest ASK JSON in order. If no ASK is present, set ANSWER_ASK to [].
@@ -233,9 +227,7 @@ REQUIRED OUTPUT (JSON ONLY)
   "ANSWER_ASK": [
     {
       "INDEX": <int>,                          // question order from latest ASK
-      "DIMENSION": "<copied from ASK.DIMENSION>",
       "ANSWER": "<concise, measurable answer>", // numbers/ranges/palettes/sets
-      "RATIONALE": "<<=1 sentence, minimal>",
       "CONFIDENCE": 0.0
     }
   ],
@@ -245,28 +237,19 @@ REQUIRED OUTPUT (JSON ONLY)
       "WHY": "<why this fits the style, grounded in known traits>",
       "ATTRIBUTES": {
         "FORM": "<shapes / geometry>",
-        "MATERIAL": "<medium / material>",
-        "COLOR_PALETTE": "<typical colors / saturation / contrast>",
+        "COLOR_PALETTE": "<typical colors / contrast>",
         "SCALE_POSE": "<relative scale, pose, arrangement>",
-        "TEXTURE": "<brushwork / texture>",
-        "LIGHTING": "<light source / flatness / chiaroscuro>",
         "CONTEXT": "<interior / nature / urban / coastal ...>",
         "COMPOSITION_ROLE": "<main / foreground accent / rhythm>",
-        "CAMERA": "<viewpoint / framing: top-down, low-angle, close-up, wide>"
       },
       "ICONOGRAPHY": "<symbolic meaning if any>",
       "VARIANTS": ["<variant 1>", "<variant 2>"],
       "CONFIDENCE": 0.0
     }
   ],
-  "COVERAGE": {
-    "BY_STYLE": { "<Style A>": ["<object 1>", "<object 2>"], "<Style B>": ["..."] },
-    "INTERSECTION": ["<objects common across all styles; empty if single style>"]
-  },
-  "NEGATIVE_OBJECTS": ["<objects to avoid that conflict with the style>"],
   "PROMPT_SNIPPETS": ["<one concise English prompt line per key object>"],
-  "CHANGES_SINCE_PREV": ["<added/edited/removed object names or attributes>"],
-  "OPEN_QUESTIONS": ["<1–3 concrete follow-ups if info is still missing; else empty>"]
+
+  "UPDATE_PROMPT": output a meaninful and clear sentence with simple and everyday words, make sure the number of words should eb no more than 50 words.
 }
 
 RULES
@@ -336,21 +319,28 @@ SCOPE
 TASK
 Study HISTORY and produce one precise English prompt line that clearly specifies the key objects/motifs characteristic of the style(s), adding only essential cues (per-object form, local color palette, local lighting, composition role) when critical.
 
+OUTPUT FORMAT (ENGLISH only; no JSON, no reasoning, no <think>)
+Line 1 — OBJECT_NAMES: {name1, name2, name3}
+Line 2 — OBJECT_DETAILS: name1—attr, attr; name2—attr, attr; name3—attr, attr END_OF_PROMPT
+
+PLAIN LANGUAGE RULES (STRICT)
+- Use simple, everyday words only.
+- BANNED WORDS: saturation, hue, chroma, luminance, value scale, gamma, specular, subsurface, Fresnel, PBR, albedo, SSS, AO, vignette, chiaroscuro, impasto, gamut, CMYK/RGB.
+- BANNED NUMBERS: no percentages (%), no numeric color codes, no kelvin values. Numbers allowed only for counts (e.g., “two birds”) or lengths like “3 small stones”.
+
+
 OUTPUT RULES
-- One line (<= 60 words), ENGLISH only. Start with: OBJECTS:
+- One line (<= 50 words), ENGLISH only. Start with: OBJECTS:
 - No extra text, no reasoning, no JSON, no <think>.
 - Ground choices in HISTORY; do not invent.
 - Prefer 3–6 objects/motifs, separated by commas or “;”.
 - Attributes must be local to each object (e.g., “butterflies—flowing curves, warm–cool contrast, foreground accent”).
-- HARD BAN: global brushwork specs, global saturation ranges, canvas-wide composition ratios, camera formats, or mood statements detached from a specific object.
 - If essential, include must-avoid objects briefly (e.g., “avoid chiaroscuro props”).
 
 SELF-CHECK (must pass before output)
 - Remove any clause that applies to the whole image rather than to a named object.
 
-Write one clear, meaningful sentence of at most 60 words. 
-Use simple, everyday words; avoid complex terms or jargon. 
-End the sentence with the exact token END_OF_PROMPT and nothing after it.
+Write one clear, meaningful sentence of at most 50 words. 
 """
 
 

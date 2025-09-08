@@ -1,0 +1,65 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"A central figure in fantasy cave scenes, often depicted in medieval or fantasy art with stylized features and expressive poses.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"humanoid, slender, elongated limbs\",
+        \"COLOR_PALETTE\": \"soft pastels, earthy tones, high contrast with shadows\",
+        \"CONTEXT\": \"cave interior, often near dragon or in mystical setting\",
+        \"COMPOSITION_ROLE\": \"main subject, focal point\"
+      },
+      \"ICONOGRAPHY\": \"symbol of innocence, exploration, or human connection to the mystical world\",
+      \"VARIANTS\": [\"wearing a cloak\", \"holding a torch\", \"in a meditative pose\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"A classic fantasy creature commonly found in cave settings, often depicted with scales, wings, and fiery elements.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body, four limbs, wings, large head\",
+        \"COLOR_PALETTE\": \"deep reds, browns, golds, with high contrast and glowing elements\",
+        \"CONTEXT\": \"cave entrance or deep cavern, often in combat or resting\",
+        \"COMPOSITION_ROLE\": \"foreground accent or dominant presence\"
+      },
+      \"ICONOGRAPHY\": \"symbol of power, danger, wisdom, or ancient lore\",
+      \"VARIANTS\": [\"coiled in a cave\", \"breathing fire\", \"with glowing eyes\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"A common environmental feature in cave scenes, often decorated with cave art or natural formations.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"vertical, jagged, textured, with overhangs and cracks\",
+        \"COLOR_PALETTE\": \"dark grays, browns, with speckles of light or glowing minerals\",
+        \"CONTEXT\": \"interior cave environment\",
+        \"COMPOSITION_ROLE\": \"background setting, depth indicator\"
+      },
+      \"ICONOGRAPHY\": \"symbol of mystery, ancient history, or hidden knowledge\",
+      \"VARIANTS\": [\"covered in petroglyphs\", \"with stalactites\", \"with glowing fungi\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"cave torch\",
+      \"WHY\": \"Used by characters to illuminate dark cave spaces, common in fantasy and medieval cave art.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simple cone or cylinder with flame at top\",
+        \"COLOR_PALETTE\": \"yellow-orange flame, dark shadows around\",
+        \"CONTEXT\": \"cave interior, near the girl or dragon\",
+        \"COMPOSITION_ROLE\": \"foreground accent, adds light and drama\"
+      },
+      \"ICONOGRAPHY\": \"symbol of exploration, courage, or human presence in darkness\",
+      \"VARIANTS\": [\"wooden\", \"metal\", \"glowing ember\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional influences on the dragon's appearance?\"
+  ]
+}"
+  }
+]

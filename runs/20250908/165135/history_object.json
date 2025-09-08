@@ -1,0 +1,193 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"A central figure in fantasy cave scenes, often depicted in a vulnerable or adventurous pose, emphasizing human presence in a mystical setting.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"humanoid, standing or kneeling, often with flowing hair or simple clothing\",
+        \"COLOR_PALETTE\": \"soft pastels or earth tones, contrasting with cave lighting\",
+        \"CONTEXT\": \"cave interior, near dragon or ancient artifacts\",
+        \"COMPOSITION_ROLE\": \"main subject or focal point\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes exploration, courage, or connection to ancient magic\",
+      \"VARIANTS\": [\"in a robe\", \"holding a torch\", \"standing beside a dragon\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"A classic fantasy creature commonly found in cave environments, representing power, danger, or ancient guardianship.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"scales, wings, long body, often coiled or resting\",
+        \"COLOR_PALETTE\": \"deep reds, browns, and blacks with metallic sheen\",
+        \"CONTEXT\": \"cave entrance or chamber, sometimes guarding treasure\",
+        \"COMPOSITION_ROLE\": \"foreground accent or dominant presence\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes wisdom, protection, or primal forces\",
+      \"VARIANTS\": [\"sleeping\", \"awake and watching\", \"with a crown or treasure\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"A common environmental feature in cave scenes, often decorated with carvings or glowing patterns.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rough, vertical surfaces with natural textures or carvings\",
+        \"COLOR_PALETTE\": \"dark gray, black, with illuminated or colored veins\",
+        \"CONTEXT\": \"interior cave setting, background or midground\",
+        \"COMPOSITION_ROLE\": \"background context or setting element\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes mystery, the unknown, or ancient history\",
+      \"VARIANTS\": [\"carved with runes\", \"glowing with bioluminescence\", \"covered in moss\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"torch\",
+      \"WHY\": \"Used by the girl to illuminate the cave, common in fantasy settings with low light and danger.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical with flame, held in hand or placed on ground\",
+        \"COLOR_PALETTE\": \"orange, yellow flame with dark blue or black surroundings\",
+        \"CONTEXT\": \"cave interior, near the girl or dragon\",
+        \"COMPOSITION_ROLE\": \"foreground accent or functional object\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes courage, exploration, and the human desire to know\",
+      \"VARIANTS\": [\"wooden\", \"stone base\", \"flickering flame\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional influences on the dragon’s appearance?\",
+    \"Is the cave naturally formed or magically created?\",
+    \"What is the relationship between the girl and the dragon—friendly, hostile, or neutral?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color pairs (e.g., cyan-magenta, yellow-purple) should be used in the glowing veins of the cave wall to create a non-realistic, magical effect, and where should they be placed within the composition?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Glowing color pairings define the dreamlike, fantastical atmosphere and emotional tone of the cave environment.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"color pairs and placement (e.g., 'cyan-magenta in top-left corner, yellow-purple in midwall')\",
+      \"DEPENDENCIES\": [\"glowing with bioluminescence\", \"cyan-magenta\", \"yellow-purple\", \"non-realistic color\"]
+    },
+    {
+      \"Q\": \"How should the brushwork thickness and texture differ between the girl’s flowing hair and the dragon’s scales to convey emotional expression and tactile contrast?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Variation in brushwork thickness and texture enhances emotional depth and physical sensation within the gestural style.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of thickness and texture (e.g., 'hair: light, soft, flowing strokes; scales: layered, textured impasto with pressure variation')\",
+      \"DEPENDENCIES\": [\"soft, gestural brushstrokes\", \"emotional expression\", \"textural contrast\"]
+    },
+    {
+      \"Q\": \"What specific form, color, and context attributes should be assigned to the torch held by the girl, including its flame color, base material, and position relative to the dragon or cave wall?\",
+      \"DIMENSION\": \"FORM_MATERIAL_COLOR_CONTEXT\",
+      \"WHY\": \"The torch serves as a functional and symbolic element that ties the girl’s action to the cave’s atmosphere and narrative tone.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"form, material, color, and context (e.g., 'cylindrical, wooden, orange flame, placed on ground near dragon')\",
+      \"DEPENDENCIES\": [\"cave interior\", \"near the girl or dragon\", \"functional object\", \"flame color\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the girl’s hair or the dragon’s scales use tonal gradients, realistic outlines, or blended edges to break the gestural, expressive style?\",
+    \"Are the glowing cave veins rendered with muted colors or naturalistic lighting to suggest realism instead of magic?\",
+    \"Is the torch depicted with a static, lifeless flame or a flickering, dynamic one to match the dreamlike energy?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PAIRINGS are specified in glowing veins THEN ask for exact hex values (e.g., cyan-magenta: #00FFFF, #FF00FF)\",
+    \"IF BRUSHWORK describes texture variation THEN ask for stroke direction (e.g., flowing vs. layered)\",
+    \"IF TORCH attributes include flame or position THEN ask for its interaction with the dragon or wall (e.g., glowing, blocking light)\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"cyan-magenta in top-left corner, yellow-purple in midwall\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"hair: light, soft, flowing strokes; scales: layered, textured impasto with pressure variation\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"cylindrical, wooden, orange flame, placed on ground near dragon\",
+      \"CONFIDENCE\": 0.91
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"Central environmental element that enhances dreamlike atmosphere through glowing, non-naturalistic veins with vibrant color contrasts.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rough, vertical surfaces with natural textures and irregular carvings\",
+        \"COLOR_PALETTE\": \"dark gray and black base with glowing cyan-magenta and yellow-purple veins\",
+        \"SCALE_POSE\": \"background, extending across the cave depth\",
+        \"CONTEXT\": \"interior cave setting, midground to background\",
+        \"COMPOSITION_ROLE\": \"atmospheric anchor and emotional backdrop\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes ancient magic, mystery, and the hidden forces of nature\",
+      \"VARIANTS\": [\"veins in top-left corner\", \"veins in midwall\", \"covered in moss with glowing patterns\"],
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central emotional figure with flowing form and soft gestures, embodying courage and connection to the mystical environment.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"humanoid, standing or kneeling, with flowing hair and simple clothing\",
+        \"COLOR_PALETTE\": \"soft pastels or earth tones, contrasting with vibrant cave lighting\",
+        \"SCALE_POSE\": \"main focal point, slightly off-center, facing the dragon or wall\",
+        \"CONTEXT\": \"cave interior, near dragon or glowing wall\",
+        \"COMPOSITION_ROLE\": \"main subject and emotional anchor\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes exploration, courage, and human resilience in magical settings\",
+      \"VARIANTS\": [\"in a robe\", \"holding a torch\", \"standing beside a dragon\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Powerful, ancient creature representing protection, wisdom, and primal energy in the cave setting.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"long body, coiled or resting, with visible scales and wings\",
+        \"COLOR_PALETTE\": \"deep reds, browns, and blacks with metallic sheen\",
+        \"SCALE_POSE\": \"midground to foreground, often facing or watching the girl\",
+        \"CONTEXT\": \"cave entrance or chamber, guarding or observing\",
+        \"COMPOSITION_ROLE\": \"dominant presence or dynamic contrast\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes wisdom, protection, and the balance between danger and peace\",
+      \"VARIANTS\": [\"sleeping\", \"awake and watching\", \"with a crown or treasure\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"torch\",
+      \"WHY\": \"Functional and symbolic object that introduces light, action, and narrative progression in the cave scene.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical with flame, held or placed on ground\",
+        \"COLOR_PALETTE\": \"orange flame with dark blue or black surroundings\",
+        \"SCALE_POSE\": \"foreground, placed near the dragon or wall\",
+        \"CONTEXT\": \"cave interior, used by the girl to illuminate dark areas\",
+        \"COMPOSITION_ROLE\": \"foreground accent and narrative trigger\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes courage, exploration, and the human desire to know the unknown\",
+      \"VARIANTS\": [\"wooden\", \"stone base\", \"flickering flame\"],
+      \"CONFIDENCE\": 0.91
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"cave wall with glowing cyan-magenta veins in top-left and yellow-purple in midwall\",
+    \"girl with flowing hair and soft pastel tones, standing near dragon\",
+    \"dragon with deep red and black scales, coiled or resting in midground\",
+    \"torch with orange flame, placed on ground near dragon\"
+  ],
+  \"UPDATE_PROMPT\": \"A fantasy cave scene with a girl, dragon, and glowing cave walls using vivid, high-saturation colors. Cyan-magenta veins glow in top-left, yellow-purple in midwall. Girl has flowing hair, dragon has textured scales, torch with orange flame stands near the dragon.\"
+}"
+  }
+]

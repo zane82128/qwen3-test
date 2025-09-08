@@ -1,0 +1,112 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical, expressive style—bold, vibrant colors, soft flowing lines, and dreamlike naturalism.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, fluid lines; dynamic yet harmonious spatial arrangements emphasizing natural movement and whimsical environments; minimal geometric structure, favoring intuitive, expressive shapes.\",
+    \"COLOR_TONALITY\": \"Highly saturated, bold primary and secondary color palettes (e.g., cerulean, magenta, yellow ochre, emerald); vibrant yet balanced contrasts; warm and cool tones interwoven to create dreamlike harmony.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with soft blending; fluid, almost impressionistic layering; emphasis on emotional texture over precision; use of washes and soft transitions to maintain a soft, dreamy quality.\",
+    \"EXPRESSION_THEME\": \"Dreamlike naturalism with a sense of wonder and gentle magic; anthropomorphized nature; serene, childlike joy; emotional resonance with the environment.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Derain) fused with modern Japanese animation aesthetics (Miyazaki's Studio Ghibli films) emphasizing emotional storytelling and environmental harmony.\"
+  },
+  \"MERGE_STRATEGY\": \"Prioritize emotional expressiveness and color vibrancy from Fauvism, while integrating Miyazaki’s fluid line work, naturalistic detail, and dreamlike atmosphere through soft, organic forms and narrative warmth.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of bold, non-naturalistic color application (Fauvist signature)\",
+    \"Use of flowing, soft lines that suggest movement and organic forms (Miyazaki influence)\",
+    \"Balance between emotional expressiveness and naturalistic environments\",
+    \"Vibrant yet harmonious color palette with warm and cool contrasts\"
+  ],
+  \"CONFIDENCE\": 0.95
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 80–120%) is typically used in the bold primary and secondary color palettes for the girl’s clothing or hair, and how does this vary between warm and cool tones?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Clarifies the measurable intensity of color application critical to Fauvist expression and Miyazaki’s dreamlike balance.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80–120%) with warm/cool tone breakdown\",
+      \"DEPENDENCIES\": [\"highly saturated\", \"vibrant yet balanced contrasts\"]
+    },
+    {
+      \"Q\": \"How are the flowing lines of the girl’s hair or the dragon’s body specifically rendered in terms of brushstroke density and layering—e.g., are they more gestural, soft-blended, or layered with washes?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Pinpoints the technical execution that bridges Fauvism’s expressiveness with Miyazaki’s fluid, organic forms.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of brushstroke density, layering, and blending method (e.g., 'soft-blended with 3–5 wash layers')\",
+      \"DEPENDENCIES\": [\"expressive, gestural brushstrokes\", \"fluid, almost impressionistic layering\"]
+    },
+    {
+      \"Q\": \"In what specific compositional device—such as leading lines, symmetry, or negative space—is the cave wall used to frame the girl or dragon, and how does this contribute to the sense of mystery or movement?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Links environmental structure to narrative tension and emotional atmosphere, grounding the dreamlike theme in spatial logic.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"one compositional device with explanation of its narrative function\",
+      \"DEPENDENCIES\": [\"cave wall\", \"dynamic yet harmonious spatial arrangements\", \"organic movement\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does the painting avoid sharp, geometric forms or rigid outlines that contradict the organic, flowing style?\",
+    \"Is there any use of naturalistic, realistic color grading (e.g., sky-to-ground gradients) that undermines the Fauvist vibrancy?\",
+    \"Are the dragon’s scales or the cave’s textures rendered with precision or detail that contradicts the expressive, gestural approach?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation ranges >100% THEN ask for specific examples of color combinations used on the girl or dragon\",
+    \"IF BRUSHWORK_TECHNIQUE references washes or layering THEN ask for number of layers and their sequence\",
+    \"IF COMPOSITIONAL_DEVICES references framing THEN ask how the frame affects viewer perspective or emotional tone\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"90–120% saturation; warm tones (e.g., yellow ochre, magenta) at 100–120%, cool tones (e.g., cerulean, emerald) at 90–110%\",
+      \"RATIONALE\": \"Balances Fauvist boldness with Miyazaki’s dreamlike harmony through controlled vibrancy.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"Soft-blended with 3–5 wash layers, applied in overlapping, fluid gestures to suggest movement and organic texture\",
+      \"RATIONALE\": \"Merges Fauvism’s expressive brushwork with Miyazaki’s smooth, impressionistic layering for emotional depth and flow.\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Leading lines from the cave wall’s cracks and overhangs frame the girl or dragon, guiding the viewer’s eye and creating a sense of mystery and depth\",
+      \"RATIONALE\": \"Uses natural environmental features to establish narrative tension and spatial movement without rigidity.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, fluid lines; dynamic yet harmonious spatial arrangements emphasizing natural movement and whimsical environments; minimal geometric structure, favoring intuitive, expressive shapes.\",
+    \"COLOR_TONALITY\": \"Highly saturated, bold primary and secondary color palettes (e.g., cerulean, magenta, yellow ochre, emerald); vibrant yet balanced contrasts; warm and cool tones interwoven to create dreamlike harmony with 90–120% saturation (warm tones 100–120%, cool tones 90–110%)\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with soft blending; fluid, almost impressionistic layering using 3–5 wash layers applied in overlapping gestures to maintain soft, dreamy texture\",
+    \"EXPRESSION_THEME\": \"Dreamlike naturalism with a sense of wonder and gentle magic; anthropomorphized nature; serene, childlike joy; emotional resonance with the environment\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Derain) fused with modern Japanese animation aesthetics (Miyazaki's Studio Ghibli films) emphasizing emotional storytelling and environmental harmony\",
+    \"SUBJECT_MATTER\": \"Fantasy cave scenes featuring a girl, a dragon, and cave environments with soft, flowing forms and vibrant color\",
+    \"COMPOSITIONAL_DEVICES\": \"Leading lines from cave walls (cracks, overhangs) frame the central subject, creating narrative depth and a sense of mystery while maintaining organic flow\",
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of bold, non-naturalistic color application (Fauvist signature) with 90–120% saturation, warm/cool balance\",
+      \"Use of soft-blended, layered brushwork (3–5 washes) to render flowing forms (hair, dragon body) with gestural fluidity\",
+      \"Framing via cave wall leading lines that guide viewer perspective and enhance emotional mystery\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"Fauvism-inspired bold colors (90–120% saturation) with warm/cool balance, soft-blended gestural brushwork in 3–5 wash layers, and leading lines from cave walls framing a girl or dragon in a dreamlike cave environment.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific saturation ranges (90–120%) with warm/cool tone breakdown\",
+    \"Quantified brushwork as 3–5 wash layers with overlapping gestures\",
+    \"Specified leading lines from cave wall cracks/overhangs as compositional device\",
+    \"Updated evaluation criteria with measurable, testable benchmarks\"
+  ],
+  \"CONFIDENCE\": 0.96
+}"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific materials (e.g., oil, watercolor, bronze, wood) are commonly used in the surfaces of objects depicted in this style, and which materials are consistently excluded?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Material choice defines object authenticity and stylistic conventions in painting traditions\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"bullet list of materials (included and excluded)\",
+      \"DEPENDENCIES\": [\"material references in LAST_RESPONSE\"]
+    },
+    {
+      \"Q\": \"What is the typical color palette used for object surfaces (e.g., warm ochres, deep blues, metallic tones), and which colors are rarely or never present?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Color palette reveals stylistic consistency and symbolic associations in object representation\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of dominant and absent colors (e.g., 'dominant: terracotta, cobalt; absent: neon green')\",
+      \"DEPENDENCIES\": [\"color descriptions in LAST_RESPONSE\"]
+    },
+    {
+      \"Q\": \"In what compositional roles (e.g., foreground, center of interest, background detail) are objects typically placed, and how does lighting affect their visibility or prominence?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Composition role and lighting determine object function and viewer attention within the painting\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"dictionary with keys: role, lighting condition (e.g., chiaroscuro, flat), visibility level (high/medium/low)\",
+      \"DEPENDENCIES\": [\"composition and lighting details in LAST_RESPONSE\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are there any objects described in the USER PROMPT that are explicitly absent from the style (e.g., digital screens, modern furniture)?\",
+    \"Do the materials or colors listed in the response contradict known stylistic conventions of the target style?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF MATERIAL includes 'metallic' THEN ask for specific types (e.g., silver, gold, brass) and their surface textures\",
+    \"IF COLOR_PALETTE includes 'neon' THEN ask whether this is a modern deviation or a stylistic exception\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [],
+  \"UPDATE_OBJECTS\": [],
+  \"PROMPT_SNIPPETS\": [],
+  \"UPDATE_PROMPT\": \"\"
+}"
+  }
+]

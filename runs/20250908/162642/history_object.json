@@ -1,0 +1,193 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"A central human figure in fantasy cave settings, often depicted with ethereal or mystical qualities in fantasy art.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, flowing lines; human silhouette with expressive features\",
+        \"COLOR_PALETTE\": \"pastel tones, soft whites and light skin tones, sometimes with glowing accents\",
+        \"CONTEXT\": \"cave interior, often near dragon or in mystical atmosphere\",
+        \"COMPOSITION_ROLE\": \"main subject / focal point\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes innocence, exploration, or connection to the mystical world\",
+      \"VARIANTS\": [\"medieval fantasy girl\", \"wandering girl\", \"cave-dwelling girl\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"A classic fantasy creature commonly appearing in cave environments, especially in cave lairs or ancient settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"scaled, serpentine body with wings and fire spouts; often large and menacing\",
+        \"COLOR_PALETTE\": \"deep reds, dark greens, and earthy browns; glowing eyes or scales\",
+        \"CONTEXT\": \"cave interior, rocky cave walls, underground lair\",
+        \"COMPOSITION_ROLE\": \"main subject / dominant presence\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes power, ancient wisdom, or danger in the natural world\",
+      \"VARIANTS\": [\"fire-breathing dragon\", \"ancient stone dragon\", \"sleeping dragon\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"A common environmental feature in cave scenes, often textured and illuminated by light sources or glowing fungi.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rough, jagged, or smooth stone surfaces; vertical or curved\",
+        \"COLOR_PALETTE\": \"dark grays, deep blues, muted earth tones; with glowing spots or veins\",
+        \"CONTEXT\": \"interior cave environment\",
+        \"COMPOSITION_ROLE\": \"background setting / depth anchor\"
+      },
+      \"ICONOGRAPHY\": \"represents isolation, mystery, or ancient origins\",
+      \"VARIANTS\": [\"fungal-covered wall\", \"carved stone wall\", \"shadowed wall\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"glowing fungi\",
+      \"WHY\": \"Common in fantasy cave art to provide illumination and add a mystical, otherworldly feel.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"small, bulbous, often clustered; bioluminescent\",
+        \"COLOR_PALETTE\": \"soft greens, blues, or pale yellows; glowing effect\",
+        \"CONTEXT\": \"cave floor or wall surfaces\",
+        \"COMPOSITION_ROLE\": \"foreground accent / mood enhancer\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes life, magic, or hidden knowledge\",
+      \"VARIANTS\": [\"blue glow fungi\", \"golden mushrooms\", \"spore clusters\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional influences in the cave setting that affect the style of the girl or dragon?\",
+    \"Is the dragon's form more realistic or stylized in this context?\",
+    \"What type of lighting (natural, magical, artificial) is typically used in such cave scenes?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 70–100% in RGB or HSV) should be used for the primary colors (red, yellow, blue) in the girl's skin or clothing to reflect Fauvist intensity while maintaining Miyazaki's soft luminosity?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"This quantifies the balance between Fauvism's bold saturation and Miyazaki's gentle glow, ensuring emotional impact without visual clash.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 70–100%)\",
+      \"DEPENDENCIES\": [\"bold primaries\", \"vibrant but harmonious combinations\"]
+    },
+    {
+      \"Q\": \"How should the brushwork on the dragon’s wings be described in terms of stroke density and layering—e.g., sparse and energetic versus layered and blended—to achieve both Fauvist expressiveness and Miyazaki’s fluid animation signature?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This clarifies the texture and movement in a key compositional element, grounding abstraction in observable technique.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description with metrics (e.g., 'sparse, high-contrast strokes' or 'layered, soft transitions')\",
+      \"DEPENDENCIES\": [\"expressive, fluid brushstrokes\", \"Miyazaki’s hand-drawn animation style\"]
+    },
+    {
+      \"Q\": \"In the cave wall composition, what specific lighting contrast (e.g., 3:1 or 5:1) between the glowing fungi and the dark stone should be maintained to support the dreamlike atmosphere and emotional depth?\",
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"WHY\": \"This ensures the mood and narrative tension between chaos and harmony are visually operationalized in the scene.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"ratio (e.g., 3:1)\",
+      \"DEPENDENCIES\": [\"glowing fungi\", \"dark grays, deep blues\", \"mystical atmosphere\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the girl's form use naturalistic shading or should it remain entirely abstract and flowing to avoid realism?\",
+    \"Is the dragon’s color palette limited to earth tones, or does it include bold Fauvist primaries for emotional contrast?\",
+    \"Can the composition maintain emotional depth without relying on clear narrative logic or character realism?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'bold primaries' THEN ask for specific primary color saturation ranges (e.g., red: 80–100%)\",
+    \"IF BRUSHWORK_TECHNIQUE references 'impulsive strokes' THEN ask for stroke frequency or density (e.g., 10–20 strokes per inch)\",
+    \"IF LIGHTING_CAMERA mentions 'glowing fungi' THEN ask for exact color temperature (e.g., 4000K–5000K) or spectral range\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"80–100%\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"layered, soft transitions with 15–20 fluid strokes per inch\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"5:1\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central figure with flowing form and emotional expression; uses bold, saturated colors to reflect Fauvist intensity while maintaining Miyazaki’s soft, luminous glow.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, flowing lines; stylized human silhouette with expressive features\",
+        \"COLOR_PALETTE\": \"red, yellow, blue at 80–100% saturation; soft whites and light skin tones with glowing accents\",
+        \"SCALE_POSE\": \"medium scale, centered or slightly off-center, in dynamic pose\",
+        \"CONTEXT\": \"cave interior, near glowing fungi or dragon\",
+        \"COMPOSITION_ROLE\": \"main subject / emotional focal point\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes innocence, emotional journey, and connection to the mystical world\",
+      \"VARIANTS\": [\"wandering girl\", \"cave-dwelling girl\", \"glowing-haired girl\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Key creature with expressive, fluid wings and bold coloration; uses layered brushwork to blend Fauvist intensity with Miyazaki’s hand-drawn animation style.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"scaled, serpentine body with large wings and fire spouts; flowing, dynamic lines\",
+        \"COLOR_PALETTE\": \"deep reds, bright yellows, and bold blues at 80–100% saturation; glowing eyes and wing edges\",
+        \"SCALE_POSE\": \"large scale, partially visible or in motion, wings spread asymmetrically\",
+        \"CONTEXT\": \"cave interior, rocky walls, near glowing fungi\",
+        \"COMPOSITION_ROLE\": \"dominant presence / emotional contrast\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes ancient power, emotional tension, and inner chaos balanced with harmony\",
+      \"VARIANTS\": [\"fire-breathing dragon\", \"sleeping dragon\", \"wings-fluttering dragon\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"Background element that defines depth and mood through high-contrast lighting and textured form, supporting the dreamlike atmosphere.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"jagged or smooth stone surfaces; vertical or curved, with natural erosion patterns\",
+        \"COLOR_PALETTE\": \"dark grays, deep blues, muted earth tones; with dark shadows and glowing veins\",
+        \"SCALE_POSE\": \"large, surrounding the scene, forming depth and enclosure\",
+        \"CONTEXT\": \"interior cave environment\",
+        \"COMPOSITION_ROLE\": \"background setting / depth anchor\"
+      },
+      \"ICONOGRAPHY\": \"represents isolation, mystery, and ancient origins\",
+      \"VARIANTS\": [\"fungal-covered wall\", \"carved stone wall\", \"shadowed wall\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"glowing fungi\",
+      \"WHY\": \"Foreground element that provides emotional lighting and visual contrast; emits soft, vibrant light to enhance dreamlike atmosphere.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"small, bulbous, clustered; bioluminescent, often on floor or wall\",
+        \"COLOR_PALETTE\": \"soft green, pale yellow, blue glow; luminous, not harsh\",
+        \"SCALE_POSE\": \"small scale, scattered or grouped in clusters\",
+        \"CONTEXT\": \"cave floor or wall surfaces\",
+        \"COMPOSITION_ROLE\": \"foreground accent / mood enhancer\"
+      },
+      \"ICONOGRAPHY\": \"symbolizes hidden life, magic, and emotional connection\",
+      \"VARIANTS\": [\"blue glow fungi\", \"golden mushrooms\", \"spore clusters\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"girl with soft flowing lines and bold red, yellow, blue at 80–100% saturation\",
+    \"dragon with layered wings using 15–20 fluid strokes per inch and glowing red/yellow/blue accents\",
+    \"cave wall in dark grays and deep blues with 5:1 contrast to glowing fungi\",
+    \"glowing fungi in soft green and blue, bioluminescent, clustered on cave floor\"
+  ],
+  \"UPDATE_PROMPT\": \"Fauvism-meets-Miyazaki style: girl with bold 80–100% saturated colors, dragon with layered wings and glowing primaries, cave walls in dark tones, glowing fungi with 5:1 contrast for dreamlike, emotional atmosphere.\"
+}"
+  }
+]

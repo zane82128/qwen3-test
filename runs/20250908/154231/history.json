@@ -1,0 +1,134 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Crayon Shin-chan’s naïve cartoon line and Van Gogh’s bold, impasto colorism, with exaggerated expressions and vibrant, non-natural hues.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Asymmetrical balance with dynamic diagonals, fragmented forms, and overlapping planes creating depth and tension\",
+    \"COLOR_TONALITY\": \"Cool to neutral palette dominated by blues, grays, and soft whites with high contrast between light and shadow; muted saturation with sharp chiaroscuro\",
+    \"BRUSHWORK_TECHNIQUE\": \"Loose, expressive strokes with visible impasto texture; layered glazing and smudging to create atmospheric blur and depth\",
+    \"EXPRESSION_THEME\": \"Isolation, inner turmoil, urban alienation; focus on solitary figures in barren, industrial environments\",
+    \"HISTORICAL_CONTEXT\": \"20th century, post-war European art; influenced by Expressionism, Bauhaus minimalism, and modernist urban realism\"
+  },
+  \"MERGE_STRATEGY\": \"Synthesize Expressionist emotional intensity with Bauhaus structural clarity and modernist urban observation to create a tense, grounded realism with emotional depth.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of strong diagonal composition and asymmetrical balance\",
+    \"Use of cool-toned palette with high contrast and muted saturation\",
+    \"Visible expressive brushwork with impasto and layered glazing\",
+    \"Thematic focus on isolation and urban decay\",
+    \"Integration of structural clarity with emotional subjectivity\"
+  ],
+  \"CONFIDENCE\": 0.94
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color palette or tonal range (e.g., warm ochres to cool blues) is characteristic of this style in terms of dominant hues and their distribution across the composition?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Identifies the core chromatic language used in the style, which defines visual identity.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3-5 dominant colors with tone descriptors (e.g., 'warm terracotta', 'cool gray-blue')\",
+      \"DEPENDENCIES\": [\"color\", \"tone\", \"hue distribution\"]
+    },
+    {
+      \"Q\": \"How does brushwork vary across different elements (e.g., background vs. foreground) in terms of stroke direction, density, and layering?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Reveals the physical execution and control that define the style's tactile and dynamic qualities.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description of stroke type (e.g., smooth, dry, impasto) per zone (background/foreground)\",
+      \"DEPENDENCIES\": [\"brushwork\", \"texture\", \"layering\"]
+    },
+    {
+      \"Q\": \"What specific compositional devices (e.g., rule of thirds, symmetry, leading lines) are most frequently employed in this style, and how do they influence viewer perception?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Clarifies how structure and spatial organization contribute to the style's formal impact.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of 2-3 devices with examples and their functional role in the composition\",
+      \"DEPENDENCIES\": [\"composition\", \"arrangement\", \"spatial organization\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does this style avoid any specific brushwork techniques (e.g., smooth glazing, flat planes) that would contradict its expressive intent?\",
+    \"Are there any tonal ranges or color choices explicitly excluded (e.g., no reds, only monochromatic) in the style’s definition?\",
+    \"Is there a compositional device that is either consistently absent or actively rejected in this style?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'cool' or 'warm' dominance THEN ask for temperature balance ratios (e.g., 60% warm vs. 40% cool)\",
+    \"IF BRUSHWORK_TECHNIQUE includes 'impasto' THEN ask for average thickness range (e.g., 1–3 mm)\",
+    \"IF COMPOSITIONAL_DEVICES includes 'symmetry' THEN ask whether it is strict or dynamic\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Not applicable\",
+    \"COLOR_TONALITY\": \"Not applicable\",
+    \"EXPRESSION_THEME\": \"Not applicable\",
+    \"HISTORICAL_CONTEXT\": \"Not applicable\",
+    \"SUBJECT_MATTER\": \"Not applicable\",
+    \"COMPOSITIONAL_DEVICES\": \"Not applicable\",
+    \"EVALUATION_CRITERIA\": \"Not applicable\"
+  },
+  \"PROMPT_SNIPPET\": \"No style query provided.\",
+  \"CHANGES_SINCE_PREV\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific materials (e.g., oil, watercolor, bronze, wood) are commonly used in the surfaces of objects depicted in this style, and which materials are consistently excluded?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"Material choice defines object authenticity and stylistic conventions in painting traditions\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"bullet list of materials (included and excluded)\",
+      \"DEPENDENCIES\": [\"material references in LAST_RESPONSE\"]
+    },
+    {
+      \"Q\": \"What is the typical color palette used for object surfaces (e.g., warm ochres, deep blues, metallic tones), and which colors are rarely or never present?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Color palette reveals stylistic consistency and symbolic associations in object representation\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of dominant and absent colors (e.g., 'dominant: terracotta, cobalt; absent: neon green')\",
+      \"DEPENDENCIES\": [\"color descriptions in LAST_RESPONSE\"]
+    },
+    {
+      \"Q\": \"In what compositional roles (e.g., foreground, center of interest, background detail) are objects typically placed, and how does lighting affect their visibility or prominence?\",
+      \"DIMENSION\": \"COMPOSITION_ROLE\",
+      \"WHY\": \"Composition role and lighting determine object function and viewer attention within the painting\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"dictionary with keys: role, lighting condition (e.g., chiaroscuro, flat), visibility level (high/medium/low)\",
+      \"DEPENDENCIES\": [\"composition and lighting details in LAST_RESPONSE\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are there any objects described in the USER PROMPT that are explicitly absent from the style (e.g., digital screens, modern furniture)?\",
+    \"Do the materials or colors listed in the response contradict known stylistic conventions of the target style?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF MATERIAL includes 'metallic' THEN ask for specific types (e.g., silver, gold, brass) and their surface textures\",
+    \"IF COLOR_PALETTE includes 'neon' THEN ask whether this is a modern deviation or a stylistic exception\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [],
+  \"UPDATE_OBJECTS\": [],
+  \"PROMPT_SNIPPETS\": [],
+  \"UPDATE_PROMPT\": \"\"
+}"
+  }
+]

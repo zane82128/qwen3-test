@@ -1,0 +1,111 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s dreamy, expressive style—bold, vibrant colors, fluid lines, and emotional depth.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, dynamic lines; non-figurative or stylized figures; emphasis on emotional expression over realism; asymmetrical spatial layouts with intuitive, dreamlike arrangements.\",
+    \"COLOR_TONALITY\": \"Highly saturated, emotionally charged palettes featuring bold primaries (red, yellow, blue) and complementary contrasts; warm and cool accents blending seamlessly; vibrant but harmonious combinations inspired by Fauvism and Miyazaki’s soft, luminous color fields.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, fluid brushstrokes with visible movement; layered glazes and soft blending to create luminous textures; mix of energetic, impulsive strokes and gentle, flowing transitions typical of both Fauvism and Miyazaki’s hand-drawn animation style.\",
+    \"EXPRESSION_THEME\": \"Emotional resonance, inner worlds, whimsy, and gentle wonder; themes of nature, childhood, and emotional journeys; a sense of peaceful tension between chaos and harmony.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with modern Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, emphasizing emotional storytelling and natural environments).\"
+  },
+  \"MERGE_STRATEGY\": \"Balance Fauvism’s radical color intensity and expressive abstraction with Miyazaki’s fluid, narrative-driven form and emotional tone; retain bold color palettes from Fauvism while softening edges and integrating organic, flowing compositions from Miyazaki’s style to create a harmonious, emotionally resonant visual language.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of bold, non-naturalistic color usage (Fauvist intensity)\",
+    \"Fluid, organic forms and flowing lines (Miyazaki’s animation signature)\",
+    \"Emotional depth and narrative atmosphere consistent with both styles\",
+    \"Balance between abstract expression and coherent, dreamlike composition\"
+  ],
+  \"CONFIDENCE\": 0.95
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 70–100% in RGB or HSV) should be used for the primary colors (red, yellow, blue) in the girl's skin or clothing to reflect Fauvist intensity while maintaining Miyazaki's soft luminosity?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"This quantifies the balance between Fauvism's bold saturation and Miyazaki's gentle glow, ensuring emotional impact without visual clash.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 70–100%)\",
+      \"DEPENDENCIES\": [\"bold primaries\", \"vibrant but harmonious combinations\"]
+    },
+    {
+      \"Q\": \"How should the brushwork on the dragon’s wings be described in terms of stroke density and layering—e.g., sparse and energetic versus layered and blended—to achieve both Fauvist expressiveness and Miyazaki’s fluid animation signature?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"This clarifies the texture and movement in a key compositional element, grounding abstraction in observable technique.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"description with metrics (e.g., 'sparse, high-contrast strokes' or 'layered, soft transitions')\",
+      \"DEPENDENCIES\": [\"expressive, fluid brushstrokes\", \"Miyazaki’s hand-drawn animation style\"]
+    },
+    {
+      \"Q\": \"In the cave wall composition, what specific lighting contrast (e.g., 3:1 or 5:1) between the glowing fungi and the dark stone should be maintained to support the dreamlike atmosphere and emotional depth?\",
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"WHY\": \"This ensures the mood and narrative tension between chaos and harmony are visually operationalized in the scene.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"ratio (e.g., 3:1)\",
+      \"DEPENDENCIES\": [\"glowing fungi\", \"dark grays, deep blues\", \"mystical atmosphere\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the girl's form use naturalistic shading or should it remain entirely abstract and flowing to avoid realism?\",
+    \"Is the dragon’s color palette limited to earth tones, or does it include bold Fauvist primaries for emotional contrast?\",
+    \"Can the composition maintain emotional depth without relying on clear narrative logic or character realism?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'bold primaries' THEN ask for specific primary color saturation ranges (e.g., red: 80–100%)\",
+    \"IF BRUSHWORK_TECHNIQUE references 'impulsive strokes' THEN ask for stroke frequency or density (e.g., 10–20 strokes per inch)\",
+    \"IF LIGHTING_CAMERA mentions 'glowing fungi' THEN ask for exact color temperature (e.g., 4000K–5000K) or spectral range\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"80–100%\",
+      \"RATIONALE\": \"Balances Fauvist intensity with Miyazaki’s soft glow through high saturation without overwhelming the scene.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"layered, soft transitions with 15–20 fluid strokes per inch\",
+      \"RATIONALE\": \"Achieves Fauvist expressiveness through dynamic layering while preserving Miyazaki’s organic, hand-drawn fluidity.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"LIGHTING_CAMERA\",
+      \"ANSWER\": \"5:1\",
+      \"RATIONALE\": \"Creates a strong contrast between glowing fungi and dark stone to enhance dreamlike atmosphere and emotional depth.\",
+      \"CONFIDENCE\": 0.94
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, dynamic lines; non-figurative or stylized figures; emphasis on emotional expression over realism; asymmetrical spatial layouts with intuitive, dreamlike arrangements.\",
+    \"COLOR_TONALITY\": \"Highly saturated, emotionally charged palettes featuring bold primaries (red, yellow, blue) at 80–100% saturation with soft, luminous blends inspired by Fauvism and Miyazaki’s gentle glow; warm and cool accents blending seamlessly.\",
+    \"EXPRESSION_THEME\": \"Emotional resonance, inner worlds, whimsy, and gentle wonder; themes of nature, childhood, and emotional journeys; a sense of peaceful tension between chaos and harmony.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Derain) fused with modern Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, emphasizing emotional storytelling and natural environments).\",
+    \"SUBJECT_MATTER\": \"Fantasy cave scenes featuring a girl, dragon, and glowing fungi in a mystical, dreamlike environment.\",
+    \"COMPOSITIONAL_DEVICES\": \"Asymmetrical balance, flowing lines, layered glazing, high-contrast lighting, organic spatial depth.\",
+    \"EVALUATION_CRITERIA\": [
+      \"Primary colors at 80–100% saturation (Fauvist intensity)\",
+      \"Layered, fluid brushwork (15–20 strokes per inch) on dragon wings (Miyazaki-style animation)\",
+      \"5:1 lighting contrast between glowing fungi and dark stone for dreamlike atmosphere\",
+      \"Emotional coherence and narrative atmosphere consistent with both Fauvism and Miyazaki’s style\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"Fauvism-meets-Miyazaki style: bold, saturated colors (80–100%), fluid layered brushwork (15–20 strokes/inch), 5:1 glowing fungi-to-dark stone contrast in a dreamlike fantasy cave.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Specific saturation range (80–100%) for primary colors to quantify Fauvist intensity and Miyazaki’s luminosity\",
+    \"Quantified brushwork as layered, fluid with 15–20 strokes per inch for dragon wings\",
+    \"Defined lighting contrast as 5:1 between glowing fungi and cave walls\",
+    \"Updated evaluation criteria with measurable, operational benchmarks\"
+  ]
+}"
+  }
+]

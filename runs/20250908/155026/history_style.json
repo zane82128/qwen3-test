@@ -1,0 +1,80 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Crayon Shin-chan’s naïve cartoon line and van Gogh’s bold, impasto colorism, with expressive, childlike energy and vibrant, non-natural hues.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Asymmetrical balance with dynamic diagonals, fragmented forms, and overlapping planes creating visual tension; structured yet loose spatial organization.\",
+    \"COLOR_TONALITY\": \"Earth tones with muted ochres, deep umbers, and soft greens; low saturation, cool-to-neutral bias with occasional sharp accents of crimson or cobalt.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Loose, gestural strokes with visible impasto texture; layered glazes and broken brushmarks to convey movement and emotional intensity.\",
+    \"EXPRESSION_THEME\": \"Inner turmoil, isolation, and existential reflection; themes of urban decay, fragmented identity, and quiet desperation.\",
+    \"HISTORICAL_CONTEXT\": \"Post-World War II European expressionism, influenced by German expressionism and early abstract expressionism, with echoes of contemporary minimalism.\"
+  },
+  \"MERGE_STRATEGY\": \"Blend the emotional intensity and expressive brushwork of German Expressionism with the structural looseness and spatial ambiguity of Abstract Expressionism, prioritizing emotional authenticity over formal coherence.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of dynamic diagonals and asymmetrical composition\",
+    \"Use of muted earth tones with strategic high-contrast accents\",
+    \"Visible, gestural brushwork with impasto texture\",
+    \"Thematic focus on psychological isolation and inner conflict\",
+    \"Historical roots in 20th-century European expressive movements\"
+  ],
+  \"CONFIDENCE\": 0.92
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color palette or tonal range (e.g., cool vs. warm, chiaroscuro ratios) is characteristic of this style in terms of dominant hues and contrasts?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Establishes the visual signature and emotional tone of the style through chromatic choices.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3-5 key colors with dominant/secondary ratios (e.g., 60% blue, 30% ochre, 10% red)\",
+      \"DEPENDENCIES\": [\"color palette\", \"tonal contrast\"]
+    },
+    {
+      \"Q\": \"How does brushwork vary across different elements (e.g., background vs. foreground) in terms of stroke density, direction, and layering?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Reveals the artist’s control and how technique supports composition and mood.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"structured breakdown by zone (e.g., background: soft, flowing; figures: sharp, directional)\",
+      \"DEPENDENCIES\": [\"brushwork description\", \"layering references\"]
+    },
+    {
+      \"Q\": \"What compositional devices (e.g., symmetry, rule of thirds, diagonal lines) are most consistently used to structure the scene, and how do they influence viewer perception?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Clarifies how form guides attention and creates narrative or emotional impact.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of 2-3 devices with examples and their effect on viewer focus\",
+      \"DEPENDENCIES\": [\"composition\", \"spatial arrangement\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Does this style avoid certain compositional devices (e.g., symmetry, central focus) that are typical in other styles?\",
+    \"Are there any specific colors or brushwork techniques explicitly excluded or rejected in this style?\",
+    \"Does the expression theme contradict the historical context or subject matter?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions 'high contrast' THEN ask for specific light-dark ratios or shadow-to-light percentages\",
+    \"IF BRUSHWORK_TECHNIQUE references 'impasto' THEN ask for average stroke thickness in millimeters or brush size used\",
+    \"IF COMPOSITIONAL_DEVICES includes 'framing' THEN ask for specific elements used (e.g., architecture, natural forms)\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"none\",
+    \"COLOR_TONALITY\": \"none\",
+    \"EXPRESSION_THEME\": \"none\",
+    \"HISTORICAL_CONTEXT\": \"none\",
+    \"SUBJECT_MATTER\": \"none\",
+    \"COMPOSITIONAL_DEVICES\": \"none\",
+    \"EVALUATION_CRITERIA\": \"none\"
+  },
+  \"PROMPT_SNIPPET\": \"none\",
+  \"CHANGES_SINCE_PREV\": []
+}"
+  }
+]

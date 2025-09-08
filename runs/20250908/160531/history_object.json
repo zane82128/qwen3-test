@@ -1,0 +1,208 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"A central figure in fantasy cave scenes, often depicted in stylized or heroic poses within mystical settings.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"humanoid, stylized silhouette with simplified features\",
+        \"COLOR_PALETTE\": \"soft pastels to earthy tones, often with high contrast against cave walls\",
+        \"CONTEXT\": \"cave interior, often near dragon or in mystical lighting\",
+        \"COMPOSITION_ROLE\": \"main subject / focal point\"
+      },
+      \"ICONOGRAPHY\": \"symbol of exploration, courage, or connection to ancient magic\",
+      \"VARIANTS\": [\"wearing a cloak\", \"holding a torch\", \"standing near a dragon\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"A classic fantasy creature frequently appearing in cave environments, representing power and ancient secrets.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine with scaled body, wings, and often a prominent head\",
+        \"COLOR_PALETTE\": \"deep reds, metallic golds, dark blues; high contrast with cave lighting\",
+        \"CONTEXT\": \"cave entrance or deep caverns, often coexisting with the girl\",
+        \"COMPOSITION_ROLE\": \"primary antagonist or majestic presence\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wisdom, danger, or primordial forces\",
+      \"VARIANTS\": [\"fire-breathing\", \"stone-skinned\", \"half-transformed\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"A defining environmental feature in cave-based fantasy scenes, often textured or illuminated.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"vertical, jagged or smooth surfaces with natural formations\",
+        \"COLOR_PALETTE\": \"dark gray, black, with speckled or glowing accents\",
+        \"CONTEXT\": \"interior of cave, background or mid-ground\",
+        \"COMPOSITION_ROLE\": \"background setting / depth anchor\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hidden knowledge or ancient origins\",
+      \"VARIANTS\": [\"carved with runes\", \"glowing with bioluminescence\", \"covered in moss\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"cave light\",
+      \"WHY\": \"Commonly used to create atmosphere in cave scenes, often from torches or magical sources.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular flame, glowing orb, or flickering light source\",
+        \"COLOR_PALETTE\": \"warm yellow, orange, with deep shadows\",
+        \"CONTEXT\": \"interior of cave, near the girl or dragon\",
+        \"COMPOSITION_ROLE\": \"atmospheric accent / visual contrast\"
+      },
+      \"ICONOGRAPHY\": \"symbol of guidance or discovery\",
+      \"VARIANTS\": [\"torch\", \"glowing crystal\", \"bioluminescent fungus\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional influences on the dragon's appearance in this setting?\",
+    \"How does the lighting affect the perception of the girl's form or emotions?\",
+    \"Is the cave environment more natural or engineered (e.g., ancient temple)?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 80–120%) must be present in the primary colors (red, yellow, blue) to meet the Fauvist intensity requirement in a cave scene with a girl and dragon?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures the bold, high-saturation palette is quantitatively defined and measurable against Fauvism’s core criteria.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80–120%)\",
+      \"DEPENDENCIES\": [\"high-saturation\", \"primary colors\", \"Fauvism\", \"evaluation criteria\"]
+    },
+    {
+      \"Q\": \"How should the brushwork texture (e.g., impasto thickness, stroke direction) differ between the girl’s silhouette and the dragon’s scales to reflect both Fauvist expressiveness and Miyazaki’s organic naturalism?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies how gestural technique varies by subject to balance emotional intensity with narrative harmony.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"comparison (e.g., 'girl: thin, fluid strokes; dragon: thick, layered impasto')\",
+      \"DEPENDENCIES\": [\"expressive\", \"gestural\", \"impasto\", \"Miyazaki-style organic forms\"]
+    },
+    {
+      \"Q\": \"In what spatial relationship should the girl and dragon be arranged (e.g., diagonally opposed, overlapping, symmetrically balanced) to satisfy the 'non-logical spatial arrangements' and 'whimsical scale shifts' in the composition?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Validates the surreal, dynamic layout required by the style’s core compositional principles.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial description (e.g., 'diagonally offset with the dragon larger than the girl')\",
+      \"DEPENDENCIES\": [\"organic\", \"non-logical\", \"whimsical scale shifts\", \"surreal natural elements\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the color palette muted or grounded in earth tones (e.g., browns, greens) to contradict Fauvism’s high-saturation requirement?\",
+    \"Does the brushwork appear flat or uniform, lacking visible gestural or impasto texture?\",
+    \"Are the girl and dragon arranged in a logical, realistic spatial hierarchy (e.g., foreground-background) that undermines the whimsical, dynamic composition?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation below 80% THEN ask for justification against evaluation criteria\",
+    \"IF BRUSHWORK_TECHNIQUE lacks impasto or gestural variation THEN probe for specific texture examples per object\",
+    \"IF FORM_COMPOSITION is logically structured THEN ask for evidence of scale shifts or surreal elements\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"90–130%\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"girl: thin, fluid strokes with soft edges; dragon: thick, layered impasto with visible scale textures and slight texture blending\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"diagonally offset with the dragon larger than the girl and floating slightly above the cave floor, creating a whimsical scale shift\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Central figure in whimsical cave scenes, rendered with fluid brushwork to match Fauvist expressiveness and Miyazaki’s soft naturalism\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"stylized humanoid silhouette with simplified facial features\",
+        \"COLOR_PALETTE\": \"high-saturation primary colors (red, yellow, blue) at 90–130% saturation, balanced against cave walls\",
+        \"SCALE_POSE\": \"smaller, grounded, diagonally offset, slightly below dragon\",
+        \"CONTEXT\": \"cave interior, near dragon or light source\",
+        \"COMPOSITION_ROLE\": \"focal point / emotional anchor\"
+      },
+      \"ICONOGRAPHY\": \"symbol of curiosity, innocence, and gentle courage in fantasy settings\",
+      \"VARIANTS\": [\"wearing a red cloak\", \"holding a glowing torch\", \"smiling softly\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Majestic and whimsical creature with expressive impasto texture, embodying both power and gentle wonder through Fauvist color and Miyazaki-style organic form\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine with large wings, prominent head, and detailed scale patterns\",
+        \"COLOR_PALETTE\": \"electric reds, metallic golds, cerulean blues at 90–130% saturation, high contrast with cave lighting\",
+        \"SCALE_POSE\": \"larger than girl, floating above cave floor, diagonally offset\",
+        \"CONTEXT\": \"cave entrance or mid-cavern, coexisting with girl\",
+        \"COMPOSITION_ROLE\": \"majestic presence / dynamic anchor\"
+      },
+      \"ICONOGRAPHY\": \"symbol of ancient wisdom, gentle power, and natural harmony\",
+      \"VARIANTS\": [\"fire-breathing gently\", \"half-transformed into moss-covered stone\", \"with glowing eyes\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"Provides environmental depth and contrast, with glowing or textured surfaces that enhance the dreamlike atmosphere through high-saturation color interactions\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"vertical, jagged or smooth surfaces with natural formations or cracks\",
+        \"COLOR_PALETTE\": \"dark gray, black, with glowing blue or red bioluminescent specks at 90–130% saturation\",
+        \"SCALE_POSE\": \"background depth anchor, extending behind both girl and dragon\",
+        \"CONTEXT\": \"interior of cave, mid-ground or background\",
+        \"COMPOSITION_ROLE\": \"depth anchor / atmospheric contrast\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hidden knowledge and ancient origins\",
+      \"VARIANTS\": [\"carved with glowing runes\", \"covered in floating moss\", \"with pulsing light veins\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"cave light\",
+      \"WHY\": \"Creates emotional warmth and visual contrast, using high-saturation color to highlight the girl and dragon against dark cave environment\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"circular flame, glowing orb, or flickering light source\",
+        \"COLOR_PALETTE\": \"warm yellow-orange at 90–130% saturation, with deep shadows in contrast\",
+        \"SCALE_POSE\": \"small, central, positioned near girl or dragon\",
+        \"CONTEXT\": \"interior of cave, near the girl or dragon\",
+        \"COMPOSITION_ROLE\": \"atmospheric accent / emotional guide\"
+      },
+      \"ICONOGRAPHY\": \"symbol of guidance, discovery, and gentle wonder\",
+      \"VARIANTS\": [\"torch\", \"glowing crystal\", \"bioluminescent fungus\"],
+      \"CONFIDENCE\": 0.85
+    },
+    {
+      \"NAME\": \"floating flower\",
+      \"WHY\": \"Adds surreal, whimsical natural element in line with style’s requirement for organic, non-logical spatial arrangements and floating forms\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"soft, blooming flower with curving petals, floating mid-air\",
+        \"COLOR_PALETTE\": \"electric pink, magenta, and yellow at 90–130% saturation, contrasting with cave tones\",
+        \"SCALE_POSE\": \"small, floating above the cave floor, near dragon or girl\",
+        \"CONTEXT\": \"cave interior, mid-air, out of ground-level logic\",
+        \"COMPOSITION_ROLE\": \"rhythm / whimsical accent\"
+      },
+      \"ICONOGRAPHY\": \"symbol of joy, innocence, and natural magic\",
+      \"VARIANTS\": [\"blossoming in mid-air\", \"with glowing centers\", \"waving gently\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"girl with thin, fluid strokes in high-saturation colors (90–130%)\",
+    \"dragon with thick impasto scales in electric reds and golds\",
+    \"cave wall with glowing blue and red specks at high saturation\",
+    \"cave light in warm yellow-orange, contrasting with dark cave\",
+    \"floating flower mid-air, glowing pink and magenta\"
+  ],
+  \"UPDATE_PROMPT\": \"A whimsical cave scene with a girl and dragon in dynamic, non-logical space, bold high-saturation colors (90–130%), floating flowers, and expressive brushwork.\"
+}"
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical animation—bold, vibrant colors, expressive lines, and dreamlike naturalism.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, dynamic arrangements with organic, flowing lines; non-logical spatial relationships; whimsical, childlike scale shifts and surreal natural elements (e.g., trees with smiling faces, floating flowers).\",
+    \"COLOR_TONALITY\": \"High-saturation, emotionally charged palette with primary and secondary hues (e.g., electric yellows, cerulean blues, magenta); bold contrasts between adjacent areas; no muted or earth-toned grounding.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural strokes with visible impasto texture; layered washes and splatters to create luminosity; fluid, animated-like motion in line rendering.\",
+    \"EXPRESSION_THEME\": \"Dreamlike naturalism, emotional whimsy, harmony between nature and fantasy; themes of joy, innocence, and gentle wonder in everyday environments.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Vlaminck) fused with modern Japanese animation aesthetics (Miyazaki’s Studio Ghibli films like 'My Neighbor Totoro' and 'Spirited Away').\"
+  },
+  \"MERGE_STRATEGY\": \"Fauvism provides the chromatic intensity and expressive brushwork; Miyazaki’s style contributes narrative whimsy, soft naturalism, and emotional tone. Merge by retaining Fauvism’s bold color contrasts and gestural lines while embedding Miyazaki’s organic forms, gentle emotional resonance, and dreamlike environments into the composition.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of at least three primary colors used with high saturation and contrast\",
+    \"Organic, non-logical spatial arrangements with whimsical natural elements\",
+    \"Expressive, visible brushwork with impasto or gestural texture\",
+    \"Emotional tone consistent with gentle wonder and joy, not chaotic or aggressive\",
+    \"Balance between Fauvist color intensity and Miyazaki-style narrative harmony\"
+  ],
+  \"CONFIDENCE\": 0.93
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 80–120%) must be present in the primary colors (red, yellow, blue) to meet the Fauvist intensity requirement in a cave scene with a girl and dragon?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures the bold, high-saturation palette is quantitatively defined and measurable against Fauvism’s core criteria.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80–120%)\",
+      \"DEPENDENCIES\": [\"high-saturation\", \"primary colors\", \"Fauvism\", \"evaluation criteria\"]
+    },
+    {
+      \"Q\": \"How should the brushwork texture (e.g., impasto thickness, stroke direction) differ between the girl’s silhouette and the dragon’s scales to reflect both Fauvist expressiveness and Miyazaki’s organic naturalism?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies how gestural technique varies by subject to balance emotional intensity with narrative harmony.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"comparison (e.g., 'girl: thin, fluid strokes; dragon: thick, layered impasto')\",
+      \"DEPENDENCIES\": [\"expressive\", \"gestural\", \"impasto\", \"Miyazaki-style organic forms\"]
+    },
+    {
+      \"Q\": \"In what spatial relationship should the girl and dragon be arranged (e.g., diagonally opposed, overlapping, symmetrically balanced) to satisfy the 'non-logical spatial arrangements' and 'whimsical scale shifts' in the composition?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Validates the surreal, dynamic layout required by the style’s core compositional principles.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"spatial description (e.g., 'diagonally offset with the dragon larger than the girl')\",
+      \"DEPENDENCIES\": [\"organic\", \"non-logical\", \"whimsical scale shifts\", \"surreal natural elements\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the color palette muted or grounded in earth tones (e.g., browns, greens) to contradict Fauvism’s high-saturation requirement?\",
+    \"Does the brushwork appear flat or uniform, lacking visible gestural or impasto texture?\",
+    \"Are the girl and dragon arranged in a logical, realistic spatial hierarchy (e.g., foreground-background) that undermines the whimsical, dynamic composition?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation below 80% THEN ask for justification against evaluation criteria\",
+    \"IF BRUSHWORK_TECHNIQUE lacks impasto or gestural variation THEN probe for specific texture examples per object\",
+    \"IF FORM_COMPOSITION is logically structured THEN ask for evidence of scale shifts or surreal elements\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"90–130%\",
+      \"RATIONALE\": \"Meets Fauvist requirement for bold, high-saturation primary colors while maintaining emotional intensity in cave lighting.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"girl: thin, fluid strokes with soft edges; dragon: thick, layered impasto with visible scale textures and slight texture blending\",
+      \"RATIONALE\": \"Balances Fauvist expressiveness with Miyazaki’s organic, tactile naturalism through material variation.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"diagonally offset with the dragon larger than the girl and floating slightly above the cave floor, creating a whimsical scale shift\",
+      \"RATIONALE\": \"Enforces non-logical spatial arrangement and whimsical scale shifts as required by the style’s surreal naturalism.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, dynamic arrangements with organic, flowing lines; non-logical spatial relationships; whimsical, childlike scale shifts and surreal natural elements (e.g., trees with smiling faces, floating flowers), now explicitly including floating or oversized creatures in cave scenes.\",
+    \"COLOR_TONALITY\": \"High-saturation, emotionally charged palette with primary and secondary hues (e.g., electric yellows, cerulean blues, magenta); bold contrasts between adjacent areas with saturation maintained at 90–130%; no muted or earth-toned grounding.\",
+    \"EXPRESSION_THEME\": \"Dreamlike naturalism, emotional whimsy, harmony between nature and fantasy; themes of joy, innocence, and gentle wonder in everyday environments, now applied to fantasy cave settings with emotional resonance through light and form.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th-century Fauvism (Matisse, Vlaminck) fused with modern Japanese animation aesthetics (Miyazaki’s Studio Ghibli films like 'My Neighbor Totoro' and 'Spirited Away'), now specifically applied to cave fantasy scenes with narrative-driven emotional tone.\",
+    \"SUBJECT_MATTER\": \"Fantasy cave environments featuring a stylized girl and a dragon in dynamic, non-logical spatial relationships with whimsical scale shifts.\",
+    \"COMPOSITIONAL_DEVICES\": \"Diagonal offset, scale inversion, floating forms, and impasto texture variation to create surreal, emotionally resonant spatial dynamics.\",
+    \"EVALUATION_CRITERIA\": [
+      \"Primary colors (red, yellow, blue) with saturation between 90–130%\",
+      \"Organic, non-logical spatial arrangements with whimsical scale shifts (e.g., dragon larger than girl, floating above ground)\",
+      \"Expressive brushwork: thin fluid strokes for girl, thick impasto for dragon scales\",
+      \"Emotional tone of gentle wonder and joy, not chaotic or aggressive\",
+      \"Balance between Fauvist color intensity and Miyazaki-style narrative harmony\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"Fauvism-meets-Miyazaki style: bold, high-saturation colors (90–130%), expressive brushwork, and whimsical cave compositions with floating or oversized elements.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Quantified color saturation range to 90–130% for primary colors\",
+    \"Specified brushwork differences between girl (fluid) and dragon (impasto)\",
+    \"Defined spatial arrangement as diagonally offset with scale inversion\",
+    \"Updated evaluation criteria to include measurable thresholds and object-specific texture\"
+  ]
+}"
+  }
+]

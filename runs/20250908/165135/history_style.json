@@ -1,0 +1,117 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical, expressive style—vivid, unmodulated colors, soft flowing lines, and dreamlike naturalism.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, fluid lines; asymmetrical layouts emphasizing movement and whimsy; natural elements rendered with dynamic, non-representational gestures.\",
+    \"COLOR_TONALITY\": \"Vivid, unmodulated color palette dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green, magenta); high saturation with no tonal gradation or realism; dreamlike contrasts between bright and unexpected color pairings.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Soft, gestural brushstrokes with a sense of spontaneity; blended edges and layered washes to create a sense of softness and motion; minimal detail, emphasizing emotional expression over precision.\",
+    \"EXPRESSION_THEME\": \"Dreamlike naturalism, gentle whimsy, and emotional resonance; scenes of animals, forests, and fantastical landscapes that feel both familiar and enchanted; focus on inner emotion and harmony with nature.\",
+    \"HISTORICAL_CONTEXT\": \"Rooted in early 20th-century Fauvism (Matisse, Van Dyck) and modern Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, especially 'My Neighbor Totoro' and 'Spirited Away')—a fusion of expressive color and narrative empathy.\"
+  },
+  \"MERGE_STRATEGY\": \"Prioritize Fauvism's unmodulated color intensity and emotional boldness, then overlay Miyazaki’s soft, flowing line quality and narrative-driven dreamlike environments to create a balanced, emotionally resonant style that retains both vibrancy and gentle whimsy.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of vivid, non-naturalistic color without tonal blending or gradients\",
+    \"Use of soft, flowing lines that suggest movement and organic forms\",
+    \"Emotional and dreamlike atmosphere with naturalistic yet fantastical elements\",
+    \"Balance between Fauvist intensity and Miyazaki’s narrative warmth\"
+  ],
+  \"CONFIDENCE\": 0.94
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation levels (e.g., 80–120%) should be used for the primary colors (cobalt blue, burnt orange, lime green) to maintain Fauvist intensity while aligning with Miyazaki’s soft, dreamlike tone?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Saturation directly affects the balance between Fauvist boldness and Miyazaki’s gentle emotional warmth.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 80–120%)\",
+      \"DEPENDENCIES\": [\"vivid, unmodulated color palette\", \"high saturation\", \"dreamlike contrasts\"]
+    },
+    {
+      \"Q\": \"How should the brushwork thickness vary between the girl’s flowing hair and the dragon’s scales to reflect both emotional expression and textural contrast?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Thickness variation supports emotional resonance and tactile realism within the gestural style.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"range or description (e.g., hair: light, soft strokes; scales: layered, textured impasto)\",
+      \"DEPENDENCIES\": [\"soft, gestural brushstrokes\", \"emotional expression\", \"textural contrast\"]
+    },
+    {
+      \"Q\": \"In the cave wall’s glowing veins, what specific color pairings (e.g., cyan with magenta) should be used to create a sense of ancient magic while avoiding realism?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Color pairings in glowing elements define the dreamlike, fantastical atmosphere and emotional tone of the scene.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"specific color pairs (e.g., cyan-magenta, yellow-purple)\",
+      \"DEPENDENCIES\": [\"glowing with bioluminescence\", \"dreamlike naturalism\", \"non-realistic color\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the cave wall or dragon use tonal gradients or realistic shading to break the Fauvist or Miyazaki aesthetic?\",
+    \"Is the girl’s clothing or hair rendered with precise, defined outlines instead of soft, flowing lines?\",
+    \"Are the colors muted or blended to suggest realism rather than emotional expression?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions specific saturation ranges THEN ask for exact color values (e.g., cobalt blue: #003366)\",
+    \"IF BRUSHWORK_TECHNIQUE references thickness THEN ask for stroke direction (e.g., flowing vs. layered)\",
+    \"IF COLOR_PAIRINGS are listed in glowing elements THEN ask for their placement (e.g., top-left corner, midwall)\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"90–110%\",
+      \"RATIONALE\": \"Maintains Fauvist intensity while softening edge sharpness to align with Miyazaki’s dreamlike warmth.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"hair: light, soft, flowing strokes; scales: layered, textured impasto with subtle variation in pressure\",
+      \"RATIONALE\": \"Creates emotional fluidity in the girl’s form while establishing tactile depth in the dragon’s scales.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"cyan-magenta, yellow-purple\",
+      \"RATIONALE\": \"Produces vivid, non-naturalistic contrasts that evoke ancient magic without realism.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with flowing, fluid lines; asymmetrical layouts emphasizing movement and whimsy; natural elements rendered with dynamic, non-representational gestures.\",
+    \"COLOR_TONALITY\": \"Vivid, unmodulated color palette dominated by primary and complementary hues (e.g., cobalt blue, burnt orange, lime green, magenta) at 90–110% saturation; dreamlike contrasts using cyan-magenta and yellow-purple in glowing elements; no tonal gradients or realism.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Soft, gestural brushstrokes with variation in thickness: hair uses light, flowing strokes; dragon scales use layered, textured impasto with subtle pressure variation to create tactile contrast and emotional depth.\",
+    \"EXPRESSION_THEME\": \"Dreamlike naturalism, gentle whimsy, and emotional resonance; scenes of animals, forests, and fantastical landscapes that feel both familiar and enchanted; focus on inner emotion and harmony with nature.\",
+    \"HISTORICAL_CONTEXT\": \"Rooted in early 20th-century Fauvism (Matisse, Van Dyck) and modern Japanese animation aesthetics (Miyazaki’s Studio Ghibli films, especially 'My Neighbor Totoro' and 'Spirited Away')—a fusion of expressive color and narrative empathy with enhanced saturation and emotional texture.\",
+    \"SUBJECT_MATTER\": \"Fantasy cave scenes featuring a girl, a dragon, and glowing cave walls; emotional and narrative focus on exploration, courage, and connection to ancient magic.\",
+    \"COMPOSITIONAL_DEVICES\": \"Asymmetrical balance, flowing lines, dynamic negative space, and focal point anchoring through the girl’s posture and the dragon’s presence.\",
+    \"EVALUATION_CRITERIA\": [
+      \"Primary colors at 90–110% saturation with no tonal blending or gradients\",
+      \"Hair: light, flowing strokes; dragon scales: layered impasto with texture variation\",
+      \"Glowing veins use cyan-magenta or yellow-purple pairings for non-realistic, magical effect\",
+      \"Emotional and dreamlike atmosphere preserved through consistent style balance\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"Fauvist intensity with Miyazaki-inspired dreamlike softness: vivid, high-saturation colors (90–110%), flowing lines, and emotional textures in a fantasy cave scene with a girl, dragon, and glowing walls.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Saturation range refined to 90–110% for balanced Fauvism and Miyazaki warmth\",
+    \"Added specific color pairs (cyan-magenta, yellow-purple) for glowing cave veins\",
+    \"Defined brushwork thickness and texture variation between girl’s hair and dragon’s scales\",
+    \"Explicitly ruled out tonal gradients, realistic shading, or precise outlines\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions specific saturation ranges THEN ask for exact color values (e.g., cobalt blue: #003366)\",
+    \"IF BRUSHWORK_TECHNIQUE references thickness THEN ask for stroke direction (e.g., flowing vs. layered)\",
+    \"IF COLOR_PAIRINGS are listed in glowing elements THEN ask for their placement (e.g., top-left corner, midwall)\"
+  ]
+}"
+  }
+]

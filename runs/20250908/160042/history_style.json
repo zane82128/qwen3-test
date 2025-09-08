@@ -1,0 +1,24 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "Fauvism blended with Miyazaki’s whimsical, expressive style—bold, vibrant colors, fluid lines, and dreamlike fantasy atmosphere.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, organic forms with dynamic, flowing lines; non-figurative or stylized figures in surreal, dreamlike arrangements; emphasis on emotional expression over realism.\",
+    \"COLOR_TONALITY\": \"Highly saturated, bold primary and secondary colors (e.g., cadmium red, cobalt blue, lemon yellow); exaggerated color contrasts; vibrant yet harmonious palettes with no naturalistic gradients.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Expressive, gestural brushstrokes with visible texture; fluid, sweeping motions; layered application to build color intensity and depth; minimal detail in form.\",
+    \"EXPRESSION_THEME\": \"Whimsical fantasy; playful, childlike imagination; emotional resonance through color and form; magical, idyllic environments with soft, floating elements.\",
+    \"HISTORICAL_CONTEXT\": \"Early 20th century Fauvism (Matisse, Vlaminck) fused with contemporary Japanese animation aesthetics (Miyazaki's Studio Ghibli films), emphasizing emotional storytelling and visual poetry.\"
+  },
+  \"MERGE_STRATEGY\": \"Prioritize Fauvism’s bold color and expressive brushwork as the core; integrate Miyazaki’s fluid line quality, dreamlike composition, and fantasy themes to enhance narrative and emotional tone without compromising color intensity or form freedom.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of at least three bold, non-naturalistic color blocks in a single composition\",
+    \"Fluid, non-geometric lines that suggest movement or emotion\",
+    \"Fantasy or imaginative elements (e.g., floating objects, magical creatures)\",
+    \"Color contrasts exceeding 80% saturation difference between adjacent hues\",
+    \"Emphasis on mood and atmosphere over realistic representation\"
+  ],
+  \"CONFIDENCE\": 0.95
+}"
+  }
+]

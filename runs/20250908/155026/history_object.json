@@ -1,0 +1,56 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [],
+  \"OPEN_QUESTIONS\": []
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color palette is commonly used in the depicted objects (e.g., dominant hues, undertones) in this style of painting?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"Color palette defines visual identity and distinguishes the style from others\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"list of 3-5 primary colors with undertones (e.g., 'cadmium red, burnt sienna, cool gray')\",
+      \"DEPENDENCIES\": [\"color references in LAST_RESPONSE\"]
+    },
+    {
+      \"Q\": \"What are the most common materials used in the construction of the objects (e.g., wood, metal, fabric), and how are they rendered in terms of texture and finish?\",
+      \"DIMENSION\": \"FORM, MATERIAL, TEXTURE\",
+      \"WHY\": \"Material and texture influence realism and tactile perception in object representation\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"bullet list of materials with texture descriptors (e.g., 'polished bronze with high gloss')\",
+      \"DEPENDENCIES\": [\"material mentions in LAST_RESPONSE\", \"texture descriptions\"]
+    },
+    {
+      \"Q\": \"In what compositional roles do the objects appear (e.g., foreground focus, background support, symbolic reference), and how does their scale or pose relate to the surrounding scene?\",
+      \"DIMENSION\": \"SCALE_POSE, COMPOSITION_ROLE\",
+      \"WHY\": \"Composition role reveals functional or narrative intent of the object within the scene\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"list of roles with scale/pose examples (e.g., 'large central object in mid-ground, slightly tilted')\",
+      \"DEPENDENCIES\": [\"scale/pose details in LAST_RESPONSE\", \"composition references\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Are there any objects in the style that are explicitly excluded (e.g., no mechanical devices, no glass items)?\",
+    \"Do the objects avoid certain textures (e.g., no rough stone, no organic decay)?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes cool tones THEN ask for specific examples of objects with reflective surfaces\",
+    \"IF MATERIAL includes organic elements THEN ask for common decay or aging indicators\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [],
+  \"UPDATE_OBJECTS\": [],
+  \"PROMPT_SNIPPETS\": [],
+  \"UPDATE_PROMPT\": \"\"
+}"
+  }
+]
