@@ -1,0 +1,470 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Van Gogh’s impasto colorism and Studio Ghibli’s soft, dreamlike atmosphere, with swirling starry skies and delicate, flowing lines.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Swirling, organic forms with dynamic radiating patterns; layered spatial depth through overlapping celestial elements; flowing, fluid lines that suggest motion and continuity\",
+    \"COLOR_TONALITY\": \"Warm, vibrant hues with high saturation (Van Gogh-inspired: cadmium yellows, cobalt blues, burnt umber); soft, diffused tones with gentle transitions (Ghibli-inspired: pastel blues, lavender, soft greens, creamy whites); balanced contrast between bold impasto spots and ambient glow\",
+    \"BRUSHWORK_TECHNIQUE\": \"Impasto brushstrokes with thick, expressive layers and visible texture; blended edges with soft, smudged transitions to create a dreamlike haze; subtle layering to suggest depth and atmosphere\",
+    \"EXPRESSION_THEME\": \"A sense of wonder and quiet magic; celestial journeys through starry skies; emotional warmth and gentle melancholy; harmony between nature and the cosmos\",
+    \"HISTORICAL_CONTEXT\": \"Post-impressionist (Van Gogh) meets contemporary Japanese animation aesthetics (Ghibli); rooted in emotional expression and visual storytelling\"
+  },
+  \"MERGE_STRATEGY\": \"Integrate Van Gogh’s textured, emotionally charged impasto application with Ghibli’s atmospheric softness and organic flow; prioritize spatial harmony over conflict by balancing bold color patches with gentle gradients and flowing forms.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of swirling, starry skies with visible impasto texture\",
+    \"Use of warm, saturated colors contrasted with soft pastels\",
+    \"Flowing, organic lines that guide the viewer’s eye through the composition\",
+    \"Emotional tone consistent with both expressive energy and gentle dreaminess\"
+  ],
+  \"CONFIDENCE\": 0.94
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "ENVIRONMENTS: windmill, bicycle, swirling stars",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Windmills are iconic structures in rural and historical European landscapes, often associated with wind energy and agricultural activity.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with rotating blades, often with a conical or square base\",
+        \"COLOR_PALETTE\": \"tan, beige, white, or weathered brown; often contrasted with sky or fields\",
+        \"CONTEXT\": \"rural countryside, open fields, coastal areas\",
+        \"COMPOSITION_ROLE\": \"foreground subject or central landmark\"
+      },
+      \"ICONOGRAPHY\": \"symbol of wind power, rural simplicity, and historical continuity\",
+      \"VARIANTS\": [\"tower windmill\", \"horizontal-axis windmill\", \"solar-wind hybrid\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Bicycles are common in urban and leisure scenes, representing mobility, youth, and modernity in artistic depictions.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"two-wheeled frame with handlebars, pedals, and a seat; often simplified or stylized\",
+        \"COLOR_PALETTE\": \"red, blue, green, or bright primary colors; sometimes monochrome\",
+        \"CONTEXT\": \"urban streets, parks, countryside paths\",
+        \"COMPOSITION_ROLE\": \"foreground accent or dynamic movement element\"
+      },
+      \"ICONOGRAPHY\": \"symbol of freedom, individualism, and post-industrial culture\",
+      \"VARIANTS\": [\"road bike\", \"bicycle with basket\", \"cycling in motion\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"swirling stars\",
+      \"WHY\": \"Swirling star motifs appear in celestial art, especially in cosmic or dreamlike compositions, evoking movement and infinity.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"spiral or vortex patterns with radiating lines, often abstracted into star-like forms\",
+        \"COLOR_PALETTE\": \"deep blues, purples, golds, and whites; high contrast and luminosity\",
+        \"CONTEXT\": \"sky, night scenes, abstract backgrounds\",
+        \"COMPOSITION_ROLE\": \"background motif or central abstract element\"
+      },
+      \"ICONOGRAPHY\": \"symbol of cosmic energy, fate, or spiritual journey\",
+      \"VARIANTS\": [\"nebula swirl\", \"galactic vortex\", \"constellation spiral\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the windmill and bicycle intended to represent specific cultural or historical movements?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of cadmium yellow to cobalt blue saturation levels should be used in the impasto spots to maintain Van Gogh's expressive intensity while avoiding visual clash with the Ghibli-inspired pastel gradients?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Directly links the core color balance required for the hybrid style and ensures measurable contrast between bold and soft tones.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 60-90% saturation for cadmium yellows; 40-70% for cobalt blues)\",
+      \"DEPENDENCIES\": [\"warm, vibrant hues with high saturation\", \"soft, diffused tones with gentle transitions\"]
+    },
+    {
+      \"Q\": \"How should the flowing lines connecting the windmill and bicycle to the swirling stars be structured in terms of curve density and directionality—e.g., radial, serpentine, or looping—to guide viewer movement while maintaining organic continuity?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Clarifies how compositional flow integrates the three objects into a unified, dynamic narrative structure.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"type (e.g., radial, serpentine) and density (e.g., 3-5 curves per 10 cm)\",
+      \"DEPENDENCIES\": [\"flowing, fluid lines that suggest motion and continuity\", \"swirling, organic forms with dynamic radiating patterns\"]
+    },
+    {
+      \"Q\": \"What percentage of the composition should be occupied by the swirling stars as a background element, and how should the windmill and bicycle be positioned relative to it (e.g., grounded, floating, emerging) to reflect the balance between cosmic wonder and earthly presence?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Establishes spatial hierarchy and emotional contrast between celestial and terrestrial elements.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 60% stars), positioning (e.g., windmill at lower third, bicycle mid-ground)\",
+      \"DEPENDENCIES\": [\"swirling, starry skies with visible impasto texture\", \"foreground subject or central landmark\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle appear as static or disconnected from the swirling stars to avoid breaking the sense of celestial journey?\",
+    \"Could the impasto texture be applied uniformly across all elements, undermining the contrast between bold and soft tones?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions saturation range below 50% for impasto spots THEN ask for specific examples of color combinations that preserve emotional warmth\",
+    \"IF FORM_COMPOSITION specifies serpentine or looping lines THEN ask for curvature radius and line thickness range\",
+    \"IF COMPOSITIONAL_DEVICES indicates stars occupy over 70% of the canvas THEN ask how the windmill and bicycle are visually anchored\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"60-90% saturation for cadmium yellows; 40-70% saturation for cobalt blues\",
+      \"RATIONALE\": \"Maintains Van Gogh’s expressive intensity while preserving soft pastel gradients in Ghibli-style backgrounds.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"serpentine curves with 4-6 curves per 10 cm, flowing from windmill to bicycle and into the stars\",
+      \"RATIONALE\": \"Provides organic continuity and dynamic movement without rigid radial symmetry.\",
+      \"CONFIDENCE\": 0.93
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"60% stars in background; windmill at lower third, bicycle in mid-ground, both grounded and slightly illuminated by starlight\",
+      \"RATIONALE\": \"Balances cosmic wonder with earthly presence through clear spatial hierarchy and visual connection.\",
+      \"CONFIDENCE\": 0.92
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Serpentine, flowing lines (4–6 per 10 cm) connect windmill and bicycle to swirling stars, maintaining organic continuity and dynamic movement\",
+    \"COLOR_TONALITY\": \"Cadmium yellows at 60–90% saturation; cobalt blues at 40–70%; contrasted with soft pastels (pastel blues, lavender, creamy whites) in gradients\",
+    \"EXPRESSION_THEME\": \"Celestial journey grounded in earthly presence; emotional warmth from windmill and bicycle, enhanced by starlight\",
+    \"HISTORICAL_CONTEXT\": \"Van Gogh’s expressive impasto fused with Ghibli’s dreamlike flow and narrative cohesion\",
+    \"SUBJECT_MATTER\": \"Windmill, bicycle, and swirling stars forming a narrative arc from earth to cosmos\",
+    \"COMPOSITIONAL_DEVICES\": \"60% background stars; windmill grounded at lower third, bicycle mid-ground, both illuminated by starlight; serpentine lines guide viewer movement\",
+    \"EVALUATION_CRITERIA\": [
+      \"Cadmium yellows and cobalt blues within specified saturation ranges\",
+      \"Serpentine lines with 4–6 curves per 10 cm linking all elements\",
+      \"60% stars in background with windmill and bicycle clearly grounded and connected\",
+      \"Emotional continuity between earthly and celestial elements\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"Van Gogh-inspired impasto with 60–90% cadmium yellow and 40–70% cobalt blue saturation, connected by serpentine flowing lines to a 60% swirling star background, with a grounded windmill and mid-ground bicycle\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific saturation ranges for cadmium yellow and cobalt blue\",
+    \"Defined serpentine line density (4–6 per 10 cm) and directionality\",
+    \"Specified 60% stars in background with grounded positioning of windmill and bicycle\",
+    \"Enhanced evaluation criteria with measurable compositional and color metrics\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific color saturation ranges should be applied to the windmill and bicycle to maintain Van Gogh’s impasto intensity while contrasting with the soft pastel gradients of the Ghibli-inspired sky?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures the earthly objects retain emotional warmth and texture while balancing against the celestial softness.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"saturation range (e.g., 60-90% for windmill; 40-70% for bicycle)\",
+      \"DEPENDENCIES\": [\"warm, vibrant hues with high saturation\", \"soft, diffused tones with gentle transitions\"]
+    },
+    {
+      \"Q\": \"How should the flowing lines connecting the windmill and bicycle to the swirling stars be structured in terms of curve density (e.g., 4–6 per 10 cm) and directionality (e.g., serpentine, looping), and what texture should they exhibit (e.g., impasto, soft blend) to maintain organic continuity?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Clarifies how movement and visual connection are established between the three elements in a unified narrative.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"curve density (e.g., 4–6 per 10 cm), directionality (e.g., serpentine), texture (e.g., impasto or soft blend)\",
+      \"DEPENDENCIES\": [\"serpentine curves with 4–6 curves per 10 cm\", \"flowing, fluid lines that suggest motion and continuity\"]
+    },
+    {
+      \"Q\": \"What percentage of the composition should be occupied by the swirling stars, and how should the windmill and bicycle be positioned (e.g., lower third, mid-ground) relative to the stars to maintain a grounded celestial journey?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Establishes spatial hierarchy and emotional balance between earthly presence and cosmic wonder.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 60%), positioning (e.g., windmill at lower third, bicycle mid-ground)\",
+      \"DEPENDENCIES\": [\"60% stars in background\", \"windmill at lower third, bicycle in mid-ground\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle appear disconnected from the swirling stars or lack visible connection lines to break narrative continuity?\",
+    \"Could the windmill or bicycle be rendered in flat, non-impasto tones, undermining the Van Gogh-inspired emotional texture?\",
+    \"Is the starry background too dominant (over 70%) or too sparse (under 40%), disrupting the emotional balance between earth and sky?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY specifies saturation below 50% for windmill or bicycle THEN ask for specific color combinations that preserve emotional warmth\",
+    \"IF FORM_COMPOSITION indicates serpentine lines with less than 4 curves per 10 cm THEN ask for curvature radius and line thickness range\",
+    \"IF COMPOSITIONAL_DEVICES shows stars over 70% THEN ask how the windmill and bicycle are visually anchored to prevent floating or disconnection\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"60-90% saturation for windmill; 40-70% saturation for bicycle\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"4–6 curves per 10 cm, serpentine directionality, impasto texture with soft blend transitions\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"60% stars; windmill at lower third, bicycle in mid-ground\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Represents grounded earthiness and rural heritage, with impasto texture reinforcing Van Gogh’s emotional warmth and contrast to soft sky gradients\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with rotating blades, conical base\",
+        \"COLOR_PALETTE\": \"burnt umber, deep red, cadmium yellow (60–90% saturation); weathered textures\",
+        \"SCALE_POSE\": \"large, grounded, slightly tilted, positioned at lower third\",
+        \"CONTEXT\": \"rural countryside under starry sky\",
+        \"COMPOSITION_ROLE\": \"foreground anchor with emotional weight\"
+      },
+      \"ICONOGRAPHY\": \"symbol of stability, tradition, and quiet resilience in a cosmic journey\",
+      \"VARIANTS\": [\"rusty windmill\", \"sunlit windmill\", \"windmill with glowing blades\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Represents youthful movement and human connection to the earth, dynamically linked to stars via flowing lines, enhancing narrative continuity\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"two-wheeled frame with handlebars, pedals, seat; simplified and stylized\",
+        \"COLOR_PALETTE\": \"bright blue, red, or green (40–70% saturation); subtle metallic sheen\",
+        \"SCALE_POSE\": \"medium, mid-ground, slightly leaning forward, in motion\",
+        \"CONTEXT\": \"countryside path leading toward the sky\",
+        \"COMPOSITION_ROLE\": \"mid-ground dynamic element that guides viewer eye to stars\"
+      },
+      \"ICONOGRAPHY\": \"symbol of personal journey, freedom, and connection between earth and cosmos\",
+      \"VARIANTS\": [\"bicycle with rider\", \"bicycle in motion\", \"cycling under starlight\"],
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"NAME\": \"swirling stars\",
+      \"WHY\": \"Serves as the celestial backdrop, providing emotional contrast and a sense of infinite wonder through dynamic, luminous patterns\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"spiral vortex with radiating lines, abstracted star clusters\",
+        \"COLOR_PALETTE\": \"deep cobalt blue (40–70%), gold, white, lavender; soft gradients and ambient glow\",
+        \"SCALE_POSE\": \"60% background, expansive and flowing, gently illuminating the earth elements\",
+        \"CONTEXT\": \"night sky above rural landscape\",
+        \"COMPOSITION_ROLE\": \"background motif that enhances emotional depth and cosmic journey\"
+      },
+      \"ICONOGRAPHY\": \"symbol of fate, journey, and the infinite connection between human life and the universe\",
+      \"VARIANTS\": [\"nebula swirl\", \"galactic spiral\", \"constellation vortex\"],
+      \"CONFIDENCE\": 0.93
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"Windmill with burnt umber and cadmium yellow (60–90% saturation) at lower third, grounded and textured\",
+    \"Bicycle in mid-ground with bright blue or red (40–70% saturation), in motion, connected by serpentine lines\",
+    \"60% swirling stars in background with deep blue, gold, and lavender gradients, softly glowing\"
+  ],
+  \"UPDATE_PROMPT\": \"A grounded windmill and bicycle linked by flowing serpentine lines to a 60% swirling star sky, with warm impasto colors on earth and soft pastel glows in the stars.\"
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of saturation should be applied to cadmium yellow and cobalt blue in the impasto spots of the windmill and bicycle to maintain Van Gogh’s expressive intensity while contrasting with the soft pastel gradients of the Ghibli-inspired starry sky?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures measurable balance between bold, saturated earth tones and soft celestial glows, preserving emotional contrast and visual harmony.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 60–90% for cadmium yellow; 40–70% for cobalt blue)\",
+      \"DEPENDENCIES\": [\"60-90% saturation for cadmium yellows\", \"40-70% saturation for cobalt blues\", \"warm, vibrant hues with high saturation\"]
+    },
+    {
+      \"Q\": \"How should the serpentine lines connecting the windmill to the bicycle and into the swirling stars be defined in terms of curve density (e.g., 4–6 per 10 cm), directionality (e.g., flowing, looping), and texture (e.g., impasto, soft blend) to guide the viewer’s eye and maintain organic continuity?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Clarifies the dynamic narrative flow between earth and cosmos, ensuring the compositional movement is both intentional and visually coherent.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"density (e.g., 4–6 per 10 cm), directionality (e.g., serpentine), texture (e.g., impasto with soft blend transitions)\",
+      \"DEPENDENCIES\": [\"serpentine curves with 4–6 per 10 cm\", \"flowing, fluid lines that suggest motion and continuity\"]
+    },
+    {
+      \"Q\": \"What percentage of the composition should be occupied by the swirling stars as background, and how should the windmill and bicycle be positioned (e.g., lower third, mid-ground) to ensure a grounded celestial journey without visual disconnection?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Establishes spatial hierarchy and emotional balance between the earthly elements and the expansive cosmos, reinforcing narrative cohesion.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 60%), positioning (e.g., windmill at lower third, bicycle in mid-ground)\",
+      \"DEPENDENCIES\": [\"60% stars in background\", \"windmill at lower third, bicycle in mid-ground\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle appear disconnected from the stars, with no visible flowing lines to break the narrative arc?\",
+    \"Could the impasto texture be applied uniformly across all elements, eliminating contrast between bold earth tones and soft celestial glows?\",
+    \"Is the starry background too dominant (over 70%) or too sparse (under 40%), disrupting the emotional balance between earth and sky?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY specifies saturation below 50% for windmill or bicycle THEN ask for specific color combinations that preserve emotional warmth and texture\",
+    \"IF FORM_COMPOSITION indicates fewer than 4 curves per 10 cm THEN ask for curvature radius and line thickness range\",
+    \"IF COMPOSITIONAL_DEVICES shows stars over 70% THEN ask how the windmill and bicycle are visually anchored to prevent floating or disconnection\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": \"60–90% saturation for cadmium yellow; 40–70% saturation for cobalt blue\",
+      \"RATIONALE\": \"Maintains Van Gogh’s expressive intensity while creating clear contrast with soft pastel gradients in the stars.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"ANSWER\": \"4–6 curves per 10 cm, serpentine directionality, impasto texture with soft blend transitions\",
+      \"RATIONALE\": \"Provides organic continuity and dynamic flow from earth to cosmos without rigid symmetry.\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"60% stars; windmill at lower third, bicycle in mid-ground\",
+      \"RATIONALE\": \"Establishes grounded narrative balance between earthly presence and celestial wonder.\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Serpentine, flowing lines (4–6 per 10 cm) connect windmill to bicycle and into swirling stars, maintaining organic continuity and dynamic movement\",
+    \"COLOR_TONALITY\": \"Cadmium yellows at 60–90% saturation; cobalt blues at 40–70%; contrasted with soft pastels (lavender, creamy whites, pastel blues) in gradients\",
+    \"EXPRESSION_THEME\": \"A grounded journey from earth to cosmos; emotional warmth from windmill and bicycle, enhanced by starlight and flowing lines\",
+    \"HISTORICAL_CONTEXT\": \"Van Gogh’s expressive impasto fused with Ghibli’s dreamlike flow and narrative cohesion\",
+    \"SUBJECT_MATTER\": \"Windmill, bicycle, and swirling stars forming a narrative arc from rural earth to infinite sky\",
+    \"COMPOSITIONAL_DEVICES\": \"60% background stars; windmill grounded at lower third, bicycle in mid-ground; serpentine lines guide viewer movement with impasto texture and soft transitions\",
+    \"EVALUATION_CRITERIA\": [
+      \"Cadmium yellows and cobalt blues within 60–90% and 40–70% saturation ranges\",
+      \"Serpentine lines with 4–6 curves per 10 cm linking all elements\",
+      \"60% stars in background with windmill at lower third and bicycle in mid-ground\",
+      \"Visual connection via flowing lines and emotional continuity between earth and sky\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"Van Gogh-inspired impasto with 60–90% cadmium yellow and 40–70% cobalt blue saturation, connected by serpentine lines (4–6 per 10 cm) to a 60% swirling star sky, with a grounded windmill at lower third and bicycle in mid-ground\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Confirmed saturation ranges for cadmium yellow and cobalt blue across both earth and sky elements\",
+    \"Reinforced serpentine line density and texture as critical for narrative flow\",
+    \"Strengthened spatial positioning with explicit grounding of windmill and bicycle\",
+    \"Updated evaluation criteria to include measurable color, form, and spatial metrics\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific saturation ranges should be applied to the windmill (cadmium yellow) and bicycle (cobalt blue) to maintain Van Gogh’s expressive impasto while contrasting with the soft pastel gradients of the Ghibli-inspired starry sky?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures measurable contrast between bold, saturated earth tones and soft celestial glows, preserving emotional and visual harmony.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"range (e.g., 60–90% for windmill; 40–70% for bicycle)\",
+      \"DEPENDENCIES\": [\"60-90% saturation for cadmium yellows\", \"40-70% saturation for cobalt blues\"]
+    },
+    {
+      \"Q\": \"How should the flowing lines connecting the windmill to the bicycle and into the swirling stars be structured in terms of curve density (e.g., 4–6 per 10 cm), directionality (e.g., serpentine), and texture (e.g., impasto with soft blend transitions) to guide viewer movement and maintain organic continuity?\",
+      \"DIMENSION\": \"FORM_COMPOSITION\",
+      \"WHY\": \"Clarifies how visual narrative flow establishes a dynamic journey from earth to cosmos with emotional coherence.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"density (e.g., 4–6 per 10 cm), directionality (e.g., serpentine), texture (e.g., impasto with soft blend transitions)\",
+      \"DEPENDENCIES\": [\"serpentine curves with 4–6 per 10 cm\", \"flowing, fluid lines that suggest motion and continuity\"]
+    },
+    {
+      \"Q\": \"What percentage of the composition should be occupied by the swirling stars as background, and how should the windmill and bicycle be positioned (e.g., windmill at lower third, bicycle in mid-ground) to ensure a grounded celestial journey without visual disconnection?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Establishes spatial hierarchy and emotional balance between earthly presence and cosmic wonder.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"percentage (e.g., 60%), positioning (e.g., windmill at lower third, bicycle in mid-ground)\",
+      \"DEPENDENCIES\": [\"60% stars in background\", \"windmill at lower third, bicycle in mid-ground\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Should the windmill or bicycle appear disconnected from the swirling stars, with no visible flowing lines to maintain narrative continuity?\",
+    \"Could the impasto texture be applied uniformly across all elements, eliminating contrast between bold earth tones and soft celestial glows?\",
+    \"Is the starry background over 70% or under 40%, disrupting the balance between earth and sky?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY specifies saturation below 50% for windmill or bicycle THEN ask for specific color combinations that preserve emotional warmth and texture\",
+    \"IF FORM_COMPOSITION indicates fewer than 4 curves per 10 cm THEN ask for curvature radius and line thickness range\",
+    \"IF COMPOSITIONAL_DEVICES shows stars over 70% THEN ask how the windmill and bicycle are visually anchored to prevent floating or disconnection\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"60–90% saturation for windmill; 40–70% saturation for bicycle\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"4–6 curves per 10 cm, serpentine directionality, impasto with soft blend transitions\",
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"60% stars; windmill at lower third, bicycle in mid-ground\",
+      \"CONFIDENCE\": 0.95
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"windmill\",
+      \"WHY\": \"Represents grounded earthiness and rural heritage, with impasto texture reinforcing Van Gogh’s emotional warmth and contrast to soft sky gradients\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"cylindrical tower with rotating blades, conical base\",
+        \"COLOR_PALETTE\": \"burnt umber, deep red, cadmium yellow (60–90% saturation); weathered textures\",
+        \"SCALE_POSE\": \"large, grounded, slightly tilted, positioned at lower third\",
+        \"CONTEXT\": \"rural countryside under starry sky\",
+        \"COMPOSITION_ROLE\": \"foreground anchor with emotional weight\"
+      },
+      \"ICONOGRAPHY\": \"symbol of stability, tradition, and quiet resilience in a cosmic journey\",
+      \"VARIANTS\": [\"rusty windmill\", \"sunlit windmill\", \"windmill with glowing blades\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"bicycle\",
+      \"WHY\": \"Represents youthful movement and human connection to the earth, dynamically linked to stars via flowing lines, enhancing narrative continuity\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"two-wheeled frame with handlebars, pedals, seat; simplified and stylized\",
+        \"COLOR_PALETTE\": \"bright blue, red, or green (40–70% saturation); subtle metallic sheen\",
+        \"SCALE_POSE\": \"medium, mid-ground, slightly leaning forward, in motion\",
+        \"CONTEXT\": \"countryside path leading toward the sky\",
+        \"COMPOSITION_ROLE\": \"mid-ground dynamic element that guides viewer eye to stars\"
+      },
+      \"ICONOGRAPHY\": \"symbol of personal journey, freedom, and connection between earth and cosmos\",
+      \"VARIANTS\": [\"bicycle with rider\", \"bicycle in motion\", \"cycling under starlight\"],
+      \"CONFIDENCE\": 0.94
+    },
+    {
+      \"NAME\": \"swirling stars\",
+      \"WHY\": \"Serves as the celestial backdrop, providing emotional contrast and a sense of infinite wonder through dynamic, luminous patterns\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"spiral vortex with radiating lines, abstracted star clusters\",
+        \"COLOR_PALETTE\": \"deep cobalt blue (40–70%), gold, white, lavender; soft gradients and ambient glow\",
+        \"SCALE_POSE\": \"60% background, expansive and flowing, gently illuminating the earth elements\",
+        \"CONTEXT\": \"night sky above rural landscape\",
+        \"COMPOSITION_ROLE\": \"background motif that enhances emotional depth and cosmic journey\"
+      },
+      \"ICONOGRAPHY\": \"symbol of fate, journey, and the infinite connection between human life and the universe\",
+      \"VARIANTS\": [\"nebula swirl\", \"galactic spiral\", \"constellation vortex\"],
+      \"CONFIDENCE\": 0.93
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"Windmill with burnt umber and cadmium yellow (60–90% saturation) at lower third, grounded and textured\",
+    \"Bicycle in mid-ground with bright blue or red (40–70% saturation), in motion, connected by serpentine lines\",
+    \"60% swirling stars in background with deep blue, gold, and lavender gradients, softly glowing\"
+  ],
+  \"UPDATE_PROMPT\": \"A grounded windmill and bicycle linked by flowing serpentine lines to a 60% swirling star sky, with warm impasto colors on earth and soft pastel glows in the stars.\"
+}"
+  }
+]

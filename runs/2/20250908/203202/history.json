@@ -1,0 +1,477 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_STYLE": "A blend of Impressionism’s soft light and Ukiyo-e’s delicate lines, with a touch of ethereal mist and traditional Japanese elegance.",
+    "STYLE_RESPONSE": "{
+  \"STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical compositions with balanced negative space; horizontal or vertical rhythms inspired by Ukiyo-e prints; soft, flowing contours and subtle directional lines that suggest movement without sharp edges.\",
+    \"COLOR_TONALITY\": \"Soft pastel palettes with muted hues in warm neutral tones (beige, pale lavender, soft ochre, muted green); low saturation and high contrast between light and shadow to evoke a diffused, atmospheric quality.\",
+    \"BRUSHWORK_TECHNIQUE\": \"Light, expressive brushstrokes with gentle blending; minimal visible strokes; delicate line work reminiscent of Ukiyo-e woodblock patterns, rendered with fine, precise, and evenly spaced lines.\",
+    \"EXPRESSION_THEME\": \"Serene, tranquil atmosphere; scenes of quiet daily life, nature in stillness, or fleeting moments of beauty; a sense of timelessness and gentle melancholy.\",
+    \"HISTORICAL_CONTEXT\": \"19th-century French Impressionism and Edo-period Japanese woodblock prints; fusion of Western optical observation with traditional Japanese aesthetic values like wabi-sabi and mono no aware.\"
+  },
+  \"MERGE_STRATEGY\": \"Integrate Impressionism’s luminous color layering and loose brushwork with Ukiyo-e’s compositional balance and linear precision; use ethereal mist as a visual medium to soften edges and unify the two styles through atmospheric depth.\",
+  \"EVALUATION_CRITERIA\": [
+    \"Presence of soft, diffused light consistent with Impressionism\",
+    \"Clear evidence of delicate, flowing lines in a Ukiyo-e-inspired composition\",
+    \"Use of muted pastel tones with low saturation and high luminosity\",
+    \"Atmospheric mist or haze that blurs edges and creates depth\",
+    \"Themes of tranquility and traditional Japanese life\"
+  ],
+  \"CONFIDENCE\": 0.97
+}"
+  },
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "CREATURES: fox; PROPS: paper lantern; ENVIRONMENTS: misty bridge",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are common symbolic creatures in traditional Eastern art, especially in Japanese and Chinese aesthetics, often appearing in misty or natural settings as a symbol of wisdom and independence.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail\",
+        \"COLOR_PALETTE\": \"tan, gray, white, red accents\",
+        \"CONTEXT\": \"misty natural landscape, bridge or forest edge\",
+        \"COMPOSITION_ROLE\": \"main subject, foreground accent\"
+      },
+      \"ICONOGRAPHY\": \"symbol of cleverness, intuition, and spiritual insight\",
+      \"VARIANTS\": [\"red fox\", \"white fox\", \"fox in moonlight\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns are classic elements in East Asian art, especially in scenes involving mist, bridges, or twilight, symbolizing peace, light, and transition.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"round or oval, paper shell with a central light source\",
+        \"COLOR_PALETTE\": \"red, gold, white, blue\",
+        \"CONTEXT\": \"misty bridge, night scene, rural setting\",
+        \"COMPOSITION_ROLE\": \"foreground accent, visual rhythm\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, celebration, and the passage of time\",
+      \"VARIANTS\": [\"red lantern\", \"paper lantern with floral pattern\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"Misty bridges are a recurring motif in traditional landscape painting, especially in Chinese and Japanese ink wash art, evoking tranquility and the boundary between worlds.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or low structure, partially obscured by fog\",
+        \"COLOR_PALETTE\": \"gray, white, soft blue, pale green\",
+        \"CONTEXT\": \"rural or mountainous environment, transitional space\",
+        \"COMPOSITION_ROLE\": \"scene setting, spatial rhythm\"
+      },
+      \"ICONOGRAPHY\": \"transition between reality and spirit, solitude, contemplation\",
+      \"VARIANTS\": [\"stone bridge\", \"wooden bridge\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are the fox and paper lantern specifically tied to a particular cultural or historical context (e.g., Japanese folklore or Chinese New Year)?\",
+    \"Is the misty bridge intended to be a literal structure or a symbolic boundary?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of pastel tones (e.g., RGB or hex values) should be used for the fox's fur and the paper lantern's surface to maintain the muted, low-saturation palette described in the style?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"To ensure the visual consistency of the soft, diffused color scheme that defines the style's atmospheric quality.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of 3-5 specific hex or RGB values (e.g., #D8BFD8, #F5F0E6) for key elements\",
+      \"DEPENDENCIES\": [\"soft pastel palettes\", \"muted hues in warm neutral tones\"]
+    },
+    {
+      \"Q\": \"How should the brushwork balance between the delicate, precise lines of Ukiyo-e and the loose, expressive strokes of Impressionism when rendering the fox’s tail and the paper lantern’s edges?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"To clarify the integration of two distinct techniques in a way that maintains both stylistic fidelity and visual harmony.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Describe stroke density, spacing, and blending for two key elements (e.g., fox tail, lantern edge)\",
+      \"DEPENDENCIES\": [\"light, expressive brushstrokes\", \"delicate line work reminiscent of Ukiyo-e\"]
+    },
+    {
+      \"Q\": \"What specific compositional device (e.g., leading lines, negative space, symmetry) is used to position the fox and paper lantern relative to the misty bridge, and how does it support the theme of tranquility and transition?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"To ground the scene in a clear structural logic that reflects both Ukiyo-e balance and Impressionist spatial depth.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"One primary device with explanation (e.g., 'negative space creates a sense of isolation and transition')\",
+      \"DEPENDENCIES\": [\"loose, asymmetrical compositions\", \"balanced negative space\", \"misty bridge as scene setting\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the fox rendered with sharp, defined edges that contradict the soft, diffused quality of the style?\",
+    \"Are the lantern or bridge elements too bright or saturated, violating the low-saturation, high-luminosity requirement?\",
+    \"Does the composition lack balance or rhythm, breaking the Ukiyo-e-inspired horizontal/vertical flow?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions red accents THEN ask for specific red tones and their saturation levels\",
+    \"IF BRUSHWORK_TECHNIQUE references 'precise lines' THEN ask for line thickness and frequency per inch\",
+    \"IF COMPOSITIONAL_DEVICES cites negative space THEN ask for the exact percentage of negative space in the frame\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": [\"#D8BFD8\", \"#F5F0E6\", \"#E6D9C4\", \"#D9C6A5\", \"#F0E6D9\"],
+      \"RATIONALE\": \"These values represent soft, muted pastels aligned with warm neutral tones and low saturation, maintaining atmospheric diffusion.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"Fox tail: fine, evenly spaced lines (1.5 lines per inch) with gentle blending to suggest flow; lantern edge: precise, parallel lines (2 lines per inch) with slight feathering at corners to preserve Ukiyo-e precision while allowing Impressionist softness.\",
+      \"RATIONALE\": \"Balances delicate line work with expressive softness, avoiding sharpness or over-saturation.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Balanced negative space creates a sense of isolation and transition, with the fox and lantern positioned asymmetrically yet harmoniously within the misty bridge’s frame, reinforcing tranquility and the boundary between worlds.\",
+      \"RATIONALE\": \"Negative space acts as a visual anchor for stillness and spatial ambiguity, consistent with Ukiyo-e balance and Impressionist depth.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical compositions with balanced negative space; horizontal or vertical rhythms inspired by Ukiyo-e prints; soft, flowing contours and subtle directional lines that suggest movement without sharp edges.\",
+    \"COLOR_TONALITY\": \"Soft pastel palettes with muted hues in warm neutral tones (beige, pale lavender, soft ochre, muted green); low saturation and high contrast between light and shadow to evoke a diffused, atmospheric quality, with specific hex values: #D8BFD8, #F5F0E6, #E6D9C4, #D9C6A5, #F0E6D9\",
+    \"EXPRESSION_THEME\": \"Serene, tranquil atmosphere; scenes of quiet daily life, nature in stillness, or fleeting moments of beauty; a sense of timelessness and gentle melancholy, enhanced by symbolic elements like fox, lantern, and misty bridge.\",
+    \"HISTORICAL_CONTEXT\": \"19th-century French Impressionism and Edo-period Japanese woodblock prints; fusion of Western optical observation with traditional Japanese aesthetic values like wabi-sabi and mono no aware, particularly in depictions of natural transitions and quiet contemplation.\",
+    \"SUBJECT_MATTER\": \"A fox and paper lantern in a misty rural landscape near a bridge, symbolizing wisdom, peace, and the passage of time in a timeless, tranquil setting.\",
+    \"COMPOSITIONAL_DEVICES\": \"Balanced negative space as primary device to create visual isolation and transition; asymmetrical placement of subject elements to maintain rhythm and flow without symmetry.\",
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of soft, diffused light consistent with Impressionism\",
+      \"Clear evidence of delicate, flowing lines in a Ukiyo-e-inspired composition\",
+      \"Use of muted pastel tones with low saturation and high luminosity (specific hex values provided)\",
+      \"Atmospheric mist or haze that blurs edges and creates depth\",
+      \"Themes of tranquility and traditional Japanese life, supported by symbolic objects and composition\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A serene Japanese-inspired scene with a fox and paper lantern on a misty bridge, rendered in soft pastel tones and delicate Ukiyo-e-inspired brushwork with Impressionist light.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Added specific hex values for pastel tones to ensure visual consistency\",
+    \"Defined brushwork density and spacing for fox tail and lantern edge\",
+    \"Specified balanced negative space as primary compositional device with explanation\",
+    \"Expanded expression theme to include symbolic meaning of objects\",
+    \"Updated evaluation criteria with measurable color and technique standards\"
+  ],
+  \"CONFIDENCE\": 0.98
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific hex values should be used for the fox's fur and the paper lantern's surface to maintain the soft, muted pastel palette with warm neutral tones and low saturation?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures visual consistency with the style's defined atmospheric quality and pastel tone system\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of 3-5 specific hex values (e.g., #D8BFD8, #F5F0E6) for key elements\",
+      \"DEPENDENCIES\": [\"soft pastel palettes\", \"muted hues in warm neutral tones\", \"low saturation and high luminosity\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the fox’s tail and the paper lantern’s edge to balance Ukiyo-e precision with Impressionist softness, including line spacing and blending?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies the integration of two distinct techniques to preserve both stylistic authenticity and visual harmony\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Describe stroke density, spacing (e.g., lines per inch), and blending method for two key elements\",
+      \"DEPENDENCIES\": [\"delicate, flowing lines\", \"light, expressive brushstrokes\", \"Ukiyo-e-inspired precision\"]
+    },
+    {
+      \"Q\": \"What role does the misty bridge play in the composition—specifically, how is its placement and relationship to the fox and lantern structured to convey tranquility and transition?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"Establishes the spatial and symbolic function of the bridge as a boundary between worlds in the scene\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"One sentence describing composition and symbolic role (e.g., 'The bridge is partially obscured by mist and positioned diagonally to create a sense of transition')\",
+      \"DEPENDENCIES\": [\"misty bridge as scene setting\", \"asymmetrical yet balanced composition\", \"tranquility and transition themes\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the fox rendered with sharp, defined edges that break the soft, diffused style?\",
+    \"Are the lantern or bridge elements overly bright or saturated, violating the low-saturation requirement?\",
+    \"Does the composition lack rhythm or balance, disrupting the Ukiyo-e-inspired flow?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY includes red accents THEN ask for specific red tones and their saturation levels\",
+    \"IF BRUSHWORK_TECHNIQUE references line spacing THEN ask for exact line count per inch for fox tail and lantern edge\",
+    \"IF CONTEXT mentions bridge obstruction or mist THEN ask for the percentage of the bridge visible or obscured\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": [\"#D8BFD8\", \"#F5F0E6\", \"#E6D9C4\", \"#D9C6A5\", \"#F0E6D9\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"Fox tail: fine, evenly spaced lines (1.5 lines per inch) with gentle blending to suggest flow; lantern edge: precise, parallel lines (2 lines per inch) with slight feathering at corners to preserve Ukiyo-e precision while allowing Impressionist softness.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"The misty bridge is partially obscured by fog and positioned diagonally, with the fox and lantern placed asymmetrically yet balanced within its frame, creating a sense of transition and quiet contemplation.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are symbolic of wisdom and quiet independence in Japanese tradition, naturally fitting in misty, tranquil settings with soft, flowing forms and muted tones.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail with soft curves\",
+        \"COLOR_PALETTE\": [\"#D8BFD8\", \"#F5F0E6\", \"#E6D9C4\"],
+        \"SCALE_POSE\": \"medium size, slightly turned, mid-frame, facing slightly away\",
+        \"CONTEXT\": \"misty natural landscape, edge of forest or bridge\",
+        \"COMPOSITION_ROLE\": \"main subject, foreground accent\"
+      },
+      \"ICONOGRAPHY\": \"symbol of cleverness, intuition, and spiritual insight\",
+      \"VARIANTS\": [\"red fox\", \"white fox\", \"fox in moonlight\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns represent peace, light, and transition in East Asian culture, especially in twilight or misty scenes, enhancing the theme of quiet beauty and passage of time.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"round or oval, paper shell with central light source\",
+        \"COLOR_PALETTE\": [\"#F5F0E6\", \"#D9C6A5\", \"#F0E6D9\"],
+        \"SCALE_POSE\": \"small to medium, slightly elevated, placed on bridge or ground\",
+        \"CONTEXT\": \"misty bridge, rural twilight, near water or path\",
+        \"COMPOSITION_ROLE\": \"foreground accent, visual rhythm\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, celebration, and the passage of time\",
+      \"VARIANTS\": [\"red lantern\", \"paper lantern with floral pattern\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"The misty bridge acts as a visual and symbolic boundary between the physical and spiritual worlds, reinforcing the theme of tranquility and transition through its partial obscurity and asymmetrical framing.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or low wooden structure, partially hidden by fog\",
+        \"COLOR_PALETTE\": [\"#D9C6A5\", \"#F0E6D9\", \"#E6D9C4\"],
+        \"SCALE_POSE\": \"medium, spanning horizontally, diagonally aligned with subject elements\",
+        \"CONTEXT\": \"rural or mountainous environment, transitional space\",
+        \"COMPOSITION_ROLE\": \"scene setting, spatial rhythm\"
+      },
+      \"ICONOGRAPHY\": \"transition between reality and spirit, solitude, contemplation\",
+      \"VARIANTS\": [\"stone bridge\", \"wooden bridge\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A fox with soft fur in pastel tones, standing near a misty bridge\",
+    \"A paper lantern with subtle golden glow, resting on the bridge edge\",
+    \"A misty bridge partially hidden in fog, creating a sense of transition\"
+  ],
+  \"UPDATE_PROMPT\": \"A serene scene of a fox and paper lantern on a misty bridge, in soft pastel tones with delicate Ukiyo-e lines and Impressionist light, showing quiet transition and stillness.\"
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_STYLE": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific range of hex values should be applied to the fox's fur and the paper lantern's surface to maintain the soft, muted pastel palette with warm neutral tones and low saturation, as defined in the style?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures visual consistency with the style's defined atmospheric quality and pastel tone system\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of 3-5 specific hex values (e.g., #D8BFD8, #F5F0E6) for key elements\",
+      \"DEPENDENCIES\": [\"soft pastel palettes\", \"muted hues in warm neutral tones\", \"low saturation and high luminosity\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the fox’s tail and the paper lantern’s edge to balance Ukiyo-e precision with Impressionist softness, including line spacing and blending techniques?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies the integration of two distinct techniques to preserve both stylistic authenticity and visual harmony\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Describe stroke density, spacing (e.g., lines per inch), and blending method for two key elements\",
+      \"DEPENDENCIES\": [\"delicate, flowing lines\", \"light, expressive brushstrokes\", \"Ukiyo-e-inspired precision\"]
+    },
+    {
+      \"Q\": \"What specific compositional device (e.g., negative space, asymmetry, leading lines) is used to position the fox and paper lantern relative to the misty bridge, and how does it support the theme of tranquility and transition?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Grounds the scene in a clear structural logic that reflects both Ukiyo-e balance and Impressionist spatial depth\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"One primary device with explanation (e.g., 'balanced negative space creates a sense of isolation and transition')\",
+      \"DEPENDENCIES\": [\"loose, asymmetrical compositions\", \"balanced negative space\", \"misty bridge as scene setting\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the fox rendered with sharp, defined edges that contradict the soft, diffused quality of the style?\",
+    \"Are the lantern or bridge elements too bright or saturated, violating the low-saturation, high-luminosity requirement?\",
+    \"Does the composition lack balance or rhythm, breaking the Ukiyo-e-inspired horizontal/vertical flow?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY mentions red accents THEN ask for specific red tones and their saturation levels\",
+    \"IF BRUSHWORK_TECHNIQUE references line spacing THEN ask for exact line count per inch for fox tail and lantern edge\",
+    \"IF COMPOSITIONAL_DEVICES cites negative space THEN ask for the exact percentage of negative space in the frame\"
+  ]
+}",
+    "STYLE_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"ANSWER\": [\"#D8BFD8\", \"#F5F0E6\", \"#E6D9C4\", \"#D9C6A5\", \"#F0E6D9\"],
+      \"RATIONALE\": \"These hex values represent soft, muted pastels in warm neutral tones with low saturation and high luminosity, aligning with the style's atmospheric diffusion and Japanese aesthetic.\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"ANSWER\": \"Fox tail: fine, evenly spaced lines (1.5 lines per inch) with gentle blending to suggest flow; lantern edge: precise, parallel lines (2 lines per inch) with slight feathering at corners to preserve Ukiyo-e precision while allowing Impressionist softness.\",
+      \"RATIONALE\": \"Balances delicate line work with expressive softness, avoiding sharpness or over-saturation.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"ANSWER\": \"Balanced negative space creates a sense of isolation and transition, with the fox and lantern positioned asymmetrically yet harmoniously within the misty bridge’s frame, reinforcing tranquility and the boundary between worlds.\",
+      \"RATIONALE\": \"Negative space acts as a visual anchor for stillness and spatial ambiguity, consistent with Ukiyo-e balance and Impressionist depth.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_STYLE_BRIEF\": {
+    \"FORM_COMPOSITION\": \"Loose, asymmetrical compositions with balanced negative space; horizontal or vertical rhythms inspired by Ukiyo-e prints; soft, flowing contours and subtle directional lines that suggest movement without sharp edges.\",
+    \"COLOR_TONALITY\": \"Soft pastel palettes with muted hues in warm neutral tones (beige, pale lavender, soft ochre, muted green); low saturation and high contrast between light and shadow to evoke a diffused, atmospheric quality, with specific hex values: #D8BFD8, #F5F0E6, #E6D9C4, #D9C6A5, #F0E6D9\",
+    \"EXPRESSION_THEME\": \"Serene, tranquil atmosphere; scenes of quiet daily life, nature in stillness, or fleeting moments of beauty; a sense of timelessness and gentle melancholy, enhanced by symbolic elements like fox, lantern, and misty bridge.\",
+    \"HISTORICAL_CONTEXT\": \"19th-century French Impressionism and Edo-period Japanese woodblock prints; fusion of Western optical observation with traditional Japanese aesthetic values like wabi-sabi and mono no aware, particularly in depictions of natural transitions and quiet contemplation.\",
+    \"SUBJECT_MATTER\": \"A fox and paper lantern in a misty rural landscape near a bridge, symbolizing wisdom, peace, and the passage of time in a timeless, tranquil setting.\",
+    \"COMPOSITIONAL_DEVICES\": \"Balanced negative space as primary device to create visual isolation and transition; asymmetrical placement of subject elements to maintain rhythm and flow without symmetry.\",
+    \"EVALUATION_CRITERIA\": [
+      \"Presence of soft, diffused light consistent with Impressionism\",
+      \"Clear evidence of delicate, flowing lines in a Ukiyo-e-inspired composition\",
+      \"Use of muted pastel tones with low saturation and high luminosity (specific hex values provided)\",
+      \"Atmospheric mist or haze that blurs edges and creates depth\",
+      \"Themes of tranquility and traditional Japanese life, supported by symbolic objects and composition\"
+    ]
+  },
+  \"PROMPT_SNIPPET\": \"A serene Japanese-inspired scene with a fox and paper lantern on a misty bridge, rendered in soft pastel tones and delicate Ukiyo-e-inspired brushwork with Impressionist light.\",
+  \"CHANGES_SINCE_PREV\": [
+    \"Reaffirmed specific hex values for color consistency\",
+    \"Strengthened brushwork specifications with exact line counts per inch\",
+    \"Clarified compositional device as balanced negative space with direct link to theme of transition\",
+    \"Ensured all elements align with negative checks and stylistic fidelity\"
+  ]
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific hex values should be used for the fox's fur and the paper lantern's surface to maintain the soft, muted pastel palette with warm neutral tones and low saturation, as defined in the style?\",
+      \"DIMENSION\": \"COLOR_TONALITY\",
+      \"WHY\": \"Ensures visual consistency with the style's defined atmospheric quality and pastel tone system\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"List of 3-5 specific hex values (e.g., #D8BFD8, #F5F0E6) for key elements\",
+      \"DEPENDENCIES\": [\"soft pastel palettes\", \"muted hues in warm neutral tones\", \"low saturation and high luminosity\"]
+    },
+    {
+      \"Q\": \"How should the brushwork be applied to the fox’s tail and the paper lantern’s edge to balance Ukiyo-e precision with Impressionist softness, including line spacing and blending techniques?\",
+      \"DIMENSION\": \"BRUSHWORK_TECHNIQUE\",
+      \"WHY\": \"Clarifies the integration of two distinct techniques to preserve both stylistic authenticity and visual harmony\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"Describe stroke density, spacing (e.g., lines per inch), and blending method for two key elements\",
+      \"DEPENDENCIES\": [\"delicate, flowing lines\", \"light, expressive brushstrokes\", \"Ukiyo-e-inspired precision\"]
+    },
+    {
+      \"Q\": \"What specific compositional device (e.g., negative space, asymmetry, leading lines) is used to position the fox and paper lantern relative to the misty bridge, and how does it support the theme of tranquility and transition?\",
+      \"DIMENSION\": \"COMPOSITIONAL_DEVICES\",
+      \"WHY\": \"Grounds the scene in a clear structural logic that reflects both Ukiyo-e balance and Impressionist spatial depth\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"One primary device with explanation (e.g., 'balanced negative space creates a sense of isolation and transition')\",
+      \"DEPENDENCIES\": [\"loose, asymmetrical compositions\", \"balanced negative space\", \"misty bridge as scene setting\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the fox rendered with sharp, defined edges that contradict the soft, diffused quality of the style?\",
+    \"Are the lantern or bridge elements too bright or saturated, violating the low-saturation, high-luminosity requirement?\",
+    \"Does the composition lack balance or rhythm, breaking the Ukiyo-e-inspired horizontal/vertical flow?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_TONALITY includes red accents THEN ask for specific red tones and their saturation levels\",
+    \"IF BRUSHWORK_TECHNIQUE references line spacing THEN ask for exact line count per inch for fox tail and lantern edge\",
+    \"IF COMPOSITIONAL_DEVICES cites negative space THEN ask for the exact percentage of negative space in the frame\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": [\"#D8BFD8\", \"#F5F0E6\", \"#E6D9C4\", \"#D9C6A5\", \"#F0E6D9\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"Fox tail: fine, evenly spaced lines (1.5 lines per inch) with gentle blending to suggest flow; lantern edge: precise, parallel lines (2 lines per inch) with slight feathering at corners to preserve Ukiyo-e precision while allowing Impressionist softness.\",
+      \"CONFIDENCE\": 0.96
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"Balanced negative space creates a sense of isolation and transition, with the fox and lantern positioned asymmetrically yet harmoniously within the misty bridge’s frame, reinforcing tranquility and the boundary between worlds.\",
+      \"CONFIDENCE\": 0.97
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"fox\",
+      \"WHY\": \"Foxes are symbolic of wisdom and quiet independence in Japanese tradition, naturally fitting in misty, tranquil settings with soft, flowing forms and muted tones.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated body, pointed ears, bushy tail with soft curves\",
+        \"COLOR_PALETTE\": [\"#D8BFD8\", \"#F5F0E6\", \"#E6D9C4\"],
+        \"SCALE_POSE\": \"medium size, slightly turned, mid-frame, facing slightly away\",
+        \"CONTEXT\": \"misty natural landscape, edge of forest or bridge\",
+        \"COMPOSITION_ROLE\": \"main subject, foreground accent\"
+      },
+      \"ICONOGRAPHY\": \"symbol of cleverness, intuition, and spiritual insight\",
+      \"VARIANTS\": [\"red fox\", \"white fox\", \"fox in moonlight\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"paper lantern\",
+      \"WHY\": \"Paper lanterns represent peace, light, and transition in East Asian culture, especially in twilight or misty scenes, enhancing the theme of quiet beauty and passage of time.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"round or oval, paper shell with central light source\",
+        \"COLOR_PALETTE\": [\"#F5F0E6\", \"#D9C6A5\", \"#F0E6D9\"],
+        \"SCALE_POSE\": \"small to medium, slightly elevated, placed on bridge or ground\",
+        \"CONTEXT\": \"misty bridge, rural twilight, near water or path\",
+        \"COMPOSITION_ROLE\": \"foreground accent, visual rhythm\"
+      },
+      \"ICONOGRAPHY\": \"symbol of hope, celebration, and the passage of time\",
+      \"VARIANTS\": [\"red lantern\", \"paper lantern with floral pattern\", \"floating lantern\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"misty bridge\",
+      \"WHY\": \"The misty bridge acts as a visual and symbolic boundary between the physical and spiritual worlds, reinforcing the theme of tranquility and transition through its partial obscurity and asymmetrical framing.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"arched or low wooden structure, partially hidden by fog\",
+        \"COLOR_PALETTE\": [\"#D9C6A5\", \"#F0E6D9\", \"#E6D9C4\"],
+        \"SCALE_POSE\": \"medium, spanning horizontally, diagonally aligned with subject elements\",
+        \"CONTEXT\": \"rural or mountainous environment, transitional space\",
+        \"COMPOSITION_ROLE\": \"scene setting, spatial rhythm\"
+      },
+      \"ICONOGRAPHY\": \"transition between reality and spirit, solitude, contemplation\",
+      \"VARIANTS\": [\"stone bridge\", \"wooden bridge\", \"bridge over river\"],
+      \"CONFIDENCE\": 0.88
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"A fox with soft fur in pastel tones, standing near a misty bridge\",
+    \"A paper lantern with subtle golden glow, resting on the bridge edge\",
+    \"A misty bridge partially hidden in fog, creating a sense of transition\"
+  ],
+  \"UPDATE_PROMPT\": \"A serene scene of a fox and paper lantern on a misty bridge, in soft pastel tones with delicate Ukiyo-e lines and Impressionist light, showing quiet transition and stillness.\"
+}"
+  }
+]

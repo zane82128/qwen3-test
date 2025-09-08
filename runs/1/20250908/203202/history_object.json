@@ -1,0 +1,289 @@
+[
+  {
+    "ROUND": 1,
+    "ASK_OBJECT": "PEOPLE: girl; CREATURES: dragon; ENVIRONMENTS: cave",
+    "OBJECT_RESPONSE": "{
+  \"OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"A central human figure in fantasy cave settings, often depicted in stylized or symbolic forms.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"anthropomorphic, often with elongated limbs or flowing hair\",
+        \"COLOR_PALETTE\": \"soft pastels or earthy tones like beige, pink, or gray\",
+        \"CONTEXT\": \"cave interior, often near dragon or mystical elements\",
+        \"COMPOSITION_ROLE\": \"main subject or focal point\"
+      },
+      \"ICONOGRAPHY\": \"symbol of exploration, innocence, or connection to ancient magic\",
+      \"VARIANTS\": [\"young girl\", \"dressed in simple robes\", \"holding a torch\"],
+      \"CONFIDENCE\": 0.95
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"A classic fantasy creature commonly found in cave environments, especially in mythological or artistic cave scenes.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body with wings, large head, prominent scales\",
+        \"COLOR_PALETTE\": \"dark red, gold, or deep blue with metallic highlights\",
+        \"CONTEXT\": \"cave walls or entrance, often coiled or guarding a treasure\",
+        \"COMPOSITION_ROLE\": \"dominant background or dynamic presence\"
+      },
+      \"ICONOGRAPHY\": \"symbol of power, guardianship, or ancient wisdom\",
+      \"VARIANTS\": [\"coiled on cave floor\", \"with glowing eyes\", \"flying above the cave\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"A natural environment element in cave scenes, often used to frame or surround fantasy figures.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rough, textured, vertical or curved surfaces\",
+        \"COLOR_PALETTE\": \"dark gray, black, with hints of green or blue\",
+        \"CONTEXT\": \"interior cave setting, often with cracks or stalactites\",
+        \"COMPOSITION_ROLE\": \"background or framing element\"
+      },
+      \"ICONOGRAPHY\": \"representation of mystery, isolation, or ancient secrets\",
+      \"VARIANTS\": [\"stalactite-covered\", \"with glowing patterns\", \"carved with runes\"],
+      \"CONFIDENCE\": 0.92
+    },
+    {
+      \"NAME\": \"torch\",
+      \"WHY\": \"Commonly used in cave scenes to provide light and suggest exploration or danger.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"simple cylindrical or conical, with flame at top\",
+        \"COLOR_PALETTE\": \"orange, yellow, red flame with dark wood base\",
+        \"CONTEXT\": \"held by girl or placed on ground in cave\",
+        \"COMPOSITION_ROLE\": \"foreground accent or symbolic tool\"
+      },
+      \"ICONOGRAPHY\": \"symbol of courage, journey, or danger\",
+      \"VARIANTS\": [\"wooden torch\", \"glowing ember\", \"held by the girl\"],
+      \"CONFIDENCE\": 0.85
+    }
+  ],
+  \"OPEN_QUESTIONS\": [
+    \"Are there specific cultural or regional influences on the girl's appearance?\",
+    \"Could the dragon be more abstract or minimal in some interpretations?\",
+    \"Is the cave environment more natural or magically altered?\"
+  ]
+}"
+  },
+  {
+    "ROUND": 2,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific form, texture, and color palette should the girl’s hair have to convey emotional intensity and whimsical movement, considering the Fauvist brushwork and Miyazaki’s fluid line quality?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"The girl’s hair is a key expressive element linking emotional intensity to fluid motion in the composition.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"description with texture and color (e.g., 'flowing, impasto texture with cadmium red and cobalt blue highlights')\",
+      \"DEPENDENCIES\": [\"elongated limbs\", \"flowing hair\", \"expressive brushwork\"]
+    },
+    {
+      \"Q\": \"What specific color combinations and saturation levels (e.g., 90–130%) should be used for the dragon’s scales and wings to ensure boldness, non-naturalism, and emotional tension with the cave environment?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"The dragon’s color palette must meet Fauvist saturation requirements while reinforcing dreamlike tension with warm-cool contrasts.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of colors and saturation range (e.g., 'dark red, gold, deep blue; saturation 90–130%')\",
+      \"DEPENDENCIES\": [\"dark red, gold, deep blue\", \"bold primary and secondary hues\", \"90–130% saturation\"]
+    },
+    {
+      \"Q\": \"How should the cave wall’s texture, form, and lighting interact with the torch and dragon to define its role as a framing element with symbolic mystery?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"The cave wall’s interaction with light and figures establishes narrative depth and emotional atmosphere in the fantasy setting.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description including texture, form, and light interaction (e.g., 'rough, stalactite-covered surface reflecting cool blue and violet glimmers')\",
+      \"DEPENDENCIES\": [\"rough, textured\", \"stalactite-covered\", \"cool blue reflections\", \"glowing patterns\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the girl’s form realistically proportioned or grounded in physical space?\",
+    \"Are the dragon’s scales or wings rendered with realistic anatomy or strictly symbolic form?\",
+    \"Does the cave wall lack texture or fail to reflect light in a dreamlike way?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes naturalistic earth tones THEN ask for justification of deviation from bold, non-naturalistic palette\",
+    \"IF FORM describes static or rigid hair THEN ask for evidence of fluid, gestural motion\",
+    \"IF CONTEXT omits light reflection or interaction with torch THEN ask for how dreamlike tension is established\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"flowing, impasto texture with cadmium red and cobalt blue highlights\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"dark red, gold, deep blue; saturation 90–130%\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"rough, stalactite-covered surface reflecting cool blue and violet glimmers\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Her hair is a key expressive element linking emotional intensity to fluid motion through Fauvist brushwork and Miyazaki’s soft lines.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated, flowing, with impasto texture and gestural movement\",
+        \"COLOR_PALETTE\": \"cadmium red, cobalt blue, lemon yellow highlights\",
+        \"SCALE_POSE\": \"mid-size, slightly tilted to emphasize dynamic motion\",
+        \"CONTEXT\": \"cave interior, near dragon or torch light source\",
+        \"COMPOSITION_ROLE\": \"main subject with emotional focus\"
+      },
+      \"ICONOGRAPHY\": \"symbol of emotional expression and childlike wonder\",
+      \"VARIANTS\": [\"hair in flowing waves\", \"with glowing red streaks\", \"dancing in wind-like motion\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Its bold, non-naturalistic color palette and dynamic form create emotional tension with the cave environment while maintaining whimsical fantasy.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body with flowing wings, exaggerated scale patterns\",
+        \"COLOR_PALETTE\": \"dark red, gold, deep blue; saturation 90–130%\",
+        \"SCALE_POSE\": \"coiled or floating with gentle motion, wings slightly open\",
+        \"CONTEXT\": \"cave walls or upper cave ceiling, glowing eyes\",
+        \"COMPOSITION_ROLE\": \"dominant background presence with symbolic power\"
+      },
+      \"ICONOGRAPHY\": \"symbol of ancient magic, emotional depth, and protective mystery\",
+      \"VARIANTS\": [\"glowing eyes\", \"flying above cave\", \"with floating ribbons of light\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"Its textured surface and light reflection create dreamlike mystery and frame the scene with emotional depth.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rough, vertical, curved surfaces with natural cracks and overhangs\",
+        \"COLOR_PALETTE\": \"dark gray, black, with cool blue and violet glimmers\",
+        \"SCALE_POSE\": \"large background element, surrounding the girl and dragon\",
+        \"CONTEXT\": \"interior cave with stalactites and soft light reflections\",
+        \"COMPOSITION_ROLE\": \"framing and atmospheric backdrop\"
+      },
+      \"ICONOGRAPHY\": \"representation of ancient secrets, isolation, and emotional mystery\",
+      \"VARIANTS\": [\"with glowing runes\", \"carved with abstract symbols\", \"reflecting torch and dragon glow\"],
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"girl with flowing, impasto hair in cadmium red and cobalt blue\",
+    \"dragon with dark red, gold, and deep blue scales at 90–130% saturation\",
+    \"cave wall with rough texture and cool blue/violet light reflections\"
+  ],
+  \"UPDATE_PROMPT\": \"A fantasy cave scene with a girl having flowing red-blue hair, a dragon with bold colored scales, and a textured cave wall glowing with cool blue and violet light, all in vibrant, expressive Fauvist style.\"
+}"
+  },
+  {
+    "ROUND": 3,
+    "ASK_OBJECT": "{
+  \"QUESTIONS\": [
+    {
+      \"Q\": \"What specific form, texture, and color palette should the girl’s hair have to convey emotional intensity and whimsical movement, considering the Fauvist brushwork and Miyazaki’s fluid line quality?\",
+      \"DIMENSION\": \"FORM\",
+      \"WHY\": \"The girl’s hair is a key expressive element linking emotional intensity to fluid motion in the composition.\",
+      \"PRIORITY\": 1,
+      \"ANSWER_FORMAT\": \"description with texture and color (e.g., 'flowing, impasto texture with cadmium red and cobalt blue highlights')\",
+      \"DEPENDENCIES\": [\"elongated limbs\", \"flowing hair\", \"expressive brushwork\"]
+    },
+    {
+      \"Q\": \"What specific color combinations and saturation levels (e.g., 90–130%) should be used for the dragon’s scales and wings to ensure boldness, non-naturalism, and emotional tension with the cave environment?\",
+      \"DIMENSION\": \"COLOR_PALETTE\",
+      \"WHY\": \"The dragon’s color palette must meet Fauvist saturation requirements while reinforcing dreamlike tension with warm-cool contrasts.\",
+      \"PRIORITY\": 2,
+      \"ANSWER_FORMAT\": \"list of colors and saturation range (e.g., 'dark red, gold, deep blue; saturation 90–130%')\",
+      \"DEPENDENCIES\": [\"dark red, gold, deep blue\", \"bold primary and secondary hues\", \"90–130% saturation\"]
+    },
+    {
+      \"Q\": \"How should the cave wall’s texture, form, and lighting interact with the torch and dragon to define its role as a framing element with symbolic mystery?\",
+      \"DIMENSION\": \"CONTEXT\",
+      \"WHY\": \"The cave wall’s interaction with light and figures establishes narrative depth and emotional atmosphere in the fantasy setting.\",
+      \"PRIORITY\": 3,
+      \"ANSWER_FORMAT\": \"description including texture, form, and light interaction (e.g., 'rough, stalactite-covered surface reflecting cool blue and violet glimmers')\",
+      \"DEPENDENCIES\": [\"rough, textured\", \"stalactite-covered\", \"cool blue reflections\", \"glowing patterns\"]
+    }
+  ],
+  \"COUNT\": 3,
+  \"NEGATIVE_CHECKS\": [
+    \"Is the girl’s form realistically proportioned or grounded in physical space?\",
+    \"Are the dragon’s scales or wings rendered with realistic anatomy or strictly symbolic form?\",
+    \"Does the cave wall lack texture or fail to reflect light in a dreamlike way?\"
+  ],
+  \"FOLLOWUP_TRIGGERS\": [
+    \"IF COLOR_PALETTE includes naturalistic earth tones THEN ask for justification of deviation from bold, non-naturalistic palette\",
+    \"IF FORM describes static or rigid hair THEN ask for evidence of fluid, gestural motion\",
+    \"IF CONTEXT omits light reflection or interaction with torch THEN ask for how dreamlike tension is established\"
+  ]
+}",
+    "OBJECT_RESPONSE": "{
+  \"ANSWER_ASK\": [
+    {
+      \"INDEX\": 0,
+      \"ANSWER\": \"flowing, impasto texture with cadmium red and cobalt blue highlights\",
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"INDEX\": 1,
+      \"ANSWER\": \"dark red, gold, deep blue; saturation 90–130%\",
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"INDEX\": 2,
+      \"ANSWER\": \"rough, stalactite-covered surface reflecting cool blue and violet glimmers\",
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"UPDATE_OBJECTS\": [
+    {
+      \"NAME\": \"girl\",
+      \"WHY\": \"Her hair is a key expressive element linking emotional intensity to fluid motion through Fauvist brushwork and Miyazaki’s soft lines.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"elongated, flowing, with impasto texture and gestural movement\",
+        \"COLOR_PALETTE\": \"cadmium red, cobalt blue, lemon yellow highlights\",
+        \"SCALE_POSE\": \"mid-size, slightly tilted to emphasize dynamic motion\",
+        \"CONTEXT\": \"cave interior, near dragon or torch light source\",
+        \"COMPOSITION_ROLE\": \"main subject with emotional focus\"
+      },
+      \"ICONOGRAPHY\": \"symbol of emotional expression and childlike wonder\",
+      \"VARIANTS\": [\"hair in flowing waves\", \"with glowing red streaks\", \"dancing in wind-like motion\"],
+      \"CONFIDENCE\": 0.97
+    },
+    {
+      \"NAME\": \"dragon\",
+      \"WHY\": \"Its bold, non-naturalistic color palette and dynamic form create emotional tension with the cave environment while maintaining whimsical fantasy.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"serpentine body with flowing wings, exaggerated scale patterns\",
+        \"COLOR_PALETTE\": \"dark red, gold, deep blue; saturation 90–130%\",
+        \"SCALE_POSE\": \"coiled or floating with gentle motion, wings slightly open\",
+        \"CONTEXT\": \"cave walls or upper cave ceiling, glowing eyes\",
+        \"COMPOSITION_ROLE\": \"dominant background presence with symbolic power\"
+      },
+      \"ICONOGRAPHY\": \"symbol of ancient magic, emotional depth, and protective mystery\",
+      \"VARIANTS\": [\"glowing eyes\", \"flying above cave\", \"with floating ribbons of light\"],
+      \"CONFIDENCE\": 0.98
+    },
+    {
+      \"NAME\": \"cave wall\",
+      \"WHY\": \"Its textured surface and light reflection create dreamlike mystery and frame the scene with emotional depth.\",
+      \"ATTRIBUTES\": {
+        \"FORM\": \"rough, vertical, curved surfaces with natural cracks and overhangs\",
+        \"COLOR_PALETTE\": \"dark gray, black, with cool blue and violet glimmers\",
+        \"SCALE_POSE\": \"large background element, surrounding the girl and dragon\",
+        \"CONTEXT\": \"interior cave with stalactites and soft light reflections\",
+        \"COMPOSITION_ROLE\": \"framing and atmospheric backdrop\"
+      },
+      \"ICONOGRAPHY\": \"representation of ancient secrets, isolation, and emotional mystery\",
+      \"VARIANTS\": [\"with glowing runes\", \"carved with abstract symbols\", \"reflecting torch and dragon glow\"],
+      \"CONFIDENCE\": 0.96
+    }
+  ],
+  \"PROMPT_SNIPPETS\": [
+    \"girl with flowing, impasto hair in cadmium red and cobalt blue\",
+    \"dragon with dark red, gold, and deep blue scales at 90–130% saturation\",
+    \"cave wall with rough texture and cool blue/violet light reflections\"
+  ],
+  \"UPDATE_PROMPT\": \"A fantasy cave scene with a girl having flowing red-blue hair, a dragon with bold colored scales, and a textured cave wall glowing with cool blue and violet light, all in vibrant, expressive Fauvist style.\"
+}"
+  }
+]
